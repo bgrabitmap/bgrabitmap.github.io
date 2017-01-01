@@ -10,7 +10,7 @@ You can also install BGRABitmap with [Lazarus Online Package Manager](http://wik
 LazPaint is a cross platform image editor supporting filters, color and image manipulation and of course painting tools. Made with BGRABitmap.
 
 * [LazPaint repository](https://github.com/bgrabitmap/lazpaint)
-* [Download binaries](https://github.com/bgrabitmap/lazpaint/releases)
+* [Download releases](https://github.com/bgrabitmap/lazpaint/releases)
 
 ### BGRA Controls
 BGRAControls is a set of UI components to use with Lazarus forms editor. Customize the color and shape of buttons, panels and many custom controls. Everything made with BGRABitmap.
@@ -26,4 +26,4 @@ BGRA Controls FX is a set of UI components to use with Lazarus forms editor that
 Participations of Lazarus Graphics related Contests. Started in 2015 and continued in 2016, the graphics contest is a way to prove your skils and made something unique with Lazarus graphic libraries, included BGRABitmap.
 
 * [BGRA Contest repository](https://github.com/bgrabitmap/bgracontest)
-* [Download binaries](https://github.com/bgrabitmap/bgracontest/releases)
+* [Download releases](https://github.com/bgrabitmap/bgracontest/releases)
