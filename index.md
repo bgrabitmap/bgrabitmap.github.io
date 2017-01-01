@@ -15,12 +15,12 @@ LazPaint is a cross platform image editor supporting filters, color and image ma
 ### BGRA Controls
 BGRAControls is a set of UI components to use with Lazarus forms editor. Customize the color and shape of buttons, panels and many custom controls. Everything made with BGRABitmap.
 
-* [BGRA Controls repository](https://github.com/bgrabitmap/bgracontrols)
+* [BGRA Controls website](https://bgrabitmap.github.io/bgracontrols/)
 
 ### BGRA Controls FX
 BGRA Controls FX is a set of UI components to use with Lazarus forms editor that supports both normal canvas and OpenGL drawing. Made with BGRABitmap.
 
-* [BGRA Controls FX repository](https://github.com/bgrabitmap/bgracontrolsfx)
+* [BGRA Controls FX website](https://bgrabitmap.github.io/bgracontrolsfx/)
 
 ### BGRA Contest
 Participations of Lazarus Graphics related Contests. Started in 2015 and continued in 2016, the graphics contest is a way to prove your skils and made something unique with Lazarus graphic libraries, included BGRABitmap.
