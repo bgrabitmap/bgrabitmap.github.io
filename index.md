@@ -6,11 +6,15 @@ BGRABitmap is a package designed to modify and create images with transparency. 
 
 You can also install BGRABitmap with [Lazarus Online Package Manager](http://wiki.lazarus.freepascal.org/Online_Package_Manager). Also you can get a fresh installation of Lazarus and BGRABitmap with [FPCUpDeluxe](http://wiki.lazarus.freepascal.org/fpcupdeluxe).
 
+You can read more about BGRABitmap in the [wiki](http://wiki.freepascal.org/BGRABitmap). And also you can [follow a tutorial](http://wiki.freepascal.org/BGRABitmap_tutorial) to learn how to use BGRABitmap.
+
 ### LazPaint
 LazPaint is a cross platform image editor supporting filters, color and image manipulation and of course painting tools. Made with BGRABitmap.
 
 * [LazPaint repository](https://github.com/bgrabitmap/lazpaint)
 * [Download releases](https://github.com/bgrabitmap/lazpaint/releases)
+
+You can read more about LazPaint in the [wiki](http://wiki.freepascal.org/LazPaint).
 
 ### BGRA Controls
 BGRAControls is a set of UI components to use with Lazarus forms editor. Customize the color and shape of buttons, panels and many custom controls. Everything made with BGRABitmap.
