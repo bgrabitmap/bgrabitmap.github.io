@@ -11,8 +11,7 @@ You can read more about BGRABitmap in the [wiki](http://wiki.freepascal.org/BGRA
 ### LazPaint
 LazPaint is a cross platform image editor supporting filters, color and image manipulation and of course painting tools. Made with BGRABitmap.
 
-* [LazPaint repository](https://github.com/bgrabitmap/lazpaint)
-* [Download releases](https://github.com/bgrabitmap/lazpaint/releases)
+* [LazPaint website](https://bgrabitmap.github.io/lazpaint/)
 
 You can read more about LazPaint in the [wiki](http://wiki.freepascal.org/LazPaint).
 
