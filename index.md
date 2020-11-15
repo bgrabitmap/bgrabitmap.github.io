@@ -20,11 +20,6 @@ BGRAControls is a set of UI components to use with Lazarus forms editor. Customi
 
 * [BGRA Controls website](https://bgrabitmap.github.io/bgracontrols/)
 
-### BGRA Controls FX
-BGRA Controls FX is a set of UI components to use with Lazarus forms editor that supports both normal canvas and OpenGL drawing. Made with BGRABitmap.
-
-* [BGRA Controls FX website](https://bgrabitmap.github.io/bgracontrolsfx/)
-
 ### BGRA Contest
 Participations of Lazarus Graphics related Contests. Started in 2015 and continued in 2016, the graphics contest is a way to prove your skils and made something unique with Lazarus graphic libraries, included BGRABitmap.
 
