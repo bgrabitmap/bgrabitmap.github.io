@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "firebase": "^10.8.0"
+  },
+  "name": "bgra-bitmap",
+  "description": "Web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "build": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bgrabitmap/bgra-bitmap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bgrabitmap/bgra-bitmap/issues"
+  },
+  "homepage": "https://github.com/bgrabitmap/bgra-bitmap#readme"
+}
