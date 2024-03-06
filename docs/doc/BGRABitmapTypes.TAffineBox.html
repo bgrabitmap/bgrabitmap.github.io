@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BGRABitmap: BGRABitmapTypes: Object TAffineBox</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">BGRABitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TAffineBox"></span><h1 class="cio">Object TAffineBox</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRABitmapTypes.html">BGRABitmapTypes</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TAffineBox = object(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Object representing an affine box.</p>
+<p>
+
+
+<p>Box is defined by three corner points (top-left, top-tight, bottom-left).</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TAffineBox</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="BGRABitmapTypes.TAffineBox.html#BottomLeft">BottomLeft</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="BGRABitmapTypes.TAffineBox.html#TopLeft">TopLeft</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="BGRABitmapTypes.TAffineBox.html#TopRight">TopRight</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BGRABitmapTypes.TAffineBox.html#AffineBox-TRectF-">AffineBox</a></strong>(ARectF: <a href="BGRABitmapTypes.html#TRectF">TRectF</a>): <a href="BGRABitmapTypes.TAffineBox.html">TAffineBox</a>; overload; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BGRABitmapTypes.TAffineBox.html#AffineBox-TPointF-TPointF-TPointF-">AffineBox</a></strong>(ATopLeft, ATopRight, ABottomLeft: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>): <a href="BGRABitmapTypes.TAffineBox.html">TAffineBox</a>; overload; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TAffineBox.html#Contains-TPointF-">Contains</a></strong>(APoint: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BGRABitmapTypes.TAffineBox.html#EmptyBox">EmptyBox</a></strong>: <a href="BGRABitmapTypes.TAffineBox.html">TAffineBox</a>; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TAffineBox.html#Inflate-single-single-">Inflate</a></strong>(AHoriz, AVert: single);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TAffineBox.html#Offset-single-single-">Offset</a></strong>(AOfsX, AOfsY: single); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TAffineBox.html#Offset-TPointF-">Offset</a></strong>(AOfs: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); overload;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TAffineBox.html#AsPolygon">AsPolygon</a></strong>: <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a> read GetAsPolygon;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TAffineBox.html#BottomRight">BottomRight</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a> read GetBottomRight;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TAffineBox.html#Center">Center</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a> read GetCenter;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TAffineBox.html#Height">Height</a></strong>: single read GetHeight;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TAffineBox.html#IsEmpty">IsEmpty</a></strong>: boolean read GetIsEmpty;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TAffineBox.html#RectBounds">RectBounds</a></strong>: <a href="BGRAClasses.html#TRect">TRect</a> read GetRectBounds;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TAffineBox.html#RectBoundsF">RectBoundsF</a></strong>: <a href="BGRABitmapTypes.html#TRectF">TRectF</a> read GetRectBoundsF;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TAffineBox.html#Surface">Surface</a></strong>: single read GetSurface;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TAffineBox.html#Width">Width</a></strong>: single read GetWidth;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BottomLeft"></span><code><strong>BottomLeft</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Bottom-left corner of the affine box</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TopLeft"></span><code><strong>TopLeft</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Top-left corner of the affine box</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TopRight"></span><code><strong>TopRight</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Top-right corner of the affine box</p>
+</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AffineBox-TRectF-"></span><code>class function <strong>AffineBox</strong>(ARectF: <a href="BGRABitmapTypes.html#TRectF">TRectF</a>): <a href="BGRABitmapTypes.TAffineBox.html">TAffineBox</a>; overload; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates an affine box from a <a class="normal" href="BGRABitmapTypes.html#TRectF">TRectF</a> structure</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AffineBox-TPointF-TPointF-TPointF-"></span><code>class function <strong>AffineBox</strong>(ATopLeft, ATopRight, ABottomLeft: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>): <a href="BGRABitmapTypes.TAffineBox.html">TAffineBox</a>; overload; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates an affine box defined by three corner points</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Contains-TPointF-"></span><code>function <strong>Contains</strong>(APoint: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Checks if a <a class="normal" href="BGRAClasses.html#Point-Integer-Integer-">point</a> is contained within the affine box</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EmptyBox"></span><code>class function <strong>EmptyBox</strong>: <a href="BGRABitmapTypes.TAffineBox.html">TAffineBox</a>; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates an empty affine box</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Inflate-single-single-"></span><code>procedure <strong>Inflate</strong>(AHoriz, AVert: single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Inflates the affine box along its axes by specified horizontal and vertical amounts</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Offset-single-single-"></span><code>procedure <strong>Offset</strong>(AOfsX, AOfsY: single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Offsets the affine box by specified X and Y amounts</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Offset-TPointF-"></span><code>procedure <strong>Offset</strong>(AOfs: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Offsets the affine box by a specified <a class="normal" href="BGRAClasses.html#Point-Integer-Integer-">point</a></p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AsPolygon"></span><code>property <strong>AsPolygon</strong>: <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a> read GetAsPolygon;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Affine box as an array of points (polygon)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BottomRight"></span><code>property <strong>BottomRight</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a> read GetBottomRight;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Bottom-right corner of the affine box</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Center"></span><code>property <strong>Center</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a> read GetCenter;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<code>Center</code> <a class="normal" href="BGRAClasses.html#Point-Integer-Integer-">point</a> of the affine box</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Height"></span><code>property <strong>Height</strong>: single read GetHeight;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<code>Height</code> of the affine box along its axes</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsEmpty"></span><code>property <strong>IsEmpty</strong>: boolean read GetIsEmpty;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Check if the affine box is empty (containing empty points, not just of zero <a class="normal" href="BGRAClasses.html#Size-Integer-Integer-">size</a>)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RectBounds"></span><code>property <strong>RectBounds</strong>: <a href="BGRAClasses.html#TRect">TRect</a> read GetRectBounds;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Bounding rectangle as <a class="normal" href="BGRAClasses.html#TRect">TRect</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RectBoundsF"></span><code>property <strong>RectBoundsF</strong>: <a href="BGRABitmapTypes.html#TRectF">TRectF</a> read GetRectBoundsF;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Bounding rectangle as <a class="normal" href="BGRABitmapTypes.html#TRectF">TRectF</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Surface"></span><code>property <strong>Surface</strong>: single read GetSurface;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<code>Surface</code> area of the affine box</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Width"></span><code>property <strong>Width</strong>: single read GetWidth;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<code>Width</code> of the affine box along its axes</p>
+</td></tr>
+</table>
+</div></div></body></html>

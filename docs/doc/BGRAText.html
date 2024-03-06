@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BGRABitmap: BGRAText</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">BGRABitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit BGRAText</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section"><a class="section" href="#PasDoc-Variables">Variables</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+Base implementation of system text rendering.</p>
+<p>
+
+
+<p>This unit provides basic text rendering functions using system renderer (LCL or MSEgui).
+
+<p>Text functions use a temporary bitmap where the operating system text drawing is used. Then it is scaled down (if antialiasing is activated) and colored.
+
+<p>These routines are rather slow, so you may use other font renderers like <a class="normal" href="BGRATextFX.TBGRATextEffectFontRenderer.html">TBGRATextEffectFontRenderer</a> in <a class="normal" href="BGRATextFX.html">BGRATextFX</a> if you want to use LCL fonts, or, if you have TrueType fonts files, you may use <a class="normal" href="BGRAFreeType.TBGRAFreeTypeFontRenderer.html">TBGRAFreeTypeFontRenderer</a> in <a class="normal" href="BGRAFreeType.html">BGRAFreeType</a>.
+
+<p><strong>Font rendering units</strong> : <code>BGRAText</code>, <a class="normal" href="BGRATextFX.html">BGRATextFX</a>, <a class="normal" href="BGRAVectorize.html">BGRAVectorize</a>, <a class="normal" href="BGRAFreeType.html">BGRAFreeType</a></p>
+<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="BGRAClasses.html">BGRAClasses</a></li><li>SysUtils</li><li><a href="BGRAGraphics.html">BGRAGraphics</a></li><li><a href="BGRABitmapTypes.html">BGRABitmapTypes</a></li><li><a href="BGRAPen.html">BGRAPen</a></li><li><a href="BGRAGrayscaleMask.html">BGRAGrayscaleMask</a></li><li>InterfaceBase</li><li>LCLVersion</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BGRAText.TBGRASystemFontRenderer.html"><code>TBGRASystemFontRenderer</code></a></td>
+<td class="itemdesc">Font renderer using system rendering (LCL, mseGUI).</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="BGRAText.TLCLFontRenderer.html"><code>TLCLFontRenderer</code></a></td>
+<td class="itemdesc">Font renderer using LCL calls to the operating system</td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAText.html#BGRAFillClearTypeGrayscaleMask-TBGRACustomBitmap-integer-integer-integer-TGrayscaleMask-TBGRAPixel-IBGRAScanner-boolean-">BGRAFillClearTypeGrayscaleMask</a></strong>(dest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x,y: integer; xThird: integer; mask: <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; color: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a> = nil; RGBOrder: boolean=true);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAText.html#BGRAFillClearTypeMask-TBGRACustomBitmap-integer-integer-integer-TBGRACustomBitmap-TBGRAPixel-IBGRAScanner-boolean-">BGRAFillClearTypeMask</a></strong>(dest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x,y: integer; xThird: integer; mask: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; color: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a> = nil; RGBOrder: boolean=true);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAText.html#BGRAFillClearTypeRGBMask-TBGRACustomBitmap-integer-integer-TBGRACustomBitmap-TBGRAPixel-IBGRAScanner-boolean-">BGRAFillClearTypeRGBMask</a></strong>(dest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x,y: integer; mask: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; color: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a> = nil; KeepRGBOrder: boolean=true);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAText.html#BGRAOriginalTextSize-TFont-TBGRAFontQuality-string-integer-">BGRAOriginalTextSize</a></strong>(Font: <a href="BGRAGraphics.html#TFont">TFont</a>; Quality: <a href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a>; sUTF8: string; CustomAntialiasingLevel: integer): <a href="BGRAClasses.html#TSize">TSize</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAText.html#BGRAOriginalTextSizeAngle-TFont-integer-TBGRAFontQuality-string-Integer-">BGRAOriginalTextSizeAngle</a></strong>(Font: <a href="BGRAGraphics.html#TFont">TFont</a>; AOrientation: integer; Quality: <a href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a>; sUTF8: string; CustomAntialiasingLevel: Integer): <a href="BGRAClasses.html#TSize">TSize</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAText.html#BGRAOriginalTextSizeEx-TFont-TBGRAFontQuality-string-Integer-integer-integer-">BGRAOriginalTextSizeEx</a></strong>(Font: <a href="BGRAGraphics.html#TFont">TFont</a>; Quality: <a href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a>; sUTF8: string; CustomAntialiasingLevel: Integer; out actualAntialiasingLevel: integer; out extraVerticalMarginDueToRotation: integer): <a href="BGRAClasses.html#TSize">TSize</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAText.html#BGRAOriginalTextSizeExAngle-TFont-integer-TBGRAFontQuality-string-Integer-integer-integer-">BGRAOriginalTextSizeExAngle</a></strong>(Font: <a href="BGRAGraphics.html#TFont">TFont</a>; AOrientation: integer; Quality: <a href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a>; sUTF8: string; CustomAntialiasingLevel: Integer; out actualAntialiasingLevel: integer; out extraVerticalMarginDueToRotation: integer): <a href="BGRAClasses.html#TSize">TSize</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAText.html#BGRATextFitInfo-TFont-TBGRAFontQuality-string-Integer-integer-">BGRATextFitInfo</a></strong>(Font: <a href="BGRAGraphics.html#TFont">TFont</a>; Quality: <a href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a>; sUTF8: string; CustomAntialiasingLevel: Integer; AMaxWidth: integer): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAText.html#BGRATextFitInfoAngle-TFont-integer-TBGRAFontQuality-string-Integer-integer-">BGRATextFitInfoAngle</a></strong>(Font: <a href="BGRAGraphics.html#TFont">TFont</a>; AOrientation: integer; Quality: <a href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a>; sUTF8: string; CustomAntialiasingLevel: Integer; AMaxWidth: integer): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAText.html#BGRATextOut-TBGRACustomBitmap-TFont-TBGRAFontQuality-single-single-string-TBGRAPixel-IBGRAScanner-TAlignment-Integer-boolean-boolean-">BGRATextOut</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; Font: <a href="BGRAGraphics.html#TFont">TFont</a>; Quality: <a href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a>; xf, yf: single; sUTF8: string; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; tex: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; CustomAntialiasingLevel: Integer = 0; ShowPrefix: boolean = false; RightToLeft: boolean = false);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAText.html#BGRATextOutAngle-TBGRACustomBitmap-TFont-TBGRAFontQuality-single-single-integer-string-TBGRAPixel-IBGRAScanner-TAlignment-Integer-">BGRATextOutAngle</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; Font: <a href="BGRAGraphics.html#TFont">TFont</a>; Quality: <a href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a>; xf, yf: single; orientationTenthDegCCW: integer; sUTF8: string; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; tex: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; CustomAntialiasingLevel: Integer = 0);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAText.html#BGRATextRect-TBGRACustomBitmap-TFont-TBGRAFontQuality-TRect-single-single-string-TTextStyle-TBGRAPixel-IBGRAScanner-Integer-">BGRATextRect</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; Font: <a href="BGRAGraphics.html#TFont">TFont</a>; Quality: <a href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>; xf, yf: single; sUTF8: string; style: <a href="BGRAGraphics.html#TTextStyle">TTextStyle</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; tex: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; CustomAntialiasingLevel: Integer = 0);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAText.html#BGRATextSize-TFont-TBGRAFontQuality-string-Integer-">BGRATextSize</a></strong>(Font: <a href="BGRAGraphics.html#TFont">TFont</a>; Quality: <a href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a>; sUTF8: string; CustomAntialiasingLevel: Integer): <a href="BGRAClasses.html#TSize">TSize</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAText.html#BGRATextSizeAngle-TFont-integer-TBGRAFontQuality-string-Integer-">BGRATextSizeAngle</a></strong>(Font: <a href="BGRAGraphics.html#TFont">TFont</a>; AOrientation: integer; Quality: <a href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a>; sUTF8: string; CustomAntialiasingLevel: Integer): <a href="BGRAClasses.html#TSize">TSize</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAText.html#BGRATextStrikeOut-TPointF-Single-TFontPixelMetric-">BGRATextStrikeOut</a></strong>(ATopLeft: <a href="BGRAClasses.html#TPointF">TPointF</a>; AWidth: Single; AMetrics: <a href="BGRABitmapTypes.TFontPixelMetric.html">TFontPixelMetric</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAText.html#BGRATextStrikeOut-TPointF-Single-single-single-single-">BGRATextStrikeOut</a></strong>(ATopLeft: <a href="BGRAClasses.html#TPointF">TPointF</a>; AWidth: Single; ABaseline, AEmHeight, AXHeight: single): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAText.html#BGRATextUnderline-TPointF-Single-TFontPixelMetric-">BGRATextUnderline</a></strong>(ATopLeft: <a href="BGRAClasses.html#TPointF">TPointF</a>; AWidth: Single; AMetrics: <a href="BGRABitmapTypes.TFontPixelMetric.html">TFontPixelMetric</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAText.html#BGRATextUnderline-TPointF-Single-single-single-">BGRATextUnderline</a></strong>(ATopLeft: <a href="BGRAClasses.html#TPointF">TPointF</a>; AWidth: Single; ABaseline, AEmHeight: single): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAText.html#BitmapFillRect-TBitmap-TRect-TColor-">BitmapFillRect</a></strong>(ABitmap: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>; AColor: <a href="BGRAGraphics.html#TColor">TColor</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAText.html#BitmapTextExtent-TBitmap-string-">BitmapTextExtent</a></strong>(ABitmap: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>; AText: string): <a href="BGRAClasses.html#TSize">TSize</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAText.html#BitmapTextExtentAngle-TBitmap-string-integer-">BitmapTextExtentAngle</a></strong>(ABitmap: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>; AText: string; AOrientation: integer): <a href="BGRAClasses.html#TSize">TSize</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAText.html#BitmapTextFitInfo-TBitmap-string-integer-">BitmapTextFitInfo</a></strong>(ABitmap: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>; AText: string; AMaxWidth: integer): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAText.html#BitmapTextFitInfoAngle-TBitmap-string-integer-integer-">BitmapTextFitInfoAngle</a></strong>(ABitmap: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>; AText: string; AMaxWidth: integer; AOrientation: integer): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAText.html#BitmapTextOut-TBitmap-TPoint-string-">BitmapTextOut</a></strong>(ABitmap: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>; ACoord: <a href="BGRAClasses.html#TPoint">TPoint</a>; AText: string);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAText.html#BitmapTextOutAngle-TBitmap-TPoint-string-integer-">BitmapTextOutAngle</a></strong>(ABitmap: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>; ACoord: <a href="BGRAClasses.html#TPoint">TPoint</a>; AText: string; AOrientation: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAText.html#BitmapTextRect-TBitmap-TRect-TPoint-string-TTextStyle-">BitmapTextRect</a></strong>(ABitmap: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>; ACoord: <a href="BGRAClasses.html#TPoint">TPoint</a>; AText: string; const AStyle: <a href="BGRAGraphics.html#TTextStyle">TTextStyle</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAText.html#CleanTextOutString-string-">CleanTextOutString</a></strong>(s: string): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAText.html#FixLCLFontFullHeight-string-integer-">FixLCLFontFullHeight</a></strong>(AFontName: string; AFontHeight: integer): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAText.html#FixSystemFontFullHeight-string-integer-">FixSystemFontFullHeight</a></strong>(AFontName: string; AFontHeight: integer): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAText.html#FontEmHeightSign">FontEmHeightSign</a></strong>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAText.html#FontFullHeightSign">FontFullHeightSign</a></strong>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAText.html#GetFineClearTypeAuto">GetFineClearTypeAuto</a></strong>: <a href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAText.html#GetFontHeightSign">GetFontHeightSign</a></strong>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAText.html#GetLCLFontPixelMetric-TFont-">GetLCLFontPixelMetric</a></strong>(AFont: <a href="BGRAGraphics.html#TFont">TFont</a>): <a href="BGRABitmapTypes.TFontPixelMetric.html">TFontPixelMetric</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAText.html#LCLFontAvailable">LCLFontAvailable</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAText.html#RemoveLineEnding-string-integer-">RemoveLineEnding</a></strong>(var s: string; indexByte: integer): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAText.html#RemoveLineEndingUTF8-string-integer-">RemoveLineEndingUTF8</a></strong>(var sUTF8: string; indexUTF8: integer): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAText.html#SystemFontAvailable">SystemFontAvailable</a></strong>: boolean;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAText.html#TWordBreakHandler">TWordBreakHandler</a></strong> = BGRABitmapTypes.TWordBreakHandler;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAText.html#FontAntialiasingLevel">FontAntialiasingLevel</a></strong> = 6;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAText.html#FontDefaultQuality">FontDefaultQuality</a></strong> = <a href="BGRAGraphics.html#fqAntialiased">fqAntialiased</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAText.html#IsLclFontRendererFine">IsLclFontRendererFine</a></strong> = false;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAText.html#RenderTextOnBitmap">RenderTextOnBitmap</a></strong> = false;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Variables"></span><h3 class="summary">Variables</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAText.html#BGRATextOutImproveReadabilityProc">BGRATextOutImproveReadabilityProc</a></strong>: procedure(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AFont: <a href="BGRAGraphics.html#TFont">TFont</a>; xf,yf: single; text: string; color: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; tex: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; mode : <a href="BGRABitmapTypes.html#TBGRATextOutImproveReadabilityMode">TBGRATextOutImproveReadabilityMode</a>);</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRAFillClearTypeGrayscaleMask-TBGRACustomBitmap-integer-integer-integer-TGrayscaleMask-TBGRAPixel-IBGRAScanner-boolean-"></span><code>procedure <strong>BGRAFillClearTypeGrayscaleMask</strong>(dest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x,y: integer; xThird: integer; mask: <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; color: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a> = nil; RGBOrder: boolean=true);</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRAFillClearTypeMask-TBGRACustomBitmap-integer-integer-integer-TBGRACustomBitmap-TBGRAPixel-IBGRAScanner-boolean-"></span><code>procedure <strong>BGRAFillClearTypeMask</strong>(dest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x,y: integer; xThird: integer; mask: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; color: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a> = nil; RGBOrder: boolean=true);</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRAFillClearTypeRGBMask-TBGRACustomBitmap-integer-integer-TBGRACustomBitmap-TBGRAPixel-IBGRAScanner-boolean-"></span><code>procedure <strong>BGRAFillClearTypeRGBMask</strong>(dest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x,y: integer; mask: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; color: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a> = nil; KeepRGBOrder: boolean=true);</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRAOriginalTextSize-TFont-TBGRAFontQuality-string-integer-"></span><code>function <strong>BGRAOriginalTextSize</strong>(Font: <a href="BGRAGraphics.html#TFont">TFont</a>; Quality: <a href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a>; sUTF8: string; CustomAntialiasingLevel: integer): <a href="BGRAClasses.html#TSize">TSize</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRAOriginalTextSizeAngle-TFont-integer-TBGRAFontQuality-string-Integer-"></span><code>function <strong>BGRAOriginalTextSizeAngle</strong>(Font: <a href="BGRAGraphics.html#TFont">TFont</a>; AOrientation: integer; Quality: <a href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a>; sUTF8: string; CustomAntialiasingLevel: Integer): <a href="BGRAClasses.html#TSize">TSize</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRAOriginalTextSizeEx-TFont-TBGRAFontQuality-string-Integer-integer-integer-"></span><code>function <strong>BGRAOriginalTextSizeEx</strong>(Font: <a href="BGRAGraphics.html#TFont">TFont</a>; Quality: <a href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a>; sUTF8: string; CustomAntialiasingLevel: Integer; out actualAntialiasingLevel: integer; out extraVerticalMarginDueToRotation: integer): <a href="BGRAClasses.html#TSize">TSize</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRAOriginalTextSizeExAngle-TFont-integer-TBGRAFontQuality-string-Integer-integer-integer-"></span><code>function <strong>BGRAOriginalTextSizeExAngle</strong>(Font: <a href="BGRAGraphics.html#TFont">TFont</a>; AOrientation: integer; Quality: <a href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a>; sUTF8: string; CustomAntialiasingLevel: Integer; out actualAntialiasingLevel: integer; out extraVerticalMarginDueToRotation: integer): <a href="BGRAClasses.html#TSize">TSize</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRATextFitInfo-TFont-TBGRAFontQuality-string-Integer-integer-"></span><code>function <strong>BGRATextFitInfo</strong>(Font: <a href="BGRAGraphics.html#TFont">TFont</a>; Quality: <a href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a>; sUTF8: string; CustomAntialiasingLevel: Integer; AMaxWidth: integer): integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRATextFitInfoAngle-TFont-integer-TBGRAFontQuality-string-Integer-integer-"></span><code>function <strong>BGRATextFitInfoAngle</strong>(Font: <a href="BGRAGraphics.html#TFont">TFont</a>; AOrientation: integer; Quality: <a href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a>; sUTF8: string; CustomAntialiasingLevel: Integer; AMaxWidth: integer): integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRATextOut-TBGRACustomBitmap-TFont-TBGRAFontQuality-single-single-string-TBGRAPixel-IBGRAScanner-TAlignment-Integer-boolean-boolean-"></span><code>procedure <strong>BGRATextOut</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; Font: <a href="BGRAGraphics.html#TFont">TFont</a>; Quality: <a href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a>; xf, yf: single; sUTF8: string; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; tex: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; CustomAntialiasingLevel: Integer = 0; ShowPrefix: boolean = false; RightToLeft: boolean = false);</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRATextOutAngle-TBGRACustomBitmap-TFont-TBGRAFontQuality-single-single-integer-string-TBGRAPixel-IBGRAScanner-TAlignment-Integer-"></span><code>procedure <strong>BGRATextOutAngle</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; Font: <a href="BGRAGraphics.html#TFont">TFont</a>; Quality: <a href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a>; xf, yf: single; orientationTenthDegCCW: integer; sUTF8: string; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; tex: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; CustomAntialiasingLevel: Integer = 0);</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRATextRect-TBGRACustomBitmap-TFont-TBGRAFontQuality-TRect-single-single-string-TTextStyle-TBGRAPixel-IBGRAScanner-Integer-"></span><code>procedure <strong>BGRATextRect</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; Font: <a href="BGRAGraphics.html#TFont">TFont</a>; Quality: <a href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>; xf, yf: single; sUTF8: string; style: <a href="BGRAGraphics.html#TTextStyle">TTextStyle</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; tex: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; CustomAntialiasingLevel: Integer = 0);</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRATextSize-TFont-TBGRAFontQuality-string-Integer-"></span><code>function <strong>BGRATextSize</strong>(Font: <a href="BGRAGraphics.html#TFont">TFont</a>; Quality: <a href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a>; sUTF8: string; CustomAntialiasingLevel: Integer): <a href="BGRAClasses.html#TSize">TSize</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRATextSizeAngle-TFont-integer-TBGRAFontQuality-string-Integer-"></span><code>function <strong>BGRATextSizeAngle</strong>(Font: <a href="BGRAGraphics.html#TFont">TFont</a>; AOrientation: integer; Quality: <a href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a>; sUTF8: string; CustomAntialiasingLevel: Integer): <a href="BGRAClasses.html#TSize">TSize</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRATextStrikeOut-TPointF-Single-TFontPixelMetric-"></span><code>function <strong>BGRATextStrikeOut</strong>(ATopLeft: <a href="BGRAClasses.html#TPointF">TPointF</a>; AWidth: Single; AMetrics: <a href="BGRABitmapTypes.TFontPixelMetric.html">TFontPixelMetric</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRATextStrikeOut-TPointF-Single-single-single-single-"></span><code>function <strong>BGRATextStrikeOut</strong>(ATopLeft: <a href="BGRAClasses.html#TPointF">TPointF</a>; AWidth: Single; ABaseline, AEmHeight, AXHeight: single): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRATextUnderline-TPointF-Single-TFontPixelMetric-"></span><code>function <strong>BGRATextUnderline</strong>(ATopLeft: <a href="BGRAClasses.html#TPointF">TPointF</a>; AWidth: Single; AMetrics: <a href="BGRABitmapTypes.TFontPixelMetric.html">TFontPixelMetric</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRATextUnderline-TPointF-Single-single-single-"></span><code>function <strong>BGRATextUnderline</strong>(ATopLeft: <a href="BGRAClasses.html#TPointF">TPointF</a>; AWidth: Single; ABaseline, AEmHeight: single): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BitmapFillRect-TBitmap-TRect-TColor-"></span><code>procedure <strong>BitmapFillRect</strong>(ABitmap: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>; AColor: <a href="BGRAGraphics.html#TColor">TColor</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BitmapTextExtent-TBitmap-string-"></span><code>function <strong>BitmapTextExtent</strong>(ABitmap: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>; AText: string): <a href="BGRAClasses.html#TSize">TSize</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BitmapTextExtentAngle-TBitmap-string-integer-"></span><code>function <strong>BitmapTextExtentAngle</strong>(ABitmap: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>; AText: string; AOrientation: integer): <a href="BGRAClasses.html#TSize">TSize</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BitmapTextFitInfo-TBitmap-string-integer-"></span><code>function <strong>BitmapTextFitInfo</strong>(ABitmap: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>; AText: string; AMaxWidth: integer): integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BitmapTextFitInfoAngle-TBitmap-string-integer-integer-"></span><code>function <strong>BitmapTextFitInfoAngle</strong>(ABitmap: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>; AText: string; AMaxWidth: integer; AOrientation: integer): integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BitmapTextOut-TBitmap-TPoint-string-"></span><code>procedure <strong>BitmapTextOut</strong>(ABitmap: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>; ACoord: <a href="BGRAClasses.html#TPoint">TPoint</a>; AText: string);</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BitmapTextOutAngle-TBitmap-TPoint-string-integer-"></span><code>procedure <strong>BitmapTextOutAngle</strong>(ABitmap: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>; ACoord: <a href="BGRAClasses.html#TPoint">TPoint</a>; AText: string; AOrientation: integer);</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BitmapTextRect-TBitmap-TRect-TPoint-string-TTextStyle-"></span><code>procedure <strong>BitmapTextRect</strong>(ABitmap: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>; ACoord: <a href="BGRAClasses.html#TPoint">TPoint</a>; AText: string; const AStyle: <a href="BGRAGraphics.html#TTextStyle">TTextStyle</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CleanTextOutString-string-"></span><code>function <strong>CleanTextOutString</strong>(s: string): string;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FixLCLFontFullHeight-string-integer-"></span><code>function <strong>FixLCLFontFullHeight</strong>(AFontName: string; AFontHeight: integer): integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FixSystemFontFullHeight-string-integer-"></span><code>function <strong>FixSystemFontFullHeight</strong>(AFontName: string; AFontHeight: integer): integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FontEmHeightSign"></span><code>function <strong>FontEmHeightSign</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FontFullHeightSign"></span><code>function <strong>FontFullHeightSign</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetFineClearTypeAuto"></span><code>function <strong>GetFineClearTypeAuto</strong>: <a href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetFontHeightSign"></span><code>function <strong>GetFontHeightSign</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetLCLFontPixelMetric-TFont-"></span><code>function <strong>GetLCLFontPixelMetric</strong>(AFont: <a href="BGRAGraphics.html#TFont">TFont</a>): <a href="BGRABitmapTypes.TFontPixelMetric.html">TFontPixelMetric</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LCLFontAvailable"></span><code>function <strong>LCLFontAvailable</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="RemoveLineEnding-string-integer-"></span><code>function <strong>RemoveLineEnding</strong>(var s: string; indexByte: integer): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+this works with UTF8 strings as well</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="RemoveLineEndingUTF8-string-integer-"></span><code>function <strong>RemoveLineEndingUTF8</strong>(var sUTF8: string; indexUTF8: integer): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+this works with UTF8 strings however the index is the byte index</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SystemFontAvailable"></span><code>function <strong>SystemFontAvailable</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TWordBreakHandler"></span><code><strong>TWordBreakHandler</strong> = BGRABitmapTypes.TWordBreakHandler;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FontAntialiasingLevel"></span><code><strong>FontAntialiasingLevel</strong> = 6;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FontDefaultQuality"></span><code><strong>FontDefaultQuality</strong> = <a href="BGRAGraphics.html#fqAntialiased">fqAntialiased</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="IsLclFontRendererFine"></span><code><strong>IsLclFontRendererFine</strong> = false;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="RenderTextOnBitmap"></span><code><strong>RenderTextOnBitmap</strong> = false;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<h3 class="detail">Variables</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRATextOutImproveReadabilityProc"></span><code><strong>BGRATextOutImproveReadabilityProc</strong>: procedure(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AFont: <a href="BGRAGraphics.html#TFont">TFont</a>; xf,yf: single; text: string; color: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; tex: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; mode : <a href="BGRABitmapTypes.html#TBGRATextOutImproveReadabilityMode">TBGRATextOutImproveReadabilityMode</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+</div></div></body></html>

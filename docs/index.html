@@ -1,29 +1,27 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="Oscar Cornejo">
-    <meta name="description" content="BGRABitmap">
-    <title>BGRABitmap</title>
+    <meta name="author" content="Juliette ELSASS">
+    <meta name="description" content="BGRABitmap is a comprehensive graphics library for FreePascal and Lazarus, enabling developers to create, modify, and process images in a versatile manner.">
+    <title>BGRABitmap - Graphics Library for FreePascal and Lazarus</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="icons/icomoon.css">
     <link rel="stylesheet" href="css/estilos.css">
-
 </head>
 
 <body>
-
-    <!-- Contenedor Header -->
+    <!-- Header -->
     <header id="linkHome">
         <nav id="navFixed" class="navbar fixed-top navbar-expand-lg navbar-light bg-light p-10px">
             <a class="navbar-brand" href="#linkHome">BGRABitmap<small>.</small></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
@@ -40,9 +38,8 @@
                         <a class="nav-link scroll" href="#linkTestimonial">Testimonial</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll" href="#linkContacto">Contacto</a>
+                        <a class="nav-link scroll" href="#linkContacto">Contact</a>
                     </li>
-
                 </ul>
             </div>
         </nav>
@@ -54,138 +51,88 @@
         <div class="boxHeader">
             <div class="textosHeader">
                 <h1><b>BGRABitmap</b></h1>
-                <p>BGRABitmap is a package designed to modify and create images with transparency. Direct pixel access allows fast image processing. The library has been tested on Windows, Ubuntu and Mac.</p>
-
-                <a class="botonGetStarted" href="#" rel="nofollow noopener">Get Started</a>
-
+                <p>BGRABitmap is a graphics library for FreePascal and Lazarus that offers extensive capabilities for image manipulation, including transparency management, direct pixel access, and various effects for dynamic image generation.</p>
+                <a class="botonGetStarted" href="doc/index.html" rel="nofollow noopener">Documentation</a>
             </div>
 
             <div class="imgHeader">
-                <img src="images/landing_1.png" alt="">
+                <img src="images/landing_1.png" alt="BGRABitmap Example Image">
             </div>
         </div>
     </header>
-    <!-- Fin Contenedor Header -->
+    <!-- End Header -->
 
-    <!-- Contenedor Main -->
+    <!-- Main Content -->
     <main>
         <a id="subir" class="icon-arrow-up scroll" href="#linkHome"></a>
-        <!-- Sección Features -->
-        <section class="boxFeatures" id="linkFeatures">
-            <h3>Features</h3>
 
+        <!-- Features Section -->
+        <section class="boxFeatures" id="linkFeatures">
+            <h3>Key Features</h3>
             <div class="features">
                 <div class="cardFeatures">
-                    <span class="icon-refresh"></span>
-                    <h4>Titulo</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odit est ullam quis recusandae ab illum sunt ut in excepturi tenetur a.</p>
-                    <a href="#">Learn More</a>
+                    <span class="icon-palette"></span>
+                    <h4>Advanced Drawing</h4>
+                    <p>Utilize advanced drawing tools for complex shapes, paths, and text rendering with anti-aliasing for smooth graphics.</p>
+                    <a href="https://wiki.freepascal.org/BGRABitmap_tutorial_6">Learn More</a>
                 </div>
 
                 <div class="cardFeatures">
-                    <span class="icon-refresh"></span>
-                    <h4>Titulo</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odit est ullam quis recusandae ab illum sunt ut in excepturi tenetur a.</p>
-                    <a href="#">Learn More</a>
+                    <span class="icon-layers"></span>
+                    <h4>Layer Support</h4>
+                    <p>Create and manage multiple layers in your graphics projects for better control and complex compositions.</p>
+                    <a href="https://wiki.freepascal.org/BGRABitmap_tutorial_5">Learn More</a>
                 </div>
 
                 <div class="cardFeatures">
-                    <span class="icon-refresh"></span>
-                    <h4>Titulo</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odit est ullam quis recusandae ab illum sunt ut in excepturi tenetur a.</p>
-                    <a href="#">Learn More</a>
+                    <span class="icon-adjust"></span>
+                    <h4>Image Adjustments</h4>
+                    <p>Adjust brightness, contrast, saturation, and apply various filters to enhance your images.</p>
+                    <a href="https://forum.lazarus.freepascal.org/index.php/topic,33524.msg217301.html#msg217301">Learn More</a>
                 </div>
 
                 <div class="cardFeatures">
-                    <span class="icon-refresh"></span>
-                    <h4>Titulo</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odit est ullam quis recusandae ab illum sunt ut in excepturi tenetur a.</p>
-                    <a href="#">Learn More</a>
+                    <span class="icon-pencil"></span>
+                    <h4>Vectorial Shapes</h4>
+                    <p>Work with vectorial shapes for scalability and precision, supporting complex path operations.</p>
+                    <a href="doc/BGRASVG.TBGRASVG.html">Learn More</a>
                 </div>
 
                 <div class="cardFeatures">
-                    <span class="icon-refresh"></span>
-                    <h4>Titulo</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odit est ullam quis recusandae ab illum sunt ut in excepturi tenetur a.</p>
-                    <a href="#">Learn More</a>
+                    <span class="icon-glass"></span>
+                    <h4>Transparency Management</h4>
+                    <p>Effortlessly manage transparency for creating PNG images with alpha channels for web, games, and applications.</p>
+                    <a href="https://lists.lazarus-ide.org/pipermail/lazarus/2020-June/238117.html">Learn More</a>
                 </div>
 
                 <div class="cardFeatures">
-                    <span class="icon-refresh"></span>
-                    <h4>Titulo</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odit est ullam quis recusandae ab illum sunt ut in excepturi tenetur a.</p>
-                    <a href="#">Learn More</a>
+                    <span class="icon-gears"></span>
+                    <h4>Performance</h4>
+                    <p>Optimized for performance, allowing for rapid processing and manipulation of images even on modest hardware.</p>
+                    <a href="https://wiki.freepascal.org/BGRABitmap_tutorial_4">Learn More</a>
                 </div>
             </div>
-
         </section>
-        <!-- Fin Sección Features -->
+        <!-- End Features Section -->
 
-        <!-- Sección Call To Actions -->
-        <section class="boxCallToActions">
-            <div class="callToActions">
-                <div class="imgCallToActions">
-                    <img src="images/do_ui_kit_download_cta_floating_devices-2x.png" alt="">
-                </div>
-
-                <article class="contenido">
-                    <h3>Create interactive <br>prototypes</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam possimus nemo sequi cum? Obcaecati eos possimus ea numquam fugit. Quae et labore accusamus consectetur voluptatum placeat incidunt quaerat quibusdam accusantium.</p>
-
-                    <ul>
-                        <li> <span class="icon-check"></span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </li>
-                        <li> <span class="icon-check"></span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </li>
-                    </ul>
-
-
-                    <div class="boxCardCallToActions" id="cardAnimada">
-                        <div class="cardCallToActions">
-
-                            <div class="boxProfesional">
-                                <div class="imgProfesional">
-                                    <img src="images/person_1.jpg" alt="">
-                                </div>
-                                <div class="datosProfesional">
-                                    <h5>Amalia G.</h5>
-                                    <h6>Co-Founder, XYZ Inc.</h6>
-                                </div>
-                            </div>
-                            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odit est ullam quis recusandae ab illum sunt ut in excepturi tenetur a, aspernatur iste. Accusamus dolorem delectus tempore debitis quaerat."</p>
-                        </div>
-                    </div>
-
-
-                </article>
-
-
-            </div>
-        </section>
-        <!-- Fin Sección Call To Actions -->
-
-        <!-- Sección About -->
+        <!-- About Section -->
         <section class="boxAbout" id="linkAbout">
-
             <h3>About Us</h3>
-
             <div class="about">
                 <div class="imgAbout">
-                    <img src="images/about_1.jpg" alt="">
+                    <img src="images/graphics_team.jpg" alt="Team Photo of Ducklings">
                 </div>
 
                 <article class="contenidoAbout">
-                    <h3>Create interactive prototypes</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam possimus nemo sequi cum? Obcaecati eos possimus ea numquam fugit. Quae et labore accusamus consectetur voluptatum placeat incidunt quaerat quibusdam accusantium.</p>
-                    <a class="botonGetStarted" href="#">Learn More</a>
+                    <h3>Our Mission</h3>
+                    <p>Our mission is to provide a powerful, accessible graphics library that empowers developers to create stunning visual applications with FreePascal and Lazarus. We are committed to open-source development and the continuous improvement of BGRABitmap.</p>
+                    <a class="botonGetStarted" href="https://forum.lazarus.freepascal.org/index.php/topic,24239.0.html">Learn More</a>
                 </article>
             </div>
-
-
         </section>
-        <!-- Fin Sección About -->
+        <!-- End About Section -->
 
-        <!-- Sección Testimonios -->
+        <!-- Testimonial Section -->
         <section class="boxSlider" id="linkTestimonial">
             <h3>Testimonials</h3>
 
@@ -203,58 +150,38 @@
             </div>
 
         </section>
-        <!-- Fin Sección Testimonios -->
+        <!-- End Testimonial Section -->
 
-        <!-- Sección Contacto -->
+        <!-- Contact Section -->
         <section class="boxContacto" id="linkContacto">
-            <h3>Get In Touch</h3>
-
+            <h3>Get Involved</h3>
             <div class="container contacto">
-                <form id="miForm">
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="inputName"><b>First Name</b></label>
-                            <input type="text" class="form-control" id="inputName" placeholder="First Name..." required>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="inputLastName"><b>Last Name</b></label>
-                            <input type="text" class="form-control" id="inputLastName" placeholder="Last Name..." required>
-                        </div>
+                <p>Interested in contributing or need help? Join the community or report an issue!</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Join the Lazarus Forum</h4>
+                        <p>Connect with the community, get help, and share your ideas on the Lazarus Forum.</p>
+                        <a href="https://forum.lazarus.freepascal.org/index.php/board,46.0.html" class="botonGetStarted" target="_blank" rel="noopener noreferrer">Visit the Forum</a>
                     </div>
-
-                    <div class="form-group">
-                        <label for="inputEmail"><b>Email</b></label>
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Email..." required>
+                    <div class="col-md-6">
+                        <h4>Report Issues on GitHub</h4>
+                        <p>Encountered a bug or have a feature request? Open an issue on our GitHub repository.</p>
+                        <a href="https://github.com/bgrabitmap/bgrabitmap/issues" class="botonGetStarted" target="_blank" rel="noopener noreferrer">Report an Issue</a>
                     </div>
-
-                    <div class="form-group">
-                        <label for="inputSubject"><b>Subject</b></label>
-                        <input type="text" class="form-control" id="inputSubject" placeholder="Subject..." required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message"><b>Message</b></label>
-                        <textarea class="form-control" rows="5" id="message" placeholder="Message..." required></textarea>
-                    </div>
-
-
-                    <button type="submit" class="botonEnviarMensaje">Send Message</button>
-                </form>
+                </div>
             </div>
         </section>
-        <!-- Sección Contacto -->
-
+        <!-- End Contact Section -->
     </main>
-    <!-- Fin Contenedor Main -->
+    <!-- End Main Content -->
 
-    <!-- Contenedor Footer -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="boxTextFooter">
-            <p>Hecho con <span class="icon-heart"></span> <a href="https://github.com/oscarcornejo" target="_blank"> por Oscar Cornejo</a></p>
+            <p>Made with <span class="icon-heart"></span> by <a href="https://github.com/bgrabitmap" target="_blank">BGRABitmap Team</a></p>
         </div>
     </footer>
-    <!-- Fin Contenedor Footer -->
-
+    <!-- End Footer -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

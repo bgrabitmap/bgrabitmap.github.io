@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BGRABitmap: BGRABitmapTypes: Packed Record TBGRAPixel</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">BGRABitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TBGRAPixel"></span><h1 class="cio">Packed Record TBGRAPixel</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Hierarchy</div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRABitmapTypes.html">BGRABitmapTypes</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBGRAPixel = packed record</code></p>
+<h2 class="description">Description</h2>
+<p>
+Each pixel is a sequence of 4 bytes containing <em><a class="normal" href="BGRABitmapTypes.TBGRAPixel.html#blue">blue</a></em>, <em><a class="normal" href="BGRABitmapTypes.TBGRAPixel.html#green">green</a></em>, <em><a class="normal" href="BGRABitmapTypes.TBGRAPixel.html#red">red</a></em> and <em><a class="normal" href="BGRABitmapTypes.TBGRAPixel.html#alpha">alpha</a></em> channel. Values range from 0 to 255, color is in sRGB colorspace. The <em><a class="normal" href="BGRABitmapTypes.TBGRAPixel.html#alpha">alpha</a></em> value of 0 is transparent and 255 is opaque. In the bitmap data, when the pixel is fully transparent, the RGB values are supposed to be set to zero.</p>
+<h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="BGRABitmapTypes.TBGRAPixel.html#blue">blue</a></strong>: byte;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="BGRABitmapTypes.TBGRAPixel.html#green">green</a></strong>: byte;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="BGRABitmapTypes.TBGRAPixel.html#red">red</a></strong>: byte;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="BGRABitmapTypes.TBGRAPixel.html#alpha">alpha</a></strong>: byte;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRAPixel.html#EqualsExactly-TBGRAPixel-TBGRAPixel-">EqualsExactly</a></strong>(constref AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRAPixel.html#ToColor">ToColor</a></strong>: <a href="BGRAGraphics.html#TColor">TColor</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRAPixel.html#ToFPColor">ToFPColor</a></strong>: TFPColor;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRAPixel.html#ToGrayscale-boolean-">ToGrayscale</a></strong>(AGammaCorrection: boolean = true): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRAPixel.html#ToString">ToString</a></strong>: string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRAPixel.html#FromColor-TColor-Byte-">FromColor</a></strong>(AColor: <a href="BGRAGraphics.html#TColor">TColor</a>; AAlpha: Byte = 255);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRAPixel.html#FromFPColor-TFPColor-">FromFPColor</a></strong>(AColor: TFPColor);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRAPixel.html#FromRGB-Byte-Byte-Byte-Byte-">FromRGB</a></strong>(ARed,AGreen,ABlue: Byte; AAlpha: Byte = 255);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRAPixel.html#FromString-string-">FromString</a></strong>(AStr: string);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRAPixel.html#ToRGB-Byte-Byte-Byte-Byte-">ToRGB</a></strong>(out ARed,AGreen,ABlue,AAlpha: Byte); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRAPixel.html#ToRGB-Byte-Byte-Byte-">ToRGB</a></strong>(out ARed,AGreen,ABlue: Byte); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class Operator := (Source: <a href="BGRAGraphics.html#TColor">TColor</a>): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class Operator := (Source: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>): <a href="BGRAGraphics.html#TColor">TColor</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TBGRAPixel.html#Intensity">Intensity</a></strong>: word read GetClassIntensity write SetClassIntensity;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TBGRAPixel.html#Lightness">Lightness</a></strong>: word read GetClassLightness write SetClassLightness;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="blue"></span><code><strong>blue</strong>: byte;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Channels if ordered <a class="normal" href="BGRABitmapTypes.html#BGRA-byte-byte-byte-">BGRA</a> ordered</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="green"></span><code><strong>green</strong>: byte;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Channels if ordered <a class="normal" href="BGRABitmapTypes.html#BGRA-byte-byte-byte-">BGRA</a> ordered</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="red"></span><code><strong>red</strong>: byte;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Channels if ordered <a class="normal" href="BGRABitmapTypes.html#BGRA-byte-byte-byte-">BGRA</a> ordered</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="alpha"></span><code><strong>alpha</strong>: byte;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Channels if ordered <a class="normal" href="BGRABitmapTypes.html#BGRA-byte-byte-byte-">BGRA</a> ordered</p>
+</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EqualsExactly-TBGRAPixel-TBGRAPixel-"></span><code>function <strong>EqualsExactly</strong>(constref AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Check whether all channels are equal (this is generally not necessary to use this fonction unless the RGB value of a transparent color matter)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ToColor"></span><code>function <strong>ToColor</strong>: <a href="BGRAGraphics.html#TColor">TColor</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Converts to <a class="normal" href="BGRAGraphics.html#TColor">TColor</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ToFPColor"></span><code>function <strong>ToFPColor</strong>: TFPColor;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Converts to TFPColor (16-bit per channel)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ToGrayscale-boolean-"></span><code>function <strong>ToGrayscale</strong>(AGammaCorrection: boolean = true): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Compute grayscale equivalent</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ToString"></span><code>function <strong>ToString</strong>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Converts to a CSS string representation</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FromColor-TColor-Byte-"></span><code>procedure <strong>FromColor</strong>(AColor: <a href="BGRAGraphics.html#TColor">TColor</a>; AAlpha: Byte = 255);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sets the pixel with given <a class="normal" href="BGRAGraphics.html#TColor">TColor</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FromFPColor-TFPColor-"></span><code>procedure <strong>FromFPColor</strong>(AColor: TFPColor);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sets the pixel with given TFPColor (16-bit per channel)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FromRGB-Byte-Byte-Byte-Byte-"></span><code>procedure <strong>FromRGB</strong>(ARed,AGreen,ABlue: Byte; AAlpha: Byte = 255);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sets the pixel with given RGB values</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FromString-string-"></span><code>procedure <strong>FromString</strong>(AStr: string);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sets the pixel according to a color name or CSS expression</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ToRGB-Byte-Byte-Byte-Byte-"></span><code>procedure <strong>ToRGB</strong>(out ARed,AGreen,ABlue,AAlpha: Byte); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Extras RGBA channels</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ToRGB-Byte-Byte-Byte-"></span><code>procedure <strong>ToRGB</strong>(out ARed,AGreen,ABlue: Byte); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Extras RGB channels</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id=":=-TColor-"></span><code>class Operator := (Source: <a href="BGRAGraphics.html#TColor">TColor</a>): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Assign a <a class="normal" href="BGRAGraphics.html#TColor">TColor</a> to a <a class="normal" href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id=":=-TBGRAPixel-"></span><code>class Operator := (Source: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>): <a href="BGRAGraphics.html#TColor">TColor</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Assign a <a class="normal" href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> to a <a class="normal" href="BGRAGraphics.html#TColor">TColor</a></p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Intensity"></span><code>property <strong>Intensity</strong>: word read GetClassIntensity write SetClassIntensity;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<code>Intensity</code> of the color (how much channels are saturated)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Lightness"></span><code>property <strong>Lightness</strong>: word read GetClassLightness write SetClassLightness;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<code>Lightness</code> of the color (the resulting <code>lightness</code> of combined channels)</p>
+</td></tr>
+</table>
+</div></div></body></html>

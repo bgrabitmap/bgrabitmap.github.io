@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BGRABitmap: BGRAArrow: Class TBGRAArrow</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">BGRABitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TBGRAArrow"></span><h1 class="cio">Class TBGRAArrow</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section">Properties</div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRAArrow.html">BGRAArrow</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBGRAArrow = class(<a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html">TBGRACustomArrow</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Implementation of arrow computation</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html">TBGRACustomArrow</a></li>
+<li class="thisitem">TBGRAArrow</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAArrow.TBGRAArrow.html#Create">Create</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAArrow.TBGRAArrow.html#ComputeEndAt-TPointF-TPointF-single-single-">ComputeEndAt</a></strong>(const APosition: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const ADirection: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const AWidth: single; const ACurrentPos: single): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAArrow.TBGRAArrow.html#ComputeStartAt-TPointF-TPointF-single-single-">ComputeStartAt</a></strong>(const APosition: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const ADirection: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const AWidth: single; const ACurrentPos: single): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAArrow.TBGRAArrow.html#GetEndOffsetX">GetEndOffsetX</a></strong>: single; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAArrow.TBGRAArrow.html#GetEndRepeatCount">GetEndRepeatCount</a></strong>: integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAArrow.TBGRAArrow.html#GetEndSizeFactor">GetEndSizeFactor</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAArrow.TBGRAArrow.html#GetIsEndDefined">GetIsEndDefined</a></strong>: boolean; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAArrow.TBGRAArrow.html#GetIsStartDefined">GetIsStartDefined</a></strong>: boolean; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAArrow.TBGRAArrow.html#GetLineCap">GetLineCap</a></strong>: <a href="BGRAGraphics.html#TPenEndCap">TPenEndCap</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAArrow.TBGRAArrow.html#GetStartOffsetX">GetStartOffsetX</a></strong>: single; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAArrow.TBGRAArrow.html#GetStartRepeatCount">GetStartRepeatCount</a></strong>: integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAArrow.TBGRAArrow.html#GetStartSizeFactor">GetStartSizeFactor</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#EndAsClassic-boolean-boolean-single-">EndAsClassic</a></strong>(AFlipped: boolean = false; ACut: boolean = false; ARelativePenWidth: single = 1); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#EndAsNone">EndAsNone</a></strong>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#EndAsTail">EndAsTail</a></strong>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#EndAsTriangle-single-boolean-boolean-single-">EndAsTriangle</a></strong>(ABackOffset: single = 0; ARounded: boolean = false; AHollow: boolean = false; AHollowPenWidth: single = 0.5); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#StartAsClassic-boolean-boolean-single-">StartAsClassic</a></strong>(AFlipped: boolean = false; ACut: boolean = false; ARelativePenWidth: single = 1); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#StartAsNone">StartAsNone</a></strong>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#StartAsTail">StartAsTail</a></strong>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#StartAsTriangle-single-boolean-boolean-single-">StartAsTriangle</a></strong>(ABackOffset: single = 0; ARounded: boolean = false; AHollow: boolean = false; AHollowPenWidth: single = 0.5); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#SetEnd-TBGRAArrowStyle-TPenJoinStyle-single-single-">SetEnd</a></strong>(AStyle: <a href="BGRABitmapTypes.html#TBGRAArrowStyle">TBGRAArrowStyle</a>; ATipStyle: <a href="BGRAGraphics.html#TPenJoinStyle">TPenJoinStyle</a> = <a href="BGRAGraphics.html#pjsMiter">pjsMiter</a>; ARelativePenWidth: single = 1; ATriangleBackOffset: single = 0);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#SetEndOffsetX-single-">SetEndOffsetX</a></strong>(AValue: single); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#SetEndRepeatCount-integer-">SetEndRepeatCount</a></strong>(AValue: integer); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#SetEndSizeFactor-TPointF-">SetEndSizeFactor</a></strong>(AValue: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#SetLineCap-TPenEndCap-">SetLineCap</a></strong>(AValue: <a href="BGRAGraphics.html#TPenEndCap">TPenEndCap</a>); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#SetStart-TBGRAArrowStyle-TPenJoinStyle-single-single-">SetStart</a></strong>(AStyle: <a href="BGRABitmapTypes.html#TBGRAArrowStyle">TBGRAArrowStyle</a>; ATipStyle: <a href="BGRAGraphics.html#TPenJoinStyle">TPenJoinStyle</a> = <a href="BGRAGraphics.html#pjsMiter">pjsMiter</a>; ARelativePenWidth: single = 1; ATriangleBackOffset: single = 0);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#SetStartOffsetX-single-">SetStartOffsetX</a></strong>(AValue: single); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#SetStartRepeatCount-integer-">SetStartRepeatCount</a></strong>(AValue: integer); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#SetStartSizeFactor-TPointF-">SetStartSizeFactor</a></strong>(AValue: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); override;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComputeEndAt-TPointF-TPointF-single-single-"></span><code>function <strong>ComputeEndAt</strong>(const APosition: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const ADirection: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const AWidth: single; const ACurrentPos: single): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html#ComputeEndAt-TPointF-TPointF-single-single-">TBGRACustomArrow.ComputeEndAt</a>.</p><p>
+Computes the end of the arrow at a given position and direction</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComputeStartAt-TPointF-TPointF-single-single-"></span><code>function <strong>ComputeStartAt</strong>(const APosition: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const ADirection: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const AWidth: single; const ACurrentPos: single): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html#ComputeStartAt-TPointF-TPointF-single-single-">TBGRACustomArrow.ComputeStartAt</a>.</p><p>
+Computes the <a class="normal" href="introduction.html#Start">start</a> of the arrow at a given position and direction</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetEndOffsetX"></span><code>function <strong>GetEndOffsetX</strong>: single; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html#GetEndOffsetX">TBGRACustomArrow.GetEndOffsetX</a>.</p><p>
+Retrieves the X-offset for the end of the arrow</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetEndRepeatCount"></span><code>function <strong>GetEndRepeatCount</strong>: integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html#GetEndRepeatCount">TBGRACustomArrow.GetEndRepeatCount</a>.</p><p>
+Retrieves the repeat count for the end symbol</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetEndSizeFactor"></span><code>function <strong>GetEndSizeFactor</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html#GetEndSizeFactor">TBGRACustomArrow.GetEndSizeFactor</a>.</p><p>
+Retrieves the <a class="normal" href="BGRAClasses.html#Size-Integer-Integer-">size</a> factor for the end of the arrow</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetIsEndDefined"></span><code>function <strong>GetIsEndDefined</strong>: boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html#GetIsEndDefined">TBGRACustomArrow.GetIsEndDefined</a>.</p><p>
+Determines if the end of the arrow is defined</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetIsStartDefined"></span><code>function <strong>GetIsStartDefined</strong>: boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html#GetIsStartDefined">TBGRACustomArrow.GetIsStartDefined</a>.</p><p>
+Determines if the <a class="normal" href="introduction.html#Start">start</a> of the arrow is defined</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetLineCap"></span><code>function <strong>GetLineCap</strong>: <a href="BGRAGraphics.html#TPenEndCap">TPenEndCap</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html#GetLineCap">TBGRACustomArrow.GetLineCap</a>.</p><p>
+Retrieves the line cap style for the classic arrow</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetStartOffsetX"></span><code>function <strong>GetStartOffsetX</strong>: single; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html#GetStartOffsetX">TBGRACustomArrow.GetStartOffsetX</a>.</p><p>
+Retrieves the X-offset for the <a class="normal" href="introduction.html#Start">start</a> of the arrow</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetStartRepeatCount"></span><code>function <strong>GetStartRepeatCount</strong>: integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html#GetStartRepeatCount">TBGRACustomArrow.GetStartRepeatCount</a>.</p><p>
+Retrieves the repeat count for the <a class="normal" href="introduction.html#Start">start</a> symbol</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetStartSizeFactor"></span><code>function <strong>GetStartSizeFactor</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html#GetStartSizeFactor">TBGRACustomArrow.GetStartSizeFactor</a>.</p><p>
+Retrieves the <a class="normal" href="BGRAClasses.html#Size-Integer-Integer-">size</a> factor for the <a class="normal" href="introduction.html#Start">start</a> of the arrow</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EndAsClassic-boolean-boolean-single-"></span><code>procedure <strong>EndAsClassic</strong>(AFlipped: boolean = false; ACut: boolean = false; ARelativePenWidth: single = 1); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html#EndAsClassic-boolean-boolean-single-">TBGRACustomArrow.EndAsClassic</a>.</p><p>
+Sets the end of the arrow to a classic style</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EndAsNone"></span><code>procedure <strong>EndAsNone</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html#EndAsNone">TBGRACustomArrow.EndAsNone</a>.</p><p>
+Sets the end of the arrow to no style</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EndAsTail"></span><code>procedure <strong>EndAsTail</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html#EndAsTail">TBGRACustomArrow.EndAsTail</a>.</p><p>
+Sets the end of the arrow to a tail style</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EndAsTriangle-single-boolean-boolean-single-"></span><code>procedure <strong>EndAsTriangle</strong>(ABackOffset: single = 0; ARounded: boolean = false; AHollow: boolean = false; AHollowPenWidth: single = 0.5); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html#EndAsTriangle-single-boolean-boolean-single-">TBGRACustomArrow.EndAsTriangle</a>.</p><p>
+Sets the end of the arrow to a triangle style</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="StartAsClassic-boolean-boolean-single-"></span><code>procedure <strong>StartAsClassic</strong>(AFlipped: boolean = false; ACut: boolean = false; ARelativePenWidth: single = 1); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html#StartAsClassic-boolean-boolean-single-">TBGRACustomArrow.StartAsClassic</a>.</p><p>
+Sets the <a class="normal" href="introduction.html#Start">start</a> of the arrow to a classic style</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="StartAsNone"></span><code>procedure <strong>StartAsNone</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html#StartAsNone">TBGRACustomArrow.StartAsNone</a>.</p><p>
+Sets the <a class="normal" href="introduction.html#Start">start</a> of the arrow to no style</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="StartAsTail"></span><code>procedure <strong>StartAsTail</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html#StartAsTail">TBGRACustomArrow.StartAsTail</a>.</p><p>
+Sets the <a class="normal" href="introduction.html#Start">start</a> of the arrow to a tail style</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="StartAsTriangle-single-boolean-boolean-single-"></span><code>procedure <strong>StartAsTriangle</strong>(ABackOffset: single = 0; ARounded: boolean = false; AHollow: boolean = false; AHollowPenWidth: single = 0.5); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html#StartAsTriangle-single-boolean-boolean-single-">TBGRACustomArrow.StartAsTriangle</a>.</p><p>
+Sets the <a class="normal" href="introduction.html#Start">start</a> of the arrow to a triangle style</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetEnd-TBGRAArrowStyle-TPenJoinStyle-single-single-"></span><code>procedure <strong>SetEnd</strong>(AStyle: <a href="BGRABitmapTypes.html#TBGRAArrowStyle">TBGRAArrowStyle</a>; ATipStyle: <a href="BGRAGraphics.html#TPenJoinStyle">TPenJoinStyle</a> = <a href="BGRAGraphics.html#pjsMiter">pjsMiter</a>; ARelativePenWidth: single = 1; ATriangleBackOffset: single = 0);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetEndOffsetX-single-"></span><code>procedure <strong>SetEndOffsetX</strong>(AValue: single); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html#SetEndOffsetX-single-">TBGRACustomArrow.SetEndOffsetX</a>.</p><p>
+Sets the X-offset for the end of the arrow</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetEndRepeatCount-integer-"></span><code>procedure <strong>SetEndRepeatCount</strong>(AValue: integer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html#SetEndRepeatCount-integer-">TBGRACustomArrow.SetEndRepeatCount</a>.</p><p>
+Sets the repeat count for the end symbol</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetEndSizeFactor-TPointF-"></span><code>procedure <strong>SetEndSizeFactor</strong>(AValue: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html#SetEndSizeFactor-TPointF-">TBGRACustomArrow.SetEndSizeFactor</a>.</p><p>
+Sets the <a class="normal" href="BGRAClasses.html#Size-Integer-Integer-">size</a> factor for the end of the arrow</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetLineCap-TPenEndCap-"></span><code>procedure <strong>SetLineCap</strong>(AValue: <a href="BGRAGraphics.html#TPenEndCap">TPenEndCap</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html#SetLineCap-TPenEndCap-">TBGRACustomArrow.SetLineCap</a>.</p><p>
+Sets the line cap style for the classic arrow</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetStart-TBGRAArrowStyle-TPenJoinStyle-single-single-"></span><code>procedure <strong>SetStart</strong>(AStyle: <a href="BGRABitmapTypes.html#TBGRAArrowStyle">TBGRAArrowStyle</a>; ATipStyle: <a href="BGRAGraphics.html#TPenJoinStyle">TPenJoinStyle</a> = <a href="BGRAGraphics.html#pjsMiter">pjsMiter</a>; ARelativePenWidth: single = 1; ATriangleBackOffset: single = 0);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetStartOffsetX-single-"></span><code>procedure <strong>SetStartOffsetX</strong>(AValue: single); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html#SetStartOffsetX-single-">TBGRACustomArrow.SetStartOffsetX</a>.</p><p>
+Sets the X-offset for the <a class="normal" href="introduction.html#Start">start</a> of the arrow</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetStartRepeatCount-integer-"></span><code>procedure <strong>SetStartRepeatCount</strong>(AValue: integer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html#SetStartRepeatCount-integer-">TBGRACustomArrow.SetStartRepeatCount</a>.</p><p>
+Sets the repeat count for the <a class="normal" href="introduction.html#Start">start</a> symbol</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetStartSizeFactor-TPointF-"></span><code>procedure <strong>SetStartSizeFactor</strong>(AValue: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html#SetStartSizeFactor-TPointF-">TBGRACustomArrow.SetStartSizeFactor</a>.</p><p>
+Sets the <a class="normal" href="BGRAClasses.html#Size-Integer-Integer-">size</a> factor for the <a class="normal" href="introduction.html#Start">start</a> of the arrow</p>
+</td></tr>
+</table>
+</div></div></body></html>

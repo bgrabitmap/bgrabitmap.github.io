@@ -261,7 +261,6 @@ a.botonGetStarted:hover {
 }
 
 .cardFeatures:hover {
-    cursor: pointer;
     transform: scale(0.9, 0.9);
 }
 
@@ -503,7 +502,7 @@ a.botonGetStarted:hover {
 .contacto {
     background: white;
     padding: 50px 40px;
-    width: 42%;
+    width: 80%;
     margin-top: 30px;
     margin-bottom: 30px;
 }

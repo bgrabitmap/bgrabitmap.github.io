@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BGRABitmap: UnzipperExt: Class TUnzipperStreamUtf8</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">BGRABitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TUnzipperStreamUtf8"></span><h1 class="cio">Class TUnzipperStreamUtf8</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="UnzipperExt.html">UnzipperExt</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TUnzipperStreamUtf8 = class(TUnZipper)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Unzipping class with custom input stream that can extract a specific file</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TUnZipper</li>
+<li class="thisitem">TUnzipperStreamUtf8</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="UnzipperExt.TUnzipperStreamUtf8.html#Create">Create</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="UnzipperExt.TUnzipperStreamUtf8.html#UnzipFileToStream-string-TStream-boolean-">UnzipFileToStream</a></strong>(AFilename: string; AStream: <a href="BGRAClasses.html#TStream">TStream</a>; ACaseSensitive: boolean= true): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="UnzipperExt.TUnzipperStreamUtf8.html#UnzipFileToString-string-">UnzipFileToString</a></strong>(AFilename:string): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="UnzipperExt.TUnzipperStreamUtf8.html#CustomCloseInput-TObject-TStream-">CustomCloseInput</a></strong>(Sender: TObject; var AStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="UnzipperExt.TUnzipperStreamUtf8.html#CustomCloseOutput-TObject-TStream-TFullZipFileEntry-">CustomCloseOutput</a></strong>(Sender : TObject; var AStream : <a href="BGRAClasses.html#TStream">TStream</a>; AItem : TFullZipFileEntry);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="UnzipperExt.TUnzipperStreamUtf8.html#CustomCreateOutput-TObject-TStream-TFullZipFileEntry-">CustomCreateOutput</a></strong>(Sender : TObject; var AStream : <a href="BGRAClasses.html#TStream">TStream</a>; AItem : TFullZipFileEntry);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>Procedure <strong><a href="UnzipperExt.TUnzipperStreamUtf8.html#CustomOpenInput-TObject-TStream-">CustomOpenInput</a></strong>(Sender: TObject; var AStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="UnzipperExt.TUnzipperStreamUtf8.html#InputStream">InputStream</a></strong>: <a href="BGRAClasses.html#TStream">TStream</a> read FCustomInputStream write SetInputStream;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates the unzipper class. You need to set the <em><a class="normal" href="UnzipperExt.TUnzipperStreamUtf8.html#InputStream">InputStream</a></em> ou <em>Filename</em> property afer that.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="UnzipFileToStream-string-TStream-boolean-"></span><code>function <strong>UnzipFileToStream</strong>(AFilename: string; AStream: <a href="BGRAClasses.html#TStream">TStream</a>; ACaseSensitive: boolean= true): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Unzips the specified item with the given filename into the given stream</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="UnzipFileToString-string-"></span><code>function <strong>UnzipFileToString</strong>(AFilename:string): string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Unzips the specified item with the given filename and return it as a string</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CustomCloseInput-TObject-TStream-"></span><code>procedure <strong>CustomCloseInput</strong>(Sender: TObject; var AStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Callback method to close the ZIP input</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CustomCloseOutput-TObject-TStream-TFullZipFileEntry-"></span><code>procedure <strong>CustomCloseOutput</strong>(Sender : TObject; var AStream : <a href="BGRAClasses.html#TStream">TStream</a>; AItem : TFullZipFileEntry);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Callback method to close the output for the content of the extracted item</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CustomCreateOutput-TObject-TStream-TFullZipFileEntry-"></span><code>procedure <strong>CustomCreateOutput</strong>(Sender : TObject; var AStream : <a href="BGRAClasses.html#TStream">TStream</a>; AItem : TFullZipFileEntry);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Callback method to <a class="normal" href="UnzipperExt.TUnzipperStreamUtf8.html#Create">create</a> the output for the content of the extracted item. This function actually just supplies the chosen output stream.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CustomOpenInput-TObject-TStream-"></span><code>Procedure <strong>CustomOpenInput</strong>(Sender: TObject; var AStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Callback method to open the ZIP input</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="InputStream"></span><code>property <strong>InputStream</strong>: <a href="BGRAClasses.html#TStream">TStream</a> read FCustomInputStream write SetInputStream;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Input stream to use when unzipping, otherwise will use the inherited <em>Filename</em> property</p>
+</td></tr>
+</table>
+</div></div></body></html>

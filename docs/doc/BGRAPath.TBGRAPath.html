@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BGRABitmap: BGRAPath: Class TBGRAPath</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">BGRABitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TBGRAPath"></span><h1 class="cio">Class TBGRAPath</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRAPath.html">BGRAPath</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBGRAPath = class(<a class="normal" href="BGRABitmapTypes.TBGRACustomPath.html">TBGRACustomPath</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Path (in 2D) that allows to define custom shapes that can be drawn</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">IInterface</li>
+<li class="ancestor"><a class="normal" href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a></li>
+<li class="ancestor"><a class="normal" href="BGRABitmapTypes.TBGRACustomPath.html">TBGRACustomPath</a></li>
+<li class="thisitem">TBGRAPath</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPath.html#FAngleRadCW">FAngleRadCW</a></strong>: single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPath.html#FCursors">FCursors</a></strong>: array of <a href="BGRAPath.TBGRAPathCursor.html">TBGRAPathCursor</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPath.html#FData">FData</a></strong>: PByte;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPath.html#FDataCapacity">FDataCapacity</a></strong>: PtrInt;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPath.html#FDataPos">FDataPos</a></strong>: PtrInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPath.html#FExpectedTransformedControlPoint">FExpectedTransformedControlPoint</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPath.html#FInternalDrawOffset">FInternalDrawOffset</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPath.html#FLastCoord">FLastCoord</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPath.html#FLastMoveToDataPos">FLastMoveToDataPos</a></strong>: PtrInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPath.html#FLastStoredElementType">FLastStoredElementType</a></strong>: <a href="BGRAPath.html#TBGRAPathElementType">TBGRAPathElementType</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPath.html#FLastSubPathElementType">FLastSubPathElementType</a></strong>: <a href="BGRAPath.html#TBGRAPathElementType">TBGRAPathElementType</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPath.html#FLastTransformedCoord">FLastTransformedCoord</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPath.html#FMatrix">FMatrix</a></strong>: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPath.html#FScale">FScale</a></strong>: single;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPath.html#FSubPathStartCoord">FSubPathStartCoord</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPath.html#FSubPathTransformedStartCoord">FSubPathTransformedStartCoord</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAPath.TBGRAPath.html#Create-string-">Create</a></strong>(ASvgString: string); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAPath.TBGRAPath.html#Create">Create</a></strong>; overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAPath.TBGRAPath.html#Create-IBGRAPath-">Create</a></strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAPath.TBGRAPath.html#Create-ArrayOfTPointF-">Create</a></strong>(const APoints: <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="BGRAPath.TBGRAPath.html#Destroy">Destroy</a></strong>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPath.html#ComputeLength-single-">ComputeLength</a></strong>(AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>): single;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPath.html#CreateCursor-single-">CreateCursor</a></strong>(AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>): <a href="BGRAPath.TBGRAPathCursor.html">TBGRAPathCursor</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPath.html#GetBounds-single-">GetBounds</a></strong>(AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>): <a href="BGRABitmapTypes.html#TRectF">TRectF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPath.html#IsEmpty">IsEmpty</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPath.html#ToPoints-TAffineMatrix-single-">ToPoints</a></strong>(AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPath.html#ToPoints-single-">ToPoints</a></strong>(AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPath.html#AllocateElement-TBGRAPathElementType-PtrInt-">AllocateElement</a></strong>(AElementType: <a href="BGRAPath.html#TBGRAPathElementType">TBGRAPathElementType</a>; AExtraBytes: PtrInt = 0): Pointer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPath.html#CheckElementType-TBGRAPathElementType-">CheckElementType</a></strong>(AElementType: <a href="BGRAPath.html#TBGRAPathElementType">TBGRAPathElementType</a>): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPath.html#CorrectAcceptedDeviation-single-TAffineMatrix-">CorrectAcceptedDeviation</a></strong>(AAcceptedDeviation: single; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>): single;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPath.html#getCursor">getCursor</a></strong>: <a href="BGRABitmapTypes.TBGRACustomPathCursor.html">TBGRACustomPathCursor</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPath.html#GetElementEndCoord-PtrInt-">GetElementEndCoord</a></strong>(APos: PtrInt): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPath.html#GetElementLength-PtrInt-single-">GetElementLength</a></strong>(APos: PtrInt; AAcceptedDeviation: single): Single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPath.html#GetElementStartCoord-PtrInt-">GetElementStartCoord</a></strong>(APos: PtrInt): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPath.html#getLength">getLength</a></strong>: single; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPath.html#getPoints-TAffineMatrix-">getPoints</a></strong>(AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPath.html#getPoints">getPoints</a></strong>: <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPath.html#GetPolygonalApprox-IntPtr-single-boolean-">GetPolygonalApprox</a></strong>(APos: IntPtr; AAcceptedDeviation: single; AIncludeFirstPoint: boolean): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPath.html#GetSvgString">GetSvgString</a></strong>: string; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPath.html#GoToNextElement-PtrInt-">GoToNextElement</a></strong>(var APos: PtrInt): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPath.html#GoToPreviousElement-PtrInt-">GoToPreviousElement</a></strong>(var APos: PtrInt): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPath.html#LastCoordDefined">LastCoordDefined</a></strong>: boolean; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPath.html#PeekNextElement-PtrInt-">PeekNextElement</a></strong>(APos: PtrInt): <a href="BGRAPath.html#TBGRAPathElementType">TBGRAPathElementType</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPath.html#SetLastCoord-TPointF-">SetLastCoord</a></strong>(ACoord: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#addPath-IBGRAPath-">addPath</a></strong>(source: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#addPath-string-">addPath</a></strong>(const AValue: string); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#arc-single-single-single-single-single-">arc</a></strong>(cx, cy, radius, startAngleRadCW, endAngleRadCW: single); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#arc-single-single-single-single-single-boolean-">arc</a></strong>(cx, cy, radius, startAngleRadCW, endAngleRadCW: single; anticlockwise: boolean); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#arc-TArcDef-TArcDef-">arc</a></strong>(constref arcDef: <a href="BGRABitmapTypes.TArcDef.html">TArcDef</a>); overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#arc-single-single-single-single-single-single-single-boolean-">arc</a></strong>(cx, cy, rx,ry, xAngleRadCW, startAngleRadCW, endAngleRadCW: single; anticlockwise: boolean); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#arc-single-single-single-single-single-single-single-">arc</a></strong>(cx, cy, rx,ry: single; xAngleRadCW, startAngleRadCW, endAngleRadCW: single); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#arcDeg-single-single-single-single-single-">arcDeg</a></strong>(cx, cy, radius, startAngleDeg, endAngleDeg: single); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#arcDeg-single-single-single-single-single-boolean-">arcDeg</a></strong>(cx, cy, radius, startAngleDeg, endAngleDeg: single; anticlockwise: boolean); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#arcTo-single-single-single-boolean-boolean-single-single-">arcTo</a></strong>(rx,ry, xAngleRadCW: single; largeArc, anticlockwise: boolean; x,y:single); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#arcTo-TPointF-TPointF-single-">arcTo</a></strong>(const p1,p2: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; radius: single); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#arcTo-single-single-single-single-single-">arcTo</a></strong>(x1, y1, x2, y2, radius: single); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#beginPath">beginPath</a></strong>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#beginSubPath">beginSubPath</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#bezierCurve-TCubicBezierCurve-">bezierCurve</a></strong>(const curve: <a href="BGRABitmapTypes.TCubicBezierCurve.html">TCubicBezierCurve</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#bezierCurve-TPointF-TPointF-TPointF-TPointF-">bezierCurve</a></strong>(p1,cp1,cp2,p2: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#bezierCurveTo-single-single-single-single-single-single-">bezierCurveTo</a></strong>(cp1x,cp1y,cp2x,cp2y,x,y: single); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#bezierCurveTo-TPointF-TPointF-TPointF-TPointF-">bezierCurveTo</a></strong>(constref cp1,cp2,pt: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#closedSpline-arrayofTPointF-TSplineStyle-">closedSpline</a></strong>(const pts: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; style: <a href="BGRABitmapTypes.html#TSplineStyle">TSplineStyle</a>); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#closePath">closePath</a></strong>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#copyTo-IBGRAPath-">copyTo</a></strong>(dest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#fill-TBGRACustomBitmap-TBGRAPixel-single-">fill</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#fill-TBGRACustomBitmap-IBGRAScanner-single-">fill</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#fill-TBGRAPathFillProc-pointer-">fill</a></strong>(AFillProc: <a href="BGRAPath.html#TBGRAPathFillProc">TBGRAPathFillProc</a>; AData: pointer); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#fill-TBGRAPathFillProc-TAffineMatrix-pointer-">fill</a></strong>(AFillProc: <a href="BGRAPath.html#TBGRAPathFillProc">TBGRAPathFillProc</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AData: pointer); overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#fill-TBGRAPathFillProc-TAffineMatrix-single-pointer-">fill</a></strong>(AFillProc: <a href="BGRAPath.html#TBGRAPathFillProc">TBGRAPathFillProc</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AAcceptedDeviation: single; AData: pointer = nil); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#fill-TBGRACustomBitmap-TAffineMatrix-IBGRAScanner-single-">fill</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#fill-TBGRACustomBitmap-single-single-TBGRAPixel-single-">fill</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x,y: single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#fill-TBGRACustomBitmap-single-single-IBGRAScanner-single-">fill</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x,y: single; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#fill-TBGRACustomBitmap-TAffineMatrix-TBGRAPixel-single-">fill</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#Fit-TRectF-single-">Fit</a></strong>(ARect: <a href="BGRABitmapTypes.html#TRectF">TRectF</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#FitInto-TBGRAPath-TRectF-single-">FitInto</a></strong>(ADest: <a href="BGRAPath.TBGRAPath.html">TBGRAPath</a>; ARect: <a href="BGRABitmapTypes.html#TRectF">TRectF</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#lineTo-single-single-">lineTo</a></strong>(x,y: single); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#lineTo-TPointF-TPointF-">lineTo</a></strong>(constref pt: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#moveTo-single-single-">moveTo</a></strong>(x,y: single); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#moveTo-TPointF-TPointF-">moveTo</a></strong>(constref pt: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#openedSpline-arrayofTPointF-TSplineStyle-">openedSpline</a></strong>(const pts: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; style: <a href="BGRABitmapTypes.html#TSplineStyle">TSplineStyle</a>); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#polygon-arrayofTPointF-">polygon</a></strong>(const pts: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#polyline-arrayofTPointF-">polyline</a></strong>(const pts: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#polylineTo-arrayofTPointF-">polylineTo</a></strong>(const pts: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#quadraticCurve-TPointF-TPointF-TPointF-">quadraticCurve</a></strong>(p1,cp,p2: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#quadraticCurve-TQuadraticBezierCurve-">quadraticCurve</a></strong>(const curve: <a href="BGRABitmapTypes.TQuadraticBezierCurve.html">TQuadraticBezierCurve</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#quadraticCurveTo-TPointF-TPointF-TPointF-">quadraticCurveTo</a></strong>(constref cp,pt: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#quadraticCurveTo-single-single-single-single-">quadraticCurveTo</a></strong>(cpx,cpy,x,y: single); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#rect-single-single-single-single-">rect</a></strong>(x,y,w,h: single);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#resetTransform">resetTransform</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#rotate-single-">rotate</a></strong>(angleRadCW: single); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#rotate-single-TPointF-">rotate</a></strong>(angleRadCW: single; center: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#rotateDeg-single-TPointF-">rotateDeg</a></strong>(angleDeg: single; center: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#rotateDeg-single-">rotateDeg</a></strong>(angleDeg: single); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#roundRect-single-single-single-single-single-">roundRect</a></strong>(x,y,w,h,radius: single);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#scale-single-">scale</a></strong>(factor: single);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#SetPoints-ArrayOfTPointF-">SetPoints</a></strong>(const APoints: <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#smoothBezierCurveTo-TPointF-TPointF-">smoothBezierCurveTo</a></strong>(const cp2,pt: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#smoothBezierCurveTo-single-single-single-single-">smoothBezierCurveTo</a></strong>(cp2x,cp2y,x,y: single); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#smoothQuadraticCurveTo-single-single-">smoothQuadraticCurveTo</a></strong>(x,y: single); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#smoothQuadraticCurveTo-TPointF-">smoothQuadraticCurveTo</a></strong>(const pt: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#stroke-TBGRACustomBitmap-TAffineMatrix-IBGRAScanner-single-single-">stroke</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AWidth: single; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#stroke-TBGRACustomBitmap-single-single-IBGRAScanner-single-single-">stroke</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x,y: single; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AWidth: single; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#stroke-TBGRACustomBitmap-TAffineMatrix-TBGRAPixel-single-single-">stroke</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AWidth: single; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#stroke-TBGRAPathDrawProc-TAffineMatrix-single-pointer-">stroke</a></strong>(ADrawProc: <a href="BGRAPath.html#TBGRAPathDrawProc">TBGRAPathDrawProc</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AAcceptedDeviation: single; AData: pointer = nil); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#stroke-TBGRAPathDrawProc-TAffineMatrix-pointer-">stroke</a></strong>(ADrawProc: <a href="BGRAPath.html#TBGRAPathDrawProc">TBGRAPathDrawProc</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AData: pointer); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#stroke-TBGRAPathDrawProc-pointer-">stroke</a></strong>(ADrawProc: <a href="BGRAPath.html#TBGRAPathDrawProc">TBGRAPathDrawProc</a>; AData: pointer); overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#stroke-TBGRACustomBitmap-TBGRAPixel-single-single-">stroke</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AWidth: single; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#stroke-TBGRACustomBitmap-IBGRAScanner-single-single-">stroke</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AWidth: single; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#stroke-TBGRACustomBitmap-single-single-TBGRAPixel-single-single-">stroke</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x,y: single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AWidth: single; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#translate-single-single-">translate</a></strong>(x,y: single);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#BezierCurveFromTransformed-TPointF-TPointF-TPointF-">BezierCurveFromTransformed</a></strong>(tcp1, cp2, pt:<a href="BGRABitmapTypes.html#TPointF">TPointF</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#BitmapDrawSubPathProc-arrayofTPointF-boolean-pointer-">BitmapDrawSubPathProc</a></strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; AClosed: boolean; AData: pointer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#ClearLastCoord">ClearLastCoord</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#DoClear">DoClear</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#GetElementAt-PtrInt-TBGRAPathElementType-pointer-">GetElementAt</a></strong>(APos: PtrInt; out AElementType: <a href="BGRAPath.html#TBGRAPathElementType">TBGRAPathElementType</a>; out AElement: pointer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#Init">Init</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#InternalDraw-TBGRAPathDrawProc-TAffineMatrix-single-pointer-">InternalDraw</a></strong>(ADrawProc: <a href="BGRAPath.html#TBGRAPathDrawProc">TBGRAPathDrawProc</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AAcceptedDeviation: single; AData: pointer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#NeedSpace-integer-">NeedSpace</a></strong>(count: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#OnMatrixChange">OnMatrixChange</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#OnModify">OnModify</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#QuadraticCurveFromTransformed-TPointF-TPointF-">QuadraticCurveFromTransformed</a></strong>(tcp, pt: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#RegisterCursor-TBGRAPathCursor-">RegisterCursor</a></strong>(ACursor: <a href="BGRAPath.TBGRAPathCursor.html">TBGRAPathCursor</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#SetSvgString-string-">SetSvgString</a></strong>(const AValue: string); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPath.html#UnregisterCursor-TBGRAPathCursor-">UnregisterCursor</a></strong>(ACursor: <a href="BGRAPath.TBGRAPathCursor.html">TBGRAPathCursor</a>);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAPath.TBGRAPath.html#SvgString">SvgString</a></strong>: string read <a href="BGRAPath.TBGRAPath.html#GetSvgString">GetSvgString</a> write <a href="BGRAPath.TBGRAPath.html#SetSvgString-string-">SetSvgString</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FAngleRadCW"></span><code><strong>FAngleRadCW</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+this matrix must have a base of vectors orthogonal, of same length and with positive orientation in order to preserve arcs</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FCursors"></span><code><strong>FCursors</strong>: array of <a href="BGRAPath.TBGRAPathCursor.html">TBGRAPathCursor</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FData"></span><code><strong>FData</strong>: PByte;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FDataCapacity"></span><code><strong>FDataCapacity</strong>: PtrInt;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FDataPos"></span><code><strong>FDataPos</strong>: PtrInt;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FExpectedTransformedControlPoint"></span><code><strong>FExpectedTransformedControlPoint</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FInternalDrawOffset"></span><code><strong>FInternalDrawOffset</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FLastCoord"></span><code><strong>FLastCoord</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FLastMoveToDataPos"></span><code><strong>FLastMoveToDataPos</strong>: PtrInt;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FLastStoredElementType"></span><code><strong>FLastStoredElementType</strong>: <a href="BGRAPath.html#TBGRAPathElementType">TBGRAPathElementType</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FLastSubPathElementType"></span><code><strong>FLastSubPathElementType</strong>: <a href="BGRAPath.html#TBGRAPathElementType">TBGRAPathElementType</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FLastTransformedCoord"></span><code><strong>FLastTransformedCoord</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FMatrix"></span><code><strong>FMatrix</strong>: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FScale"></span><code><strong>FScale</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+this matrix must have a base of vectors orthogonal, of same length and with positive orientation in order to preserve arcs</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FSubPathStartCoord"></span><code><strong>FSubPathStartCoord</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FSubPathTransformedStartCoord"></span><code><strong>FSubPathTransformedStartCoord</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create-string-"></span><code>constructor <strong>Create</strong>(ASvgString: string); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomPath.html#Create">TBGRACustomPath.Create</a>.</p><p>
+Constructor to <code>create</code> a custom path. Must be overridden in subclasses</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create-IBGRAPath-"></span><code>constructor <strong>Create</strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create-ArrayOfTPointF-"></span><code>constructor <strong>Create</strong>(const APoints: <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComputeLength-single-"></span><code>function <strong>ComputeLength</strong>(AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>): single;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CreateCursor-single-"></span><code>function <strong>CreateCursor</strong>(AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>): <a href="BGRAPath.TBGRAPathCursor.html">TBGRAPathCursor</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetBounds-single-"></span><code>function <strong>GetBounds</strong>(AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>): <a href="BGRABitmapTypes.html#TRectF">TRectF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsEmpty"></span><code>function <strong>IsEmpty</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ToPoints-TAffineMatrix-single-"></span><code>function <strong>ToPoints</strong>(AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ToPoints-single-"></span><code>function <strong>ToPoints</strong>(AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="AllocateElement-TBGRAPathElementType-PtrInt-"></span><code>function <strong>AllocateElement</strong>(AElementType: <a href="BGRAPath.html#TBGRAPathElementType">TBGRAPathElementType</a>; AExtraBytes: PtrInt = 0): Pointer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CheckElementType-TBGRAPathElementType-"></span><code>function <strong>CheckElementType</strong>(AElementType: <a href="BGRAPath.html#TBGRAPathElementType">TBGRAPathElementType</a>): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CorrectAcceptedDeviation-single-TAffineMatrix-"></span><code>function <strong>CorrectAcceptedDeviation</strong>(AAcceptedDeviation: single; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>): single;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="getCursor"></span><code>function <strong>getCursor</strong>: <a href="BGRABitmapTypes.TBGRACustomPathCursor.html">TBGRACustomPathCursor</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomPath.html#getCursor">TBGRACustomPath.getCursor</a>.</p><p>
+Retrieves a cursor for navigating the path</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetElementEndCoord-PtrInt-"></span><code>function <strong>GetElementEndCoord</strong>(APos: PtrInt): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetElementLength-PtrInt-single-"></span><code>function <strong>GetElementLength</strong>(APos: PtrInt; AAcceptedDeviation: single): Single;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetElementStartCoord-PtrInt-"></span><code>function <strong>GetElementStartCoord</strong>(APos: PtrInt): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="getLength"></span><code>function <strong>getLength</strong>: single; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomPath.html#getLength">TBGRACustomPath.getLength</a>.</p><p>
+Retrieves the length of the path</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="getPoints-TAffineMatrix-"></span><code>function <strong>getPoints</strong>(AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomPath.html#getPoints-TAffineMatrix-">TBGRACustomPath.getPoints</a>.</p><p>
+Retrieves the points of the path, transformed by a specified matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="getPoints"></span><code>function <strong>getPoints</strong>: <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomPath.html#getPoints">TBGRACustomPath.getPoints</a>.</p><p>
+Retrieves the points of the path</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetPolygonalApprox-IntPtr-single-boolean-"></span><code>function <strong>GetPolygonalApprox</strong>(APos: IntPtr; AAcceptedDeviation: single; AIncludeFirstPoint: boolean): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetSvgString"></span><code>function <strong>GetSvgString</strong>: string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GoToNextElement-PtrInt-"></span><code>function <strong>GoToNextElement</strong>(var APos: PtrInt): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GoToPreviousElement-PtrInt-"></span><code>function <strong>GoToPreviousElement</strong>(var APos: PtrInt): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="LastCoordDefined"></span><code>function <strong>LastCoordDefined</strong>: boolean; inline;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="PeekNextElement-PtrInt-"></span><code>function <strong>PeekNextElement</strong>(APos: PtrInt): <a href="BGRAPath.html#TBGRAPathElementType">TBGRAPathElementType</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetLastCoord-TPointF-"></span><code>function <strong>SetLastCoord</strong>(ACoord: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; inline;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="addPath-IBGRAPath-"></span><code>procedure <strong>addPath</strong>(source: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="addPath-string-"></span><code>procedure <strong>addPath</strong>(const AValue: string); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="arc-single-single-single-single-single-"></span><code>procedure <strong>arc</strong>(cx, cy, radius, startAngleRadCW, endAngleRadCW: single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="arc-single-single-single-single-single-boolean-"></span><code>procedure <strong>arc</strong>(cx, cy, radius, startAngleRadCW, endAngleRadCW: single; anticlockwise: boolean); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="arc-TArcDef-TArcDef-"></span><code>procedure <strong>arc</strong>(constref arcDef: <a href="BGRABitmapTypes.TArcDef.html">TArcDef</a>); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomPath.html#arc-TArcDef-TArcDef-">TBGRACustomPath.arc</a>.</p><p>
+Adds an <code>arc</code> to the path based on an <code>arc</code> definition</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="arc-single-single-single-single-single-single-single-boolean-"></span><code>procedure <strong>arc</strong>(cx, cy, rx,ry, xAngleRadCW, startAngleRadCW, endAngleRadCW: single; anticlockwise: boolean); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="arc-single-single-single-single-single-single-single-"></span><code>procedure <strong>arc</strong>(cx, cy, rx,ry: single; xAngleRadCW, startAngleRadCW, endAngleRadCW: single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="arcDeg-single-single-single-single-single-"></span><code>procedure <strong>arcDeg</strong>(cx, cy, radius, startAngleDeg, endAngleDeg: single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="arcDeg-single-single-single-single-single-boolean-"></span><code>procedure <strong>arcDeg</strong>(cx, cy, radius, startAngleDeg, endAngleDeg: single; anticlockwise: boolean); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="arcTo-single-single-single-boolean-boolean-single-single-"></span><code>procedure <strong>arcTo</strong>(rx,ry, xAngleRadCW: single; largeArc, anticlockwise: boolean; x,y:single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="arcTo-TPointF-TPointF-single-"></span><code>procedure <strong>arcTo</strong>(const p1,p2: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; radius: single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="arcTo-single-single-single-single-single-"></span><code>procedure <strong>arcTo</strong>(x1, y1, x2, y2, radius: single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="beginPath"></span><code>procedure <strong>beginPath</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomPath.html#beginPath">TBGRACustomPath.beginPath</a>.</p><p>
+Begins a new path</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="beginSubPath"></span><code>procedure <strong>beginSubPath</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="bezierCurve-TCubicBezierCurve-"></span><code>procedure <strong>bezierCurve</strong>(const curve: <a href="BGRABitmapTypes.TCubicBezierCurve.html">TCubicBezierCurve</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="bezierCurve-TPointF-TPointF-TPointF-TPointF-"></span><code>procedure <strong>bezierCurve</strong>(p1,cp1,cp2,p2: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="bezierCurveTo-single-single-single-single-single-single-"></span><code>procedure <strong>bezierCurveTo</strong>(cp1x,cp1y,cp2x,cp2y,x,y: single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="bezierCurveTo-TPointF-TPointF-TPointF-TPointF-"></span><code>procedure <strong>bezierCurveTo</strong>(constref cp1,cp2,pt: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomPath.html#bezierCurveTo-TPointF-TPointF-TPointF-TPointF-">TBGRACustomPath.bezierCurveTo</a>.</p><p>
+Adds a cubic Bézier curve to the path</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="closedSpline-arrayofTPointF-TSplineStyle-"></span><code>procedure <strong>closedSpline</strong>(const pts: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; style: <a href="BGRABitmapTypes.html#TSplineStyle">TSplineStyle</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomPath.html#closedSpline-arrayofTPointF-TSplineStyle-">TBGRACustomPath.closedSpline</a>.</p><p>
+Adds a closed spline to the path based on a series of points and a spline style</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="closePath"></span><code>procedure <strong>closePath</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomPath.html#closePath">TBGRACustomPath.closePath</a>.</p><p>
+Closes the current path</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="copyTo-IBGRAPath-"></span><code>procedure <strong>copyTo</strong>(dest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomPath.html#copyTo-IBGRAPath-">TBGRACustomPath.copyTo</a>.</p><p>
+Copies the path to another path object</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="fill-TBGRACustomBitmap-TBGRAPixel-single-"></span><code>procedure <strong>fill</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="fill-TBGRACustomBitmap-IBGRAScanner-single-"></span><code>procedure <strong>fill</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="fill-TBGRAPathFillProc-pointer-"></span><code>procedure <strong>fill</strong>(AFillProc: <a href="BGRAPath.html#TBGRAPathFillProc">TBGRAPathFillProc</a>; AData: pointer); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomPath.html#fill-TBGRAPathFillProc-pointer-">TBGRACustomPath.fill</a>.</p><p>
+Fills the path with a specified filling procedure</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="fill-TBGRAPathFillProc-TAffineMatrix-pointer-"></span><code>procedure <strong>fill</strong>(AFillProc: <a href="BGRAPath.html#TBGRAPathFillProc">TBGRAPathFillProc</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AData: pointer); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomPath.html#fill-TBGRAPathFillProc-TAffineMatrix-pointer-">TBGRACustomPath.fill</a>.</p><p>
+Fills the path with a specified filling procedure and transformation matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="fill-TBGRAPathFillProc-TAffineMatrix-single-pointer-"></span><code>procedure <strong>fill</strong>(AFillProc: <a href="BGRAPath.html#TBGRAPathFillProc">TBGRAPathFillProc</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AAcceptedDeviation: single; AData: pointer = nil); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="fill-TBGRACustomBitmap-TAffineMatrix-IBGRAScanner-single-"></span><code>procedure <strong>fill</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="fill-TBGRACustomBitmap-single-single-TBGRAPixel-single-"></span><code>procedure <strong>fill</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x,y: single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="fill-TBGRACustomBitmap-single-single-IBGRAScanner-single-"></span><code>procedure <strong>fill</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x,y: single; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="fill-TBGRACustomBitmap-TAffineMatrix-TBGRAPixel-single-"></span><code>procedure <strong>fill</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Fit-TRectF-single-"></span><code>procedure <strong>Fit</strong>(ARect: <a href="BGRABitmapTypes.html#TRectF">TRectF</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FitInto-TBGRAPath-TRectF-single-"></span><code>procedure <strong>FitInto</strong>(ADest: <a href="BGRAPath.TBGRAPath.html">TBGRAPath</a>; ARect: <a href="BGRABitmapTypes.html#TRectF">TRectF</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="lineTo-single-single-"></span><code>procedure <strong>lineTo</strong>(x,y: single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="lineTo-TPointF-TPointF-"></span><code>procedure <strong>lineTo</strong>(constref pt: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomPath.html#lineTo-TPointF-TPointF-">TBGRACustomPath.lineTo</a>.</p><p>
+Adds a line from the current <a class="normal" href="BGRAClasses.html#Point-Integer-Integer-">point</a> to a specified <a class="normal" href="BGRAClasses.html#Point-Integer-Integer-">point</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="moveTo-single-single-"></span><code>procedure <strong>moveTo</strong>(x,y: single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="moveTo-TPointF-TPointF-"></span><code>procedure <strong>moveTo</strong>(constref pt: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomPath.html#moveTo-TPointF-TPointF-">TBGRACustomPath.moveTo</a>.</p><p>
+Moves the current <a class="normal" href="BGRAClasses.html#Point-Integer-Integer-">point</a> to a specified location, starting a new sub-path</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="openedSpline-arrayofTPointF-TSplineStyle-"></span><code>procedure <strong>openedSpline</strong>(const pts: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; style: <a href="BGRABitmapTypes.html#TSplineStyle">TSplineStyle</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomPath.html#openedSpline-arrayofTPointF-TSplineStyle-">TBGRACustomPath.openedSpline</a>.</p><p>
+Adds an open spline to the path based on a series of points and a spline style</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="polygon-arrayofTPointF-"></span><code>procedure <strong>polygon</strong>(const pts: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="polyline-arrayofTPointF-"></span><code>procedure <strong>polyline</strong>(const pts: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="polylineTo-arrayofTPointF-"></span><code>procedure <strong>polylineTo</strong>(const pts: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomPath.html#polylineTo-arrayofTPointF-">TBGRACustomPath.polylineTo</a>.</p><p>
+Adds a series of lines to the path based on an array of points</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="quadraticCurve-TPointF-TPointF-TPointF-"></span><code>procedure <strong>quadraticCurve</strong>(p1,cp,p2: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="quadraticCurve-TQuadraticBezierCurve-"></span><code>procedure <strong>quadraticCurve</strong>(const curve: <a href="BGRABitmapTypes.TQuadraticBezierCurve.html">TQuadraticBezierCurve</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="quadraticCurveTo-TPointF-TPointF-TPointF-"></span><code>procedure <strong>quadraticCurveTo</strong>(constref cp,pt: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomPath.html#quadraticCurveTo-TPointF-TPointF-TPointF-">TBGRACustomPath.quadraticCurveTo</a>.</p><p>
+Adds a quadratic Bézier curve to the path</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="quadraticCurveTo-single-single-single-single-"></span><code>procedure <strong>quadraticCurveTo</strong>(cpx,cpy,x,y: single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="rect-single-single-single-single-"></span><code>procedure <strong>rect</strong>(x,y,w,h: single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="resetTransform"></span><code>procedure <strong>resetTransform</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="rotate-single-"></span><code>procedure <strong>rotate</strong>(angleRadCW: single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="rotate-single-TPointF-"></span><code>procedure <strong>rotate</strong>(angleRadCW: single; center: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="rotateDeg-single-TPointF-"></span><code>procedure <strong>rotateDeg</strong>(angleDeg: single; center: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="rotateDeg-single-"></span><code>procedure <strong>rotateDeg</strong>(angleDeg: single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="roundRect-single-single-single-single-single-"></span><code>procedure <strong>roundRect</strong>(x,y,w,h,radius: single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="scale-single-"></span><code>procedure <strong>scale</strong>(factor: single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetPoints-ArrayOfTPointF-"></span><code>procedure <strong>SetPoints</strong>(const APoints: <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="smoothBezierCurveTo-TPointF-TPointF-"></span><code>procedure <strong>smoothBezierCurveTo</strong>(const cp2,pt: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="smoothBezierCurveTo-single-single-single-single-"></span><code>procedure <strong>smoothBezierCurveTo</strong>(cp2x,cp2y,x,y: single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="smoothQuadraticCurveTo-single-single-"></span><code>procedure <strong>smoothQuadraticCurveTo</strong>(x,y: single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="smoothQuadraticCurveTo-TPointF-"></span><code>procedure <strong>smoothQuadraticCurveTo</strong>(const pt: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="stroke-TBGRACustomBitmap-TAffineMatrix-IBGRAScanner-single-single-"></span><code>procedure <strong>stroke</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AWidth: single; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="stroke-TBGRACustomBitmap-single-single-IBGRAScanner-single-single-"></span><code>procedure <strong>stroke</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x,y: single; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AWidth: single; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="stroke-TBGRACustomBitmap-TAffineMatrix-TBGRAPixel-single-single-"></span><code>procedure <strong>stroke</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AWidth: single; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="stroke-TBGRAPathDrawProc-TAffineMatrix-single-pointer-"></span><code>procedure <strong>stroke</strong>(ADrawProc: <a href="BGRAPath.html#TBGRAPathDrawProc">TBGRAPathDrawProc</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AAcceptedDeviation: single; AData: pointer = nil); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="stroke-TBGRAPathDrawProc-TAffineMatrix-pointer-"></span><code>procedure <strong>stroke</strong>(ADrawProc: <a href="BGRAPath.html#TBGRAPathDrawProc">TBGRAPathDrawProc</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AData: pointer); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomPath.html#stroke-TBGRAPathDrawProc-TAffineMatrix-pointer-">TBGRACustomPath.stroke</a>.</p><p>
+Strokes the path with a specified drawing procedure and transformation matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="stroke-TBGRAPathDrawProc-pointer-"></span><code>procedure <strong>stroke</strong>(ADrawProc: <a href="BGRAPath.html#TBGRAPathDrawProc">TBGRAPathDrawProc</a>; AData: pointer); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomPath.html#stroke-TBGRAPathDrawProc-pointer-">TBGRACustomPath.stroke</a>.</p><p>
+Strokes the path with a specified drawing procedure</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="stroke-TBGRACustomBitmap-TBGRAPixel-single-single-"></span><code>procedure <strong>stroke</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AWidth: single; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="stroke-TBGRACustomBitmap-IBGRAScanner-single-single-"></span><code>procedure <strong>stroke</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AWidth: single; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="stroke-TBGRACustomBitmap-single-single-TBGRAPixel-single-single-"></span><code>procedure <strong>stroke</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x,y: single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AWidth: single; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="translate-single-single-"></span><code>procedure <strong>translate</strong>(x,y: single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="BezierCurveFromTransformed-TPointF-TPointF-TPointF-"></span><code>procedure <strong>BezierCurveFromTransformed</strong>(tcp1, cp2, pt:<a href="BGRABitmapTypes.html#TPointF">TPointF</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="BitmapDrawSubPathProc-arrayofTPointF-boolean-pointer-"></span><code>procedure <strong>BitmapDrawSubPathProc</strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; AClosed: boolean; AData: pointer);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ClearLastCoord"></span><code>procedure <strong>ClearLastCoord</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="DoClear"></span><code>procedure <strong>DoClear</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetElementAt-PtrInt-TBGRAPathElementType-pointer-"></span><code>procedure <strong>GetElementAt</strong>(APos: PtrInt; out AElementType: <a href="BGRAPath.html#TBGRAPathElementType">TBGRAPathElementType</a>; out AElement: pointer);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Init"></span><code>procedure <strong>Init</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalDraw-TBGRAPathDrawProc-TAffineMatrix-single-pointer-"></span><code>procedure <strong>InternalDraw</strong>(ADrawProc: <a href="BGRAPath.html#TBGRAPathDrawProc">TBGRAPathDrawProc</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AAcceptedDeviation: single; AData: pointer);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="NeedSpace-integer-"></span><code>procedure <strong>NeedSpace</strong>(count: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="OnMatrixChange"></span><code>procedure <strong>OnMatrixChange</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="OnModify"></span><code>procedure <strong>OnModify</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="QuadraticCurveFromTransformed-TPointF-TPointF-"></span><code>procedure <strong>QuadraticCurveFromTransformed</strong>(tcp, pt: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="RegisterCursor-TBGRAPathCursor-"></span><code>procedure <strong>RegisterCursor</strong>(ACursor: <a href="BGRAPath.TBGRAPathCursor.html">TBGRAPathCursor</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetSvgString-string-"></span><code>procedure <strong>SetSvgString</strong>(const AValue: string); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="UnregisterCursor-TBGRAPathCursor-"></span><code>procedure <strong>UnregisterCursor</strong>(ACursor: <a href="BGRAPath.TBGRAPathCursor.html">TBGRAPathCursor</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SvgString"></span><code>property <strong>SvgString</strong>: string read <a href="BGRAPath.TBGRAPath.html#GetSvgString">GetSvgString</a> write <a href="BGRAPath.TBGRAPath.html#SetSvgString-string-">SetSvgString</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+</div></div></body></html>

@@ -1,0 +1,348 @@
+digraph Uses {
+  "avifbgra" -> "libavif"
+  "avifbgra" [href="avifbgra.html"]
+  "BGRAAnimatedGif" -> "BGRABitmap"
+  "BGRAAnimatedGif" -> "BGRAPalette"
+  "BGRAAnimatedGif" -> "BGRAGifFormat"
+  "BGRAAnimatedGif" -> "ExtCtrls"
+  "BGRAAnimatedGif" [href="BGRAAnimatedGif.html"]
+  "BGRAArrow" [href="BGRAArrow.html"]
+  "BGRABitmap" -> "BGRALCLBitmap"
+  "BGRABitmap" [href="BGRABitmap.html"]
+  "BGRABlend" [href="BGRABlend.html"]
+  "BGRABlurGL" -> "BGRAOpenGL3D"
+  "BGRABlurGL" -> "BGRACanvasGL"
+  "BGRABlurGL" -> "BGRAOpenGLType"
+  "BGRABlurGL" [href="BGRABlurGL.html"]
+  "BGRACanvas" -> "FPCanvas"
+  "BGRACanvas" [href="BGRACanvas.html"]
+  "BGRACanvas2D" -> "BGRATransform"
+  "BGRACanvas2D" -> "BGRAGradientScanner"
+  "BGRACanvas2D" -> "BGRAPath"
+  "BGRACanvas2D" -> "BGRAPen"
+  "BGRACanvas2D" -> "BGRAGrayscaleMask"
+  "BGRACanvas2D" [href="BGRACanvas2D.html"]
+  "BGRACanvasGL" -> "BGRAOpenGLType"
+  "BGRACanvasGL" -> "BGRATransform"
+  "BGRACanvasGL" -> "BGRAPath"
+  "BGRACanvasGL" -> "BGRASSE"
+  "BGRACanvasGL" -> "BGRAMatrix3D"
+  "BGRACanvasGL" [href="BGRACanvasGL.html"]
+  "BGRAColorInt" [href="BGRAColorInt.html"]
+  "BGRAColorQuantization" -> "BGRAPalette"
+  "BGRAColorQuantization" [href="BGRAColorQuantization.html"]
+  "BGRACompressableBitmap" -> "BGRABitmap"
+  "BGRACompressableBitmap" -> "zstream"
+  "BGRACompressableBitmap" [href="BGRACompressableBitmap.html"]
+  "BGRACoordPool3D" -> "BGRASSE"
+  "BGRACoordPool3D" -> "BGRAMatrix3D"
+  "BGRACoordPool3D" [href="BGRACoordPool3D.html"]
+  "BGRACustomTextFX" -> "BGRAPhongTypes"
+  "BGRACustomTextFX" -> "BGRAGrayscaleMask"
+  "BGRACustomTextFX" [href="BGRACustomTextFX.html"]
+  "BGRADefaultBitmap" -> "BGRACanvas"
+  "BGRADefaultBitmap" -> "BGRACanvas2D"
+  "BGRADefaultBitmap" -> "BGRATransform"
+  "BGRADefaultBitmap" -> "BGRATextBidi"
+  "BGRADefaultBitmap" -> "UniversalDrawer"
+  "BGRADefaultBitmap" -> "BGRAGrayscaleMask"
+  "BGRADefaultBitmap" [href="BGRADefaultBitmap.html"]
+  "BGRADithering" -> "BGRAFilterType"
+  "BGRADithering" -> "BGRAPalette"
+  "BGRADithering" [href="BGRADithering.html"]
+  "BGRADNetDeserial" [href="BGRADNetDeserial.html"]
+  "BGRAFillInfo" [href="BGRAFillInfo.html"]
+  "BGRAFilterBlur" -> "BGRAFilterType"
+  "BGRAFilterBlur" [href="BGRAFilterBlur.html"]
+  "BGRAFilters" -> "BGRAFilterType"
+  "BGRAFilters" -> "BGRAFilterBlur"
+  "BGRAFilters" [href="BGRAFilters.html"]
+  "BGRAFilterScanner" -> "BGRAFilterType"
+  "BGRAFilterScanner" [href="BGRAFilterScanner.html"]
+  "BGRAFilterType" [href="BGRAFilterType.html"]
+  "BGRAFontGL" -> "BGRAOpenGLType"
+  "BGRAFontGL" -> "Avl_Tree"
+  "BGRAFontGL" [href="BGRAFontGL.html"]
+  "BGRAFreeType" -> "EasyLazFreeType"
+  "BGRAFreeType" -> "BGRACustomTextFX"
+  "BGRAFreeType" -> "BGRAPhongTypes"
+  "BGRAFreeType" -> "BGRATypewriter"
+  "BGRAFreeType" -> "LazVersion"
+  "BGRAFreeType" [href="BGRAFreeType.html"]
+  "BGRAGifFormat" -> "BGRABitmap"
+  "BGRAGifFormat" -> "BGRAPalette"
+  "BGRAGifFormat" [href="BGRAGifFormat.html"]
+  "BGRAGradientOriginal" -> "BGRALayerOriginal"
+  "BGRAGradientOriginal" -> "BGRABitmap"
+  "BGRAGradientOriginal" -> "BGRAGradientScanner"
+  "BGRAGradientOriginal" -> "BGRASVG"
+  "BGRAGradientOriginal" -> "BGRASVGShapes"
+  "BGRAGradientOriginal" -> "BGRASVGType"
+  "BGRAGradientOriginal" [href="BGRAGradientOriginal.html"]
+  "BGRAGradients" -> "BGRABitmap"
+  "BGRAGradients" -> "BGRABlend"
+  "BGRAGradients" -> "BGRAPhongTypes"
+  "BGRAGradients" -> "BGRASSE"
+  "BGRAGradients" -> "BGRAGrayscaleMask"
+  "BGRAGradients" [href="BGRAGradients.html"]
+  "BGRAGradientScanner" -> "BGRATransform"
+  "BGRAGradientScanner" [href="BGRAGradientScanner.html"]
+  "BGRAGrayscaleMask" -> "BGRAResample"
+  "BGRAGrayscaleMask" -> "UniversalDrawer"
+  "BGRAGrayscaleMask" [href="BGRAGrayscaleMask.html"]
+  "BGRAIconCursor" -> "BGRAMultiFileType"
+  "BGRAIconCursor" [href="BGRAIconCursor.html"]
+  "BGRALayerOriginal" -> "BGRABitmap"
+  "BGRALayerOriginal" -> "BGRATransform"
+  "BGRALayerOriginal" -> "BGRAMemDirectory"
+  "BGRALayerOriginal" -> "LCLType"
+  "BGRALayerOriginal" -> "LCLIntf"
+  "BGRALayerOriginal" [href="BGRALayerOriginal.html"]
+  "BGRALayers" -> "BGRABitmap"
+  "BGRALayers" -> "BGRAMemDirectory"
+  "BGRALayers" -> "BGRATransform"
+  "BGRALayers" -> "BGRALayerOriginal"
+  "BGRALayers" [href="BGRALayers.html"]
+  "BGRALazPaint" -> "BGRALayers"
+  "BGRALazPaint" -> "BGRAReadLzp"
+  "BGRALazPaint" -> "BGRAWriteLzp"
+  "BGRALazPaint" -> "BGRALzpCommon"
+  "BGRALazPaint" [href="BGRALazPaint.html"]
+  "BGRALazResource" -> "BGRAMultiFileType"
+  "BGRALazResource" [href="BGRALazResource.html"]
+  "BGRALCLBitmap" -> "Graphics"
+  "BGRALCLBitmap" -> "GraphType"
+  "BGRALCLBitmap" -> "BGRADefaultBitmap"
+  "BGRALCLBitmap" [href="BGRALCLBitmap.html"]
+  "BGRALzpCommon" [href="BGRALzpCommon.html"]
+  "BGRAMatrix3D" -> "BGRASSE"
+  "BGRAMatrix3D" -> "BGRATransform"
+  "BGRAMatrix3D" [href="BGRAMatrix3D.html"]
+  "BGRAMemDirectory" -> "BGRAMultiFileType"
+  "BGRAMemDirectory" [href="BGRAMemDirectory.html"]
+  "BGRAMultiFileType" [href="BGRAMultiFileType.html"]
+  "BGRAOpenGL" -> "BGRAOpenGLType"
+  "BGRAOpenGL" -> "BGRASpriteGL"
+  "BGRAOpenGL" -> "BGRACanvasGL"
+  "BGRAOpenGL" -> "GL"
+  "BGRAOpenGL" -> "GLext"
+  "BGRAOpenGL" -> "GLU"
+  "BGRAOpenGL" -> "BGRAFontGL"
+  "BGRAOpenGL" -> "BGRASSE"
+  "BGRAOpenGL" -> "BGRAMatrix3D"
+  "BGRAOpenGL" [href="BGRAOpenGL.html"]
+  "BGRAOpenGL3D" -> "BGRASceneTypes"
+  "BGRAOpenGL3D" -> "BGRASSE"
+  "BGRAOpenGL3D" -> "BGRAMatrix3D"
+  "BGRAOpenGL3D" -> "BGRACanvasGL"
+  "BGRAOpenGL3D" -> "BGRAScene3D"
+  "BGRAOpenGL3D" -> "BGRAOpenGLType"
+  "BGRAOpenGL3D" -> "BGRATransform"
+  "BGRAOpenGL3D" -> "BGRARenderer3D"
+  "BGRAOpenGL3D" [href="BGRAOpenGL3D.html"]
+  "BGRAOpenGLType" -> "BGRABitmap"
+  "BGRAOpenGLType" -> "BGRATransform"
+  "BGRAOpenGLType" -> "BGRASSE"
+  "BGRAOpenGLType" -> "BGRAMatrix3D"
+  "BGRAOpenGLType" [href="BGRAOpenGLType.html"]
+  "BGRAOpenRaster" -> "BGRALayers"
+  "BGRAOpenRaster" -> "zipper"
+  "BGRAOpenRaster" -> "DOM"
+  "BGRAOpenRaster" -> "BGRABitmap"
+  "BGRAOpenRaster" -> "BGRALayerOriginal"
+  "BGRAOpenRaster" -> "BGRASVGShapes"
+  "BGRAOpenRaster" -> "BGRASVG"
+  "BGRAOpenRaster" [href="BGRAOpenRaster.html"]
+  "BGRAPaintNet" -> "BGRADNetDeserial"
+  "BGRAPaintNet" -> "BGRABitmap"
+  "BGRAPaintNet" -> "BGRALayers"
+  "BGRAPaintNet" [href="BGRAPaintNet.html"]
+  "BGRAPalette" -> "Avl_Tree"
+  "BGRAPalette" [href="BGRAPalette.html"]
+  "BGRAPapers" [href="BGRAPapers.html"]
+  "BGRAPath" -> "BGRATransform"
+  "BGRAPath" [href="BGRAPath.html"]
+  "BGRAPen" -> "BGRATransform"
+  "BGRAPen" [href="BGRAPen.html"]
+  "BGRAPhongTypes" [href="BGRAPhongTypes.html"]
+  "BGRAPhoxo" -> "BGRALayers"
+  "BGRAPhoxo" -> "BGRABitmap"
+  "BGRAPhoxo" -> "BMPcomn"
+  "BGRAPhoxo" [href="BGRAPhoxo.html"]
+  "BGRAPNGComn" -> "PNGComn"
+  "BGRAPNGComn" [href="BGRAPNGComn.html"]
+  "BGRAPolygon" -> "BGRAFillInfo"
+  "BGRAPolygon" -> "BGRAPath"
+  "BGRAPolygon" [href="BGRAPolygon.html"]
+  "BGRAPolygonAliased" -> "BGRAFillInfo"
+  "BGRAPolygonAliased" -> "BGRASSE"
+  "BGRAPolygonAliased" [href="BGRAPolygonAliased.html"]
+  "BGRAReadAvif" [href="BGRAReadAvif.html"]
+  "BGRAReadBMP" -> "BMPcomn"
+  "BGRAReadBMP" [href="BGRAReadBMP.html"]
+  "BGRAReadBmpMioMap" [href="BGRAReadBmpMioMap.html"]
+  "BGRAReadGif" -> "FPReadGif"
+  "BGRAReadGif" [href="BGRAReadGif.html"]
+  "BGRAReadIco" -> "Graphics"
+  "BGRAReadIco" [href="BGRAReadIco.html"]
+  "BGRAReadJpeg" -> "JPEGLib"
+  "BGRAReadJpeg" -> "JdAPImin"
+  "BGRAReadJpeg" -> "JDataSrc"
+  "BGRAReadJpeg" -> "JdAPIstd"
+  "BGRAReadJpeg" -> "JmoreCfg"
+  "BGRAReadJpeg" -> "FPReadJPEG"
+  "BGRAReadJpeg" [href="BGRAReadJpeg.html"]
+  "BGRAReadLzp" -> "BGRALzpCommon"
+  "BGRAReadLzp" -> "BGRABitmap"
+  "BGRAReadLzp" [href="BGRAReadLzp.html"]
+  "BGRAReadPCX" -> "FPReadPCX"
+  "BGRAReadPCX" [href="BGRAReadPCX.html"]
+  "BGRAReadPng" -> "FPImgCmn"
+  "BGRAReadPng" -> "BGRAPNGComn"
+  "BGRAReadPng" -> "ZStream"
+  "BGRAReadPng" [href="BGRAReadPng.html"]
+  "BGRAReadPSD" -> "FPReadPSD"
+  "BGRAReadPSD" [href="BGRAReadPSD.html"]
+  "BGRAReadTGA" -> "FPReadTGA"
+  "BGRAReadTGA" [href="BGRAReadTGA.html"]
+  "BGRAReadTiff" -> "ctypes"
+  "BGRAReadTiff" -> "zinflate"
+  "BGRAReadTiff" -> "zbase"
+  "BGRAReadTiff" -> "FPTiffCmn"
+  "BGRAReadTiff" [href="BGRAReadTiff.html"]
+  "BGRAReadWebP" [href="BGRAReadWebP.html"]
+  "BGRAReadXPM" -> "FPReadXPM"
+  "BGRAReadXPM" [href="BGRAReadXPM.html"]
+  "BGRARenderer3D" -> "BGRASceneTypes"
+  "BGRARenderer3D" -> "BGRASSE"
+  "BGRARenderer3D" -> "BGRAPolygon"
+  "BGRARenderer3D" -> "BGRAColorInt"
+  "BGRARenderer3D" -> "BGRAMatrix3D"
+  "BGRARenderer3D" -> "BGRAPolygonAliased"
+  "BGRARenderer3D" [href="BGRARenderer3D.html"]
+  "BGRAResample" [href="BGRAResample.html"]
+  "BGRAScene3D" -> "BGRAColorInt"
+  "BGRAScene3D" -> "BGRASSE"
+  "BGRAScene3D" -> "BGRAMatrix3D"
+  "BGRAScene3D" -> "BGRASceneTypes"
+  "BGRAScene3D" -> "BGRARenderer3D"
+  "BGRAScene3D" [href="BGRAScene3D.html"]
+  "BGRASceneTypes" -> "BGRASSE"
+  "BGRASceneTypes" -> "BGRAMatrix3D"
+  "BGRASceneTypes" -> "BGRAColorInt"
+  "BGRASceneTypes" [href="BGRASceneTypes.html"]
+  "BGRASliceScaling" -> "BGRABitmap"
+  "BGRASliceScaling" -> "IniFiles"
+  "BGRASliceScaling" [href="BGRASliceScaling.html"]
+  "BGRASpriteGL" -> "BGRAOpenGLType"
+  "BGRASpriteGL" [href="BGRASpriteGL.html"]
+  "BGRASSE" [href="BGRASSE.html"]
+  "BGRAStreamLayers" -> "BGRALayers"
+  "BGRAStreamLayers" -> "BGRABitmap"
+  "BGRAStreamLayers" -> "BGRALzpCommon"
+  "BGRAStreamLayers" -> "BGRAMemDirectory"
+  "BGRAStreamLayers" [href="BGRAStreamLayers.html"]
+  "BGRASVG" -> "DOM"
+  "BGRASVG" -> "BGRAUnits"
+  "BGRASVG" -> "BGRASVGShapes"
+  "BGRASVG" -> "BGRACanvas2D"
+  "BGRASVG" -> "BGRASVGType"
+  "BGRASVG" [href="BGRASVG.html"]
+  "BGRASVGOriginal" -> "BGRABitmap"
+  "BGRASVGOriginal" -> "BGRASVG"
+  "BGRASVGOriginal" -> "BGRATransform"
+  "BGRASVGOriginal" -> "BGRALayerOriginal"
+  "BGRASVGOriginal" -> "BGRAUnits"
+  "BGRASVGOriginal" -> "BGRALayers"
+  "BGRASVGOriginal" [href="BGRASVGOriginal.html"]
+  "BGRASVGShapes" -> "BGRAUnits"
+  "BGRASVGShapes" -> "DOM"
+  "BGRASVGShapes" -> "BGRAPath"
+  "BGRASVGShapes" -> "BGRACanvas2D"
+  "BGRASVGShapes" -> "BGRASVGType"
+  "BGRASVGShapes" [href="BGRASVGShapes.html"]
+  "BGRASVGType" -> "BGRATransform"
+  "BGRASVGType" -> "BGRAUnits"
+  "BGRASVGType" -> "DOM"
+  "BGRASVGType" -> "BGRACanvas2D"
+  "BGRASVGType" [href="BGRASVGType.html"]
+  "BGRAText" -> "BGRAPen"
+  "BGRAText" -> "BGRAGrayscaleMask"
+  "BGRAText" -> "InterfaceBase"
+  "BGRAText" -> "LCLVersion"
+  "BGRAText" [href="BGRAText.html"]
+  "BGRATextBidi" -> "BGRAUTF8"
+  "BGRATextBidi" -> "BGRAUnicode"
+  "BGRATextBidi" -> "BGRATransform"
+  "BGRATextBidi" -> "BGRAUnicodeText"
+  "BGRATextBidi" [href="BGRATextBidi.html"]
+  "BGRATextFX" -> "BGRAPhongTypes"
+  "BGRATextFX" -> "BGRAText"
+  "BGRATextFX" -> "BGRACustomTextFX"
+  "BGRATextFX" -> "BGRAVectorize"
+  "BGRATextFX" [href="BGRATextFX.html"]
+  "BGRAThumbnail" -> "BGRABitmap"
+  "BGRAThumbnail" [href="BGRAThumbnail.html"]
+  "BGRATransform" [href="BGRATransform.html"]
+  "BGRATypewriter" -> "Avl_Tree"
+  "BGRATypewriter" -> "BGRACanvas2D"
+  "BGRATypewriter" -> "BGRATransform"
+  "BGRATypewriter" [href="BGRATypewriter.html"]
+  "BGRAUnicode" [href="BGRAUnicode.html"]
+  "BGRAUnicodeText" -> "BGRAUnicode"
+  "BGRAUnicodeText" -> "BGRAUTF8"
+  "BGRAUnicodeText" [href="BGRAUnicodeText.html"]
+  "BGRAUnits" [href="BGRAUnits.html"]
+  "BGRAUTF8" -> "BGRAUnicode"
+  "BGRAUTF8" [href="BGRAUTF8.html"]
+  "BGRAVectorize" -> "BGRATypewriter"
+  "BGRAVectorize" -> "BGRATransform"
+  "BGRAVectorize" -> "BGRACanvas2D"
+  "BGRAVectorize" -> "BGRAText"
+  "BGRAVectorize" [href="BGRAVectorize.html"]
+  "BGRAWinResource" -> "BGRAMultiFileType"
+  "BGRAWinResource" -> "BGRAReadBMP"
+  "BGRAWinResource" [href="BGRAWinResource.html"]
+  "BGRAWriteAvif" -> "avifbgra"
+  "BGRAWriteAvif" [href="BGRAWriteAvif.html"]
+  "BGRAWriteBMP" -> "FPWriteBMP"
+  "BGRAWriteBMP" [href="BGRAWriteBMP.html"]
+  "BGRAWriteBmpMioMap" -> "BGRAReadBmpMioMap"
+  "BGRAWriteBmpMioMap" [href="BGRAWriteBmpMioMap.html"]
+  "BGRAWriteJpeg" -> "FPReadJPEG"
+  "BGRAWriteJpeg" -> "FPWriteJPEG"
+  "BGRAWriteJpeg" -> "JPEGLib"
+  "BGRAWriteJpeg" -> "JcAPIstd"
+  "BGRAWriteJpeg" -> "JcAPImin"
+  "BGRAWriteJpeg" -> "JDataDst"
+  "BGRAWriteJpeg" -> "JcParam"
+  "BGRAWriteJpeg" -> "JError"
+  "BGRAWriteJpeg" [href="BGRAWriteJpeg.html"]
+  "BGRAWriteLzp" -> "BGRALzpCommon"
+  "BGRAWriteLzp" -> "BGRABitmap"
+  "BGRAWriteLzp" [href="BGRAWriteLzp.html"]
+  "BGRAWritePCX" -> "FPWritePCX"
+  "BGRAWritePCX" [href="BGRAWritePCX.html"]
+  "BGRAWritePNG" -> "FPImgCmn"
+  "BGRAWritePNG" -> "BGRAPNGComn"
+  "BGRAWritePNG" -> "ZStream"
+  "BGRAWritePNG" [href="BGRAWritePNG.html"]
+  "BGRAWriteTiff" -> "zbase"
+  "BGRAWriteTiff" -> "zdeflate"
+  "BGRAWriteTiff" -> "FPTiffCmn"
+  "BGRAWriteTiff" [href="BGRAWriteTiff.html"]
+  "BGRAWriteWebP" [href="BGRAWriteWebP.html"]
+  "ExpandedBitmap" -> "UniversalDrawer"
+  "ExpandedBitmap" [href="ExpandedBitmap.html"]
+  "LinearRGBABitmap" -> "UniversalDrawer"
+  "LinearRGBABitmap" [href="LinearRGBABitmap.html"]
+  "UniversalDrawer" -> "BGRAPen"
+  "UniversalDrawer" -> "BGRAArrow"
+  "UniversalDrawer" [href="UniversalDrawer.html"]
+  "UnzipperExt" -> "zipper"
+  "UnzipperExt" [href="UnzipperExt.html"]
+  "WordXYZABitmap" -> "UniversalDrawer"
+  "WordXYZABitmap" [href="WordXYZABitmap.html"]
+  "XYZABitmap" -> "UniversalDrawer"
+  "XYZABitmap" [href="XYZABitmap.html"]
+}

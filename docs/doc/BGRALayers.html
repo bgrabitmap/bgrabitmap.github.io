@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BGRABitmap: BGRALayers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">BGRABitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit BGRALayers</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section"><a class="section" href="#PasDoc-Variables">Variables</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+Layered image, each layer being a <a class="normal" href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a> or rendered from an original. It can handle SVG format, gradients and blend modes.</p>
+<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="BGRAGraphics.html">BGRAGraphics</a></li><li><a href="BGRAClasses.html">BGRAClasses</a></li><li>SysUtils</li><li><a href="BGRABitmapTypes.html">BGRABitmapTypes</a></li><li><a href="BGRABitmap.html">BGRABitmap</a></li><li><a href="BGRAMemDirectory.html">BGRAMemDirectory</a></li><li><a href="BGRATransform.html">BGRATransform</a></li><li>fgl</li><li><a href="BGRALayerOriginal.html">BGRALayerOriginal</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BGRALayers.TBGRACustomLayeredBitmap.html"><code>TBGRACustomLayeredBitmap</code></a></td>
+<td class="itemdesc">Abstract class for storing a layered bitmap</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="BGRALayers.TBGRALayeredBitmap.html"><code>TBGRALayeredBitmap</code></a></td>
+<td class="itemdesc">Base implementation for a layered bitmap</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="BGRALayers.TBGRALayerInfo.html"><code>TBGRALayerInfo</code></a></td>
+<td class="itemdesc">Information about one layer</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="BGRALayers.TBGRALayerOriginalEntry.html"><code>TBGRALayerOriginalEntry</code></a></td>
+<td class="itemdesc">Entry for one original in a list of originals</td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRALayers.html#BGRALayerOriginalEntry-TBGRALayerCustomOriginal-">BGRALayerOriginalEntry</a></strong>(AInstance: <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>): <a href="BGRALayers.TBGRALayerOriginalEntry.html">TBGRALayerOriginalEntry</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRALayers.html#BGRALayerOriginalEntry-TGuid-">BGRALayerOriginalEntry</a></strong>(AGuid: TGuid): <a href="BGRALayers.TBGRALayerOriginalEntry.html">TBGRALayerOriginalEntry</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.html#OnLayeredBitmapLoaded">OnLayeredBitmapLoaded</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.html#OnLayeredBitmapLoadFromStreamStart">OnLayeredBitmapLoadFromStreamStart</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.html#OnLayeredBitmapLoadProgress-integer-">OnLayeredBitmapLoadProgress</a></strong>(APercentage: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.html#OnLayeredBitmapLoadStart-string-">OnLayeredBitmapLoadStart</a></strong>(AFilenameUTF8: string);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.html#OnLayeredBitmapSaved">OnLayeredBitmapSaved</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.html#OnLayeredBitmapSaveProgress-integer-">OnLayeredBitmapSaveProgress</a></strong>(APercentage: integer);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.html#OnLayeredBitmapSaveStart-string-">OnLayeredBitmapSaveStart</a></strong>(AFilenameUTF8: string);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.html#OnLayeredBitmapSaveToStreamStart">OnLayeredBitmapSaveToStreamStart</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.html#RegisterLayeredBitmapReader-string-TBGRACustomLayeredBitmapClass-">RegisterLayeredBitmapReader</a></strong>(AExtensionUTF8: string; AReader: <a href="BGRALayers.html#TBGRACustomLayeredBitmapClass">TBGRACustomLayeredBitmapClass</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.html#RegisterLayeredBitmapWriter-string-TBGRALayeredBitmapClass-">RegisterLayeredBitmapWriter</a></strong>(AExtensionUTF8: string; AWriter: <a href="BGRALayers.html#TBGRALayeredBitmapClass">TBGRALayeredBitmapClass</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.html#RegisterLoadingHandler-TOnLayeredBitmapLoadStartProc-TOnLayeredBitmapLoadProgressProc-TOnLayeredBitmapLoadedProc-">RegisterLoadingHandler</a></strong>(AStart: TOnLayeredBitmapLoadStartProc; AProgress: TOnLayeredBitmapLoadProgressProc; ADone: <a href="BGRALayers.html#TOnLayeredBitmapLoadedProc">TOnLayeredBitmapLoadedProc</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.html#RegisterSavingHandler-TOnLayeredBitmapSaveStartProc-TOnLayeredBitmapSaveProgressProc-TOnLayeredBitmapSavedProc-">RegisterSavingHandler</a></strong>(AStart: TOnLayeredBitmapSaveStartProc; AProgress: TOnLayeredBitmapSaveProgressProc; ADone: <a href="BGRALayers.html#TOnLayeredBitmapSavedProc">TOnLayeredBitmapSavedProc</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRALayers.html#TryCreateLayeredBitmapReader-string-">TryCreateLayeredBitmapReader</a></strong>(AExtensionUTF8: string): <a href="BGRALayers.TBGRACustomLayeredBitmap.html">TBGRACustomLayeredBitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRALayers.html#TryCreateLayeredBitmapWriter-string-">TryCreateLayeredBitmapWriter</a></strong>(AExtensionUTF8: string): <a href="BGRALayers.TBGRALayeredBitmap.html">TBGRALayeredBitmap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.html#UnregisterLoadingHandler-TOnLayeredBitmapLoadStartProc-TOnLayeredBitmapLoadProgressProc-TOnLayeredBitmapLoadedProc-">UnregisterLoadingHandler</a></strong>(AStart: TOnLayeredBitmapLoadStartProc; AProgress: TOnLayeredBitmapLoadProgressProc; ADone: <a href="BGRALayers.html#TOnLayeredBitmapLoadedProc">TOnLayeredBitmapLoadedProc</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.html#UnregisterSavingHandler-TOnLayeredBitmapSaveStartProc-TOnLayeredBitmapSaveProgressProc-TOnLayeredBitmapSavedProc-">UnregisterSavingHandler</a></strong>(AStart: TOnLayeredBitmapSaveStartProc; AProgress: TOnLayeredBitmapSaveProgressProc; ADone: <a href="BGRALayers.html#TOnLayeredBitmapSavedProc">TOnLayeredBitmapSavedProc</a>);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRALayers.html#TAffineMatrix">TAffineMatrix</a></strong> = <a href="BGRABitmapTypes.html#TAffineMatrix">BGRABitmapTypes.TAffineMatrix</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRALayers.html#TBGRACustomLayeredBitmapClass">TBGRACustomLayeredBitmapClass</a></strong> = class of <a href="BGRALayers.TBGRACustomLayeredBitmap.html">TBGRACustomLayeredBitmap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRALayers.html#TBGRALayeredBitmapCheckStreamProc-TStream-">TBGRALayeredBitmapCheckStreamProc</a></strong> = function(AStream: <a href="BGRAClasses.html#TStream">TStream</a>): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRALayers.html#TBGRALayeredBitmapClass">TBGRALayeredBitmapClass</a></strong> = class of <a href="BGRALayers.TBGRALayeredBitmap.html">TBGRALayeredBitmap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRALayers.html#TBGRALayeredBitmapLoadFromStreamProc-TStream-TBGRACustomLayeredBitmap-">TBGRALayeredBitmapLoadFromStreamProc</a></strong> = procedure(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; ALayers: <a href="BGRALayers.TBGRACustomLayeredBitmap.html">TBGRACustomLayeredBitmap</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRALayers.html#TBGRALayeredBitmapSaveToStreamProc-TStream-TBGRACustomLayeredBitmap-">TBGRALayeredBitmapSaveToStreamProc</a></strong> = procedure(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; ALayers: <a href="BGRALayers.TBGRACustomLayeredBitmap.html">TBGRACustomLayeredBitmap</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRALayers.html#TBGRALayerOriginalList">TBGRALayerOriginalList</a></strong> = specialize TFPGList&lt;<a href="BGRALayers.TBGRALayerOriginalEntry.html">TBGRALayerOriginalEntry</a>&gt;;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRALayers.html#TEmbeddedOriginalChangeEvent-TObject-TBGRALayerCustomOriginal-TBGRAOriginalDiff-">TEmbeddedOriginalChangeEvent</a></strong> = procedure (ASender: TObject; AOriginal: <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>; var ADiff: <a href="BGRALayerOriginal.TBGRAOriginalDiff.html">TBGRAOriginalDiff</a>) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRALayers.html#TEmbeddedOriginalEditingChangeEvent-TObject-TBGRALayerCustomOriginal-">TEmbeddedOriginalEditingChangeEvent</a></strong> = procedure (ASender: TObject; AOriginal: <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>) of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRALayers.html#TEmbeddedOriginalLoadErrorEvent-TObject-string-boolean-">TEmbeddedOriginalLoadErrorEvent</a></strong> = procedure (ASender: TObject; AError: string; var ARaise: boolean) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRALayers.html#TLayeredActionProgressEvent-TObject-integer-">TLayeredActionProgressEvent</a></strong> = procedure(ASender: TObject; AProgressPercent: integer) of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRALayers.html#TOnLayeredBitmapLoadedProc">TOnLayeredBitmapLoadedProc</a></strong> = procedure() of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRALayers.html#TOnLayeredBitmapLoadProgressProc-integer-">TOnLayeredBitmapLoadProgressProc</a></strong> = procedure(APercentage: integer) of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRALayers.html#TOnLayeredBitmapLoadStartProc-string-">TOnLayeredBitmapLoadStartProc</a></strong> = procedure(AFilenameUTF8: string) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRALayers.html#TOnLayeredBitmapSavedProc">TOnLayeredBitmapSavedProc</a></strong> = procedure() of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRALayers.html#TOnLayeredBitmapSaveProgressProc-integer-">TOnLayeredBitmapSaveProgressProc</a></strong> = procedure(APercentage: integer) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRALayers.html#TOnLayeredBitmapSaveStartProc-string-">TOnLayeredBitmapSaveStartProc</a></strong> = procedure(AFilenameUTF8: string) of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRALayers.html#TOriginalRenderStatus">TOriginalRenderStatus</a></strong> = (...);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRALayers.html#RenderTempSubDirectory">RenderTempSubDirectory</a></strong> = 'temp';</code></td>
+</tr>
+</table>
+<span id="PasDoc-Variables"></span><h3 class="summary">Variables</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRALayers.html#LayeredBitmapCheckStreamProc">LayeredBitmapCheckStreamProc</a></strong>: TBGRALayeredBitmapCheckStreamProc;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRALayers.html#LayeredBitmapLoadFromStreamProc">LayeredBitmapLoadFromStreamProc</a></strong>: TBGRALayeredBitmapLoadFromStreamProc;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRALayers.html#LayeredBitmapSaveToStreamProc">LayeredBitmapSaveToStreamProc</a></strong>: TBGRALayeredBitmapSaveToStreamProc;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRALayerOriginalEntry-TBGRALayerCustomOriginal-"></span><code>function <strong>BGRALayerOriginalEntry</strong>(AInstance: <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>): <a href="BGRALayers.TBGRALayerOriginalEntry.html">TBGRALayerOriginalEntry</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRALayerOriginalEntry-TGuid-"></span><code>function <strong>BGRALayerOriginalEntry</strong>(AGuid: TGuid): <a href="BGRALayers.TBGRALayerOriginalEntry.html">TBGRALayerOriginalEntry</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="OnLayeredBitmapLoaded"></span><code>procedure <strong>OnLayeredBitmapLoaded</strong>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="OnLayeredBitmapLoadFromStreamStart"></span><code>procedure <strong>OnLayeredBitmapLoadFromStreamStart</strong>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="OnLayeredBitmapLoadProgress-integer-"></span><code>procedure <strong>OnLayeredBitmapLoadProgress</strong>(APercentage: integer);</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="OnLayeredBitmapLoadStart-string-"></span><code>procedure <strong>OnLayeredBitmapLoadStart</strong>(AFilenameUTF8: string);</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="OnLayeredBitmapSaved"></span><code>procedure <strong>OnLayeredBitmapSaved</strong>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="OnLayeredBitmapSaveProgress-integer-"></span><code>procedure <strong>OnLayeredBitmapSaveProgress</strong>(APercentage: integer);</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="OnLayeredBitmapSaveStart-string-"></span><code>procedure <strong>OnLayeredBitmapSaveStart</strong>(AFilenameUTF8: string);</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="OnLayeredBitmapSaveToStreamStart"></span><code>procedure <strong>OnLayeredBitmapSaveToStreamStart</strong>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="RegisterLayeredBitmapReader-string-TBGRACustomLayeredBitmapClass-"></span><code>procedure <strong>RegisterLayeredBitmapReader</strong>(AExtensionUTF8: string; AReader: <a href="BGRALayers.html#TBGRACustomLayeredBitmapClass">TBGRACustomLayeredBitmapClass</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="RegisterLayeredBitmapWriter-string-TBGRALayeredBitmapClass-"></span><code>procedure <strong>RegisterLayeredBitmapWriter</strong>(AExtensionUTF8: string; AWriter: <a href="BGRALayers.html#TBGRALayeredBitmapClass">TBGRALayeredBitmapClass</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="RegisterLoadingHandler-TOnLayeredBitmapLoadStartProc-TOnLayeredBitmapLoadProgressProc-TOnLayeredBitmapLoadedProc-"></span><code>procedure <strong>RegisterLoadingHandler</strong>(AStart: TOnLayeredBitmapLoadStartProc; AProgress: TOnLayeredBitmapLoadProgressProc; ADone: <a href="BGRALayers.html#TOnLayeredBitmapLoadedProc">TOnLayeredBitmapLoadedProc</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="RegisterSavingHandler-TOnLayeredBitmapSaveStartProc-TOnLayeredBitmapSaveProgressProc-TOnLayeredBitmapSavedProc-"></span><code>procedure <strong>RegisterSavingHandler</strong>(AStart: TOnLayeredBitmapSaveStartProc; AProgress: TOnLayeredBitmapSaveProgressProc; ADone: <a href="BGRALayers.html#TOnLayeredBitmapSavedProc">TOnLayeredBitmapSavedProc</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TryCreateLayeredBitmapReader-string-"></span><code>function <strong>TryCreateLayeredBitmapReader</strong>(AExtensionUTF8: string): <a href="BGRALayers.TBGRACustomLayeredBitmap.html">TBGRACustomLayeredBitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TryCreateLayeredBitmapWriter-string-"></span><code>function <strong>TryCreateLayeredBitmapWriter</strong>(AExtensionUTF8: string): <a href="BGRALayers.TBGRALayeredBitmap.html">TBGRALayeredBitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UnregisterLoadingHandler-TOnLayeredBitmapLoadStartProc-TOnLayeredBitmapLoadProgressProc-TOnLayeredBitmapLoadedProc-"></span><code>procedure <strong>UnregisterLoadingHandler</strong>(AStart: TOnLayeredBitmapLoadStartProc; AProgress: TOnLayeredBitmapLoadProgressProc; ADone: <a href="BGRALayers.html#TOnLayeredBitmapLoadedProc">TOnLayeredBitmapLoadedProc</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UnregisterSavingHandler-TOnLayeredBitmapSaveStartProc-TOnLayeredBitmapSaveProgressProc-TOnLayeredBitmapSavedProc-"></span><code>procedure <strong>UnregisterSavingHandler</strong>(AStart: TOnLayeredBitmapSaveStartProc; AProgress: TOnLayeredBitmapSaveProgressProc; ADone: <a href="BGRALayers.html#TOnLayeredBitmapSavedProc">TOnLayeredBitmapSavedProc</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TAffineMatrix"></span><code><strong>TAffineMatrix</strong> = <a href="BGRABitmapTypes.html#TAffineMatrix">BGRABitmapTypes.TAffineMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+An affine matrix contains three 2D vectors: the image of x, the image of y and the translation</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBGRACustomLayeredBitmapClass"></span><code><strong>TBGRACustomLayeredBitmapClass</strong> = class of <a href="BGRALayers.TBGRACustomLayeredBitmap.html">TBGRACustomLayeredBitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBGRALayeredBitmapCheckStreamProc-TStream-"></span><code><strong>TBGRALayeredBitmapCheckStreamProc</strong> = function(AStream: <a href="BGRAClasses.html#TStream">TStream</a>): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBGRALayeredBitmapClass"></span><code><strong>TBGRALayeredBitmapClass</strong> = class of <a href="BGRALayers.TBGRALayeredBitmap.html">TBGRALayeredBitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBGRALayeredBitmapLoadFromStreamProc-TStream-TBGRACustomLayeredBitmap-"></span><code><strong>TBGRALayeredBitmapLoadFromStreamProc</strong> = procedure(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; ALayers: <a href="BGRALayers.TBGRACustomLayeredBitmap.html">TBGRACustomLayeredBitmap</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBGRALayeredBitmapSaveToStreamProc-TStream-TBGRACustomLayeredBitmap-"></span><code><strong>TBGRALayeredBitmapSaveToStreamProc</strong> = procedure(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; ALayers: <a href="BGRALayers.TBGRACustomLayeredBitmap.html">TBGRACustomLayeredBitmap</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBGRALayerOriginalList"></span><code><strong>TBGRALayerOriginalList</strong> = specialize TFPGList&lt;<a href="BGRALayers.TBGRALayerOriginalEntry.html">TBGRALayerOriginalEntry</a>&gt;;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TEmbeddedOriginalChangeEvent-TObject-TBGRALayerCustomOriginal-TBGRAOriginalDiff-"></span><code><strong>TEmbeddedOriginalChangeEvent</strong> = procedure (ASender: TObject; AOriginal: <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>; var ADiff: <a href="BGRALayerOriginal.TBGRAOriginalDiff.html">TBGRAOriginalDiff</a>) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TEmbeddedOriginalEditingChangeEvent-TObject-TBGRALayerCustomOriginal-"></span><code><strong>TEmbeddedOriginalEditingChangeEvent</strong> = procedure (ASender: TObject; AOriginal: <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TEmbeddedOriginalLoadErrorEvent-TObject-string-boolean-"></span><code><strong>TEmbeddedOriginalLoadErrorEvent</strong> = procedure (ASender: TObject; AError: string; var ARaise: boolean) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TLayeredActionProgressEvent-TObject-integer-"></span><code><strong>TLayeredActionProgressEvent</strong> = procedure(ASender: TObject; AProgressPercent: integer) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TOnLayeredBitmapLoadedProc"></span><code><strong>TOnLayeredBitmapLoadedProc</strong> = procedure() of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TOnLayeredBitmapLoadProgressProc-integer-"></span><code><strong>TOnLayeredBitmapLoadProgressProc</strong> = procedure(APercentage: integer) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TOnLayeredBitmapLoadStartProc-string-"></span><code><strong>TOnLayeredBitmapLoadStartProc</strong> = procedure(AFilenameUTF8: string) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TOnLayeredBitmapSavedProc"></span><code><strong>TOnLayeredBitmapSavedProc</strong> = procedure() of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TOnLayeredBitmapSaveProgressProc-integer-"></span><code><strong>TOnLayeredBitmapSaveProgressProc</strong> = procedure(APercentage: integer) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TOnLayeredBitmapSaveStartProc-string-"></span><code><strong>TOnLayeredBitmapSaveStartProc</strong> = procedure(AFilenameUTF8: string) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TOriginalRenderStatus"></span><code><strong>TOriginalRenderStatus</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p><h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="orsNone">orsNone</span></li>
+<li>
+<span id="orsDraft">orsDraft</span></li>
+<li>
+<span id="orsPartialDraft">orsPartialDraft</span></li>
+<li>
+<span id="orsProof">orsProof</span></li>
+<li>
+<span id="orsPartialProof">orsPartialProof</span></li>
+</ul>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="RenderTempSubDirectory"></span><code><strong>RenderTempSubDirectory</strong> = 'temp';</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<h3 class="detail">Variables</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LayeredBitmapCheckStreamProc"></span><code><strong>LayeredBitmapCheckStreamProc</strong>: TBGRALayeredBitmapCheckStreamProc;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LayeredBitmapLoadFromStreamProc"></span><code><strong>LayeredBitmapLoadFromStreamProc</strong>: TBGRALayeredBitmapLoadFromStreamProc;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LayeredBitmapSaveToStreamProc"></span><code><strong>LayeredBitmapSaveToStreamProc</strong>: TBGRALayeredBitmapSaveToStreamProc;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+</div></div></body></html>

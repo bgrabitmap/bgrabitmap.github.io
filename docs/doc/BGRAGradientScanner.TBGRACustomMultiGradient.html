@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BGRABitmap: BGRAGradientScanner: Class TBGRACustomMultiGradient</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">BGRABitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TBGRACustomMultiGradient"></span><h1 class="cio">Class TBGRACustomMultiGradient</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRAGradientScanner.html">BGRAGradientScanner</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBGRACustomMultiGradient = class(<a class="normal" href="BGRABitmapTypes.TBGRACustomGradient.html">TBGRACustomGradient</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Abstract class multi color stops gradient</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal" href="BGRABitmapTypes.TBGRACustomGradient.html">TBGRACustomGradient</a></li>
+<li class="thisitem">TBGRACustomMultiGradient</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRACustomMultiGradient.html#FColors">FColors</a></strong>: array of <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRACustomMultiGradient.html#FEColors">FEColors</a></strong>: array of <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRACustomMultiGradient.html#FInterpolationFunction">FInterpolationFunction</a></strong>: TGradientInterpolationFunction;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRACustomMultiGradient.html#FPositions">FPositions</a></strong>: array of integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRACustomMultiGradient.html#FPositionsF">FPositionsF</a></strong>: array of single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRACustomMultiGradient.html#FRepetition">FRepetition</a></strong>: <a href="BGRAGradientScanner.html#TBGRAGradientRepetition">TBGRAGradientRepetition</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRACustomMultiGradient.html#CosineInterpolation-single-">CosineInterpolation</a></strong>(t: single): single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BGRAGradientScanner.TBGRACustomMultiGradient.html#CreateAny-arrayofTEXpandedPixel-arrayofsingle-TBGRAColorInterpolation-TBGRAGradientRepetition-">CreateAny</a></strong>(Colors: array of <a href="BGRABitmapTypes.TExpandedPixel.html">TEXpandedPixel</a>; Positions0To1: array of single; AInterpolation: <a href="BGRAGradientScanner.html#TBGRAColorInterpolation">TBGRAColorInterpolation</a>; ARepetition: <a href="BGRAGradientScanner.html#TBGRAGradientRepetition">TBGRAGradientRepetition</a> = <a href="BGRAGradientScanner.html#grPad">grPad</a>): <a href="BGRAGradientScanner.TBGRACustomMultiGradient.html">TBGRACustomMultiGradient</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BGRAGradientScanner.TBGRACustomMultiGradient.html#CreateAny-arrayofTBGRAPixel-arrayofsingle-TBGRAColorInterpolation-TBGRAGradientRepetition-">CreateAny</a></strong>(Colors: array of <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; Positions0To1: array of single; AInterpolation: <a href="BGRAGradientScanner.html#TBGRAColorInterpolation">TBGRAColorInterpolation</a>; ARepetition: <a href="BGRAGradientScanner.html#TBGRAGradientRepetition">TBGRAGradientRepetition</a> = <a href="BGRAGradientScanner.html#grPad">grPad</a>): <a href="BGRAGradientScanner.TBGRACustomMultiGradient.html">TBGRACustomMultiGradient</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRACustomMultiGradient.html#GetMonochrome">GetMonochrome</a></strong>: boolean; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRACustomMultiGradient.html#HalfCosineInterpolation-single-">HalfCosineInterpolation</a></strong>(t: single): single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGradientScanner.TBGRACustomMultiGradient.html#Init-arrayofTExpandedPixel-arrayofsingle-">Init</a></strong>(Colors: array of <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>; Positions0To1: array of single);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGradientScanner.TBGRACustomMultiGradient.html#Init-arrayofTBGRAPixel-arrayofsingle-">Init</a></strong>(Colors: array of <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; Positions0To1: array of single);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAGradientScanner.TBGRACustomMultiGradient.html#ColorCount">ColorCount</a></strong>: integer read GetColorCount;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAGradientScanner.TBGRACustomMultiGradient.html#InterpolationFunction">InterpolationFunction</a></strong>: TGradientInterpolationFunction read <a href="BGRAGradientScanner.TBGRACustomMultiGradient.html#FInterpolationFunction">FInterpolationFunction</a> write <a href="BGRAGradientScanner.TBGRACustomMultiGradient.html#FInterpolationFunction">FInterpolationFunction</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAGradientScanner.TBGRACustomMultiGradient.html#Repetition">Repetition</a></strong>: <a href="BGRAGradientScanner.html#TBGRAGradientRepetition">TBGRAGradientRepetition</a> read <a href="BGRAGradientScanner.TBGRACustomMultiGradient.html#FRepetition">FRepetition</a> write <a href="BGRAGradientScanner.TBGRACustomMultiGradient.html#FRepetition">FRepetition</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FColors"></span><code><strong>FColors</strong>: array of <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FEColors"></span><code><strong>FEColors</strong>: array of <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FInterpolationFunction"></span><code><strong>FInterpolationFunction</strong>: TGradientInterpolationFunction;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FPositions"></span><code><strong>FPositions</strong>: array of integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FPositionsF"></span><code><strong>FPositionsF</strong>: array of single;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FRepetition"></span><code><strong>FRepetition</strong>: <a href="BGRAGradientScanner.html#TBGRAGradientRepetition">TBGRAGradientRepetition</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CosineInterpolation-single-"></span><code>function <strong>CosineInterpolation</strong>(t: single): single;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CreateAny-arrayofTEXpandedPixel-arrayofsingle-TBGRAColorInterpolation-TBGRAGradientRepetition-"></span><code>class function <strong>CreateAny</strong>(Colors: array of <a href="BGRABitmapTypes.TExpandedPixel.html">TEXpandedPixel</a>; Positions0To1: array of single; AInterpolation: <a href="BGRAGradientScanner.html#TBGRAColorInterpolation">TBGRAColorInterpolation</a>; ARepetition: <a href="BGRAGradientScanner.html#TBGRAGradientRepetition">TBGRAGradientRepetition</a> = <a href="BGRAGradientScanner.html#grPad">grPad</a>): <a href="BGRAGradientScanner.TBGRACustomMultiGradient.html">TBGRACustomMultiGradient</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CreateAny-arrayofTBGRAPixel-arrayofsingle-TBGRAColorInterpolation-TBGRAGradientRepetition-"></span><code>class function <strong>CreateAny</strong>(Colors: array of <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; Positions0To1: array of single; AInterpolation: <a href="BGRAGradientScanner.html#TBGRAColorInterpolation">TBGRAColorInterpolation</a>; ARepetition: <a href="BGRAGradientScanner.html#TBGRAGradientRepetition">TBGRAGradientRepetition</a> = <a href="BGRAGradientScanner.html#grPad">grPad</a>): <a href="BGRAGradientScanner.TBGRACustomMultiGradient.html">TBGRACustomMultiGradient</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetMonochrome"></span><code>function <strong>GetMonochrome</strong>: boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomGradient.html#GetMonochrome">TBGRACustomGradient.GetMonochrome</a>.</p><p>
+Returns whether the gradient has only one color</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="HalfCosineInterpolation-single-"></span><code>function <strong>HalfCosineInterpolation</strong>(t: single): single;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Init-arrayofTExpandedPixel-arrayofsingle-"></span><code>procedure <strong>Init</strong>(Colors: array of <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>; Positions0To1: array of single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Init-arrayofTBGRAPixel-arrayofsingle-"></span><code>procedure <strong>Init</strong>(Colors: array of <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; Positions0To1: array of single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ColorCount"></span><code>property <strong>ColorCount</strong>: integer read GetColorCount;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="InterpolationFunction"></span><code>property <strong>InterpolationFunction</strong>: TGradientInterpolationFunction read <a href="BGRAGradientScanner.TBGRACustomMultiGradient.html#FInterpolationFunction">FInterpolationFunction</a> write <a href="BGRAGradientScanner.TBGRACustomMultiGradient.html#FInterpolationFunction">FInterpolationFunction</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Repetition"></span><code>property <strong>Repetition</strong>: <a href="BGRAGradientScanner.html#TBGRAGradientRepetition">TBGRAGradientRepetition</a> read <a href="BGRAGradientScanner.TBGRACustomMultiGradient.html#FRepetition">FRepetition</a> write <a href="BGRAGradientScanner.TBGRACustomMultiGradient.html#FRepetition">FRepetition</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+</div></div></body></html>
