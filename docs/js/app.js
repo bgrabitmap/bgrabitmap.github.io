@@ -1,34 +1,43 @@
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js'
+import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.8.1/firebase-analytics.js'
+//import { getAuth } from 'https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js'
+import { getQuotes } from './dataApi.js'
+ 
+ const firebaseConfig = {
+  apiKey: "AIzaSyCRMzakhggi4fRmL3aE8DFFIXMeu_lY_0Y",
+  authDomain: "bgrabitmap.firebaseapp.com",
+  projectId: "bgrabitmap",
+  storageBucket: "bgrabitmap.appspot.com",
+  messagingSenderId: "728161949558",
+  appId: "1:728161949558:web:175524e00c53eab0e04c57",
+  measurementId: "G-BQSSMRXTS8"
+}; 
+export const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics();  
+
 // AGREGA CLASE boxCardAnimated AL HACER SCROLL PARA ANIMAR COMPONENTE CARD 
 window.onscroll = function() {
 
     let scrollPosY = window.pageYOffset | document.body.scrollTop;
 
     if (scrollPosY >= 400) {
-        subir = document.querySelector('#subir');
+        const subir = document.querySelector('#subir');
         subir.classList.add("irArriba");
     } else {
-        subir = document.querySelector('#subir');
+        const subir = document.querySelector('#subir');
         subir.classList.remove("irArriba");
     }
-
-    if (scrollPosY >= 910) {
-        cardAnimated = document.getElementById('cardAnimada');
-        cardAnimated.classList.add("boxCardAnimated");
-    } else {
-        cardAnimated = document.getElementById('cardAnimada');
-        cardAnimated.classList.remove("boxCardAnimated");
-    }
-
 };
 
 
 // AGREGA CLASE current AL HACER SCROLL 
-let mainNavLinks = document.querySelectorAll("nav div ul li a");
+const mainNavLinks = document.querySelectorAll("nav div ul li a");
+const mainNav = document.getElementById("navFixed");
 
 window.addEventListener("scroll", event => {
     event.preventDefault();
 
-    let fromTop = window.scrollY;
+    let fromTop = window.scrollY + mainNav.offsetHeight + (window.innerHeight - mainNav.offsetHeight) * 0.3;
 
     mainNavLinks.forEach(link => {
         let section = document.querySelector(link.hash);
@@ -47,7 +56,8 @@ window.addEventListener("scroll", event => {
 // DESPLAZAMIENTO SMOOTH SCROLL
 window.onload = function() {
 
-    const easeInCubic = function(t) { return t * t * t }
+    fillSite();
+    const easeInCubic = function(t) { return 0.5 - Math.cos(t * Math.PI)/2 }
     const scrollElems = document.getElementsByClassName('scroll');
 
     const scrollToElem = (start, stamp, duration, scrollEndElemTop, startScrollOffset) => {
@@ -79,12 +89,12 @@ window.onload = function() {
 
             const anim = requestAnimationFrame(() => {
                 const stamp = new Date().getTime();
-                const duration = 1200;
+                const duration = 800;
                 const start = stamp;
 
                 const startScrollOffset = window.pageYOffset;
 
-                const scrollEndElemTop = scrollEndElem.getBoundingClientRect().top;
+                const scrollEndElemTop = scrollEndElem.getBoundingClientRect().top - mainNav.offsetHeight;
 
                 scrollToElem(start, stamp, duration, scrollEndElemTop, startScrollOffset);
             })
@@ -92,7 +102,40 @@ window.onload = function() {
     }
 }
 
-function enviarMensaje() {
-    alert('Mensaje enviado con éxito!');
-    document.getElementById("miForm").reset();
+async function fillSite() {
+    await getQuotes()
+        .then((quotes) => {
+            let index = 0;
+            let indicators = document.getElementById('testimonioIndicators');
+            let texto = document.getElementById('testimonio');
+            quotes.forEach((row) => {
+              const quote = row.data();
+              let string = '';
+              let indicator = '';
+
+              if (index == 0) {
+                  string += `
+                      <div class="carousel-item active">
+                          <img class="d-block mx-auto" src="${quote.avatar}" alt=""> 
+                  `;
+                  indicator = `<li data-target="#carouselExampleIndicators" data-slide-to="${index}" class="active"></li>`;
+              } else {
+                  string += `
+                      <div class="carousel-item">
+                          <img class="d-block mx-auto" src="${quote.avatar}" alt="${quote.name}"> 
+                  `;
+                  indicator = `<li data-target="#carouselExampleIndicators" data-slide-to="${index}"></li>`;
+              }
+
+              string += ` <p class="text-center sliderText">${quote.quote}</p>`;
+              string += `<p class="text-center"><b>${quote.name}</b></p>`;
+              string += `</div>`;
+
+              texto.innerHTML += string;
+              indicators.innerHTML += indicator;
+              index++;
+            });
+        }).catch((error) => {
+            console.log('ERROR: ', error);
+        });
 }
