@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="container"><div class="navigation">
-<h2><a href="index.html">📚 BGRABitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Structures</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<h2><a href="index.html">Getting started</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Structures</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
 <div style="clear: both"></div>
 </li></ul></div><div class="content">
 <span id="TBGRALayerGradientOriginal"></span><h1 class="cio">Class TBGRALayerGradientOriginal</h1>
@@ -22,6 +22,7 @@
 <h2 class="declaration">Declaration</h2>
 <p class="declaration">
 <code>type TBGRALayerGradientOriginal = class(<a class="normal" href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>)</code></p>
+<script type="text/javascript" src="navigation.js"></script>
 <h2 class="description">Description</h2>
 <p>
 Original for rendering a gradient</p>
@@ -160,81 +161,93 @@ Original for rendering a gradient</p>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAGradientOriginal.TBGRALayerGradientOriginal.html#ApplyOpacity-byte-">ApplyOpacity</a></strong>(AOpacity: byte);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGradientOriginal.TBGRALayerGradientOriginal.html#AddColor-TBGRAPixel-single-">AddColor</a></strong>(AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APreviousColorPosition: single = <a href="BGRABitmapTypes.html#EmptySingle">EmptySingle</a>);</code></td>
 </tr>
 <tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGradientOriginal.TBGRALayerGradientOriginal.html#ApplyOpacity-byte-">ApplyOpacity</a></strong>(AOpacity: byte);</code></td>
+</tr>
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRAGradientOriginal.TBGRALayerGradientOriginal.html#AssignExceptGeometry-TBGRALayerGradientOriginal-">AssignExceptGeometry</a></strong>(AOther: <a href="BGRAGradientOriginal.TBGRALayerGradientOriginal.html">TBGRALayerGradientOriginal</a>);</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRAGradientOriginal.TBGRALayerGradientOriginal.html#ConfigureEditor-TBGRAOriginalEditor-">ConfigureEditor</a></strong>(AEditor: <a href="BGRALayerOriginal.TBGRAOriginalEditor.html">TBGRAOriginalEditor</a>); override;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRAGradientOriginal.TBGRALayerGradientOriginal.html#FitGeometry-TAffineBox-">FitGeometry</a></strong>(const ABox: <a href="BGRABitmapTypes.TAffineBox.html">TAffineBox</a>);</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRAGradientOriginal.TBGRALayerGradientOriginal.html#LoadFromStorage-TBGRACustomOriginalStorage-">LoadFromStorage</a></strong>(AStorage: <a href="BGRALayerOriginal.TBGRACustomOriginalStorage.html">TBGRACustomOriginalStorage</a>); override;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRAGradientOriginal.TBGRALayerGradientOriginal.html#Render-TBGRABitmap-TAffineMatrix-boolean-TDrawMode-">Render</a></strong>(ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; AMatrix: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>; ADraft: boolean; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>); overload;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRAGradientOriginal.TBGRALayerGradientOriginal.html#Render-TBGRABitmap-TAffineMatrix-boolean-">Render</a></strong>(ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; AMatrix: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>; ADraft: boolean); overload; override;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRAGradientOriginal.TBGRALayerGradientOriginal.html#SaveToStorage-TBGRACustomOriginalStorage-">SaveToStorage</a></strong>(AStorage: <a href="BGRALayerOriginal.TBGRACustomOriginalStorage.html">TBGRACustomOriginalStorage</a>); override;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRAGradientOriginal.TBGRALayerGradientOriginal.html#SetColors-TBGRAPixel-TBGRAPixel-">SetColors</a></strong>(AStartColor, AEndColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>);</code></td>
 </tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGradientOriginal.TBGRALayerGradientOriginal.html#SetColors-arrayofTBGRAPixel-Arrayofsingle-">SetColors</a></strong>(const AColors: array of <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; const APositions: Array of single);</code></td>
+</tr>
 <tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGradientOriginal.TBGRALayerGradientOriginal.html#SetColors-arrayofTBGRAPixel-boolean-">SetColors</a></strong>(const AColors: array of <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ASpreadColorsEqually: boolean = true);</code></td>
+</tr>
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRAGradientOriginal.TBGRALayerGradientOriginal.html#Transform-TAffineMatrix-">Transform</a></strong>(AMatrix: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>);</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRAGradientOriginal.TBGRALayerGradientOriginal.html#BeginUpdate">BeginUpdate</a></strong>;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRAGradientOriginal.TBGRALayerGradientOriginal.html#EndUpdate">EndUpdate</a></strong>;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRAGradientOriginal.TBGRALayerGradientOriginal.html#NotifyChangeWithoutDiff">NotifyChangeWithoutDiff</a></strong>;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRAGradientOriginal.TBGRALayerGradientOriginal.html#OnMoveFocalPoint-TObject-TPointF-TPointF-TShiftState-">OnMoveFocalPoint</a></strong>(ASender: TObject; APrevCoord, ANewCoord: <a href="BGRAClasses.html#TPointF">TPointF</a>; AShift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>);</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRAGradientOriginal.TBGRALayerGradientOriginal.html#OnMoveFocalRadius-TObject-TPointF-TPointF-TShiftState-">OnMoveFocalRadius</a></strong>(ASender: TObject; APrevCoord, ANewCoord: <a href="BGRAClasses.html#TPointF">TPointF</a>; AShift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>);</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRAGradientOriginal.TBGRALayerGradientOriginal.html#OnMoveOrigin-TObject-TPointF-TPointF-TShiftState-">OnMoveOrigin</a></strong>(ASender: TObject; APrevCoord, ANewCoord: <a href="BGRAClasses.html#TPointF">TPointF</a>; AShift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>);</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRAGradientOriginal.TBGRALayerGradientOriginal.html#OnMoveXAxis-TObject-TPointF-TPointF-TShiftState-">OnMoveXAxis</a></strong>(ASender: TObject; APrevCoord, ANewCoord: <a href="BGRAClasses.html#TPointF">TPointF</a>; AShift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>);</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRAGradientOriginal.TBGRALayerGradientOriginal.html#OnMoveXAxisNeg-TObject-TPointF-TPointF-TShiftState-">OnMoveXAxisNeg</a></strong>(ASender: TObject; APrevCoord, ANewCoord: <a href="BGRAClasses.html#TPointF">TPointF</a>; AShift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>);</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRAGradientOriginal.TBGRALayerGradientOriginal.html#OnMoveYAxis-TObject-TPointF-TPointF-TShiftState-">OnMoveYAxis</a></strong>(ASender: TObject; APrevCoord, ANewCoord: <a href="BGRAClasses.html#TPointF">TPointF</a>; AShift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>);</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRAGradientOriginal.TBGRALayerGradientOriginal.html#OnStartMove-TObject-integer-TShiftState-">OnStartMove</a></strong>(ASender: TObject; AIndex: integer; AShift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>);</code></td>
 </tr>
@@ -322,6 +335,7 @@ Original for rendering a gradient</p>
 <td class="itemcode"><code>property <strong><a href="BGRAGradientOriginal.TBGRALayerGradientOriginal.html#YAxis">YAxis</a></strong>: <a href="BGRAClasses.html#TPointF">TPointF</a> read <a href="BGRAGradientOriginal.TBGRALayerGradientOriginal.html#FYAxis">FYAxis</a> write SetYAxis;</code></td>
 </tr>
 </table>
+<script type="text/javascript" src="navigation.js"></script>
 <h2 class="description">Description</h2>
 <h3 class="detail">Fields</h3>
 <table class="detail wide_list">
@@ -576,6 +590,14 @@ Original for rendering a gradient</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddColor-TBGRAPixel-single-"></span><code>procedure <strong>AddColor</strong>(AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APreviousColorPosition: single = <a href="BGRABitmapTypes.html#EmptySingle">EmptySingle</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><span id="ApplyOpacity-byte-"></span><code>procedure <strong>ApplyOpacity</strong>(AOpacity: byte);</code></td>
 </tr>
 <tr><td colspan="2">
@@ -643,6 +665,22 @@ one of the two <a class="normal" href="BGRALayerOriginal.TBGRALayerCustomOrigina
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><span id="SetColors-TBGRAPixel-TBGRAPixel-"></span><code>procedure <strong>SetColors</strong>(AStartColor, AEndColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetColors-arrayofTBGRAPixel-Arrayofsingle-"></span><code>procedure <strong>SetColors</strong>(const AColors: array of <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; const APositions: Array of single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetColors-arrayofTBGRAPixel-boolean-"></span><code>procedure <strong>SetColors</strong>(const AColors: array of <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ASpreadColorsEqually: boolean = true);</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>

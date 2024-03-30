@@ -575,6 +575,8 @@ digraph Classes {
   "TSVGGroup" [href="BGRASVGShapes.TSVGGroup.html"]
   "TSVGLink" -> "TSVGGroup"
   "TSVGLink" [href="BGRASVGShapes.TSVGLink.html"]
+  "TSVGMask" -> "TSVGElementWithContent"
+  "TSVGMask" [href="BGRASVGShapes.TSVGMask.html"]
   "TSVGElementWithGradient" -> "TSVGElement"
   "TSVGElementWithGradient" [href="BGRASVGShapes.TSVGElementWithGradient.html"]
   "TSVGCircle" -> "TSVGElementWithGradient"
@@ -617,8 +619,6 @@ digraph Classes {
   "TSVGLine" [href="BGRASVGShapes.TSVGLine.html"]
   "TSVGMarker" -> "TSVGElement"
   "TSVGMarker" [href="BGRASVGShapes.TSVGMarker.html"]
-  "TSVGMask" -> "TSVGElement"
-  "TSVGMask" [href="BGRASVGShapes.TSVGMask.html"]
   "TSVGStopGradient" -> "TSVGElement"
   "TSVGStopGradient" [href="BGRASVGShapes.TSVGStopGradient.html"]
   "TSVGStyle" -> "TSVGElement"

@@ -40,12 +40,12 @@ digraph Uses {
   "BGRACustomTextFX" -> "BGRAPhongTypes"
   "BGRACustomTextFX" -> "BGRAGrayscaleMask"
   "BGRACustomTextFX" [href="BGRACustomTextFX.html"]
-  "BGRADefaultBitmap" -> "BGRACanvas"
-  "BGRADefaultBitmap" -> "BGRACanvas2D"
   "BGRADefaultBitmap" -> "BGRATransform"
-  "BGRADefaultBitmap" -> "BGRATextBidi"
   "BGRADefaultBitmap" -> "UniversalDrawer"
   "BGRADefaultBitmap" -> "BGRAGrayscaleMask"
+  "BGRADefaultBitmap" -> "BGRATextBidi"
+  "BGRADefaultBitmap" -> "BGRACanvas"
+  "BGRADefaultBitmap" -> "BGRACanvas2D"
   "BGRADefaultBitmap" [href="BGRADefaultBitmap.html"]
   "BGRADithering" -> "BGRAFilterType"
   "BGRADithering" -> "BGRAPalette"

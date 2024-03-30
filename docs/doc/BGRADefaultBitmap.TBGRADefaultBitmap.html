@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="container"><div class="navigation">
-<h2><a href="index.html">📚 BGRABitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Structures</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<h2><a href="index.html">Getting started</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Structures</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
 <div style="clear: both"></div>
 </li></ul></div><div class="content">
 <span id="TBGRADefaultBitmap"></span><h1 class="cio">Class TBGRADefaultBitmap</h1>
@@ -22,6 +22,7 @@
 <h2 class="declaration">Declaration</h2>
 <p class="declaration">
 <code>type TBGRADefaultBitmap = class(<a class="normal" href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>)</code></p>
+<script type="text/javascript" src="navigation.js"></script>
 <h2 class="description">Description</h2>
 <p>
 Base implementation for all <a class="normal" href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a> classes.</p>
@@ -90,31 +91,31 @@ Base implementation for all <a class="normal" href="BGRABitmap.TBGRABitmap.html"
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>constructor <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#Create-TBitmap-boolean-">Create</a></strong>(ABitmap: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>; AUseTransparentColor: boolean); overload; override;</code></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#Create-string-">Create</a></strong>(AFilename: string); overload; override;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>constructor <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#Create-TBitmap-">Create</a></strong>(ABitmap: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>); overload; override;</code></td>
-</tr>
-<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>constructor <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#Create-TFPCustomImage-Boolean-">Create</a></strong>(AFPImage: TFPCustomImage; ACopyProperties: Boolean=False); overload; override;</code></td>
 </tr>
-<tr class="list2">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>constructor <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#Create-string-">Create</a></strong>(AFilename: string); overload; override;</code></td>
-</tr>
 <tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#Create-TBitmap-">Create</a></strong>(ABitmap: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>); overload; override;</code></td>
+</tr>
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>constructor <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#Create-TStream-">Create</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>); overload; override;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>constructor <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#Create-string-boolean-TBGRALoadingOptions-">Create</a></strong>(AFilename: string; AIsUtf8: boolean; AOptions: <a href="BGRABitmapTypes.html#TBGRALoadingOptions">TBGRALoadingOptions</a>); overload; override;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>constructor <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#Create-string-boolean-">Create</a></strong>(AFilename: string; AIsUtf8: boolean); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#Create-TBitmap-boolean-">Create</a></strong>(ABitmap: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>; AUseTransparentColor: boolean); overload; override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -130,11 +131,11 @@ Base implementation for all <a class="normal" href="BGRABitmap.TBGRABitmap.html"
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#ComputeBezierCurve-TCubicBezierCurve-">ComputeBezierCurve</a></strong>(const ACurve: <a href="BGRABitmapTypes.TCubicBezierCurve.html">TCubicBezierCurve</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#ComputeBezierCurve-TQuadraticBezierCurve-">ComputeBezierCurve</a></strong>(const ACurve: <a href="BGRABitmapTypes.TQuadraticBezierCurve.html">TQuadraticBezierCurve</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#ComputeBezierCurve-TQuadraticBezierCurve-">ComputeBezierCurve</a></strong>(const ACurve: <a href="BGRABitmapTypes.TQuadraticBezierCurve.html">TQuadraticBezierCurve</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#ComputeBezierCurve-TCubicBezierCurve-">ComputeBezierCurve</a></strong>(const ACurve: <a href="BGRABitmapTypes.TCubicBezierCurve.html">TCubicBezierCurve</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -150,19 +151,19 @@ Base implementation for all <a class="normal" href="BGRABitmap.TBGRABitmap.html"
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#ComputeEllipseBorder-TPointF-TPointF-TPointF-single-single-">ComputeEllipseBorder</a></strong>(AOrigin, AXAxis, AYAxis: <a href="BGRAClasses.html#TPointF">TPointF</a>; w: single; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; override; overload;</code></td>
+<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#ComputeEllipseBorder-single-single-single-single-single-single-">ComputeEllipseBorder</a></strong>(x,y,rx,ry,w: single; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#ComputeEllipseBorder-single-single-single-single-single-single-">ComputeEllipseBorder</a></strong>(x,y,rx,ry,w: single; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#ComputeEllipseBorder-TPointF-TPointF-TPointF-single-single-">ComputeEllipseBorder</a></strong>(AOrigin, AXAxis, AYAxis: <a href="BGRAClasses.html#TPointF">TPointF</a>; w: single; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; override; overload;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#ComputeEllipseContour-TPointF-TPointF-TPointF-single-">ComputeEllipseContour</a></strong>(AOrigin, AXAxis, AYAxis: <a href="BGRAClasses.html#TPointF">TPointF</a>; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#ComputeEllipseContour-single-single-single-single-single-">ComputeEllipseContour</a></strong>(x,y,rx,ry: single; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#ComputeEllipseContour-single-single-single-single-single-">ComputeEllipseContour</a></strong>(x,y,rx,ry: single; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#ComputeEllipseContour-TPointF-TPointF-TPointF-single-">ComputeEllipseContour</a></strong>(AOrigin, AXAxis, AYAxis: <a href="BGRAClasses.html#TPointF">TPointF</a>; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -190,11 +191,11 @@ Base implementation for all <a class="normal" href="BGRABitmap.TBGRABitmap.html"
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#ComputeWidePolyline-arrayofTPointF-single-">ComputeWidePolyline</a></strong>(const points: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; w: single): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#ComputeWidePolyline-arrayofTPointF-single-boolean-">ComputeWidePolyline</a></strong>(const points: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; w: single; ClosedCap: boolean): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#ComputeWidePolyline-arrayofTPointF-single-boolean-">ComputeWidePolyline</a></strong>(const points: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; w: single; ClosedCap: boolean): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#ComputeWidePolyline-arrayofTPointF-single-">ComputeWidePolyline</a></strong>(const points: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; w: single): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -218,23 +219,23 @@ Base implementation for all <a class="normal" href="BGRABitmap.TBGRABitmap.html"
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#FilterEmbossHighlight-boolean-Boolean-">FilterEmbossHighlight</a></strong>(FillSelection: boolean; ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
-</tr>
-<tr class="list2">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#FilterEmbossHighlight-boolean-TBGRAPixel-TPoint-Boolean-">FilterEmbossHighlight</a></strong>(FillSelection: boolean; BorderColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; var Offset: <a href="BGRAClasses.html#TPoint">TPoint</a>; ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
-</tr>
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#FilterEmbossHighlight-boolean-TBGRAPixel-Boolean-">FilterEmbossHighlight</a></strong>(FillSelection: boolean; BorderColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#FilterGrayscale-TRect-Boolean-">FilterGrayscale</a></strong>(ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#FilterEmbossHighlight-boolean-Boolean-">FilterEmbossHighlight</a></strong>(FillSelection: boolean; ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#FilterEmbossHighlight-boolean-TBGRAPixel-TPoint-Boolean-">FilterEmbossHighlight</a></strong>(FillSelection: boolean; BorderColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; var Offset: <a href="BGRAClasses.html#TPoint">TPoint</a>; ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#FilterGrayscale-Boolean-">FilterGrayscale</a></strong>(ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#FilterGrayscale-TRect-Boolean-">FilterGrayscale</a></strong>(ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -242,11 +243,11 @@ Base implementation for all <a class="normal" href="BGRABitmap.TBGRABitmap.html"
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#FilterNormalize-boolean-Boolean-">FilterNormalize</a></strong>(eachChannel: boolean = True; ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#FilterNormalize-TRect-boolean-Boolean-">FilterNormalize</a></strong>(ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; eachChannel: boolean = True; ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#FilterNormalize-TRect-boolean-Boolean-">FilterNormalize</a></strong>(ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; eachChannel: boolean = True; ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#FilterNormalize-boolean-Boolean-">FilterNormalize</a></strong>(eachChannel: boolean = True; ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -282,11 +283,11 @@ Base implementation for all <a class="normal" href="BGRABitmap.TBGRABitmap.html"
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#FilterTwirl-TPoint-Single-Single-Single-Boolean-">FilterTwirl</a></strong>(ACenter: <a href="BGRAClasses.html#TPoint">TPoint</a>; ARadius: Single; ATurn: Single=1; AExponent: Single=3; ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#FilterTwirl-TRect-TPoint-Single-Single-Single-Boolean-">FilterTwirl</a></strong>(ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; ACenter: <a href="BGRAClasses.html#TPoint">TPoint</a>; ARadius: Single; ATurn: Single=1; AExponent: Single=3; ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#FilterTwirl-TRect-TPoint-Single-Single-Single-Boolean-">FilterTwirl</a></strong>(ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; ACenter: <a href="BGRAClasses.html#TPoint">TPoint</a>; ARadius: Single; ATurn: Single=1; AExponent: Single=3; ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#FilterTwirl-TPoint-Single-Single-Single-Boolean-">FilterTwirl</a></strong>(ACenter: <a href="BGRAClasses.html#TPoint">TPoint</a>; ARadius: Single; ATurn: Single=1; AExponent: Single=3; ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -318,11 +319,11 @@ Base implementation for all <a class="normal" href="BGRABitmap.TBGRABitmap.html"
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#GetPixelCycle256-int32or64-int32or64-int32or64-int32or64-TResampleFilter-">GetPixelCycle256</a></strong>(x, y, fracX256,fracY256: <a href="BGRAClasses.html#Int32or64">int32or64</a>; AResampleFilter: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a> = <a href="BGRABitmapTypes.html#rfLinear">rfLinear</a>): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; overload; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#GetPixelCycle256-int32or64-int32or64-int32or64-int32or64-TResampleFilter-boolean-boolean-">GetPixelCycle256</a></strong>(x, y, fracX256,fracY256: <a href="BGRAClasses.html#Int32or64">int32or64</a>; AResampleFilter: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a>; repeatX: boolean; repeatY: boolean): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; overload; override;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#GetPixelCycle256-int32or64-int32or64-int32or64-int32or64-TResampleFilter-boolean-boolean-">GetPixelCycle256</a></strong>(x, y, fracX256,fracY256: <a href="BGRAClasses.html#Int32or64">int32or64</a>; AResampleFilter: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a>; repeatX: boolean; repeatY: boolean): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; overload; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#GetPixelCycle256-int32or64-int32or64-int32or64-int32or64-TResampleFilter-">GetPixelCycle256</a></strong>(x, y, fracX256,fracY256: <a href="BGRAClasses.html#Int32or64">int32or64</a>; AResampleFilter: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a> = <a href="BGRABitmapTypes.html#rfLinear">rfLinear</a>): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; overload; override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -342,22 +343,6 @@ Base implementation for all <a class="normal" href="BGRABitmap.TBGRABitmap.html"
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#NewBitmap-string-boolean-TBGRALoadingOptions-">NewBitmap</a></strong>(Filename: string; AIsUtf8: boolean; AOptions: <a href="BGRABitmapTypes.html#TBGRALoadingOptions">TBGRALoadingOptions</a>): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
-</tr>
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#NewBitmap-string-boolean-">NewBitmap</a></strong>(Filename: string; AIsUtf8: boolean): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
-</tr>
-<tr class="list2">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#NewBitmap-TFPCustomImage-">NewBitmap</a></strong>(AFPImage: TFPCustomImage): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
-</tr>
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#NewBitmap-string-">NewBitmap</a></strong>(Filename: string): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
-</tr>
-<tr class="list2">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#NewBitmap-integer-integer-">NewBitmap</a></strong>(AWidth, AHeight: integer): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
 </tr>
 <tr class="list">
@@ -371,6 +356,22 @@ Base implementation for all <a class="normal" href="BGRABitmap.TBGRABitmap.html"
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#NewBitmap-integer-integer-TBGRAPixel-">NewBitmap</a></strong>(AWidth, AHeight: integer; const Color: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#NewBitmap-string-boolean-TBGRALoadingOptions-">NewBitmap</a></strong>(Filename: string; AIsUtf8: boolean; AOptions: <a href="BGRABitmapTypes.html#TBGRALoadingOptions">TBGRALoadingOptions</a>): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#NewBitmap-TFPCustomImage-">NewBitmap</a></strong>(AFPImage: TFPCustomImage): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#NewBitmap-string-">NewBitmap</a></strong>(Filename: string): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#NewBitmap-string-boolean-">NewBitmap</a></strong>(Filename: string; AIsUtf8: boolean): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -398,15 +399,15 @@ Base implementation for all <a class="normal" href="BGRABitmap.TBGRABitmap.html"
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#TextSize-string-integer-boolean-">TextSize</a></strong>(const sUTF8: string; AMaxWidth: integer; ARightToLeft: boolean): <a href="BGRAClasses.html#TSize">TSize</a>; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#TextSize-string-">TextSize</a></strong>(const sUTF8: string): <a href="BGRAClasses.html#TSize">TSize</a>; override;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#TextSize-string-integer-">TextSize</a></strong>(const sUTF8: string; AMaxWidth: integer): <a href="BGRAClasses.html#TSize">TSize</a>; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#TextSize-string-integer-boolean-">TextSize</a></strong>(const sUTF8: string; AMaxWidth: integer; ARightToLeft: boolean): <a href="BGRAClasses.html#TSize">TSize</a>; override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#TextSize-string-">TextSize</a></strong>(const sUTF8: string): <a href="BGRAClasses.html#TSize">TSize</a>; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#TextSize-string-integer-">TextSize</a></strong>(const sUTF8: string; AMaxWidth: integer): <a href="BGRAClasses.html#TSize">TSize</a>; override;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -638,19 +639,19 @@ Base implementation for all <a class="normal" href="BGRABitmap.TBGRABitmap.html"
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#BlendImage-TRect-IBGRAScanner-integer-integer-TBlendOperation-">BlendImage</a></strong>(ADest: <a href="BGRAClasses.html#TRect">TRect</a>; ASource: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AOffsetX, AOffsetY: integer; AOperation: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>); overload; override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#BlendImage-integer-integer-TBGRACustomBitmap-TBlendOperation-">BlendImage</a></strong>(x, y: integer; ASource: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AOperation: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>); overload; override;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#BlendImage-integer-integer-TBGRACustomBitmap-TBlendOperation-">BlendImage</a></strong>(x, y: integer; ASource: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AOperation: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>); overload; override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#BlendImage-TRect-IBGRAScanner-integer-integer-TBlendOperation-">BlendImage</a></strong>(ADest: <a href="BGRAClasses.html#TRect">TRect</a>; ASource: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AOffsetX, AOffsetY: integer; AOperation: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>); overload; override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#BlendImageOver-integer-integer-TBGRACustomBitmap-TBlendOperation-byte-boolean-">BlendImageOver</a></strong>(x, y: integer; ASource: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AOperation: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; AOpacity: byte = 255; ALinearBlend: boolean = false); overload; override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#BlendImageOver-TRect-IBGRAScanner-integer-integer-TBlendOperation-byte-boolean-">BlendImageOver</a></strong>(ADest: <a href="BGRAClasses.html#TRect">TRect</a>; ASource: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AOffsetX, AOffsetY: integer; AOperation: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; AOpacity: byte = 255; ALinearBlend: boolean = false); overload; override;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#BlendImageOver-TRect-IBGRAScanner-integer-integer-TBlendOperation-byte-boolean-">BlendImageOver</a></strong>(ADest: <a href="BGRAClasses.html#TRect">TRect</a>; ASource: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AOffsetX, AOffsetY: integer; AOperation: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; AOpacity: byte = 255; ALinearBlend: boolean = false); overload; override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#BlendImageOver-integer-integer-TBGRACustomBitmap-TBlendOperation-byte-boolean-">BlendImageOver</a></strong>(x, y: integer; ASource: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AOperation: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; AOpacity: byte = 255; ALinearBlend: boolean = false); overload; override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -674,11 +675,11 @@ Base implementation for all <a class="normal" href="BGRABitmap.TBGRABitmap.html"
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#CrossFade-TRect-IBGRAScanner-IBGRAScanner-IBGRAScanner-TDrawMode-">CrossFade</a></strong>(ARect: <a href="BGRAClasses.html#TRect">TRect</a>; Source1, Source2: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AFadeMask: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; mode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>); overload; override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#CrossFade-TRect-IBGRAScanner-IBGRAScanner-byte-TDrawMode-">CrossFade</a></strong>(ARect: <a href="BGRAClasses.html#TRect">TRect</a>; Source1, Source2: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AFadePosition: byte; mode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>); overload; override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#CrossFade-TRect-IBGRAScanner-IBGRAScanner-byte-TDrawMode-">CrossFade</a></strong>(ARect: <a href="BGRAClasses.html#TRect">TRect</a>; Source1, Source2: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AFadePosition: byte; mode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>); overload; override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#CrossFade-TRect-IBGRAScanner-IBGRAScanner-IBGRAScanner-TDrawMode-">CrossFade</a></strong>(ARect: <a href="BGRAClasses.html#TRect">TRect</a>; Source1, Source2: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AFadeMask: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; mode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>); overload; override;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -686,11 +687,11 @@ Base implementation for all <a class="normal" href="BGRABitmap.TBGRABitmap.html"
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#Draw-TCanvas-TRect-boolean-">Draw</a></strong>(ACanvas: <a href="BGRAGraphics.html#TCanvas">TCanvas</a>; Rect: <a href="BGRAClasses.html#TRect">TRect</a>; Opaque: boolean = True); overload; override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#Draw-TCanvas-integer-integer-boolean-">Draw</a></strong>(ACanvas: <a href="BGRAGraphics.html#TCanvas">TCanvas</a>; x, y: integer; Opaque: boolean = True); overload; override;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#Draw-TCanvas-integer-integer-boolean-">Draw</a></strong>(ACanvas: <a href="BGRAGraphics.html#TCanvas">TCanvas</a>; x, y: integer; Opaque: boolean = True); overload; override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#Draw-TCanvas-TRect-boolean-">Draw</a></strong>(ACanvas: <a href="BGRAGraphics.html#TCanvas">TCanvas</a>; Rect: <a href="BGRAClasses.html#TRect">TRect</a>; Opaque: boolean = True); overload; override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -702,19 +703,11 @@ Base implementation for all <a class="normal" href="BGRABitmap.TBGRABitmap.html"
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#DrawPath-IBGRAPath-IBGRAScanner-single-IBGRAScanner-">DrawPath</a></strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AStrokeTexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AWidth: single; AFillTexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>); overload; override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#DrawPath-IBGRAPath-TAffineMatrix-IBGRAScanner-single-TBGRAPixel-">DrawPath</a></strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AStrokeTexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AWidth: single; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; override;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#DrawPath-IBGRAPath-TAffineMatrix-TBGRAPixel-single-TBGRAPixel-">DrawPath</a></strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AStrokeColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AWidth: single; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; override;</code></td>
-</tr>
-<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#DrawPath-IBGRAPath-TBGRAPixel-single-IBGRAScanner-">DrawPath</a></strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AStrokeColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AWidth: single; AFillTexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>); overload; override;</code></td>
-</tr>
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#DrawPath-IBGRAPath-TBGRAPixel-single-TBGRAPixel-">DrawPath</a></strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AStrokeColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AWidth: single; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -722,15 +715,23 @@ Base implementation for all <a class="normal" href="BGRABitmap.TBGRABitmap.html"
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#DrawPath-IBGRAPath-TAffineMatrix-IBGRAScanner-single-IBGRAScanner-">DrawPath</a></strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AStrokeTexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AWidth: single; AFillTexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>); overload; override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#DrawPath-IBGRAPath-TBGRAPixel-single-TBGRAPixel-">DrawPath</a></strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AStrokeColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AWidth: single; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#DrawPath-IBGRAPath-TAffineMatrix-TBGRAPixel-single-IBGRAScanner-">DrawPath</a></strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AStrokeColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AWidth: single; AFillTexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>); overload; override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#DrawPath-IBGRAPath-TAffineMatrix-TBGRAPixel-single-TBGRAPixel-">DrawPath</a></strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AStrokeColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AWidth: single; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; override;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#DrawPath-IBGRAPath-TAffineMatrix-IBGRAScanner-single-TBGRAPixel-">DrawPath</a></strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AStrokeTexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AWidth: single; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#DrawPath-IBGRAPath-IBGRAScanner-single-IBGRAScanner-">DrawPath</a></strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AStrokeTexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AWidth: single; AFillTexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>); overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#DrawPath-IBGRAPath-TAffineMatrix-IBGRAScanner-single-IBGRAScanner-">DrawPath</a></strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AStrokeTexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AWidth: single; AFillTexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#DrawPath-IBGRAPath-TAffineMatrix-TBGRAPixel-single-IBGRAScanner-">DrawPath</a></strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AStrokeColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AWidth: single; AFillTexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>); overload; override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -754,11 +755,11 @@ Base implementation for all <a class="normal" href="BGRABitmap.TBGRABitmap.html"
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#EllipseAntialias-TPointF-TPointF-TPointF-TBGRAPixel-single-TBGRAPixel-">EllipseAntialias</a></strong>(AOrigin, AXAxis, AYAxis: <a href="BGRAClasses.html#TPointF">TPointF</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; w: single; back: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#EllipseAntialias-single-single-single-single-TBGRAPixel-single-TBGRAPixel-">EllipseAntialias</a></strong>(x, y, rx, ry: single; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; w: single; back: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#EllipseAntialias-single-single-single-single-TBGRAPixel-single-TBGRAPixel-">EllipseAntialias</a></strong>(x, y, rx, ry: single; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; w: single; back: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#EllipseAntialias-TPointF-TPointF-TPointF-TBGRAPixel-single-TBGRAPixel-">EllipseAntialias</a></strong>(AOrigin, AXAxis, AYAxis: <a href="BGRAClasses.html#TPointF">TPointF</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; w: single; back: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; override;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -862,11 +863,11 @@ Base implementation for all <a class="normal" href="BGRABitmap.TBGRABitmap.html"
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#FillQuadPerspectiveMapping-TPointF-TPointF-TPointF-TPointF-IBGRAScanner-TPointF-TPointF-TPointF-TPointF-TDrawMode-">FillQuadPerspectiveMapping</a></strong>(pt1,pt2,pt3,pt4: <a href="BGRAClasses.html#TPointF">TPointF</a>; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; tex1, tex2, tex3, tex4: <a href="BGRAClasses.html#TPointF">TPointF</a>; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>); override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#FillQuadPerspectiveMapping-TPointF-TPointF-TPointF-TPointF-IBGRAScanner-TPointF-TPointF-TPointF-TPointF-TRect-TDrawMode-">FillQuadPerspectiveMapping</a></strong>(pt1,pt2,pt3,pt4: <a href="BGRAClasses.html#TPointF">TPointF</a>; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; tex1, tex2, tex3, tex4: <a href="BGRAClasses.html#TPointF">TPointF</a>; ACleanBorders: <a href="BGRAClasses.html#TRect">TRect</a>; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>); override;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#FillQuadPerspectiveMapping-TPointF-TPointF-TPointF-TPointF-IBGRAScanner-TPointF-TPointF-TPointF-TPointF-TRect-TDrawMode-">FillQuadPerspectiveMapping</a></strong>(pt1,pt2,pt3,pt4: <a href="BGRAClasses.html#TPointF">TPointF</a>; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; tex1, tex2, tex3, tex4: <a href="BGRAClasses.html#TPointF">TPointF</a>; ACleanBorders: <a href="BGRAClasses.html#TRect">TRect</a>; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>); override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#FillQuadPerspectiveMapping-TPointF-TPointF-TPointF-TPointF-IBGRAScanner-TPointF-TPointF-TPointF-TPointF-TDrawMode-">FillQuadPerspectiveMapping</a></strong>(pt1,pt2,pt3,pt4: <a href="BGRAClasses.html#TPointF">TPointF</a>; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; tex1, tex2, tex3, tex4: <a href="BGRAClasses.html#TPointF">TPointF</a>; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>); override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -902,11 +903,11 @@ Base implementation for all <a class="normal" href="BGRABitmap.TBGRABitmap.html"
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#GradientFill-integer-integer-integer-integer-TBGRAPixel-TBGRAPixel-TGradientType-TPointF-TPointF-TDrawMode-boolean-Boolean-TDitheringAlgorithm-">GradientFill</a></strong>(x, y, x2, y2: integer; c1, c2: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; gtype: <a href="BGRABitmapTypes.html#TGradientType">TGradientType</a>; o1, o2: <a href="BGRAClasses.html#TPointF">TPointF</a>; mode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>; gammaColorCorrection: boolean = True; Sinus: Boolean=False; ditherAlgo: <a href="BGRABitmapTypes.html#TDitheringAlgorithm">TDitheringAlgorithm</a> = <a href="BGRABitmapTypes.html#daNearestNeighbor">daNearestNeighbor</a>); override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#GradientFill-integer-integer-integer-integer-TBGRACustomGradient-TGradientType-TPointF-TPointF-TDrawMode-Boolean-TDitheringAlgorithm-">GradientFill</a></strong>(x, y, x2, y2: integer; gradient: <a href="BGRABitmapTypes.TBGRACustomGradient.html">TBGRACustomGradient</a>; gtype: <a href="BGRABitmapTypes.html#TGradientType">TGradientType</a>; o1, o2: <a href="BGRAClasses.html#TPointF">TPointF</a>; mode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>; Sinus: Boolean=False; ditherAlgo: <a href="BGRABitmapTypes.html#TDitheringAlgorithm">TDitheringAlgorithm</a> = <a href="BGRABitmapTypes.html#daNearestNeighbor">daNearestNeighbor</a>); override;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#GradientFill-integer-integer-integer-integer-TBGRACustomGradient-TGradientType-TPointF-TPointF-TDrawMode-Boolean-TDitheringAlgorithm-">GradientFill</a></strong>(x, y, x2, y2: integer; gradient: <a href="BGRABitmapTypes.TBGRACustomGradient.html">TBGRACustomGradient</a>; gtype: <a href="BGRABitmapTypes.html#TGradientType">TGradientType</a>; o1, o2: <a href="BGRAClasses.html#TPointF">TPointF</a>; mode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>; Sinus: Boolean=False; ditherAlgo: <a href="BGRABitmapTypes.html#TDitheringAlgorithm">TDitheringAlgorithm</a> = <a href="BGRABitmapTypes.html#daNearestNeighbor">daNearestNeighbor</a>); override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#GradientFill-integer-integer-integer-integer-TBGRAPixel-TBGRAPixel-TGradientType-TPointF-TPointF-TDrawMode-boolean-Boolean-TDitheringAlgorithm-">GradientFill</a></strong>(x, y, x2, y2: integer; c1, c2: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; gtype: <a href="BGRABitmapTypes.html#TGradientType">TGradientType</a>; o1, o2: <a href="BGRAClasses.html#TPointF">TPointF</a>; mode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>; gammaColorCorrection: boolean = True; Sinus: Boolean=False; ditherAlgo: <a href="BGRABitmapTypes.html#TDitheringAlgorithm">TDitheringAlgorithm</a> = <a href="BGRABitmapTypes.html#daNearestNeighbor">daNearestNeighbor</a>); override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -994,7 +995,7 @@ Base implementation for all <a class="normal" href="BGRABitmap.TBGRABitmap.html"
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#RoundRectAntialias-single-single-single-single-single-single-IBGRAScanner-single-TRoundRectangleOptions-">RoundRectAntialias</a></strong>(x,y,x2,y2,rx,ry: single; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; w: single; options: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a> = []); overload; override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#RoundRectAntialias-single-single-single-single-single-single-TBGRAPixel-single-TBGRAPixel-TRoundRectangleOptions-">RoundRectAntialias</a></strong>(x,y,x2,y2,rx,ry: single; pencolor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; w: single; fillcolor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; options: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a> = []); overload; override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -1006,7 +1007,7 @@ Base implementation for all <a class="normal" href="BGRABitmap.TBGRABitmap.html"
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#RoundRectAntialias-single-single-single-single-single-single-TBGRAPixel-single-TBGRAPixel-TRoundRectangleOptions-">RoundRectAntialias</a></strong>(x,y,x2,y2,rx,ry: single; pencolor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; w: single; fillcolor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; options: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a> = []); overload; override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#RoundRectAntialias-single-single-single-single-single-single-IBGRAScanner-single-TRoundRectangleOptions-">RoundRectAntialias</a></strong>(x,y,x2,y2,rx,ry: single; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; w: single; options: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a> = []); overload; override;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -1050,11 +1051,19 @@ Base implementation for all <a class="normal" href="BGRABitmap.TBGRABitmap.html"
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#TextMultiline-single-single-single-string-TBGRAPixel-TBidiTextAlignment-TTextLayout-single-">TextMultiline</a></strong>(ALeft,ATop,AWidth: single; const sUTF8: string; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AAlign: <a href="BGRABitmapTypes.html#TBidiTextAlignment">TBidiTextAlignment</a> = <a href="BGRABitmapTypes.html#btaNatural">btaNatural</a>; AVertAlign: <a href="BGRAGraphics.html#TTextLayout">TTextLayout</a> = <a href="BGRAGraphics.html#tlTop">tlTop</a>; AParagraphSpacing: single = 0); overload; override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#TextMultiline-single-single-single-string-IBGRAScanner-TBidiTextAlignment-TTextLayout-single-">TextMultiline</a></strong>(ALeft,ATop,AWidth: single; const sUTF8: string; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AAlign: <a href="BGRABitmapTypes.html#TBidiTextAlignment">TBidiTextAlignment</a> = <a href="BGRABitmapTypes.html#btaNatural">btaNatural</a>; AVertAlign: <a href="BGRAGraphics.html#TTextLayout">TTextLayout</a> = <a href="BGRAGraphics.html#tlTop">tlTop</a>; AParagraphSpacing: single = 0); overload; override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#TextMultiline-single-single-single-string-IBGRAScanner-TBidiTextAlignment-TTextLayout-single-">TextMultiline</a></strong>(ALeft,ATop,AWidth: single; const sUTF8: string; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AAlign: <a href="BGRABitmapTypes.html#TBidiTextAlignment">TBidiTextAlignment</a> = <a href="BGRABitmapTypes.html#btaNatural">btaNatural</a>; AVertAlign: <a href="BGRAGraphics.html#TTextLayout">TTextLayout</a> = <a href="BGRAGraphics.html#tlTop">tlTop</a>; AParagraphSpacing: single = 0); overload; override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#TextMultiline-single-single-single-string-TBGRAPixel-TBidiTextAlignment-TTextLayout-single-">TextMultiline</a></strong>(ALeft,ATop,AWidth: single; const sUTF8: string; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AAlign: <a href="BGRABitmapTypes.html#TBidiTextAlignment">TBidiTextAlignment</a> = <a href="BGRABitmapTypes.html#btaNatural">btaNatural</a>; AVertAlign: <a href="BGRAGraphics.html#TTextLayout">TTextLayout</a> = <a href="BGRAGraphics.html#tlTop">tlTop</a>; AParagraphSpacing: single = 0); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#TextOut-single-single-string-IBGRAScanner-TAlignment-single-">TextOut</a></strong>(x, y: single; const sUTF8: string; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AAlign: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; ALetterSpacing: single); overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#TextOut-single-single-string-TBGRAPixel-TAlignment-boolean-">TextOut</a></strong>(x, y: single; const sUTF8: string; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; ARightToLeft: boolean); overload; override;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -1062,15 +1071,7 @@ Base implementation for all <a class="normal" href="BGRABitmap.TBGRABitmap.html"
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#TextOut-single-single-string-IBGRAScanner-TAlignment-single-">TextOut</a></strong>(x, y: single; const sUTF8: string; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AAlign: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; ALetterSpacing: single); overload; override;</code></td>
-</tr>
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#TextOut-single-single-string-TBGRAPixel-TAlignment-single-">TextOut</a></strong>(x, y: single; const sUTF8: string; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AAlign: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; ALetterSpacing: single); overload; override;</code></td>
-</tr>
-<tr class="list2">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#TextOut-single-single-string-TBGRAPixel-TAlignment-boolean-">TextOut</a></strong>(x, y: single; const sUTF8: string; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; ARightToLeft: boolean); overload; override;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -1146,77 +1147,81 @@ Base implementation for all <a class="normal" href="BGRABitmap.TBGRABitmap.html"
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#RebuildBitmap">RebuildBitmap</a></strong>; virtual; abstract;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#InternalTextOutOffset-single-single-string-TBGRAPixel-IBGRAScanner-arrayofTPointF-">InternalTextOutOffset</a></strong>(x, y: single; const sUTF8: string; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AOffsets: array of <a href="BGRAClasses.html#TPointF">TPointF</a>); override;</code></td>
 </tr>
 <tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#RebuildBitmap">RebuildBitmap</a></strong>; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#SetArrowEndOffset-single-">SetArrowEndOffset</a></strong>(AValue: single); override;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#SetArrowEndRepeat-integer-">SetArrowEndRepeat</a></strong>(AValue: integer); override;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#SetArrowEndSize-TPointF-">SetArrowEndSize</a></strong>(AValue: <a href="BGRAClasses.html#TPointF">TPointF</a>); override;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#SetArrowStartOffset-single-">SetArrowStartOffset</a></strong>(AValue: single); override;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#SetArrowStartRepeat-integer-">SetArrowStartRepeat</a></strong>(AValue: integer); override;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#SetArrowStartSize-TPointF-">SetArrowStartSize</a></strong>(AValue: <a href="BGRAClasses.html#TPointF">TPointF</a>); override;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#SetCanvasAlphaCorrection-boolean-">SetCanvasAlphaCorrection</a></strong>(const AValue: boolean); override;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#SetCanvasDrawModeFP-TDrawMode-">SetCanvasDrawModeFP</a></strong>(const AValue: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>); override;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#SetCanvasOpacity-byte-">SetCanvasOpacity</a></strong>(AValue: byte); override;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#SetCustomPenStyle-TBGRAPenStyle-">SetCustomPenStyle</a></strong>(const AValue: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>); override;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#SetFontFullHeight-integer-">SetFontFullHeight</a></strong>(AHeight: integer); override;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#SetFontHeight-integer-">SetFontHeight</a></strong>(AHeight: integer); override;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#SetFontRenderer-TBGRACustomFontRenderer-">SetFontRenderer</a></strong>(AValue: <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html">TBGRACustomFontRenderer</a>); override;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#SetInternalColor-integer-integer-TFPColor-">SetInternalColor</a></strong>(x, y: integer; const Value: TFPColor); override;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#SetInternalPixel-integer-integer-integer-">SetInternalPixel</a></strong>(x, y: integer; Value: integer); override;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#SetPenJoinStyle-TPenJoinStyle-">SetPenJoinStyle</a></strong>(const AValue: <a href="BGRAGraphics.html#TPenJoinStyle">TPenJoinStyle</a>); override;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#SetPenMiterLimit-single-">SetPenMiterLimit</a></strong>(const AValue: single); override;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#SetPenStyle-TPenStyle-">SetPenStyle</a></strong>(const AValue: <a href="BGRAGraphics.html#TPenStyle">TPenStyle</a>); override;</code></td>
 </tr>
@@ -1232,6 +1237,7 @@ Base implementation for all <a class="normal" href="BGRABitmap.TBGRABitmap.html"
 <td class="itemcode"><code>property <strong><a href="BGRADefaultBitmap.TBGRADefaultBitmap.html#CanvasBGRA">CanvasBGRA</a></strong>: <a href="BGRACanvas.TBGRACanvas.html">TBGRACanvas</a> read GetCanvasBGRA;</code></td>
 </tr>
 </table>
+<script type="text/javascript" src="navigation.js"></script>
 <h2 class="description">Description</h2>
 <h3 class="detail">Fields</h3>
 <table class="detail wide_list">
@@ -1348,21 +1354,11 @@ drawing options</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Create-TBitmap-boolean-"></span><code>constructor <strong>Create</strong>(ABitmap: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>; AUseTransparentColor: boolean); overload; override;</code></td>
+<td class="itemcode"><span id="Create-string-"></span><code>constructor <strong>Create</strong>(AFilename: string); overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
-Creates an image by copying the content of a ''<a class="normal" href="BGRAGraphics.html#TBitmap">TBitmap</a>'', enforce/disable use of transparent color</p>
-</td></tr>
-</table>
-<table class="detail wide_list">
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Create-TBitmap-"></span><code>constructor <strong>Create</strong>(ABitmap: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>); overload; override;</code></td>
-</tr>
-<tr><td colspan="2">
-<p>
-Creates an image by copying the content of a ''<a class="normal" href="BGRAGraphics.html#TBitmap">TBitmap</a>'', apply transparent color if specified and <a class="normal" href="BGRABitmapTypes.TBGRACustomBitmap.html#Bitmap">bitmap</a> is masked</p>
+Creates an image by loading its content from the file ''AFilename''. The encoding of the string is the default one for the operating system. It is recommended to use the next constructor and UTF8 encoding</p>
 </td></tr>
 </table>
 <table class="detail wide_list">
@@ -1378,11 +1374,11 @@ Creates an image by copying the content of a ''TFPCustomImage''</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Create-string-"></span><code>constructor <strong>Create</strong>(AFilename: string); overload; override;</code></td>
+<td class="itemcode"><span id="Create-TBitmap-"></span><code>constructor <strong>Create</strong>(ABitmap: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>); overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
-Creates an image by loading its content from the file ''AFilename''. The encoding of the string is the default one for the operating system. It is recommended to use the next constructor and UTF8 encoding</p>
+Creates an image by copying the content of a ''<a class="normal" href="BGRAGraphics.html#TBitmap">TBitmap</a>'', apply transparent color if specified and <a class="normal" href="BGRABitmapTypes.TBGRACustomBitmap.html#Bitmap">bitmap</a> is masked</p>
 </td></tr>
 </table>
 <table class="detail wide_list">
@@ -1416,6 +1412,16 @@ Creates an image by loading its content from the file ''AFilename''. The boolean
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create-TBitmap-boolean-"></span><code>constructor <strong>Create</strong>(ABitmap: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>; AUseTransparentColor: boolean); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates an image by copying the content of a ''<a class="normal" href="BGRAGraphics.html#TBitmap">TBitmap</a>'', enforce/disable use of transparent color</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
 </tr>
 <tr><td colspan="2">
@@ -1442,7 +1448,7 @@ Free the object and all its <a class="normal" href="introduction.html#Resources"
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="ComputeBezierCurve-TCubicBezierCurve-"></span><code>function <strong>ComputeBezierCurve</strong>(const ACurve: <a href="BGRABitmapTypes.TCubicBezierCurve.html">TCubicBezierCurve</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
+<td class="itemcode"><span id="ComputeBezierCurve-TQuadraticBezierCurve-"></span><code>function <strong>ComputeBezierCurve</strong>(const ACurve: <a href="BGRABitmapTypes.TQuadraticBezierCurve.html">TQuadraticBezierCurve</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -1450,7 +1456,7 @@ Free the object and all its <a class="normal" href="introduction.html#Resources"
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="ComputeBezierCurve-TQuadraticBezierCurve-"></span><code>function <strong>ComputeBezierCurve</strong>(const ACurve: <a href="BGRABitmapTypes.TQuadraticBezierCurve.html">TQuadraticBezierCurve</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
+<td class="itemcode"><span id="ComputeBezierCurve-TCubicBezierCurve-"></span><code>function <strong>ComputeBezierCurve</strong>(const ACurve: <a href="BGRABitmapTypes.TCubicBezierCurve.html">TCubicBezierCurve</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -1484,14 +1490,6 @@ Spline</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="ComputeEllipseBorder-TPointF-TPointF-TPointF-single-single-"></span><code>function <strong>ComputeEllipseBorder</strong>(AOrigin, AXAxis, AYAxis: <a href="BGRAClasses.html#TPointF">TPointF</a>; w: single; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; override; overload;</code></td>
-</tr>
-<tr><td colspan="2">
-<p class="nodescription">This item has no description.</p></td></tr>
-</table>
-<table class="detail wide_list">
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><span id="ComputeEllipseBorder-single-single-single-single-single-single-"></span><code>function <strong>ComputeEllipseBorder</strong>(x,y,rx,ry,w: single; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
@@ -1500,7 +1498,7 @@ Spline</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="ComputeEllipseContour-TPointF-TPointF-TPointF-single-"></span><code>function <strong>ComputeEllipseContour</strong>(AOrigin, AXAxis, AYAxis: <a href="BGRAClasses.html#TPointF">TPointF</a>; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
+<td class="itemcode"><span id="ComputeEllipseBorder-TPointF-TPointF-TPointF-single-single-"></span><code>function <strong>ComputeEllipseBorder</strong>(AOrigin, AXAxis, AYAxis: <a href="BGRAClasses.html#TPointF">TPointF</a>; w: single; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; override; overload;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -1509,6 +1507,14 @@ Spline</p>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><span id="ComputeEllipseContour-single-single-single-single-single-"></span><code>function <strong>ComputeEllipseContour</strong>(x,y,rx,ry: single; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComputeEllipseContour-TPointF-TPointF-TPointF-single-"></span><code>function <strong>ComputeEllipseContour</strong>(AOrigin, AXAxis, AYAxis: <a href="BGRAClasses.html#TPointF">TPointF</a>; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -1564,20 +1570,20 @@ Spline</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComputeWidePolyline-arrayofTPointF-single-boolean-"></span><code>function <strong>ComputeWidePolyline</strong>(const points: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; w: single; ClosedCap: boolean): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><span id="ComputeWidePolyline-arrayofTPointF-single-"></span><code>function <strong>ComputeWidePolyline</strong>(const points: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; w: single): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomBitmap.html#ComputeWidePolyline-arrayofTPointF-single-">TBGRACustomBitmap.ComputeWidePolyline</a>.</p><p>
 can be accessed via <a class="normal" href="BGRABitmapTypes.TCustomUniversalBitmap.html#Pen">Pen</a> property</p>
 </td></tr>
-</table>
-<table class="detail wide_list">
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="ComputeWidePolyline-arrayofTPointF-single-boolean-"></span><code>function <strong>ComputeWidePolyline</strong>(const points: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; w: single; ClosedCap: boolean): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; override;</code></td>
-</tr>
-<tr><td colspan="2">
-<p class="nodescription">This item has no description.</p></td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -1622,6 +1628,14 @@ can be accessed via <a class="normal" href="BGRABitmapTypes.TCustomUniversalBitm
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FilterEmbossHighlight-boolean-TBGRAPixel-Boolean-"></span><code>function <strong>FilterEmbossHighlight</strong>(FillSelection: boolean; BorderColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><span id="FilterEmbossHighlight-boolean-Boolean-"></span><code>function <strong>FilterEmbossHighlight</strong>(FillSelection: boolean; ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
@@ -1638,7 +1652,7 @@ can be accessed via <a class="normal" href="BGRABitmapTypes.TCustomUniversalBitm
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="FilterEmbossHighlight-boolean-TBGRAPixel-Boolean-"></span><code>function <strong>FilterEmbossHighlight</strong>(FillSelection: boolean; BorderColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
+<td class="itemcode"><span id="FilterGrayscale-Boolean-"></span><code>function <strong>FilterGrayscale</strong>(ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -1654,14 +1668,6 @@ can be accessed via <a class="normal" href="BGRABitmapTypes.TCustomUniversalBitm
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="FilterGrayscale-Boolean-"></span><code>function <strong>FilterGrayscale</strong>(ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
-</tr>
-<tr><td colspan="2">
-<p class="nodescription">This item has no description.</p></td></tr>
-</table>
-<table class="detail wide_list">
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><span id="FilterMedian-TMedianOption-Boolean-"></span><code>function <strong>FilterMedian</strong>(Option: <a href="BGRABitmapTypes.html#TMedianOption">TMedianOption</a>; ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; override;</code></td>
 </tr>
 <tr><td colspan="2">
@@ -1670,7 +1676,7 @@ can be accessed via <a class="normal" href="BGRABitmapTypes.TCustomUniversalBitm
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="FilterNormalize-boolean-Boolean-"></span><code>function <strong>FilterNormalize</strong>(eachChannel: boolean = True; ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
+<td class="itemcode"><span id="FilterNormalize-TRect-boolean-Boolean-"></span><code>function <strong>FilterNormalize</strong>(ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; eachChannel: boolean = True; ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -1678,7 +1684,7 @@ can be accessed via <a class="normal" href="BGRABitmapTypes.TCustomUniversalBitm
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="FilterNormalize-TRect-boolean-Boolean-"></span><code>function <strong>FilterNormalize</strong>(ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; eachChannel: boolean = True; ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
+<td class="itemcode"><span id="FilterNormalize-boolean-Boolean-"></span><code>function <strong>FilterNormalize</strong>(eachChannel: boolean = True; ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -1752,7 +1758,7 @@ Filters</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="FilterTwirl-TPoint-Single-Single-Single-Boolean-"></span><code>function <strong>FilterTwirl</strong>(ACenter: <a href="BGRAClasses.html#TPoint">TPoint</a>; ARadius: Single; ATurn: Single=1; AExponent: Single=3; ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
+<td class="itemcode"><span id="FilterTwirl-TRect-TPoint-Single-Single-Single-Boolean-"></span><code>function <strong>FilterTwirl</strong>(ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; ACenter: <a href="BGRAClasses.html#TPoint">TPoint</a>; ARadius: Single; ATurn: Single=1; AExponent: Single=3; ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -1760,7 +1766,7 @@ Filters</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="FilterTwirl-TRect-TPoint-Single-Single-Single-Boolean-"></span><code>function <strong>FilterTwirl</strong>(ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; ACenter: <a href="BGRAClasses.html#TPoint">TPoint</a>; ARadius: Single; ATurn: Single=1; AExponent: Single=3; ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
+<td class="itemcode"><span id="FilterTwirl-TPoint-Single-Single-Single-Boolean-"></span><code>function <strong>FilterTwirl</strong>(ACenter: <a href="BGRAClasses.html#TPoint">TPoint</a>; ARadius: Single; ATurn: Single=1; AExponent: Single=3; ACopyProperties: Boolean=False): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -1852,7 +1858,7 @@ Computes the value of the pixel at a floating <a class="normal" href="BGRAClasse
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetPixelCycle256-int32or64-int32or64-int32or64-int32or64-TResampleFilter-"></span><code>function <strong>GetPixelCycle256</strong>(x, y, fracX256,fracY256: <a href="BGRAClasses.html#Int32or64">int32or64</a>; AResampleFilter: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a> = <a href="BGRABitmapTypes.html#rfLinear">rfLinear</a>): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; overload; override;</code></td>
+<td class="itemcode"><span id="GetPixelCycle256-int32or64-int32or64-int32or64-int32or64-TResampleFilter-boolean-boolean-"></span><code>function <strong>GetPixelCycle256</strong>(x, y, fracX256,fracY256: <a href="BGRAClasses.html#Int32or64">int32or64</a>; AResampleFilter: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a>; repeatX: boolean; repeatY: boolean): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -1862,7 +1868,7 @@ Similar to previous ''<a class="normal" href="BGRADefaultBitmap.TBGRADefaultBitm
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetPixelCycle256-int32or64-int32or64-int32or64-int32or64-TResampleFilter-boolean-boolean-"></span><code>function <strong>GetPixelCycle256</strong>(x, y, fracX256,fracY256: <a href="BGRAClasses.html#Int32or64">int32or64</a>; AResampleFilter: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a>; repeatX: boolean; repeatY: boolean): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; overload; override;</code></td>
+<td class="itemcode"><span id="GetPixelCycle256-int32or64-int32or64-int32or64-int32or64-TResampleFilter-"></span><code>function <strong>GetPixelCycle256</strong>(x, y, fracX256,fracY256: <a href="BGRAClasses.html#Int32or64">int32or64</a>; AResampleFilter: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a> = <a href="BGRABitmapTypes.html#rfLinear">rfLinear</a>): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -1908,44 +1914,6 @@ Returns True if the function <em><a class="normal" href="BGRABitmapTypes.IBGRASc
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="NewBitmap-string-boolean-TBGRALoadingOptions-"></span><code>function <strong>NewBitmap</strong>(Filename: string; AIsUtf8: boolean; AOptions: <a href="BGRABitmapTypes.html#TBGRALoadingOptions">TBGRALoadingOptions</a>): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
-</tr>
-<tr><td colspan="2">
-<p class="nodescription">This item has no description.</p></td></tr>
-</table>
-<table class="detail wide_list">
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="NewBitmap-string-boolean-"></span><code>function <strong>NewBitmap</strong>(Filename: string; AIsUtf8: boolean): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
-</tr>
-<tr><td colspan="2">
-<p>
-Can only be called from an existing instance of ''<a class="normal" href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>''. Creates a new instance with by loading its content from the file ''Filename''</p>
-</td></tr>
-</table>
-<table class="detail wide_list">
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="NewBitmap-TFPCustomImage-"></span><code>function <strong>NewBitmap</strong>(AFPImage: TFPCustomImage): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
-</tr>
-<tr><td colspan="2">
-<p>
-Can only be called from an existing instance of ''<a class="normal" href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>''. Creates an image by copying the content of a ''TFPCustomImage''</p>
-</td></tr>
-</table>
-<table class="detail wide_list">
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="NewBitmap-string-"></span><code>function <strong>NewBitmap</strong>(Filename: string): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
-</tr>
-<tr><td colspan="2">
-<p>
-Can only be called from an existing instance of ''<a class="normal" href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>''. Creates a new instance with by loading its content from the file ''Filename''. The encoding of the string is the default one for the operating system</p>
-</td></tr>
-</table>
-<table class="detail wide_list">
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><span id="NewBitmap-integer-integer-"></span><code>function <strong>NewBitmap</strong>(AWidth, AHeight: integer): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
@@ -1979,6 +1947,44 @@ Can only be called from an existing instance of ''<a class="normal" href="BGRABi
 <tr><td colspan="2">
 <p>
 Can only be called from an existing instance of ''<a class="normal" href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>''. Creates a new instance with dimensions ''AWidth'' and ''AHeight'', and fills it with Color</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NewBitmap-string-boolean-TBGRALoadingOptions-"></span><code>function <strong>NewBitmap</strong>(Filename: string; AIsUtf8: boolean; AOptions: <a href="BGRABitmapTypes.html#TBGRALoadingOptions">TBGRALoadingOptions</a>): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NewBitmap-TFPCustomImage-"></span><code>function <strong>NewBitmap</strong>(AFPImage: TFPCustomImage): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Can only be called from an existing instance of ''<a class="normal" href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>''. Creates an image by copying the content of a ''TFPCustomImage''</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NewBitmap-string-"></span><code>function <strong>NewBitmap</strong>(Filename: string): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Can only be called from an existing instance of ''<a class="normal" href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>''. Creates a new instance with by loading its content from the file ''Filename''. The encoding of the string is the default one for the operating system</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NewBitmap-string-boolean-"></span><code>function <strong>NewBitmap</strong>(Filename: string; AIsUtf8: boolean): <a href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Can only be called from an existing instance of ''<a class="normal" href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>''. Creates a new instance with by loading its content from the file ''Filename''</p>
 </td></tr>
 </table>
 <table class="detail wide_list">
@@ -2046,6 +2052,16 @@ Returns the affine box of the string provided using the current font. Orientatio
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TextSize-string-"></span><code>function <strong>TextSize</strong>(const sUTF8: string): <a href="BGRAClasses.html#TSize">TSize</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the total <a class="normal" href="BGRAClasses.html#Size-Integer-Integer-">size</a> of the string provided using the current font. Orientation is not taken into account, so that the <a class="normal" href="BGRABitmapTypes.TCustomUniversalBitmap.html#Width">width</a> is along the text. End of lines are stripped from the string.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><span id="TextSize-string-integer-boolean-"></span><code>function <strong>TextSize</strong>(const sUTF8: string; AMaxWidth: integer; ARightToLeft: boolean): <a href="BGRAClasses.html#TSize">TSize</a>; override;</code></td>
 </tr>
 <tr><td colspan="2">
@@ -2064,20 +2080,12 @@ Returns the total <a class="normal" href="BGRAClasses.html#Size-Integer-Integer-
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="TextSize-string-"></span><code>function <strong>TextSize</strong>(const sUTF8: string): <a href="BGRAClasses.html#TSize">TSize</a>; override;</code></td>
-</tr>
-<tr><td colspan="2">
-<p>
-Returns the total <a class="normal" href="BGRAClasses.html#Size-Integer-Integer-">size</a> of the string provided using the current font. Orientation is not taken into account, so that the <a class="normal" href="BGRABitmapTypes.TCustomUniversalBitmap.html#Width">width</a> is along the text. End of lines are stripped from the string.</p>
-</td></tr>
-</table>
-<table class="detail wide_list">
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><span id="TextSizeMultiline-string-single-single-"></span><code>function <strong>TextSizeMultiline</strong>(const sUTF8: string; AMaxWidth: single = <a href="BGRABitmapTypes.html#EmptySingle">EmptySingle</a>; AParagraphSpacing: single = 0): <a href="BGRAClasses.html#TSize">TSize</a>; override;</code></td>
 </tr>
 <tr><td colspan="2">
-<p class="nodescription">This item has no description.</p></td></tr>
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomBitmap.html#TextSizeMultiline-string-single-single-">TBGRACustomBitmap.TextSizeMultiline</a>.</p><p>
+Returns the total <a class="normal" href="BGRAClasses.html#Size-Integer-Integer-">size</a> of the string provided using the current font and taking into account line breaks.</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -2550,14 +2558,6 @@ Replace alpha values in a vertical line at column ''x'' and at row ''y'' to ''y2
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="BlendImage-TRect-IBGRAScanner-integer-integer-TBlendOperation-"></span><code>procedure <strong>BlendImage</strong>(ADest: <a href="BGRAClasses.html#TRect">TRect</a>; ASource: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AOffsetX, AOffsetY: integer; AOperation: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>); overload; override;</code></td>
-</tr>
-<tr><td colspan="2">
-<p class="nodescription">This item has no description.</p></td></tr>
-</table>
-<table class="detail wide_list">
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><span id="BlendImage-integer-integer-TBGRACustomBitmap-TBlendOperation-"></span><code>procedure <strong>BlendImage</strong>(x, y: integer; ASource: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AOperation: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>); overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
@@ -2566,7 +2566,7 @@ Replace alpha values in a vertical line at column ''x'' and at row ''y'' to ''y2
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="BlendImageOver-integer-integer-TBGRACustomBitmap-TBlendOperation-byte-boolean-"></span><code>procedure <strong>BlendImageOver</strong>(x, y: integer; ASource: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AOperation: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; AOpacity: byte = 255; ALinearBlend: boolean = false); overload; override;</code></td>
+<td class="itemcode"><span id="BlendImage-TRect-IBGRAScanner-integer-integer-TBlendOperation-"></span><code>procedure <strong>BlendImage</strong>(ADest: <a href="BGRAClasses.html#TRect">TRect</a>; ASource: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AOffsetX, AOffsetY: integer; AOperation: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>); overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -2575,6 +2575,14 @@ Replace alpha values in a vertical line at column ''x'' and at row ''y'' to ''y2
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><span id="BlendImageOver-TRect-IBGRAScanner-integer-integer-TBlendOperation-byte-boolean-"></span><code>procedure <strong>BlendImageOver</strong>(ADest: <a href="BGRAClasses.html#TRect">TRect</a>; ASource: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AOffsetX, AOffsetY: integer; AOperation: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; AOpacity: byte = 255; ALinearBlend: boolean = false); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BlendImageOver-integer-integer-TBGRACustomBitmap-TBlendOperation-byte-boolean-"></span><code>procedure <strong>BlendImageOver</strong>(x, y: integer; ASource: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AOperation: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; AOpacity: byte = 255; ALinearBlend: boolean = false); overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -2624,20 +2632,20 @@ Clear all channels of transparent pixels</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="CrossFade-TRect-IBGRAScanner-IBGRAScanner-IBGRAScanner-TDrawMode-"></span><code>procedure <strong>CrossFade</strong>(ARect: <a href="BGRAClasses.html#TRect">TRect</a>; Source1, Source2: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AFadeMask: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; mode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>); overload; override;</code></td>
-</tr>
-<tr><td colspan="2">
-<p class="nodescription">This item has no description.</p></td></tr>
-</table>
-<table class="detail wide_list">
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><span id="CrossFade-TRect-IBGRAScanner-IBGRAScanner-byte-TDrawMode-"></span><code>procedure <strong>CrossFade</strong>(ARect: <a href="BGRAClasses.html#TRect">TRect</a>; Source1, Source2: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AFadePosition: byte; mode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>); overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
 <a class="normal" href="BGRABitmapTypes.html#BGRA-byte-byte-byte-">BGRA</a> <a class="normal" href="BGRABitmapTypes.TBGRACustomBitmap.html#Bitmap">bitmap</a> functions</p>
 </td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CrossFade-TRect-IBGRAScanner-IBGRAScanner-IBGRAScanner-TDrawMode-"></span><code>procedure <strong>CrossFade</strong>(ARect: <a href="BGRAClasses.html#TRect">TRect</a>; Source1, Source2: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AFadeMask: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; mode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -2652,20 +2660,20 @@ Reads the image in a stream that was previously serialized</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Draw-TCanvas-TRect-boolean-"></span><code>procedure <strong>Draw</strong>(ACanvas: <a href="BGRAGraphics.html#TCanvas">TCanvas</a>; Rect: <a href="BGRAClasses.html#TRect">TRect</a>; Opaque: boolean = True); overload; override;</code></td>
-</tr>
-<tr><td colspan="2">
-<p class="nodescription">This item has no description.</p></td></tr>
-</table>
-<table class="detail wide_list">
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><span id="Draw-TCanvas-integer-integer-boolean-"></span><code>procedure <strong>Draw</strong>(ACanvas: <a href="BGRAGraphics.html#TCanvas">TCanvas</a>; x, y: integer; Opaque: boolean = True); overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
 <a class="normal" href="BGRABitmapTypes.TBGRACustomBitmap.html#Canvas">Canvas</a> drawing functions</p>
 </td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Draw-TCanvas-TRect-boolean-"></span><code>procedure <strong>Draw</strong>(ACanvas: <a href="BGRAGraphics.html#TCanvas">TCanvas</a>; Rect: <a href="BGRAClasses.html#TRect">TRect</a>; Opaque: boolean = True); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -2690,7 +2698,7 @@ Draws an horizontal line with gamma correction at line ''y'' and at columns ''x'
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="DrawPath-IBGRAPath-IBGRAScanner-single-IBGRAScanner-"></span><code>procedure <strong>DrawPath</strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AStrokeTexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AWidth: single; AFillTexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>); overload; override;</code></td>
+<td class="itemcode"><span id="DrawPath-IBGRAPath-TAffineMatrix-IBGRAScanner-single-TBGRAPixel-"></span><code>procedure <strong>DrawPath</strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AStrokeTexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AWidth: single; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -2698,17 +2706,15 @@ Draws an horizontal line with gamma correction at line ''y'' and at columns ''x'
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="DrawPath-IBGRAPath-TAffineMatrix-TBGRAPixel-single-TBGRAPixel-"></span><code>procedure <strong>DrawPath</strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AStrokeColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AWidth: single; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; override;</code></td>
+<td class="itemcode"><span id="DrawPath-IBGRAPath-TBGRAPixel-single-IBGRAScanner-"></span><code>procedure <strong>DrawPath</strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AStrokeColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AWidth: single; AFillTexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>); overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
-<p>
-Draws and fills a path with a matrix transform</p>
-</td></tr>
+<p class="nodescription">This item has no description.</p></td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="DrawPath-IBGRAPath-TBGRAPixel-single-IBGRAScanner-"></span><code>procedure <strong>DrawPath</strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AStrokeColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AWidth: single; AFillTexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>); overload; override;</code></td>
+<td class="itemcode"><span id="DrawPath-IBGRAPath-IBGRAScanner-single-TBGRAPixel-"></span><code>procedure <strong>DrawPath</strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AStrokeTexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AWidth: single; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -2726,7 +2732,17 @@ Draws and fills a path</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="DrawPath-IBGRAPath-IBGRAScanner-single-TBGRAPixel-"></span><code>procedure <strong>DrawPath</strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AStrokeTexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AWidth: single; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; override;</code></td>
+<td class="itemcode"><span id="DrawPath-IBGRAPath-TAffineMatrix-TBGRAPixel-single-TBGRAPixel-"></span><code>procedure <strong>DrawPath</strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AStrokeColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AWidth: single; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draws and fills a path with a matrix transform</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawPath-IBGRAPath-IBGRAScanner-single-IBGRAScanner-"></span><code>procedure <strong>DrawPath</strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AStrokeTexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AWidth: single; AFillTexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>); overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -2743,14 +2759,6 @@ Draws and fills a path</p>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><span id="DrawPath-IBGRAPath-TAffineMatrix-TBGRAPixel-single-IBGRAScanner-"></span><code>procedure <strong>DrawPath</strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AStrokeColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AWidth: single; AFillTexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>); overload; override;</code></td>
-</tr>
-<tr><td colspan="2">
-<p class="nodescription">This item has no description.</p></td></tr>
-</table>
-<table class="detail wide_list">
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="DrawPath-IBGRAPath-TAffineMatrix-IBGRAScanner-single-TBGRAPixel-"></span><code>procedure <strong>DrawPath</strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AStrokeTexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AWidth: single; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -2806,20 +2814,20 @@ Draws a vertical line with gamma correction at column ''x'' and at row ''y'' to 
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="EllipseAntialias-TPointF-TPointF-TPointF-TBGRAPixel-single-TBGRAPixel-"></span><code>procedure <strong>EllipseAntialias</strong>(AOrigin, AXAxis, AYAxis: <a href="BGRAClasses.html#TPointF">TPointF</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; w: single; back: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; override;</code></td>
-</tr>
-<tr><td colspan="2">
-<p class="nodescription">This item has no description.</p></td></tr>
-</table>
-<table class="detail wide_list">
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><span id="EllipseAntialias-single-single-single-single-TBGRAPixel-single-TBGRAPixel-"></span><code>procedure <strong>EllipseAntialias</strong>(x, y, rx, ry: single; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; w: single; back: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
 Draws and fills an <a class="normal" href="BGRABitmapTypes.TGenericUniversalBitmap.generic.html#Ellipse-TPointF-TPointF-TPointF-TPixel-single-TDrawMode-Word-">ellipse</a></p>
 </td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EllipseAntialias-TPointF-TPointF-TPointF-TBGRAPixel-single-TBGRAPixel-"></span><code>procedure <strong>EllipseAntialias</strong>(AOrigin, AXAxis, AYAxis: <a href="BGRAClasses.html#TPointF">TPointF</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; w: single; back: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -3031,12 +3039,14 @@ Fills an <a class="normal" href="BGRABitmapTypes.TGenericUniversalBitmap.generic
 <td class="itemcode"><span id="FillQuadLinearMappingLightness-TPointF-TPointF-TPointF-TPointF-IBGRAScanner-TPointF-TPointF-TPointF-TPointF-word-word-word-word-Boolean-"></span><code>procedure <strong>FillQuadLinearMappingLightness</strong>(pt1,pt2,pt3,pt4: <a href="BGRAClasses.html#TPointF">TPointF</a>; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; tex1, tex2, tex3, tex4: <a href="BGRAClasses.html#TPointF">TPointF</a>; light1,light2,light3,light4: word; TextureInterpolation: Boolean= True); override;</code></td>
 </tr>
 <tr><td colspan="2">
-<p class="nodescription">This item has no description.</p></td></tr>
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomBitmap.html#FillQuadLinearMappingLightness-TPointF-TPointF-TPointF-TPointF-IBGRAScanner-TPointF-TPointF-TPointF-TPointF-word-word-word-word-Boolean-">TBGRACustomBitmap.FillQuadLinearMappingLightness</a>.</p><p>
+Fills a quadrilateral with linear mapping and lightness</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="FillQuadPerspectiveMapping-TPointF-TPointF-TPointF-TPointF-IBGRAScanner-TPointF-TPointF-TPointF-TPointF-TDrawMode-"></span><code>procedure <strong>FillQuadPerspectiveMapping</strong>(pt1,pt2,pt3,pt4: <a href="BGRAClasses.html#TPointF">TPointF</a>; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; tex1, tex2, tex3, tex4: <a href="BGRAClasses.html#TPointF">TPointF</a>; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>); override;</code></td>
+<td class="itemcode"><span id="FillQuadPerspectiveMapping-TPointF-TPointF-TPointF-TPointF-IBGRAScanner-TPointF-TPointF-TPointF-TPointF-TRect-TDrawMode-"></span><code>procedure <strong>FillQuadPerspectiveMapping</strong>(pt1,pt2,pt3,pt4: <a href="BGRAClasses.html#TPointF">TPointF</a>; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; tex1, tex2, tex3, tex4: <a href="BGRAClasses.html#TPointF">TPointF</a>; ACleanBorders: <a href="BGRAClasses.html#TRect">TRect</a>; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>); override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -3044,7 +3054,7 @@ Fills an <a class="normal" href="BGRABitmapTypes.TGenericUniversalBitmap.generic
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="FillQuadPerspectiveMapping-TPointF-TPointF-TPointF-TPointF-IBGRAScanner-TPointF-TPointF-TPointF-TPointF-TRect-TDrawMode-"></span><code>procedure <strong>FillQuadPerspectiveMapping</strong>(pt1,pt2,pt3,pt4: <a href="BGRAClasses.html#TPointF">TPointF</a>; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; tex1, tex2, tex3, tex4: <a href="BGRAClasses.html#TPointF">TPointF</a>; ACleanBorders: <a href="BGRAClasses.html#TRect">TRect</a>; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>); override;</code></td>
+<td class="itemcode"><span id="FillQuadPerspectiveMapping-TPointF-TPointF-TPointF-TPointF-IBGRAScanner-TPointF-TPointF-TPointF-TPointF-TDrawMode-"></span><code>procedure <strong>FillQuadPerspectiveMapping</strong>(pt1,pt2,pt3,pt4: <a href="BGRAClasses.html#TPointF">TPointF</a>; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; tex1, tex2, tex3, tex4: <a href="BGRAClasses.html#TPointF">TPointF</a>; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>); override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -3115,12 +3125,14 @@ Fills completely a <a class="normal" href="BGRABitmapTypes.TGenericUniversalBitm
 <td class="itemcode"><span id="FillTriangleLinearMappingLightness-TPointF-TPointF-TPointF-IBGRAScanner-TPointF-TPointF-TPointF-word-word-word-Boolean-"></span><code>procedure <strong>FillTriangleLinearMappingLightness</strong>(pt1,pt2,pt3: <a href="BGRAClasses.html#TPointF">TPointF</a>; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; tex1, tex2, tex3: <a href="BGRAClasses.html#TPointF">TPointF</a>; light1,light2,light3: word; TextureInterpolation: Boolean= True); override;</code></td>
 </tr>
 <tr><td colspan="2">
-<p class="nodescription">This item has no description.</p></td></tr>
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomBitmap.html#FillTriangleLinearMappingLightness-TPointF-TPointF-TPointF-IBGRAScanner-TPointF-TPointF-TPointF-word-word-word-Boolean-">TBGRACustomBitmap.FillTriangleLinearMappingLightness</a>.</p><p>
+Fills a triangle with linear mapping of a texture and lightness</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GradientFill-integer-integer-integer-integer-TBGRAPixel-TBGRAPixel-TGradientType-TPointF-TPointF-TDrawMode-boolean-Boolean-TDitheringAlgorithm-"></span><code>procedure <strong>GradientFill</strong>(x, y, x2, y2: integer; c1, c2: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; gtype: <a href="BGRABitmapTypes.html#TGradientType">TGradientType</a>; o1, o2: <a href="BGRAClasses.html#TPointF">TPointF</a>; mode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>; gammaColorCorrection: boolean = True; Sinus: Boolean=False; ditherAlgo: <a href="BGRABitmapTypes.html#TDitheringAlgorithm">TDitheringAlgorithm</a> = <a href="BGRABitmapTypes.html#daNearestNeighbor">daNearestNeighbor</a>); override;</code></td>
+<td class="itemcode"><span id="GradientFill-integer-integer-integer-integer-TBGRACustomGradient-TGradientType-TPointF-TPointF-TDrawMode-Boolean-TDitheringAlgorithm-"></span><code>procedure <strong>GradientFill</strong>(x, y, x2, y2: integer; gradient: <a href="BGRABitmapTypes.TBGRACustomGradient.html">TBGRACustomGradient</a>; gtype: <a href="BGRABitmapTypes.html#TGradientType">TGradientType</a>; o1, o2: <a href="BGRAClasses.html#TPointF">TPointF</a>; mode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>; Sinus: Boolean=False; ditherAlgo: <a href="BGRABitmapTypes.html#TDitheringAlgorithm">TDitheringAlgorithm</a> = <a href="BGRABitmapTypes.html#daNearestNeighbor">daNearestNeighbor</a>); override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -3128,7 +3140,7 @@ Fills completely a <a class="normal" href="BGRABitmapTypes.TGenericUniversalBitm
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GradientFill-integer-integer-integer-integer-TBGRACustomGradient-TGradientType-TPointF-TPointF-TDrawMode-Boolean-TDitheringAlgorithm-"></span><code>procedure <strong>GradientFill</strong>(x, y, x2, y2: integer; gradient: <a href="BGRABitmapTypes.TBGRACustomGradient.html">TBGRACustomGradient</a>; gtype: <a href="BGRABitmapTypes.html#TGradientType">TGradientType</a>; o1, o2: <a href="BGRAClasses.html#TPointF">TPointF</a>; mode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>; Sinus: Boolean=False; ditherAlgo: <a href="BGRABitmapTypes.html#TDitheringAlgorithm">TDitheringAlgorithm</a> = <a href="BGRABitmapTypes.html#daNearestNeighbor">daNearestNeighbor</a>); override;</code></td>
+<td class="itemcode"><span id="GradientFill-integer-integer-integer-integer-TBGRAPixel-TBGRAPixel-TGradientType-TPointF-TPointF-TDrawMode-boolean-Boolean-TDitheringAlgorithm-"></span><code>procedure <strong>GradientFill</strong>(x, y, x2, y2: integer; c1, c2: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; gtype: <a href="BGRABitmapTypes.html#TGradientType">TGradientType</a>; o1, o2: <a href="BGRAClasses.html#TPointF">TPointF</a>; mode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>; gammaColorCorrection: boolean = True; Sinus: Boolean=False; ditherAlgo: <a href="BGRABitmapTypes.html#TDitheringAlgorithm">TDitheringAlgorithm</a> = <a href="BGRABitmapTypes.html#daNearestNeighbor">daNearestNeighbor</a>); override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -3312,11 +3324,11 @@ Draws a <a class="normal" href="BGRABitmapTypes.TGenericUniversalBitmap.generic.
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="RoundRectAntialias-single-single-single-single-single-single-IBGRAScanner-single-TRoundRectangleOptions-"></span><code>procedure <strong>RoundRectAntialias</strong>(x,y,x2,y2,rx,ry: single; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; w: single; options: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a> = []); overload; override;</code></td>
+<td class="itemcode"><span id="RoundRectAntialias-single-single-single-single-single-single-TBGRAPixel-single-TBGRAPixel-TRoundRectangleOptions-"></span><code>procedure <strong>RoundRectAntialias</strong>(x,y,x2,y2,rx,ry: single; pencolor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; w: single; fillcolor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; options: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a> = []); overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
-Draws a rounded <a class="normal" href="BGRABitmapTypes.TGenericUniversalBitmap.generic.html#Rectangle-TRect-TPixel-TPixel-TDrawMode-Word-">rectangle</a> border with the specified texture. The corners have an elliptical radius of ''rx'' and ''ry''. ''options'' specifies how to <a class="normal" href="BGRADefaultBitmap.TBGRADefaultBitmap.html#Draw-TCanvas-TRect-boolean-">draw</a> the corners. See [[<a class="normal" href="BGRABitmap.html">BGRABitmap</a> Geometry types|geometry types]]</p>
+Draws and fills a round <a class="normal" href="BGRABitmapTypes.TGenericUniversalBitmap.generic.html#Rectangle-TRect-TPixel-TPixel-TDrawMode-Word-">rectangle</a></p>
 </td></tr>
 </table>
 <table class="detail wide_list">
@@ -3342,11 +3354,11 @@ Draws a rounded <a class="normal" href="BGRABitmapTypes.TGenericUniversalBitmap.
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="RoundRectAntialias-single-single-single-single-single-single-TBGRAPixel-single-TBGRAPixel-TRoundRectangleOptions-"></span><code>procedure <strong>RoundRectAntialias</strong>(x,y,x2,y2,rx,ry: single; pencolor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; w: single; fillcolor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; options: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a> = []); overload; override;</code></td>
+<td class="itemcode"><span id="RoundRectAntialias-single-single-single-single-single-single-IBGRAScanner-single-TRoundRectangleOptions-"></span><code>procedure <strong>RoundRectAntialias</strong>(x,y,x2,y2,rx,ry: single; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; w: single; options: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a> = []); overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
-Draws and fills a round <a class="normal" href="BGRABitmapTypes.TGenericUniversalBitmap.generic.html#Rectangle-TRect-TPixel-TPixel-TDrawMode-Word-">rectangle</a></p>
+Draws a rounded <a class="normal" href="BGRABitmapTypes.TGenericUniversalBitmap.generic.html#Rectangle-TRect-TPixel-TPixel-TDrawMode-Word-">rectangle</a> border with the specified texture. The corners have an elliptical radius of ''rx'' and ''ry''. ''options'' specifies how to <a class="normal" href="BGRADefaultBitmap.TBGRADefaultBitmap.html#Draw-TCanvas-TRect-boolean-">draw</a> the corners. See [[<a class="normal" href="BGRABitmap.html">BGRABitmap</a> Geometry types|geometry types]]</p>
 </td></tr>
 </table>
 <table class="detail wide_list">
@@ -3444,7 +3456,27 @@ universal brushes</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TextMultiline-single-single-single-string-IBGRAScanner-TBidiTextAlignment-TTextLayout-single-"></span><code>procedure <strong>TextMultiline</strong>(ALeft,ATop,AWidth: single; const sUTF8: string; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AAlign: <a href="BGRABitmapTypes.html#TBidiTextAlignment">TBidiTextAlignment</a> = <a href="BGRABitmapTypes.html#btaNatural">btaNatural</a>; AVertAlign: <a href="BGRAGraphics.html#TTextLayout">TTextLayout</a> = <a href="BGRAGraphics.html#tlTop">tlTop</a>; AParagraphSpacing: single = 0); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomBitmap.html#TextMultiline-single-single-single-string-IBGRAScanner-TBidiTextAlignment-TTextLayout-single-">TBGRACustomBitmap.TextMultiline</a>.</p><p>
+<a class="normal" href="BGRABitmapTypes.TBGRACustomBitmap.html#Draw-TCanvas-TRect-boolean-">Draw</a> text with line breaks, filling it with a texture</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><span id="TextMultiline-single-single-single-string-TBGRAPixel-TBidiTextAlignment-TTextLayout-single-"></span><code>procedure <strong>TextMultiline</strong>(ALeft,ATop,AWidth: single; const sUTF8: string; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AAlign: <a href="BGRABitmapTypes.html#TBidiTextAlignment">TBidiTextAlignment</a> = <a href="BGRABitmapTypes.html#btaNatural">btaNatural</a>; AVertAlign: <a href="BGRAGraphics.html#TTextLayout">TTextLayout</a> = <a href="BGRAGraphics.html#tlTop">tlTop</a>; AParagraphSpacing: single = 0); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomBitmap.html#TextMultiline-single-single-single-string-TBGRAPixel-TBidiTextAlignment-TTextLayout-single-">TBGRACustomBitmap.TextMultiline</a>.</p><p>
+<a class="normal" href="BGRABitmapTypes.TBGRACustomBitmap.html#Draw-TCanvas-TRect-boolean-">Draw</a> text with line breaks, filling it with a solid color</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TextOut-single-single-string-IBGRAScanner-TAlignment-single-"></span><code>procedure <strong>TextOut</strong>(x, y: single; const sUTF8: string; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AAlign: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; ALetterSpacing: single); overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -3452,10 +3484,12 @@ universal brushes</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="TextMultiline-single-single-single-string-IBGRAScanner-TBidiTextAlignment-TTextLayout-single-"></span><code>procedure <strong>TextMultiline</strong>(ALeft,ATop,AWidth: single; const sUTF8: string; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AAlign: <a href="BGRABitmapTypes.html#TBidiTextAlignment">TBidiTextAlignment</a> = <a href="BGRABitmapTypes.html#btaNatural">btaNatural</a>; AVertAlign: <a href="BGRAGraphics.html#TTextLayout">TTextLayout</a> = <a href="BGRAGraphics.html#tlTop">tlTop</a>; AParagraphSpacing: single = 0); overload; override;</code></td>
+<td class="itemcode"><span id="TextOut-single-single-string-TBGRAPixel-TAlignment-boolean-"></span><code>procedure <strong>TextOut</strong>(x, y: single; const sUTF8: string; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; ARightToLeft: boolean); overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
-<p class="nodescription">This item has no description.</p></td></tr>
+<p>
+Draws the UTF8 encoded string, with color c. If align is <a class="normal" href="BGRAClasses.html#taLeftJustify">taLeftJustify</a>, (x,y) is the top-left corner. If align is <a class="normal" href="BGRAClasses.html#taCenter">taCenter</a>, (x,y) is at the top and middle of the text. If align is <a class="normal" href="BGRAClasses.html#taRightJustify">taRightJustify</a>, (x,y) is the top-right corner. The value of <a class="normal" href="BGRABitmapTypes.TBGRACustomBitmap.html#FontOrientation">FontOrientation</a> is taken into account, so that the text may be rotated.</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -3470,28 +3504,10 @@ Same as above functions, except that the text is filled using texture. The value
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="TextOut-single-single-string-IBGRAScanner-TAlignment-single-"></span><code>procedure <strong>TextOut</strong>(x, y: single; const sUTF8: string; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AAlign: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; ALetterSpacing: single); overload; override;</code></td>
-</tr>
-<tr><td colspan="2">
-<p class="nodescription">This item has no description.</p></td></tr>
-</table>
-<table class="detail wide_list">
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><span id="TextOut-single-single-string-TBGRAPixel-TAlignment-single-"></span><code>procedure <strong>TextOut</strong>(x, y: single; const sUTF8: string; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AAlign: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; ALetterSpacing: single); overload; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
-</table>
-<table class="detail wide_list">
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="TextOut-single-single-string-TBGRAPixel-TAlignment-boolean-"></span><code>procedure <strong>TextOut</strong>(x, y: single; const sUTF8: string; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; ARightToLeft: boolean); overload; override;</code></td>
-</tr>
-<tr><td colspan="2">
-<p>
-Draws the UTF8 encoded string, with color c. If align is <a class="normal" href="BGRAClasses.html#taLeftJustify">taLeftJustify</a>, (x,y) is the top-left corner. If align is <a class="normal" href="BGRAClasses.html#taCenter">taCenter</a>, (x,y) is at the top and middle of the text. If align is <a class="normal" href="BGRAClasses.html#taRightJustify">taRightJustify</a>, (x,y) is the top-right corner. The value of <a class="normal" href="BGRABitmapTypes.TBGRACustomBitmap.html#FontOrientation">FontOrientation</a> is taken into account, so that the text may be rotated.</p>
-</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -3645,6 +3661,14 @@ ReadWriteConfig: TBGRAReadWriteConfig;</p>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><span id="InternalTextOutLetterSpacing-single-single-string-TBGRAPixel-IBGRAScanner-TAlignment-single-"></span><code>procedure <strong>InternalTextOutLetterSpacing</strong>(x,y: single; sUTF8: string; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AAlign: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; ALetterSpacing: single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalTextOutOffset-single-single-string-TBGRAPixel-IBGRAScanner-arrayofTPointF-"></span><code>procedure <strong>InternalTextOutOffset</strong>(x, y: single; const sUTF8: string; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AOffsets: array of <a href="BGRAClasses.html#TPointF">TPointF</a>); override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>

@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="container"><div class="navigation">
-<h2><a href="index.html">📚 BGRABitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Structures</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<h2><a href="index.html">Getting started</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Structures</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
 <div style="clear: both"></div>
 </li></ul></div><div class="content">
 <span id="TBGRAVectorizedFont"></span><h1 class="cio">Class TBGRAVectorizedFont</h1>
@@ -22,6 +22,7 @@
 <h2 class="declaration">Declaration</h2>
 <p class="declaration">
 <code>type TBGRAVectorizedFont = class(<a class="normal" href="BGRATypewriter.TBGRACustomTypeWriter.html">TBGRACustomTypeWriter</a>)</code></p>
+<script type="text/javascript" src="navigation.js"></script>
 <h2 class="description">Description</h2>
 <p>
 Allows to vectorize and to load vectorized font and draw them</p>
@@ -116,11 +117,11 @@ Allows to vectorize and to load vectorized font and draw them</p>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAVectorize.TBGRAVectorizedFont.html#DrawTextRect-TBGRACanvas2D-string-Single-Single-Single-Single-TBGRATypeWriterAlignment-">DrawTextRect</a></strong>(ADest: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; ATextUTF8: string; X1,Y1,X2,Y2: Single; AAlign: <a href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a>=<a href="BGRABitmapTypes.html#twaTopLeft">twaTopLeft</a>); overload;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAVectorize.TBGRAVectorizedFont.html#DrawTextRect-TBGRACanvas2D-string-TPointF-TPointF-TBGRATypeWriterAlignment-">DrawTextRect</a></strong>(ADest: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; ATextUTF8: string; ATopLeft,ABottomRight: <a href="BGRAClasses.html#TPointF">TPointF</a>; AAlign: <a href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a>=<a href="BGRABitmapTypes.html#twaTopLeft">twaTopLeft</a>); overload;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAVectorize.TBGRAVectorizedFont.html#DrawTextRect-TBGRACanvas2D-string-TPointF-TPointF-TBGRATypeWriterAlignment-">DrawTextRect</a></strong>(ADest: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; ATextUTF8: string; ATopLeft,ABottomRight: <a href="BGRAClasses.html#TPointF">TPointF</a>; AAlign: <a href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a>=<a href="BGRABitmapTypes.html#twaTopLeft">twaTopLeft</a>); overload;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAVectorize.TBGRAVectorizedFont.html#DrawTextRect-TBGRACanvas2D-string-Single-Single-Single-Single-TBGRATypeWriterAlignment-">DrawTextRect</a></strong>(ADest: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; ATextUTF8: string; X1,Y1,X2,Y2: Single; AAlign: <a href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a>=<a href="BGRABitmapTypes.html#twaTopLeft">twaTopLeft</a>); overload;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -140,25 +141,29 @@ Allows to vectorize and to load vectorized font and draw them</p>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAVectorize.TBGRAVectorizedFont.html#Init-boolean-">Init</a></strong>(AVectorize: boolean);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAVectorize.TBGRAVectorizedFont.html#Init-boolean-">Init</a></strong>(AVectorizeLCL: boolean);</code></td>
 </tr>
 <tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAVectorize.TBGRAVectorizedFont.html#NeedBuffer">NeedBuffer</a></strong>;</code></td>
+</tr>
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRAVectorize.TBGRAVectorizedFont.html#ReadAdditionalHeader-TStream-">ReadAdditionalHeader</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>); override;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRAVectorize.TBGRAVectorizedFont.html#SetDirectory-string-">SetDirectory</a></strong>(const AValue: string);</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRAVectorize.TBGRAVectorizedFont.html#UpdateFont">UpdateFont</a></strong>;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRAVectorize.TBGRAVectorizedFont.html#UpdateMatrix">UpdateMatrix</a></strong>;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BGRAVectorize.TBGRAVectorizedFont.html#WriteCustomHeader-TStream-">WriteCustomHeader</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>); override;</code></td>
 </tr>
@@ -227,9 +232,10 @@ Allows to vectorize and to load vectorized font and draw them</p>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="BGRAVectorize.TBGRAVectorizedFont.html#VectorizeLCL">VectorizeLCL</a></strong>: boolean read GetVectorizeLCL write SetVectorizeLCL;</code></td>
+<td class="itemcode"><code>property <strong><a href="BGRAVectorize.TBGRAVectorizedFont.html#VectorizeLCL">VectorizeLCL</a></strong>: boolean read FVectorizeLCL write SetVectorizeLCL;</code></td>
 </tr>
 </table>
+<script type="text/javascript" src="navigation.js"></script>
 <h2 class="description">Description</h2>
 <h3 class="detail">Fields</h3>
 <table class="detail wide_list">
@@ -396,7 +402,7 @@ Allows to vectorize and to load vectorized font and draw them</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="DrawTextRect-TBGRACanvas2D-string-Single-Single-Single-Single-TBGRATypeWriterAlignment-"></span><code>procedure <strong>DrawTextRect</strong>(ADest: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; ATextUTF8: string; X1,Y1,X2,Y2: Single; AAlign: <a href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a>=<a href="BGRABitmapTypes.html#twaTopLeft">twaTopLeft</a>); overload;</code></td>
+<td class="itemcode"><span id="DrawTextRect-TBGRACanvas2D-string-TPointF-TPointF-TBGRATypeWriterAlignment-"></span><code>procedure <strong>DrawTextRect</strong>(ADest: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; ATextUTF8: string; ATopLeft,ABottomRight: <a href="BGRAClasses.html#TPointF">TPointF</a>; AAlign: <a href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a>=<a href="BGRABitmapTypes.html#twaTopLeft">twaTopLeft</a>); overload;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -404,7 +410,7 @@ Allows to vectorize and to load vectorized font and draw them</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="DrawTextRect-TBGRACanvas2D-string-TPointF-TPointF-TBGRATypeWriterAlignment-"></span><code>procedure <strong>DrawTextRect</strong>(ADest: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; ATextUTF8: string; ATopLeft,ABottomRight: <a href="BGRAClasses.html#TPointF">TPointF</a>; AAlign: <a href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a>=<a href="BGRABitmapTypes.html#twaTopLeft">twaTopLeft</a>); overload;</code></td>
+<td class="itemcode"><span id="DrawTextRect-TBGRACanvas2D-string-Single-Single-Single-Single-TBGRATypeWriterAlignment-"></span><code>procedure <strong>DrawTextRect</strong>(ADest: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; ATextUTF8: string; X1,Y1,X2,Y2: Single; AAlign: <a href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a>=<a href="BGRABitmapTypes.html#twaTopLeft">twaTopLeft</a>); overload;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -444,7 +450,15 @@ Allows to vectorize and to load vectorized font and draw them</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><span id="Init-boolean-"></span><code>procedure <strong>Init</strong>(AVectorize: boolean);</code></td>
+<td class="itemcode"><span id="Init-boolean-"></span><code>procedure <strong>Init</strong>(AVectorizeLCL: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="NeedBuffer"></span><code>procedure <strong>NeedBuffer</strong>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -613,7 +627,7 @@ Allows to vectorize and to load vectorized font and draw them</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="VectorizeLCL"></span><code>property <strong>VectorizeLCL</strong>: boolean read GetVectorizeLCL write SetVectorizeLCL;</code></td>
+<td class="itemcode"><span id="VectorizeLCL"></span><code>property <strong>VectorizeLCL</strong>: boolean read FVectorizeLCL write SetVectorizeLCL;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
