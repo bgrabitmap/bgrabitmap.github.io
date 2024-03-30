@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="container"><div class="navigation">
-<h2><a href="index.html">Getting started</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Structures</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<h2><a href="index.html">Getting started</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Structures</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">All Identifiers</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
 <div style="clear: both"></div>
 </li></ul></div><div class="content">
 <h1 class="unit">Unit BGRAPNGComn
@@ -53,150 +53,150 @@ Common types for PNG format. This extents PNGComn unit for animated PNG.</p>
 <span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="itemcode"><code>function <strong><a href="BGRAPNGComn.html#CalculateChunkCRC-TChunkCode-Pointer-integer-">CalculateChunkCRC</a></strong>(AChunkCode: <a href="BGRAPNGComn.html#TChunkCode">TChunkCode</a>; AData: Pointer; ALength: integer): LongWord;</code></td>
+<td class="itemcode"><code>function <strong><a href="#CalculateChunkCRC-TChunkCode-Pointer-integer-">CalculateChunkCRC</a></strong>(AChunkCode: <a href="#TChunkCode">TChunkCode</a>; AData: Pointer; ALength: integer): LongWord;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code>function <strong><a href="BGRAPNGComn.html#CheckSignature-TPNGSignature-">CheckSignature</a></strong>(const ASignature: <a href="BGRAPNGComn.html#TPNGSignature">TPNGSignature</a>): boolean;</code></td>
+<td class="itemcode"><code>function <strong><a href="#CheckSignature-TPNGSignature-">CheckSignature</a></strong>(const ASignature: <a href="#TPNGSignature">TPNGSignature</a>): boolean;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code>function <strong><a href="BGRAPNGComn.html#GetChunkCode-TChunkTypes-">GetChunkCode</a></strong>(AChunkType: <a href="BGRAPNGComn.html#TChunkTypes">TChunkTypes</a>): <a href="BGRAPNGComn.html#TChunkCode">TChunkCode</a>;</code></td>
+<td class="itemcode"><code>function <strong><a href="#GetChunkCode-TChunkTypes-">GetChunkCode</a></strong>(AChunkType: <a href="#TChunkTypes">TChunkTypes</a>): <a href="#TChunkCode">TChunkCode</a>;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code>function <strong><a href="BGRAPNGComn.html#GetChunkType-TChunkCode-">GetChunkType</a></strong>(AChunkCode: <a href="BGRAPNGComn.html#TChunkCode">TChunkCode</a>): <a href="BGRAPNGComn.html#TChunkTypes">TChunkTypes</a>;</code></td>
+<td class="itemcode"><code>function <strong><a href="#GetChunkType-TChunkCode-">GetChunkType</a></strong>(AChunkCode: <a href="#TChunkCode">TChunkCode</a>): <a href="#TChunkTypes">TChunkTypes</a>;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code>function <strong><a href="BGRAPNGComn.html#GetSignature">GetSignature</a></strong>: <a href="BGRAPNGComn.html#TPNGSignature">TPNGSignature</a>;</code></td>
+<td class="itemcode"><code>function <strong><a href="#GetSignature">GetSignature</a></strong>: <a href="#TPNGSignature">TPNGSignature</a>;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code>function <strong><a href="BGRAPNGComn.html#IsAnimatedChunkType-TChunkTypes-">IsAnimatedChunkType</a></strong>(AChunkType: <a href="BGRAPNGComn.html#TChunkTypes">TChunkTypes</a>): boolean;</code></td>
+<td class="itemcode"><code>function <strong><a href="#IsAnimatedChunkType-TChunkTypes-">IsAnimatedChunkType</a></strong>(AChunkType: <a href="#TChunkTypes">TChunkTypes</a>): boolean;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#EightLong">EightLong</a></strong> = PNGComn.EightLong;</code></td>
+<td class="itemcode"><code><strong><a href="#EightLong">EightLong</a></strong> = PNGComn.EightLong;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#PAnimationControlChunk">PAnimationControlChunk</a></strong> = &circ;<a href="BGRAPNGComn.TAnimationControlChunk.html">TAnimationControlChunk</a>;</code></td>
+<td class="itemcode"><code><strong><a href="#PAnimationControlChunk">PAnimationControlChunk</a></strong> = &circ;<a href="BGRAPNGComn.TAnimationControlChunk.html">TAnimationControlChunk</a>;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#PFrameControlChunk">PFrameControlChunk</a></strong> = &circ;<a href="BGRAPNGComn.TFrameControlChunk.html">TFrameControlChunk</a>;</code></td>
+<td class="itemcode"><code><strong><a href="#PFrameControlChunk">PFrameControlChunk</a></strong> = &circ;<a href="BGRAPNGComn.TFrameControlChunk.html">TFrameControlChunk</a>;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#PFrameDataChunk">PFrameDataChunk</a></strong> = &circ;<a href="BGRAPNGComn.TFrameDataChunk.html">TFrameDataChunk</a>;</code></td>
+<td class="itemcode"><code><strong><a href="#PFrameDataChunk">PFrameDataChunk</a></strong> = &circ;<a href="BGRAPNGComn.TFrameDataChunk.html">TFrameDataChunk</a>;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#PNGImageException">PNGImageException</a></strong> = PNGComn.PNGImageException;</code></td>
+<td class="itemcode"><code><strong><a href="#PNGImageException">PNGImageException</a></strong> = PNGComn.PNGImageException;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#PPNGPhysicalDimensions">PPNGPhysicalDimensions</a></strong>=&circ;<a href="BGRAPNGComn.TPNGPhysicalDimensions.html">TPNGPhysicalDimensions</a>;</code></td>
+<td class="itemcode"><code><strong><a href="#PPNGPhysicalDimensions">PPNGPhysicalDimensions</a></strong>=&circ;<a href="BGRAPNGComn.TPNGPhysicalDimensions.html">TPNGPhysicalDimensions</a>;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#TAnimatedChunkTypes">TAnimatedChunkTypes</a></strong> = (...);</code></td>
+<td class="itemcode"><code><strong><a href="#TAnimatedChunkTypes">TAnimatedChunkTypes</a></strong> = (...);</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#TChunk">TChunk</a></strong> = PNGComn.TChunk;</code></td>
+<td class="itemcode"><code><strong><a href="#TChunk">TChunk</a></strong> = PNGComn.TChunk;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#TChunkCode">TChunkCode</a></strong> = PNGComn.TChunkCode;</code></td>
+<td class="itemcode"><code><strong><a href="#TChunkCode">TChunkCode</a></strong> = PNGComn.TChunkCode;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#TChunkHeader">TChunkHeader</a></strong> = PNGComn.TChunkHeader;</code></td>
+<td class="itemcode"><code><strong><a href="#TChunkHeader">TChunkHeader</a></strong> = PNGComn.TChunkHeader;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#TChunkTypes">TChunkTypes</a></strong> = PNGComn.TChunkTypes;</code></td>
+<td class="itemcode"><code><strong><a href="#TChunkTypes">TChunkTypes</a></strong> = PNGComn.TChunkTypes;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#TPNGSignature">TPNGSignature</a></strong> = array[0..7] of byte;</code></td>
+<td class="itemcode"><code><strong><a href="#TPNGSignature">TPNGSignature</a></strong> = array[0..7] of byte;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#AnimatedChunkTypes">AnimatedChunkTypes</a></strong> : array[low(<a href="BGRAPNGComn.html#TAnimatedChunkTypes">TAnimatedChunkTypes</a>)..high(<a href="BGRAPNGComn.html#TAnimatedChunkTypes">TAnimatedChunkTypes</a>)] of <a href="BGRAPNGComn.html#TChunkCode">TChunkCode</a> = (
+<td class="itemcode"><code><strong><a href="#AnimatedChunkTypes">AnimatedChunkTypes</a></strong> : array[low(<a href="#TAnimatedChunkTypes">TAnimatedChunkTypes</a>)..high(<a href="#TAnimatedChunkTypes">TAnimatedChunkTypes</a>)] of <a href="#TChunkCode">TChunkCode</a> = (
     'acTL',  'fcTL',  'fdAT'
   );</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#APNG_BLEND_OP_OVER">APNG_BLEND_OP_OVER</a></strong> = 1;</code></td>
+<td class="itemcode"><code><strong><a href="#APNG_BLEND_OP_OVER">APNG_BLEND_OP_OVER</a></strong> = 1;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#APNG_BLEND_OP_SOURCE">APNG_BLEND_OP_SOURCE</a></strong> = 0;</code></td>
+<td class="itemcode"><code><strong><a href="#APNG_BLEND_OP_SOURCE">APNG_BLEND_OP_SOURCE</a></strong> = 0;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#APNG_DISPOSE_OP_BACKGROUND">APNG_DISPOSE_OP_BACKGROUND</a></strong> = 1;</code></td>
+<td class="itemcode"><code><strong><a href="#APNG_DISPOSE_OP_BACKGROUND">APNG_DISPOSE_OP_BACKGROUND</a></strong> = 1;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#APNG_DISPOSE_OP_NONE">APNG_DISPOSE_OP_NONE</a></strong> = 0;</code></td>
+<td class="itemcode"><code><strong><a href="#APNG_DISPOSE_OP_NONE">APNG_DISPOSE_OP_NONE</a></strong> = 0;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#APNG_DISPOSE_OP_PREVIOUS">APNG_DISPOSE_OP_PREVIOUS</a></strong> = 2;</code></td>
+<td class="itemcode"><code><strong><a href="#APNG_DISPOSE_OP_PREVIOUS">APNG_DISPOSE_OP_PREVIOUS</a></strong> = 2;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#ctbKGD">ctbKGD</a></strong> = PNGComn.ctbKGD;</code></td>
+<td class="itemcode"><code><strong><a href="#ctbKGD">ctbKGD</a></strong> = PNGComn.ctbKGD;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#ctcHRM">ctcHRM</a></strong> = PNGComn.ctcHRM;</code></td>
+<td class="itemcode"><code><strong><a href="#ctcHRM">ctcHRM</a></strong> = PNGComn.ctcHRM;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#ctgAMA">ctgAMA</a></strong> = PNGComn.ctgAMA;</code></td>
+<td class="itemcode"><code><strong><a href="#ctgAMA">ctgAMA</a></strong> = PNGComn.ctgAMA;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#cthIST">cthIST</a></strong> = PNGComn.cthIST;</code></td>
+<td class="itemcode"><code><strong><a href="#cthIST">cthIST</a></strong> = PNGComn.cthIST;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#ctiCCP">ctiCCP</a></strong> = PNGComn.ctiCCP;</code></td>
+<td class="itemcode"><code><strong><a href="#ctiCCP">ctiCCP</a></strong> = PNGComn.ctiCCP;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#ctIDAT">ctIDAT</a></strong> = PNGComn.ctIDAT;</code></td>
+<td class="itemcode"><code><strong><a href="#ctIDAT">ctIDAT</a></strong> = PNGComn.ctIDAT;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#ctIEND">ctIEND</a></strong> = PNGComn.ctIEND;</code></td>
+<td class="itemcode"><code><strong><a href="#ctIEND">ctIEND</a></strong> = PNGComn.ctIEND;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#ctIHDR">ctIHDR</a></strong> = PNGComn.ctIHDR;</code></td>
+<td class="itemcode"><code><strong><a href="#ctIHDR">ctIHDR</a></strong> = PNGComn.ctIHDR;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#ctiTXt">ctiTXt</a></strong> = PNGComn.ctiTXt;</code></td>
+<td class="itemcode"><code><strong><a href="#ctiTXt">ctiTXt</a></strong> = PNGComn.ctiTXt;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#ctoFFs">ctoFFs</a></strong> = PNGComn.ctoFFs;</code></td>
+<td class="itemcode"><code><strong><a href="#ctoFFs">ctoFFs</a></strong> = PNGComn.ctoFFs;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#ctpHYs">ctpHYs</a></strong> = PNGComn.ctpHYs;</code></td>
+<td class="itemcode"><code><strong><a href="#ctpHYs">ctpHYs</a></strong> = PNGComn.ctpHYs;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#ctPLTE">ctPLTE</a></strong> = PNGComn.ctPLTE;</code></td>
+<td class="itemcode"><code><strong><a href="#ctPLTE">ctPLTE</a></strong> = PNGComn.ctPLTE;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#ctsBIT">ctsBIT</a></strong> = PNGComn.ctsBIT;</code></td>
+<td class="itemcode"><code><strong><a href="#ctsBIT">ctsBIT</a></strong> = PNGComn.ctsBIT;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#ctsCAL">ctsCAL</a></strong> = PNGComn.ctsCAL;</code></td>
+<td class="itemcode"><code><strong><a href="#ctsCAL">ctsCAL</a></strong> = PNGComn.ctsCAL;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#ctsPLT">ctsPLT</a></strong> = PNGComn.ctsPLT;</code></td>
+<td class="itemcode"><code><strong><a href="#ctsPLT">ctsPLT</a></strong> = PNGComn.ctsPLT;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#ctsRGB">ctsRGB</a></strong> = PNGComn.ctsRGB;</code></td>
+<td class="itemcode"><code><strong><a href="#ctsRGB">ctsRGB</a></strong> = PNGComn.ctsRGB;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#cttEXt">cttEXt</a></strong> = PNGComn.cttEXt;</code></td>
+<td class="itemcode"><code><strong><a href="#cttEXt">cttEXt</a></strong> = PNGComn.cttEXt;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#cttIME">cttIME</a></strong> = PNGComn.cttIME;</code></td>
+<td class="itemcode"><code><strong><a href="#cttIME">cttIME</a></strong> = PNGComn.cttIME;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#cttRNS">cttRNS</a></strong> = PNGComn.cttRNS;</code></td>
+<td class="itemcode"><code><strong><a href="#cttRNS">cttRNS</a></strong> = PNGComn.cttRNS;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#ctUnknown">ctUnknown</a></strong> = PNGComn.ctUnknown;</code></td>
+<td class="itemcode"><code><strong><a href="#ctUnknown">ctUnknown</a></strong> = PNGComn.ctUnknown;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#ctzTXt">ctzTXt</a></strong> = PNGComn.ctzTXt;</code></td>
+<td class="itemcode"><code><strong><a href="#ctzTXt">ctzTXt</a></strong> = PNGComn.ctzTXt;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="BGRAPNGComn.html#MaxChunkLength">MaxChunkLength</a></strong> = PNGComn.MaxChunkLength;</code></td>
+<td class="itemcode"><code><strong><a href="#MaxChunkLength">MaxChunkLength</a></strong> = PNGComn.MaxChunkLength;</code></td>
 </tr>
 </table>
 <script type="text/javascript" src="navigation.js"></script>
@@ -204,42 +204,42 @@ Common types for PNG format. This extents PNGComn unit for animated PNG.</p>
 <h3 class="detail">Functions and Procedures</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="CalculateChunkCRC-TChunkCode-Pointer-integer-"></span><code>function <strong>CalculateChunkCRC</strong>(AChunkCode: <a href="BGRAPNGComn.html#TChunkCode">TChunkCode</a>; AData: Pointer; ALength: integer): LongWord;</code></td>
+<td class="itemcode"><span id="CalculateChunkCRC-TChunkCode-Pointer-integer-"></span><code>function <strong>CalculateChunkCRC</strong>(AChunkCode: <a href="#TChunkCode">TChunkCode</a>; AData: Pointer; ALength: integer): LongWord;</code></td>
 </tr>
 <tr><td colspan="1">
 <p class="nodescription">This item has no description.</p></td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="CheckSignature-TPNGSignature-"></span><code>function <strong>CheckSignature</strong>(const ASignature: <a href="BGRAPNGComn.html#TPNGSignature">TPNGSignature</a>): boolean;</code></td>
+<td class="itemcode"><span id="CheckSignature-TPNGSignature-"></span><code>function <strong>CheckSignature</strong>(const ASignature: <a href="#TPNGSignature">TPNGSignature</a>): boolean;</code></td>
 </tr>
 <tr><td colspan="1">
 <p class="nodescription">This item has no description.</p></td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="GetChunkCode-TChunkTypes-"></span><code>function <strong>GetChunkCode</strong>(AChunkType: <a href="BGRAPNGComn.html#TChunkTypes">TChunkTypes</a>): <a href="BGRAPNGComn.html#TChunkCode">TChunkCode</a>;</code></td>
+<td class="itemcode"><span id="GetChunkCode-TChunkTypes-"></span><code>function <strong>GetChunkCode</strong>(AChunkType: <a href="#TChunkTypes">TChunkTypes</a>): <a href="#TChunkCode">TChunkCode</a>;</code></td>
 </tr>
 <tr><td colspan="1">
 <p class="nodescription">This item has no description.</p></td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="GetChunkType-TChunkCode-"></span><code>function <strong>GetChunkType</strong>(AChunkCode: <a href="BGRAPNGComn.html#TChunkCode">TChunkCode</a>): <a href="BGRAPNGComn.html#TChunkTypes">TChunkTypes</a>;</code></td>
+<td class="itemcode"><span id="GetChunkType-TChunkCode-"></span><code>function <strong>GetChunkType</strong>(AChunkCode: <a href="#TChunkCode">TChunkCode</a>): <a href="#TChunkTypes">TChunkTypes</a>;</code></td>
 </tr>
 <tr><td colspan="1">
 <p class="nodescription">This item has no description.</p></td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="GetSignature"></span><code>function <strong>GetSignature</strong>: <a href="BGRAPNGComn.html#TPNGSignature">TPNGSignature</a>;</code></td>
+<td class="itemcode"><span id="GetSignature"></span><code>function <strong>GetSignature</strong>: <a href="#TPNGSignature">TPNGSignature</a>;</code></td>
 </tr>
 <tr><td colspan="1">
 <p class="nodescription">This item has no description.</p></td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="IsAnimatedChunkType-TChunkTypes-"></span><code>function <strong>IsAnimatedChunkType</strong>(AChunkType: <a href="BGRAPNGComn.html#TChunkTypes">TChunkTypes</a>): boolean;</code></td>
+<td class="itemcode"><span id="IsAnimatedChunkType-TChunkTypes-"></span><code>function <strong>IsAnimatedChunkType</strong>(AChunkType: <a href="#TChunkTypes">TChunkTypes</a>): boolean;</code></td>
 </tr>
 <tr><td colspan="1">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -303,7 +303,7 @@ Animated PNG chunks</p>
 <h6 class="description_section">Values</h6>
 <ul>
 <li>
-<span id="ctacTL">ctacTL = 128</span>: extends <a class="normal" href="BGRAPNGComn.html#TChunkTypes">TChunkTypes</a></li>
+<span id="ctacTL">ctacTL = 128</span>: extends <a class="normal" href="#TChunkTypes">TChunkTypes</a></li>
 <li>
 <span id="ctfcTL">ctfcTL</span>: Animation Control: Specifies number of frames and repeat count</li>
 <li>
@@ -359,7 +359,7 @@ PNG signature</p>
 <h3 class="detail">Constants</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="AnimatedChunkTypes"></span><code><strong>AnimatedChunkTypes</strong> : array[low(<a href="BGRAPNGComn.html#TAnimatedChunkTypes">TAnimatedChunkTypes</a>)..high(<a href="BGRAPNGComn.html#TAnimatedChunkTypes">TAnimatedChunkTypes</a>)] of <a href="BGRAPNGComn.html#TChunkCode">TChunkCode</a> = (
+<td class="itemcode"><span id="AnimatedChunkTypes"></span><code><strong>AnimatedChunkTypes</strong> : array[low(<a href="#TAnimatedChunkTypes">TAnimatedChunkTypes</a>)..high(<a href="#TAnimatedChunkTypes">TAnimatedChunkTypes</a>)] of <a href="#TChunkCode">TChunkCode</a> = (
     'acTL',  'fcTL',  'fdAT'
   );</code></td>
 </tr>

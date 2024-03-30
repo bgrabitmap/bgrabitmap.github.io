@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="container"><div class="navigation">
-<h2><a href="index.html">Getting started</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Structures</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<h2><a href="index.html">Getting started</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Structures</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">All Identifiers</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
 <div style="clear: both"></div>
 </li></ul></div><div class="content">
 <h1 class="unit">Unit BGRAResample
@@ -53,31 +53,31 @@ This unit provides resampling functions, i.e. resizing of bitmaps with or withou
 <span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="itemcode"><code>function <strong><a href="BGRAResample.html#CreateInterpolator-TSplineStyle-">CreateInterpolator</a></strong>(style: <a href="BGRABitmapTypes.html#TSplineStyle">TSplineStyle</a>): <a href="BGRAResample.TWideKernelFilter.html">TWideKernelFilter</a>;</code></td>
+<td class="itemcode"><code>function <strong><a href="#CreateInterpolator-TSplineStyle-">CreateInterpolator</a></strong>(style: <a href="BGRABitmapTypes.html#TSplineStyle">TSplineStyle</a>): <a href="BGRAResample.TWideKernelFilter.html">TWideKernelFilter</a>;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code>function <strong><a href="BGRAResample.html#DownSample-TBGRACustomBitmap-integer-integer-">DownSample</a></strong>(source: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; factorX,factorY: integer): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+<td class="itemcode"><code>function <strong><a href="#DownSample-TBGRACustomBitmap-integer-integer-">DownSample</a></strong>(source: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; factorX,factorY: integer): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code>procedure <strong><a href="BGRAResample.html#DownSamplePutImage-TBGRACustomBitmap-integer-integer-TBGRACustomBitmap-Integer-Integer-TDrawMode-">DownSamplePutImage</a></strong>(source: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; factorX,factorY: integer; dest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; OffsetX,OffsetY: Integer; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#DownSamplePutImage-TBGRACustomBitmap-integer-integer-TBGRACustomBitmap-Integer-Integer-TDrawMode-">DownSamplePutImage</a></strong>(source: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; factorX,factorY: integer; dest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; OffsetX,OffsetY: Integer; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>);</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code>function <strong><a href="BGRAResample.html#FineInterpolation-single-TResampleFilter-">FineInterpolation</a></strong>(t: single; ResampleFilter: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a>): single;</code></td>
+<td class="itemcode"><code>function <strong><a href="#FineInterpolation-single-TResampleFilter-">FineInterpolation</a></strong>(t: single; ResampleFilter: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a>): single;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code>function <strong><a href="BGRAResample.html#FineInterpolation256-integer-TResampleFilter-">FineInterpolation256</a></strong>(t256: integer; ResampleFilter: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a>): integer;</code></td>
+<td class="itemcode"><code>function <strong><a href="#FineInterpolation256-integer-TResampleFilter-">FineInterpolation256</a></strong>(t256: integer; ResampleFilter: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a>): integer;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code>function <strong><a href="BGRAResample.html#FineResample-TBGRACustomBitmap-integer-integer-TResampleFilter-">FineResample</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; NewWidth, NewHeight: integer; ResampleFilter: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a>): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+<td class="itemcode"><code>function <strong><a href="#FineResample-TBGRACustomBitmap-integer-integer-TResampleFilter-">FineResample</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; NewWidth, NewHeight: integer; ResampleFilter: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a>): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code>function <strong><a href="BGRAResample.html#SimpleStretch-TBGRACustomBitmap-integer-integer-">SimpleStretch</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; NewWidth, NewHeight: integer): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+<td class="itemcode"><code>function <strong><a href="#SimpleStretch-TBGRACustomBitmap-integer-integer-">SimpleStretch</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; NewWidth, NewHeight: integer): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code>procedure <strong><a href="BGRAResample.html#StretchPutImage-TBGRACustomBitmap-integer-integer-TBGRACustomBitmap-Integer-Integer-TDrawMode-byte-boolean-">StretchPutImage</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; NewWidth, NewHeight: integer; dest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; OffsetX,OffsetY: Integer; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>; AOpacity: byte; ANoTransition: boolean = false);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#StretchPutImage-TBGRACustomBitmap-integer-integer-TBGRACustomBitmap-Integer-Integer-TDrawMode-byte-boolean-">StretchPutImage</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; NewWidth, NewHeight: integer; dest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; OffsetX,OffsetY: Integer; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>; AOpacity: byte; ANoTransition: boolean = false);</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code>function <strong><a href="BGRAResample.html#WideKernelResample-TBGRACustomBitmap-integer-integer-TWideKernelFilter-TWideKernelFilter-">WideKernelResample</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; NewWidth, NewHeight: integer; ResampleFilterSmaller, ResampleFilterLarger: <a href="BGRAResample.TWideKernelFilter.html">TWideKernelFilter</a>): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+<td class="itemcode"><code>function <strong><a href="#WideKernelResample-TBGRACustomBitmap-integer-integer-TWideKernelFilter-TWideKernelFilter-">WideKernelResample</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; NewWidth, NewHeight: integer; ResampleFilterSmaller, ResampleFilterLarger: <a href="BGRAResample.TWideKernelFilter.html">TWideKernelFilter</a>): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
 </tr>
 </table>
 <script type="text/javascript" src="navigation.js"></script>
@@ -138,7 +138,7 @@ Uses floating <a class="normal" href="BGRAClasses.html#Point-Integer-Integer-">p
 <p>
 
 
-<p>It can use minimal interpolation (4 pixels when upsizing) for simple interpolation filters (linear and cosine-like) or wide kernel resample for complex interpolation. In this cas, it calls <a class="normal" href="BGRAResample.html#WideKernelResample-TBGRACustomBitmap-integer-integer-TWideKernelFilter-TWideKernelFilter-">WideKernelResample</a>.</p>
+<p>It can use minimal interpolation (4 pixels when upsizing) for simple interpolation filters (linear and cosine-like) or wide kernel resample for complex interpolation. In this cas, it calls <a class="normal" href="#WideKernelResample-TBGRACustomBitmap-integer-integer-TWideKernelFilter-TWideKernelFilter-">WideKernelResample</a>.</p>
 </td></tr>
 </table>
 <table class="detail wide_list">

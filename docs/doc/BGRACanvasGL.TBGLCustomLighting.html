@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="container"><div class="navigation">
-<h2><a href="index.html">Getting started</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Structures</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<h2><a href="index.html">Getting started</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Structures</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">All Identifiers</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
 <div style="clear: both"></div>
 </li></ul></div><div class="content">
 <span id="TBGLCustomLighting"></span><h1 class="cio">Class TBGLCustomLighting</h1>
@@ -33,137 +33,137 @@ Abstract class for lighting with OpenGL</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code><strong><a href="BGRACanvasGL.TBGLCustomLighting.html#ShaderList">ShaderList</a></strong>: <a href="BGRAClasses.html#TStringList">TStringList</a>;</code></td>
+<td class="itemcode"><code><strong><a href="#ShaderList">ShaderList</a></strong>: <a href="BGRAClasses.html#TStringList">TStringList</a>;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>destructor <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#Destroy">Destroy</a></strong>; override;</code></td>
+<td class="itemcode"><code>destructor <strong><a href="#Destroy">Destroy</a></strong>; override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#AddDirectionalLight-TColorF-TPoint3D-">AddDirectionalLight</a></strong>(AColor: <a href="BGRABitmapTypes.html#TColorF">TColorF</a>; ADirection: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>): integer; virtual; abstract;</code></td>
+<td class="itemcode"><code>function <strong><a href="#AddDirectionalLight-TColorF-TPoint3D-">AddDirectionalLight</a></strong>(AColor: <a href="BGRABitmapTypes.html#TColorF">TColorF</a>; ADirection: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>): integer; virtual; abstract;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#AddPointLight-TColorF-TPoint3D-single-single-">AddPointLight</a></strong>(AColor: <a href="BGRABitmapTypes.html#TColorF">TColorF</a>; APosition: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>; ALinearAttenuation, AQuadraticAttenuation: single): integer; virtual; abstract;</code></td>
+<td class="itemcode"><code>function <strong><a href="#AddPointLight-TColorF-TPoint3D-single-single-">AddPointLight</a></strong>(AColor: <a href="BGRABitmapTypes.html#TColorF">TColorF</a>; APosition: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>; ALinearAttenuation, AQuadraticAttenuation: single): integer; virtual; abstract;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#GetAttribVariable-LongWord-string-">GetAttribVariable</a></strong>(AProgram: LongWord; AName: string): LongWord; virtual; abstract;</code></td>
+<td class="itemcode"><code>function <strong><a href="#GetAttribVariable-LongWord-string-">GetAttribVariable</a></strong>(AProgram: LongWord; AName: string): LongWord; virtual; abstract;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#GetUniformVariable-LongWord-string-">GetUniformVariable</a></strong>(AProgram: LongWord; AName: string): LongWord; virtual; abstract;</code></td>
+<td class="itemcode"><code>function <strong><a href="#GetUniformVariable-LongWord-string-">GetUniformVariable</a></strong>(AProgram: LongWord; AName: string): LongWord; virtual; abstract;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#MakeFragmentShader-string-">MakeFragmentShader</a></strong>(ASource: string): LongWord; virtual; abstract;</code></td>
+<td class="itemcode"><code>function <strong><a href="#MakeFragmentShader-string-">MakeFragmentShader</a></strong>(ASource: string): LongWord; virtual; abstract;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#MakeShaderProgram-LongWord-LongWord-">MakeShaderProgram</a></strong>(AVertexShader, AFragmentShader: LongWord): LongWord; virtual; abstract;</code></td>
+<td class="itemcode"><code>function <strong><a href="#MakeShaderProgram-LongWord-LongWord-">MakeShaderProgram</a></strong>(AVertexShader, AFragmentShader: LongWord): LongWord; virtual; abstract;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#MakeVertexShader-string-">MakeVertexShader</a></strong>(ASource: string): LongWord; virtual; abstract;</code></td>
+<td class="itemcode"><code>function <strong><a href="#MakeVertexShader-string-">MakeVertexShader</a></strong>(ASource: string): LongWord; virtual; abstract;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#RemoveLight-integer-">RemoveLight</a></strong>(AIndex: integer): boolean; virtual; abstract;</code></td>
+<td class="itemcode"><code>function <strong><a href="#RemoveLight-integer-">RemoveLight</a></strong>(AIndex: integer): boolean; virtual; abstract;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#GetAmbiantLightF">GetAmbiantLightF</a></strong>: <a href="BGRABitmapTypes.html#TColorF">TColorF</a>; virtual; abstract;</code></td>
+<td class="itemcode"><code>function <strong><a href="#GetAmbiantLightF">GetAmbiantLightF</a></strong>: <a href="BGRABitmapTypes.html#TColorF">TColorF</a>; virtual; abstract;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#GetBuiltInLightingEnabled">GetBuiltInLightingEnabled</a></strong>: boolean; virtual; abstract;</code></td>
+<td class="itemcode"><code>function <strong><a href="#GetBuiltInLightingEnabled">GetBuiltInLightingEnabled</a></strong>: boolean; virtual; abstract;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#GetShader-string-">GetShader</a></strong>(AName: string): <a href="BGRACanvasGL.TBGLCustomShader.html">TBGLCustomShader</a>;</code></td>
+<td class="itemcode"><code>function <strong><a href="#GetShader-string-">GetShader</a></strong>(AName: string): <a href="BGRACanvasGL.TBGLCustomShader.html">TBGLCustomShader</a>;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#GetSupportShaders">GetSupportShaders</a></strong>: boolean; virtual;</code></td>
+<td class="itemcode"><code>function <strong><a href="#GetSupportShaders">GetSupportShaders</a></strong>: boolean; virtual;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#BindAttribute-TAttributeVariable-">BindAttribute</a></strong>(AAttribute: <a href="BGRACanvasGL.TAttributeVariable.html">TAttributeVariable</a>); virtual; abstract;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#BindAttribute-TAttributeVariable-">BindAttribute</a></strong>(AAttribute: <a href="BGRACanvasGL.TAttributeVariable.html">TAttributeVariable</a>); virtual; abstract;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#ClearLights">ClearLights</a></strong>; virtual; abstract;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#ClearLights">ClearLights</a></strong>; virtual; abstract;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#DeleteShaderObject-LongWord-">DeleteShaderObject</a></strong>(AShader: LongWord); virtual; abstract;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#DeleteShaderObject-LongWord-">DeleteShaderObject</a></strong>(AShader: LongWord); virtual; abstract;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#DeleteShaderProgram-LongWord-">DeleteShaderProgram</a></strong>(AProgram: LongWord); virtual; abstract;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#DeleteShaderProgram-LongWord-">DeleteShaderProgram</a></strong>(AProgram: LongWord); virtual; abstract;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#FreeShaders">FreeShaders</a></strong>;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#FreeShaders">FreeShaders</a></strong>;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#SetSpecularIndex-integer-">SetSpecularIndex</a></strong>(AIndex: integer); virtual; abstract;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#SetSpecularIndex-integer-">SetSpecularIndex</a></strong>(AIndex: integer); virtual; abstract;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#SetUniformInteger-LongWord-const-integer-integer-">SetUniformInteger</a></strong>(AVariable: LongWord; const AValue; AElementCount, AComponentCount: integer); virtual; abstract;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#SetUniformInteger-LongWord-const-integer-integer-">SetUniformInteger</a></strong>(AVariable: LongWord; const AValue; AElementCount, AComponentCount: integer); virtual; abstract;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#SetUniformSingle-LongWord-const-integer-integer-">SetUniformSingle</a></strong>(AVariable: LongWord; const AValue; AElementCount, AComponentCount: integer); virtual; abstract;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#SetUniformSingle-LongWord-const-integer-integer-">SetUniformSingle</a></strong>(AVariable: LongWord; const AValue; AElementCount, AComponentCount: integer); virtual; abstract;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#UnbindAttribute-TAttributeVariable-">UnbindAttribute</a></strong>(AAttribute: <a href="BGRACanvasGL.TAttributeVariable.html">TAttributeVariable</a>); virtual; abstract;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#UnbindAttribute-TAttributeVariable-">UnbindAttribute</a></strong>(AAttribute: <a href="BGRACanvasGL.TAttributeVariable.html">TAttributeVariable</a>); virtual; abstract;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#UseProgram-LongWord-">UseProgram</a></strong>(AProgram: LongWord); virtual; abstract;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#UseProgram-LongWord-">UseProgram</a></strong>(AProgram: LongWord); virtual; abstract;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#SetAmbiantLightF-TColorF-">SetAmbiantLightF</a></strong>(AAmbiantLight: <a href="BGRABitmapTypes.html#TColorF">TColorF</a>); virtual; abstract;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#SetAmbiantLightF-TColorF-">SetAmbiantLightF</a></strong>(AAmbiantLight: <a href="BGRABitmapTypes.html#TColorF">TColorF</a>); virtual; abstract;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#SetBuiltInLightingEnabled-boolean-">SetBuiltInLightingEnabled</a></strong>(AValue: boolean); virtual; abstract;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#SetBuiltInLightingEnabled-boolean-">SetBuiltInLightingEnabled</a></strong>(AValue: boolean); virtual; abstract;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#SetShader-string-TBGLCustomShader-">SetShader</a></strong>(AName: string; AValue: <a href="BGRACanvasGL.TBGLCustomShader.html">TBGLCustomShader</a>);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#SetShader-string-TBGLCustomShader-">SetShader</a></strong>(AName: string; AValue: <a href="BGRACanvasGL.TBGLCustomShader.html">TBGLCustomShader</a>);</code></td>
 </tr>
 </table>
 <span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#ActiveShader">ActiveShader</a></strong>: <a href="BGRACanvasGL.TBGLCustomShader.html">TBGLCustomShader</a> read GetActiveShader write SetActiveShader;</code></td>
+<td class="itemcode"><code>property <strong><a href="#ActiveShader">ActiveShader</a></strong>: <a href="BGRACanvasGL.TBGLCustomShader.html">TBGLCustomShader</a> read GetActiveShader write SetActiveShader;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#AmbiantLightF">AmbiantLightF</a></strong>: <a href="BGRABitmapTypes.html#TColorF">TColorF</a> read <a href="BGRACanvasGL.TBGLCustomLighting.html#GetAmbiantLightF">GetAmbiantLightF</a> write <a href="BGRACanvasGL.TBGLCustomLighting.html#SetAmbiantLightF-TColorF-">SetAmbiantLightF</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="#AmbiantLightF">AmbiantLightF</a></strong>: <a href="BGRABitmapTypes.html#TColorF">TColorF</a> read <a href="#GetAmbiantLightF">GetAmbiantLightF</a> write <a href="#SetAmbiantLightF-TColorF-">SetAmbiantLightF</a>;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#BuiltInLightingEnabled">BuiltInLightingEnabled</a></strong>: boolean read <a href="BGRACanvasGL.TBGLCustomLighting.html#GetBuiltInLightingEnabled">GetBuiltInLightingEnabled</a> write <a href="BGRACanvasGL.TBGLCustomLighting.html#SetBuiltInLightingEnabled-boolean-">SetBuiltInLightingEnabled</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="#BuiltInLightingEnabled">BuiltInLightingEnabled</a></strong>: boolean read <a href="#GetBuiltInLightingEnabled">GetBuiltInLightingEnabled</a> write <a href="#SetBuiltInLightingEnabled-boolean-">SetBuiltInLightingEnabled</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#Shader">Shader</a></strong>[AName: string]: <a href="BGRACanvasGL.TBGLCustomShader.html">TBGLCustomShader</a> read <a href="BGRACanvasGL.TBGLCustomLighting.html#GetShader-string-">GetShader</a> write <a href="BGRACanvasGL.TBGLCustomLighting.html#SetShader-string-TBGLCustomShader-">SetShader</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="#Shader">Shader</a></strong>[AName: string]: <a href="BGRACanvasGL.TBGLCustomShader.html">TBGLCustomShader</a> read <a href="#GetShader-string-">GetShader</a> write <a href="#SetShader-string-TBGLCustomShader-">SetShader</a>;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="BGRACanvasGL.TBGLCustomLighting.html#SupportShaders">SupportShaders</a></strong>: boolean read <a href="BGRACanvasGL.TBGLCustomLighting.html#GetSupportShaders">GetSupportShaders</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="#SupportShaders">SupportShaders</a></strong>: boolean read <a href="#GetSupportShaders">GetSupportShaders</a>;</code></td>
 </tr>
 </table>
 <script type="text/javascript" src="navigation.js"></script>
@@ -398,7 +398,7 @@ Abstract class for lighting with OpenGL</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="AmbiantLightF"></span><code>property <strong>AmbiantLightF</strong>: <a href="BGRABitmapTypes.html#TColorF">TColorF</a> read <a href="BGRACanvasGL.TBGLCustomLighting.html#GetAmbiantLightF">GetAmbiantLightF</a> write <a href="BGRACanvasGL.TBGLCustomLighting.html#SetAmbiantLightF-TColorF-">SetAmbiantLightF</a>;</code></td>
+<td class="itemcode"><span id="AmbiantLightF"></span><code>property <strong>AmbiantLightF</strong>: <a href="BGRABitmapTypes.html#TColorF">TColorF</a> read <a href="#GetAmbiantLightF">GetAmbiantLightF</a> write <a href="#SetAmbiantLightF-TColorF-">SetAmbiantLightF</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -406,7 +406,7 @@ Abstract class for lighting with OpenGL</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="BuiltInLightingEnabled"></span><code>property <strong>BuiltInLightingEnabled</strong>: boolean read <a href="BGRACanvasGL.TBGLCustomLighting.html#GetBuiltInLightingEnabled">GetBuiltInLightingEnabled</a> write <a href="BGRACanvasGL.TBGLCustomLighting.html#SetBuiltInLightingEnabled-boolean-">SetBuiltInLightingEnabled</a>;</code></td>
+<td class="itemcode"><span id="BuiltInLightingEnabled"></span><code>property <strong>BuiltInLightingEnabled</strong>: boolean read <a href="#GetBuiltInLightingEnabled">GetBuiltInLightingEnabled</a> write <a href="#SetBuiltInLightingEnabled-boolean-">SetBuiltInLightingEnabled</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -414,7 +414,7 @@ Abstract class for lighting with OpenGL</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Shader"></span><code>property <strong>Shader</strong>[AName: string]: <a href="BGRACanvasGL.TBGLCustomShader.html">TBGLCustomShader</a> read <a href="BGRACanvasGL.TBGLCustomLighting.html#GetShader-string-">GetShader</a> write <a href="BGRACanvasGL.TBGLCustomLighting.html#SetShader-string-TBGLCustomShader-">SetShader</a>;</code></td>
+<td class="itemcode"><span id="Shader"></span><code>property <strong>Shader</strong>[AName: string]: <a href="BGRACanvasGL.TBGLCustomShader.html">TBGLCustomShader</a> read <a href="#GetShader-string-">GetShader</a> write <a href="#SetShader-string-TBGLCustomShader-">SetShader</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -422,7 +422,7 @@ Abstract class for lighting with OpenGL</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="SupportShaders"></span><code>property <strong>SupportShaders</strong>: boolean read <a href="BGRACanvasGL.TBGLCustomLighting.html#GetSupportShaders">GetSupportShaders</a>;</code></td>
+<td class="itemcode"><span id="SupportShaders"></span><code>property <strong>SupportShaders</strong>: boolean read <a href="#GetSupportShaders">GetSupportShaders</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>

@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="container"><div class="navigation">
-<h2><a href="index.html">Getting started</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Structures</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<h2><a href="index.html">Getting started</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Structures</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">All Identifiers</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
 <div style="clear: both"></div>
 </li></ul></div><div class="content">
 <span id="TBGRAReaderTiff"></span><h1 class="cio">Class TBGRAReaderTiff</h1>
@@ -33,98 +33,98 @@ Reader for TIFF format</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code><strong><a href="BGRAReadTiff.TBGRAReaderTiff.html#ImageList">ImageList</a></strong>: <a href="BGRAClasses.html#TFPList">TFPList</a>;</code></td>
+<td class="itemcode"><code><strong><a href="#ImageList">ImageList</a></strong>: <a href="BGRAClasses.html#TFPList">TFPList</a>;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>constructor <strong><a href="BGRAReadTiff.TBGRAReaderTiff.html#Create">Create</a></strong>; override;</code></td>
+<td class="itemcode"><code>constructor <strong><a href="#Create">Create</a></strong>; override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>destructor <strong><a href="BGRAReadTiff.TBGRAReaderTiff.html#Destroy">Destroy</a></strong>; override;</code></td>
+<td class="itemcode"><code>destructor <strong><a href="#Destroy">Destroy</a></strong>; override;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRAReadTiff.TBGRAReaderTiff.html#FirstImg">FirstImg</a></strong>: TTiffIFD;</code></td>
+<td class="itemcode"><code>function <strong><a href="#FirstImg">FirstImg</a></strong>: TTiffIFD;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRAReadTiff.TBGRAReaderTiff.html#GetBiggestImage">GetBiggestImage</a></strong>: TTiffIFD;</code></td>
+<td class="itemcode"><code>function <strong><a href="#GetBiggestImage">GetBiggestImage</a></strong>: TTiffIFD;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRAReadTiff.TBGRAReaderTiff.html#ImageCount">ImageCount</a></strong>: integer;</code></td>
-</tr>
-<tr class="list2">
-<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRAReadTiff.TBGRAReaderTiff.html#InternalCheck-TStream-">InternalCheck</a></strong>(Str: <a href="BGRAClasses.html#TStream">TStream</a>): boolean; override;</code></td>
-</tr>
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAReadTiff.TBGRAReaderTiff.html#Clear">Clear</a></strong>;</code></td>
-</tr>
-<tr class="list2">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAReadTiff.TBGRAReaderTiff.html#LoadFromStream-TStream-boolean-">LoadFromStream</a></strong>(aStream: <a href="BGRAClasses.html#TStream">TStream</a>; AutoClear: boolean = true);</code></td>
-</tr>
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAReadTiff.TBGRAReaderTiff.html#LoadHeaderFromStream-TStream-">LoadHeaderFromStream</a></strong>(aStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
-</tr>
-<tr class="list2">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAReadTiff.TBGRAReaderTiff.html#LoadIFDsFromStream">LoadIFDsFromStream</a></strong>;</code></td>
-</tr>
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAReadTiff.TBGRAReaderTiff.html#LoadImageFromStream-integer-">LoadImageFromStream</a></strong>(Index: integer);</code></td>
-</tr>
-<tr class="list2">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAReadTiff.TBGRAReaderTiff.html#LoadImageFromStream-TTiffIFD-">LoadImageFromStream</a></strong>(IFD: TTiffIFD);</code></td>
-</tr>
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAReadTiff.TBGRAReaderTiff.html#ReleaseStream">ReleaseStream</a></strong>;</code></td>
+<td class="itemcode"><code>function <strong><a href="#ImageCount">ImageCount</a></strong>: integer;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAReadTiff.TBGRAReaderTiff.html#DoCreateImage-TTiffIFD-">DoCreateImage</a></strong>(ImgFileDir: TTiffIFD); virtual;</code></td>
+<td class="itemcode"><code>function <strong><a href="#InternalCheck-TStream-">InternalCheck</a></strong>(Str: <a href="BGRAClasses.html#TStream">TStream</a>): boolean; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="#Clear">Clear</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="#LoadFromStream-TStream-boolean-">LoadFromStream</a></strong>(aStream: <a href="BGRAClasses.html#TStream">TStream</a>; AutoClear: boolean = true);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="#LoadHeaderFromStream-TStream-">LoadHeaderFromStream</a></strong>(aStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="#LoadIFDsFromStream">LoadIFDsFromStream</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="#LoadImageFromStream-integer-">LoadImageFromStream</a></strong>(Index: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="#LoadImageFromStream-TTiffIFD-">LoadImageFromStream</a></strong>(IFD: TTiffIFD);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="#ReleaseStream">ReleaseStream</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="#DoCreateImage-TTiffIFD-">DoCreateImage</a></strong>(ImgFileDir: TTiffIFD); virtual;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAReadTiff.TBGRAReaderTiff.html#InternalRead-TStream-TFPCustomImage-">InternalRead</a></strong>(Str: <a href="BGRAClasses.html#TStream">TStream</a>; AnImage: TFPCustomImage); override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#InternalRead-TStream-TFPCustomImage-">InternalRead</a></strong>(Str: <a href="BGRAClasses.html#TStream">TStream</a>; AnImage: TFPCustomImage); override;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="BGRAReadTiff.TBGRAReaderTiff.html#CheckIFDOrder">CheckIFDOrder</a></strong>: <a href="BGRAReadTiff.html#TTiffCheckIFDOrder">TTiffCheckIFDOrder</a> read FCheckIFDOrder write FCheckIFDOrder;</code></td>
+<td class="itemcode"><code>property <strong><a href="#CheckIFDOrder">CheckIFDOrder</a></strong>: <a href="BGRAReadTiff.html#TTiffCheckIFDOrder">TTiffCheckIFDOrder</a> read FCheckIFDOrder write FCheckIFDOrder;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="BGRAReadTiff.TBGRAReaderTiff.html#FirstIFDStart">FirstIFDStart</a></strong>: LongWord read FFirstIFDStart;</code></td>
+<td class="itemcode"><code>property <strong><a href="#FirstIFDStart">FirstIFDStart</a></strong>: LongWord read FFirstIFDStart;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="BGRAReadTiff.TBGRAReaderTiff.html#Images">Images</a></strong>[Index: integer]: TTiffIFD read GetImages;</code></td>
+<td class="itemcode"><code>property <strong><a href="#Images">Images</a></strong>[Index: integer]: TTiffIFD read GetImages;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="BGRAReadTiff.TBGRAReaderTiff.html#OnCreateImage">OnCreateImage</a></strong>: TTiffCreateCompatibleImgEvent read FOnCreateImage
+<td class="itemcode"><code>property <strong><a href="#OnCreateImage">OnCreateImage</a></strong>: TTiffCreateCompatibleImgEvent read FOnCreateImage
                                                           write FOnCreateImage;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="BGRAReadTiff.TBGRAReaderTiff.html#StartPos">StartPos</a></strong>: int64 read fStartPos;</code></td>
+<td class="itemcode"><code>property <strong><a href="#StartPos">StartPos</a></strong>: int64 read fStartPos;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="BGRAReadTiff.TBGRAReaderTiff.html#TheStream">TheStream</a></strong>: <a href="BGRAClasses.html#TStream">TStream</a> read s;</code></td>
+<td class="itemcode"><code>property <strong><a href="#TheStream">TheStream</a></strong>: <a href="BGRAClasses.html#TStream">TStream</a> read s;</code></td>
 </tr>
 </table>
 <script type="text/javascript" src="navigation.js"></script>
@@ -232,7 +232,7 @@ list of TTiffIFD</p>
 </tr>
 <tr><td colspan="2">
 <p>
-call <a class="normal" href="BGRAReadTiff.TBGRAReaderTiff.html#LoadHeaderFromStream-TStream-">LoadHeaderFromStream</a> before</p>
+call <a class="normal" href="#LoadHeaderFromStream-TStream-">LoadHeaderFromStream</a> before</p>
 </td></tr>
 </table>
 <table class="detail wide_list">
@@ -242,7 +242,7 @@ call <a class="normal" href="BGRAReadTiff.TBGRAReaderTiff.html#LoadHeaderFromStr
 </tr>
 <tr><td colspan="2">
 <p>
-call <a class="normal" href="BGRAReadTiff.TBGRAReaderTiff.html#LoadIFDsFromStream">LoadIFDsFromStream</a> before</p>
+call <a class="normal" href="#LoadIFDsFromStream">LoadIFDsFromStream</a> before</p>
 </td></tr>
 </table>
 <table class="detail wide_list">
@@ -252,7 +252,7 @@ call <a class="normal" href="BGRAReadTiff.TBGRAReaderTiff.html#LoadIFDsFromStrea
 </tr>
 <tr><td colspan="2">
 <p>
-call <a class="normal" href="BGRAReadTiff.TBGRAReaderTiff.html#LoadIFDsFromStream">LoadIFDsFromStream</a> before</p>
+call <a class="normal" href="#LoadIFDsFromStream">LoadIFDsFromStream</a> before</p>
 </td></tr>
 </table>
 <table class="detail wide_list">
@@ -304,7 +304,7 @@ call <a class="normal" href="BGRAReadTiff.TBGRAReaderTiff.html#LoadIFDsFromStrea
 </tr>
 <tr><td colspan="2">
 <p>
-load all <a class="normal" href="BGRAReadTiff.TBGRAReaderTiff.html#Images">images</a> (you need to handle <code>OnCreateImage</code> event and assign ImgFileDir.Img)</p>
+load all <a class="normal" href="#Images">images</a> (you need to handle <code>OnCreateImage</code> event and assign ImgFileDir.Img)</p>
 </td></tr>
 </table>
 <table class="detail wide_list">

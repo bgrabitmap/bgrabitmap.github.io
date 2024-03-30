@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="container"><div class="navigation">
-<h2><a href="index.html">Getting started</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Structures</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<h2><a href="index.html">Getting started</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Structures</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">All Identifiers</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
 <div style="clear: both"></div>
 </li></ul></div><div class="content">
 <h1 class="unit">Unit avifbgra
@@ -51,106 +51,106 @@ Easy to use classes and functions to read/write images in AVIF format.</p>
 <span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="itemcode"><code>procedure <strong><a href="avifbgra.html#AvifLoadFromFile-string-TBGRACustomBitmap-">AvifLoadFromFile</a></strong>(const AFilename: string; aBitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#AvifLoadFromFile-string-TBGRACustomBitmap-">AvifLoadFromFile</a></strong>(const AFilename: string; aBitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>);</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code>procedure <strong><a href="avifbgra.html#AvifLoadFromFileNative-string-TBGRACustomBitmap-">AvifLoadFromFileNative</a></strong>(const AFilename: string; aBitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#AvifLoadFromFileNative-string-TBGRACustomBitmap-">AvifLoadFromFileNative</a></strong>(const AFilename: string; aBitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>);</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code>procedure <strong><a href="avifbgra.html#AvifLoadFromMemory-Pointer-cardinal-TBGRACustomBitmap-">AvifLoadFromMemory</a></strong>(AData: Pointer; ASize: cardinal; aBitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#AvifLoadFromMemory-Pointer-cardinal-TBGRACustomBitmap-">AvifLoadFromMemory</a></strong>(AData: Pointer; ASize: cardinal; aBitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>);</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code>procedure <strong><a href="avifbgra.html#AvifLoadFromStream-TStream-TBGRACustomBitmap-">AvifLoadFromStream</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; aBitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#AvifLoadFromStream-TStream-TBGRACustomBitmap-">AvifLoadFromStream</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; aBitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>);</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code>function <strong><a href="avifbgra.html#AvifSaveToFile-TBGRACustomBitmap-string-boolean-integer-integer-avifPixelFormat-avifCodecChoice-integer-">AvifSaveToFile</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; const AFilename: string; AIgnoreAlpha: boolean = False; AQuality0to100: integer = <a href="avifbgra.html#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a>; AQualityAlpha0to100: integer = <a href="avifbgra.html#AVIF_BGRA_DEFAULT_QUALITY_ALPHA">AVIF_BGRA_DEFAULT_QUALITY_ALPHA</a>; APixelFormat: <a href="avifbgra.html#avifPixelFormat">avifPixelFormat</a> = <a href="avifbgra.html#AVIF_BGRA_PIXEL_FORMAT_DEFAULT">AVIF_BGRA_PIXEL_FORMAT_DEFAULT</a>; ACodec: <a href="avifbgra.html#avifCodecChoice">avifCodecChoice</a> = <a href="avifbgra.html#AVIF_BGRA_CODEC_CHOICE_AUTO">AVIF_BGRA_CODEC_CHOICE_AUTO</a>; ASpeed0to10: integer = <a href="avifbgra.html#AVIF_BGRA_SPEED_DEFAULT">AVIF_BGRA_SPEED_DEFAULT</a>): nativeuint; overload;</code></td>
+<td class="itemcode"><code>function <strong><a href="#AvifSaveToFile-TBGRACustomBitmap-string-boolean-integer-integer-avifPixelFormat-avifCodecChoice-integer-">AvifSaveToFile</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; const AFilename: string; AIgnoreAlpha: boolean = False; AQuality0to100: integer = <a href="#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a>; AQualityAlpha0to100: integer = <a href="#AVIF_BGRA_DEFAULT_QUALITY_ALPHA">AVIF_BGRA_DEFAULT_QUALITY_ALPHA</a>; APixelFormat: <a href="#avifPixelFormat">avifPixelFormat</a> = <a href="#AVIF_BGRA_PIXEL_FORMAT_DEFAULT">AVIF_BGRA_PIXEL_FORMAT_DEFAULT</a>; ACodec: <a href="#avifCodecChoice">avifCodecChoice</a> = <a href="#AVIF_BGRA_CODEC_CHOICE_AUTO">AVIF_BGRA_CODEC_CHOICE_AUTO</a>; ASpeed0to10: integer = <a href="#AVIF_BGRA_SPEED_DEFAULT">AVIF_BGRA_SPEED_DEFAULT</a>): nativeuint; overload;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code>function <strong><a href="avifbgra.html#AvifSaveToFile-TBGRACustomBitmap-string-integer-integer-avifPixelFormat-boolean-">AvifSaveToFile</a></strong>(aBitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; const AFilename: string; aQuality0to100: integer = <a href="avifbgra.html#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a>; aSpeed0to10: integer = <a href="avifbgra.html#AVIF_BGRA_SPEED_DEFAULT">AVIF_BGRA_SPEED_DEFAULT</a>; aPixelFormat: <a href="avifbgra.html#avifPixelFormat">avifPixelFormat</a> = <a href="avifbgra.html#AVIF_BGRA_PIXEL_FORMAT_DEFAULT">AVIF_BGRA_PIXEL_FORMAT_DEFAULT</a>; aIgnoreAlpha: boolean = false): NativeUInt;</code></td>
+<td class="itemcode"><code>function <strong><a href="#AvifSaveToFile-TBGRACustomBitmap-string-integer-integer-avifPixelFormat-boolean-">AvifSaveToFile</a></strong>(aBitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; const AFilename: string; aQuality0to100: integer = <a href="#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a>; aSpeed0to10: integer = <a href="#AVIF_BGRA_SPEED_DEFAULT">AVIF_BGRA_SPEED_DEFAULT</a>; aPixelFormat: <a href="#avifPixelFormat">avifPixelFormat</a> = <a href="#AVIF_BGRA_PIXEL_FORMAT_DEFAULT">AVIF_BGRA_PIXEL_FORMAT_DEFAULT</a>; aIgnoreAlpha: boolean = false): NativeUInt;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code>function <strong><a href="avifbgra.html#AvifSaveToMemory-TBGRACustomBitmap-Pointer-nativeuint-boolean-integer-integer-avifPixelFormat-avifCodecChoice-integer-">AvifSaveToMemory</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AData: Pointer; ASize: nativeuint; AIgnoreAlpha: boolean = False; AQuality0to100: integer = <a href="avifbgra.html#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a>; AQualityAlpha0to100: integer = <a href="avifbgra.html#AVIF_BGRA_DEFAULT_QUALITY_ALPHA">AVIF_BGRA_DEFAULT_QUALITY_ALPHA</a>; APixelFormat: <a href="avifbgra.html#avifPixelFormat">avifPixelFormat</a> = <a href="avifbgra.html#AVIF_BGRA_PIXEL_FORMAT_DEFAULT">AVIF_BGRA_PIXEL_FORMAT_DEFAULT</a>; ACodec: <a href="avifbgra.html#avifCodecChoice">avifCodecChoice</a> = <a href="avifbgra.html#AVIF_BGRA_CODEC_CHOICE_AUTO">AVIF_BGRA_CODEC_CHOICE_AUTO</a>; ASpeed0to10: integer = <a href="avifbgra.html#AVIF_BGRA_SPEED_DEFAULT">AVIF_BGRA_SPEED_DEFAULT</a>): nativeuint; overload;</code></td>
+<td class="itemcode"><code>function <strong><a href="#AvifSaveToMemory-TBGRACustomBitmap-Pointer-nativeuint-boolean-integer-integer-avifPixelFormat-avifCodecChoice-integer-">AvifSaveToMemory</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AData: Pointer; ASize: nativeuint; AIgnoreAlpha: boolean = False; AQuality0to100: integer = <a href="#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a>; AQualityAlpha0to100: integer = <a href="#AVIF_BGRA_DEFAULT_QUALITY_ALPHA">AVIF_BGRA_DEFAULT_QUALITY_ALPHA</a>; APixelFormat: <a href="#avifPixelFormat">avifPixelFormat</a> = <a href="#AVIF_BGRA_PIXEL_FORMAT_DEFAULT">AVIF_BGRA_PIXEL_FORMAT_DEFAULT</a>; ACodec: <a href="#avifCodecChoice">avifCodecChoice</a> = <a href="#AVIF_BGRA_CODEC_CHOICE_AUTO">AVIF_BGRA_CODEC_CHOICE_AUTO</a>; ASpeed0to10: integer = <a href="#AVIF_BGRA_SPEED_DEFAULT">AVIF_BGRA_SPEED_DEFAULT</a>): nativeuint; overload;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code>function <strong><a href="avifbgra.html#AvifSaveToMemory-TBGRACustomBitmap-Pointer-cardinal-integer-integer-avifPixelFormat-boolean-">AvifSaveToMemory</a></strong>(aBitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AData: Pointer; ASize: cardinal; aQuality0to100: integer = <a href="avifbgra.html#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a>; aSpeed0to10:integer = <a href="avifbgra.html#AVIF_BGRA_SPEED_DEFAULT">AVIF_BGRA_SPEED_DEFAULT</a>; aPixelFormat:<a href="avifbgra.html#avifPixelFormat">avifPixelFormat</a> = <a href="avifbgra.html#AVIF_BGRA_PIXEL_FORMAT_DEFAULT">AVIF_BGRA_PIXEL_FORMAT_DEFAULT</a>; aIgnoreAlpha:boolean = false): NativeUInt;</code></td>
+<td class="itemcode"><code>function <strong><a href="#AvifSaveToMemory-TBGRACustomBitmap-Pointer-cardinal-integer-integer-avifPixelFormat-boolean-">AvifSaveToMemory</a></strong>(aBitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AData: Pointer; ASize: cardinal; aQuality0to100: integer = <a href="#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a>; aSpeed0to10:integer = <a href="#AVIF_BGRA_SPEED_DEFAULT">AVIF_BGRA_SPEED_DEFAULT</a>; aPixelFormat:<a href="#avifPixelFormat">avifPixelFormat</a> = <a href="#AVIF_BGRA_PIXEL_FORMAT_DEFAULT">AVIF_BGRA_PIXEL_FORMAT_DEFAULT</a>; aIgnoreAlpha:boolean = false): NativeUInt;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code>function <strong><a href="avifbgra.html#AvifSaveToStream-TBGRACustomBitmap-TStream-integer-integer-avifPixelFormat-boolean-">AvifSaveToStream</a></strong>(aBitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AStream: <a href="BGRAClasses.html#TStream">TStream</a>; aQuality0to100: integer = <a href="avifbgra.html#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a>; aSpeed0to10: integer = <a href="avifbgra.html#AVIF_BGRA_SPEED_DEFAULT">AVIF_BGRA_SPEED_DEFAULT</a>; aPixelFormat:<a href="avifbgra.html#avifPixelFormat">avifPixelFormat</a> = <a href="avifbgra.html#AVIF_BGRA_PIXEL_FORMAT_DEFAULT">AVIF_BGRA_PIXEL_FORMAT_DEFAULT</a>; aIgnoreAlpha:boolean = false): NativeUInt;</code></td>
+<td class="itemcode"><code>function <strong><a href="#AvifSaveToStream-TBGRACustomBitmap-TStream-integer-integer-avifPixelFormat-boolean-">AvifSaveToStream</a></strong>(aBitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AStream: <a href="BGRAClasses.html#TStream">TStream</a>; aQuality0to100: integer = <a href="#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a>; aSpeed0to10: integer = <a href="#AVIF_BGRA_SPEED_DEFAULT">AVIF_BGRA_SPEED_DEFAULT</a>; aPixelFormat:<a href="#avifPixelFormat">avifPixelFormat</a> = <a href="#AVIF_BGRA_PIXEL_FORMAT_DEFAULT">AVIF_BGRA_PIXEL_FORMAT_DEFAULT</a>; aIgnoreAlpha:boolean = false): NativeUInt;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code>function <strong><a href="avifbgra.html#AvifSaveToStream-TBGRACustomBitmap-TStream-boolean-integer-integer-avifPixelFormat-avifCodecChoice-integer-">AvifSaveToStream</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AIgnoreAlpha: boolean = False; AQuality0to100: integer = <a href="avifbgra.html#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a>; AQualityAlpha0to100: integer = <a href="avifbgra.html#AVIF_BGRA_DEFAULT_QUALITY_ALPHA">AVIF_BGRA_DEFAULT_QUALITY_ALPHA</a>; APixelFormat: <a href="avifbgra.html#avifPixelFormat">avifPixelFormat</a> = <a href="avifbgra.html#AVIF_BGRA_PIXEL_FORMAT_DEFAULT">AVIF_BGRA_PIXEL_FORMAT_DEFAULT</a>; ACodec: <a href="avifbgra.html#avifCodecChoice">avifCodecChoice</a> = <a href="avifbgra.html#AVIF_BGRA_CODEC_CHOICE_AUTO">AVIF_BGRA_CODEC_CHOICE_AUTO</a>; ASpeed0to10: integer = <a href="avifbgra.html#AVIF_BGRA_SPEED_DEFAULT">AVIF_BGRA_SPEED_DEFAULT</a>): nativeuint; overload;</code></td>
+<td class="itemcode"><code>function <strong><a href="#AvifSaveToStream-TBGRACustomBitmap-TStream-boolean-integer-integer-avifPixelFormat-avifCodecChoice-integer-">AvifSaveToStream</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AIgnoreAlpha: boolean = False; AQuality0to100: integer = <a href="#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a>; AQualityAlpha0to100: integer = <a href="#AVIF_BGRA_DEFAULT_QUALITY_ALPHA">AVIF_BGRA_DEFAULT_QUALITY_ALPHA</a>; APixelFormat: <a href="#avifPixelFormat">avifPixelFormat</a> = <a href="#AVIF_BGRA_PIXEL_FORMAT_DEFAULT">AVIF_BGRA_PIXEL_FORMAT_DEFAULT</a>; ACodec: <a href="#avifCodecChoice">avifCodecChoice</a> = <a href="#AVIF_BGRA_CODEC_CHOICE_AUTO">AVIF_BGRA_CODEC_CHOICE_AUTO</a>; ASpeed0to10: integer = <a href="#AVIF_BGRA_SPEED_DEFAULT">AVIF_BGRA_SPEED_DEFAULT</a>): nativeuint; overload;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code>function <strong><a href="avifbgra.html#AvifValidateHeaderSignature-Pointer-">AvifValidateHeaderSignature</a></strong>( aBuffer: Pointer ): boolean;</code></td>
+<td class="itemcode"><code>function <strong><a href="#AvifValidateHeaderSignature-Pointer-">AvifValidateHeaderSignature</a></strong>( aBuffer: Pointer ): boolean;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="itemcode"><code><strong><a href="avifbgra.html#avifCodecChoice">avifCodecChoice</a></strong> = libavif.avifCodecChoice;</code></td>
+<td class="itemcode"><code><strong><a href="#avifCodecChoice">avifCodecChoice</a></strong> = libavif.avifCodecChoice;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="avifbgra.html#avifPixelFormat">avifPixelFormat</a></strong> = libavif.avifPixelFormat;</code></td>
+<td class="itemcode"><code><strong><a href="#avifPixelFormat">avifPixelFormat</a></strong> = libavif.avifPixelFormat;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="itemcode"><code><strong><a href="avifbgra.html#AVIF_BGRA_CODEC_CHOICE_AUTO">AVIF_BGRA_CODEC_CHOICE_AUTO</a></strong> = AVIF_CODEC_CHOICE_AUTO;</code></td>
+<td class="itemcode"><code><strong><a href="#AVIF_BGRA_CODEC_CHOICE_AUTO">AVIF_BGRA_CODEC_CHOICE_AUTO</a></strong> = AVIF_CODEC_CHOICE_AUTO;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="avifbgra.html#AVIF_BGRA_DEFAULT_MAX_THREADS">AVIF_BGRA_DEFAULT_MAX_THREADS</a></strong> = 2;</code></td>
+<td class="itemcode"><code><strong><a href="#AVIF_BGRA_DEFAULT_MAX_THREADS">AVIF_BGRA_DEFAULT_MAX_THREADS</a></strong> = 2;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><strong><a href="avifbgra.html#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a></strong> = 30;</code></td>
+<td class="itemcode"><code><strong><a href="#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a></strong> = 30;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="avifbgra.html#AVIF_BGRA_DEFAULT_QUALITY_ALPHA">AVIF_BGRA_DEFAULT_QUALITY_ALPHA</a></strong> = <a href="avifbgra.html#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a> + <a href="avifbgra.html#AVIF_BGRA_DEFAULT_QUALITY_ALPHA_DELTA">AVIF_BGRA_DEFAULT_QUALITY_ALPHA_DELTA</a>;</code></td>
+<td class="itemcode"><code><strong><a href="#AVIF_BGRA_DEFAULT_QUALITY_ALPHA">AVIF_BGRA_DEFAULT_QUALITY_ALPHA</a></strong> = <a href="#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a> + <a href="#AVIF_BGRA_DEFAULT_QUALITY_ALPHA_DELTA">AVIF_BGRA_DEFAULT_QUALITY_ALPHA_DELTA</a>;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><strong><a href="avifbgra.html#AVIF_BGRA_DEFAULT_QUALITY_ALPHA_DELTA">AVIF_BGRA_DEFAULT_QUALITY_ALPHA_DELTA</a></strong> = 25;</code></td>
+<td class="itemcode"><code><strong><a href="#AVIF_BGRA_DEFAULT_QUALITY_ALPHA_DELTA">AVIF_BGRA_DEFAULT_QUALITY_ALPHA_DELTA</a></strong> = 25;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="avifbgra.html#AVIF_BGRA_DEFAULT_TIMESCALE">AVIF_BGRA_DEFAULT_TIMESCALE</a></strong> = 30;</code></td>
+<td class="itemcode"><code><strong><a href="#AVIF_BGRA_DEFAULT_TIMESCALE">AVIF_BGRA_DEFAULT_TIMESCALE</a></strong> = 30;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><strong><a href="avifbgra.html#AVIF_BGRA_LOSSLESS_QUALITY">AVIF_BGRA_LOSSLESS_QUALITY</a></strong> = 100;</code></td>
+<td class="itemcode"><code><strong><a href="#AVIF_BGRA_LOSSLESS_QUALITY">AVIF_BGRA_LOSSLESS_QUALITY</a></strong> = 100;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="avifbgra.html#AVIF_BGRA_PIXEL_FORMAT_DEFAULT">AVIF_BGRA_PIXEL_FORMAT_DEFAULT</a></strong> = <a href="avifbgra.html#AVIF_PIXEL_FORMAT_YUV420">AVIF_PIXEL_FORMAT_YUV420</a>;</code></td>
+<td class="itemcode"><code><strong><a href="#AVIF_BGRA_PIXEL_FORMAT_DEFAULT">AVIF_BGRA_PIXEL_FORMAT_DEFAULT</a></strong> = <a href="#AVIF_PIXEL_FORMAT_YUV420">AVIF_PIXEL_FORMAT_YUV420</a>;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><strong><a href="avifbgra.html#AVIF_BGRA_SPEED_DEFAULT">AVIF_BGRA_SPEED_DEFAULT</a></strong> = AVIF_SPEED_DEFAULT;</code></td>
+<td class="itemcode"><code><strong><a href="#AVIF_BGRA_SPEED_DEFAULT">AVIF_BGRA_SPEED_DEFAULT</a></strong> = AVIF_SPEED_DEFAULT;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="avifbgra.html#AVIF_CODEC_CHOICE_AOM">AVIF_CODEC_CHOICE_AOM</a></strong> = libavif.AVIF_CODEC_CHOICE_AOM;</code></td>
+<td class="itemcode"><code><strong><a href="#AVIF_CODEC_CHOICE_AOM">AVIF_CODEC_CHOICE_AOM</a></strong> = libavif.AVIF_CODEC_CHOICE_AOM;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><strong><a href="avifbgra.html#AVIF_CODEC_CHOICE_AVM">AVIF_CODEC_CHOICE_AVM</a></strong> = libavif.AVIF_CODEC_CHOICE_AVM;</code></td>
+<td class="itemcode"><code><strong><a href="#AVIF_CODEC_CHOICE_AVM">AVIF_CODEC_CHOICE_AVM</a></strong> = libavif.AVIF_CODEC_CHOICE_AVM;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="avifbgra.html#AVIF_CODEC_CHOICE_DAV1D">AVIF_CODEC_CHOICE_DAV1D</a></strong> = libavif.AVIF_CODEC_CHOICE_DAV1D;</code></td>
+<td class="itemcode"><code><strong><a href="#AVIF_CODEC_CHOICE_DAV1D">AVIF_CODEC_CHOICE_DAV1D</a></strong> = libavif.AVIF_CODEC_CHOICE_DAV1D;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><strong><a href="avifbgra.html#AVIF_CODEC_CHOICE_LIBGAV1">AVIF_CODEC_CHOICE_LIBGAV1</a></strong> = libavif.AVIF_CODEC_CHOICE_LIBGAV1;</code></td>
+<td class="itemcode"><code><strong><a href="#AVIF_CODEC_CHOICE_LIBGAV1">AVIF_CODEC_CHOICE_LIBGAV1</a></strong> = libavif.AVIF_CODEC_CHOICE_LIBGAV1;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="avifbgra.html#AVIF_CODEC_CHOICE_RAV1E">AVIF_CODEC_CHOICE_RAV1E</a></strong> = libavif.AVIF_CODEC_CHOICE_RAV1E;</code></td>
+<td class="itemcode"><code><strong><a href="#AVIF_CODEC_CHOICE_RAV1E">AVIF_CODEC_CHOICE_RAV1E</a></strong> = libavif.AVIF_CODEC_CHOICE_RAV1E;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><strong><a href="avifbgra.html#AVIF_CODEC_CHOICE_SVT">AVIF_CODEC_CHOICE_SVT</a></strong> = libavif.AVIF_CODEC_CHOICE_SVT;</code></td>
+<td class="itemcode"><code><strong><a href="#AVIF_CODEC_CHOICE_SVT">AVIF_CODEC_CHOICE_SVT</a></strong> = libavif.AVIF_CODEC_CHOICE_SVT;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="avifbgra.html#AVIF_PIXEL_FORMAT_YUV400">AVIF_PIXEL_FORMAT_YUV400</a></strong> = libavif.AVIF_PIXEL_FORMAT_YUV400;</code></td>
+<td class="itemcode"><code><strong><a href="#AVIF_PIXEL_FORMAT_YUV400">AVIF_PIXEL_FORMAT_YUV400</a></strong> = libavif.AVIF_PIXEL_FORMAT_YUV400;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><strong><a href="avifbgra.html#AVIF_PIXEL_FORMAT_YUV420">AVIF_PIXEL_FORMAT_YUV420</a></strong> = libavif.AVIF_PIXEL_FORMAT_YUV420;</code></td>
+<td class="itemcode"><code><strong><a href="#AVIF_PIXEL_FORMAT_YUV420">AVIF_PIXEL_FORMAT_YUV420</a></strong> = libavif.AVIF_PIXEL_FORMAT_YUV420;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><strong><a href="avifbgra.html#AVIF_PIXEL_FORMAT_YUV422">AVIF_PIXEL_FORMAT_YUV422</a></strong> = libavif.AVIF_PIXEL_FORMAT_YUV422;</code></td>
+<td class="itemcode"><code><strong><a href="#AVIF_PIXEL_FORMAT_YUV422">AVIF_PIXEL_FORMAT_YUV422</a></strong> = libavif.AVIF_PIXEL_FORMAT_YUV422;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><strong><a href="avifbgra.html#AVIF_PIXEL_FORMAT_YUV444">AVIF_PIXEL_FORMAT_YUV444</a></strong> = libavif.AVIF_PIXEL_FORMAT_YUV444;</code></td>
+<td class="itemcode"><code><strong><a href="#AVIF_PIXEL_FORMAT_YUV444">AVIF_PIXEL_FORMAT_YUV444</a></strong> = libavif.AVIF_PIXEL_FORMAT_YUV444;</code></td>
 </tr>
 </table>
 <script type="text/javascript" src="navigation.js"></script>
@@ -194,7 +194,7 @@ Load an AVIF image from the given stream</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="AvifSaveToFile-TBGRACustomBitmap-string-boolean-integer-integer-avifPixelFormat-avifCodecChoice-integer-"></span><code>function <strong>AvifSaveToFile</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; const AFilename: string; AIgnoreAlpha: boolean = False; AQuality0to100: integer = <a href="avifbgra.html#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a>; AQualityAlpha0to100: integer = <a href="avifbgra.html#AVIF_BGRA_DEFAULT_QUALITY_ALPHA">AVIF_BGRA_DEFAULT_QUALITY_ALPHA</a>; APixelFormat: <a href="avifbgra.html#avifPixelFormat">avifPixelFormat</a> = <a href="avifbgra.html#AVIF_BGRA_PIXEL_FORMAT_DEFAULT">AVIF_BGRA_PIXEL_FORMAT_DEFAULT</a>; ACodec: <a href="avifbgra.html#avifCodecChoice">avifCodecChoice</a> = <a href="avifbgra.html#AVIF_BGRA_CODEC_CHOICE_AUTO">AVIF_BGRA_CODEC_CHOICE_AUTO</a>; ASpeed0to10: integer = <a href="avifbgra.html#AVIF_BGRA_SPEED_DEFAULT">AVIF_BGRA_SPEED_DEFAULT</a>): nativeuint; overload;</code></td>
+<td class="itemcode"><span id="AvifSaveToFile-TBGRACustomBitmap-string-boolean-integer-integer-avifPixelFormat-avifCodecChoice-integer-"></span><code>function <strong>AvifSaveToFile</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; const AFilename: string; AIgnoreAlpha: boolean = False; AQuality0to100: integer = <a href="#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a>; AQualityAlpha0to100: integer = <a href="#AVIF_BGRA_DEFAULT_QUALITY_ALPHA">AVIF_BGRA_DEFAULT_QUALITY_ALPHA</a>; APixelFormat: <a href="#avifPixelFormat">avifPixelFormat</a> = <a href="#AVIF_BGRA_PIXEL_FORMAT_DEFAULT">AVIF_BGRA_PIXEL_FORMAT_DEFAULT</a>; ACodec: <a href="#avifCodecChoice">avifCodecChoice</a> = <a href="#AVIF_BGRA_CODEC_CHOICE_AUTO">AVIF_BGRA_CODEC_CHOICE_AUTO</a>; ASpeed0to10: integer = <a href="#AVIF_BGRA_SPEED_DEFAULT">AVIF_BGRA_SPEED_DEFAULT</a>): nativeuint; overload;</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -203,7 +203,7 @@ Save an image into a file using AVIF format. Return the number of bytes needed.<
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="AvifSaveToFile-TBGRACustomBitmap-string-integer-integer-avifPixelFormat-boolean-"></span><code>function <strong>AvifSaveToFile</strong>(aBitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; const AFilename: string; aQuality0to100: integer = <a href="avifbgra.html#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a>; aSpeed0to10: integer = <a href="avifbgra.html#AVIF_BGRA_SPEED_DEFAULT">AVIF_BGRA_SPEED_DEFAULT</a>; aPixelFormat: <a href="avifbgra.html#avifPixelFormat">avifPixelFormat</a> = <a href="avifbgra.html#AVIF_BGRA_PIXEL_FORMAT_DEFAULT">AVIF_BGRA_PIXEL_FORMAT_DEFAULT</a>; aIgnoreAlpha: boolean = false): NativeUInt;</code></td>
+<td class="itemcode"><span id="AvifSaveToFile-TBGRACustomBitmap-string-integer-integer-avifPixelFormat-boolean-"></span><code>function <strong>AvifSaveToFile</strong>(aBitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; const AFilename: string; aQuality0to100: integer = <a href="#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a>; aSpeed0to10: integer = <a href="#AVIF_BGRA_SPEED_DEFAULT">AVIF_BGRA_SPEED_DEFAULT</a>; aPixelFormat: <a href="#avifPixelFormat">avifPixelFormat</a> = <a href="#AVIF_BGRA_PIXEL_FORMAT_DEFAULT">AVIF_BGRA_PIXEL_FORMAT_DEFAULT</a>; aIgnoreAlpha: boolean = false): NativeUInt;</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -212,7 +212,7 @@ Save an image into a file using AVIF format. Return the number of bytes needed.<
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="AvifSaveToMemory-TBGRACustomBitmap-Pointer-nativeuint-boolean-integer-integer-avifPixelFormat-avifCodecChoice-integer-"></span><code>function <strong>AvifSaveToMemory</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AData: Pointer; ASize: nativeuint; AIgnoreAlpha: boolean = False; AQuality0to100: integer = <a href="avifbgra.html#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a>; AQualityAlpha0to100: integer = <a href="avifbgra.html#AVIF_BGRA_DEFAULT_QUALITY_ALPHA">AVIF_BGRA_DEFAULT_QUALITY_ALPHA</a>; APixelFormat: <a href="avifbgra.html#avifPixelFormat">avifPixelFormat</a> = <a href="avifbgra.html#AVIF_BGRA_PIXEL_FORMAT_DEFAULT">AVIF_BGRA_PIXEL_FORMAT_DEFAULT</a>; ACodec: <a href="avifbgra.html#avifCodecChoice">avifCodecChoice</a> = <a href="avifbgra.html#AVIF_BGRA_CODEC_CHOICE_AUTO">AVIF_BGRA_CODEC_CHOICE_AUTO</a>; ASpeed0to10: integer = <a href="avifbgra.html#AVIF_BGRA_SPEED_DEFAULT">AVIF_BGRA_SPEED_DEFAULT</a>): nativeuint; overload;</code></td>
+<td class="itemcode"><span id="AvifSaveToMemory-TBGRACustomBitmap-Pointer-nativeuint-boolean-integer-integer-avifPixelFormat-avifCodecChoice-integer-"></span><code>function <strong>AvifSaveToMemory</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AData: Pointer; ASize: nativeuint; AIgnoreAlpha: boolean = False; AQuality0to100: integer = <a href="#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a>; AQualityAlpha0to100: integer = <a href="#AVIF_BGRA_DEFAULT_QUALITY_ALPHA">AVIF_BGRA_DEFAULT_QUALITY_ALPHA</a>; APixelFormat: <a href="#avifPixelFormat">avifPixelFormat</a> = <a href="#AVIF_BGRA_PIXEL_FORMAT_DEFAULT">AVIF_BGRA_PIXEL_FORMAT_DEFAULT</a>; ACodec: <a href="#avifCodecChoice">avifCodecChoice</a> = <a href="#AVIF_BGRA_CODEC_CHOICE_AUTO">AVIF_BGRA_CODEC_CHOICE_AUTO</a>; ASpeed0to10: integer = <a href="#AVIF_BGRA_SPEED_DEFAULT">AVIF_BGRA_SPEED_DEFAULT</a>): nativeuint; overload;</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -221,7 +221,7 @@ Save an image to memory using AVIF format. Return the number of bytes needed.</p
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="AvifSaveToMemory-TBGRACustomBitmap-Pointer-cardinal-integer-integer-avifPixelFormat-boolean-"></span><code>function <strong>AvifSaveToMemory</strong>(aBitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AData: Pointer; ASize: cardinal; aQuality0to100: integer = <a href="avifbgra.html#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a>; aSpeed0to10:integer = <a href="avifbgra.html#AVIF_BGRA_SPEED_DEFAULT">AVIF_BGRA_SPEED_DEFAULT</a>; aPixelFormat:<a href="avifbgra.html#avifPixelFormat">avifPixelFormat</a> = <a href="avifbgra.html#AVIF_BGRA_PIXEL_FORMAT_DEFAULT">AVIF_BGRA_PIXEL_FORMAT_DEFAULT</a>; aIgnoreAlpha:boolean = false): NativeUInt;</code></td>
+<td class="itemcode"><span id="AvifSaveToMemory-TBGRACustomBitmap-Pointer-cardinal-integer-integer-avifPixelFormat-boolean-"></span><code>function <strong>AvifSaveToMemory</strong>(aBitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AData: Pointer; ASize: cardinal; aQuality0to100: integer = <a href="#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a>; aSpeed0to10:integer = <a href="#AVIF_BGRA_SPEED_DEFAULT">AVIF_BGRA_SPEED_DEFAULT</a>; aPixelFormat:<a href="#avifPixelFormat">avifPixelFormat</a> = <a href="#AVIF_BGRA_PIXEL_FORMAT_DEFAULT">AVIF_BGRA_PIXEL_FORMAT_DEFAULT</a>; aIgnoreAlpha:boolean = false): NativeUInt;</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -230,7 +230,7 @@ Save an image to memory using AVIF format. Return the number of bytes needed.</p
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="AvifSaveToStream-TBGRACustomBitmap-TStream-integer-integer-avifPixelFormat-boolean-"></span><code>function <strong>AvifSaveToStream</strong>(aBitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AStream: <a href="BGRAClasses.html#TStream">TStream</a>; aQuality0to100: integer = <a href="avifbgra.html#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a>; aSpeed0to10: integer = <a href="avifbgra.html#AVIF_BGRA_SPEED_DEFAULT">AVIF_BGRA_SPEED_DEFAULT</a>; aPixelFormat:<a href="avifbgra.html#avifPixelFormat">avifPixelFormat</a> = <a href="avifbgra.html#AVIF_BGRA_PIXEL_FORMAT_DEFAULT">AVIF_BGRA_PIXEL_FORMAT_DEFAULT</a>; aIgnoreAlpha:boolean = false): NativeUInt;</code></td>
+<td class="itemcode"><span id="AvifSaveToStream-TBGRACustomBitmap-TStream-integer-integer-avifPixelFormat-boolean-"></span><code>function <strong>AvifSaveToStream</strong>(aBitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AStream: <a href="BGRAClasses.html#TStream">TStream</a>; aQuality0to100: integer = <a href="#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a>; aSpeed0to10: integer = <a href="#AVIF_BGRA_SPEED_DEFAULT">AVIF_BGRA_SPEED_DEFAULT</a>; aPixelFormat:<a href="#avifPixelFormat">avifPixelFormat</a> = <a href="#AVIF_BGRA_PIXEL_FORMAT_DEFAULT">AVIF_BGRA_PIXEL_FORMAT_DEFAULT</a>; aIgnoreAlpha:boolean = false): NativeUInt;</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -239,7 +239,7 @@ Save an image into a stream using AVIF format. Return the number of bytes needed
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="AvifSaveToStream-TBGRACustomBitmap-TStream-boolean-integer-integer-avifPixelFormat-avifCodecChoice-integer-"></span><code>function <strong>AvifSaveToStream</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AIgnoreAlpha: boolean = False; AQuality0to100: integer = <a href="avifbgra.html#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a>; AQualityAlpha0to100: integer = <a href="avifbgra.html#AVIF_BGRA_DEFAULT_QUALITY_ALPHA">AVIF_BGRA_DEFAULT_QUALITY_ALPHA</a>; APixelFormat: <a href="avifbgra.html#avifPixelFormat">avifPixelFormat</a> = <a href="avifbgra.html#AVIF_BGRA_PIXEL_FORMAT_DEFAULT">AVIF_BGRA_PIXEL_FORMAT_DEFAULT</a>; ACodec: <a href="avifbgra.html#avifCodecChoice">avifCodecChoice</a> = <a href="avifbgra.html#AVIF_BGRA_CODEC_CHOICE_AUTO">AVIF_BGRA_CODEC_CHOICE_AUTO</a>; ASpeed0to10: integer = <a href="avifbgra.html#AVIF_BGRA_SPEED_DEFAULT">AVIF_BGRA_SPEED_DEFAULT</a>): nativeuint; overload;</code></td>
+<td class="itemcode"><span id="AvifSaveToStream-TBGRACustomBitmap-TStream-boolean-integer-integer-avifPixelFormat-avifCodecChoice-integer-"></span><code>function <strong>AvifSaveToStream</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AIgnoreAlpha: boolean = False; AQuality0to100: integer = <a href="#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a>; AQualityAlpha0to100: integer = <a href="#AVIF_BGRA_DEFAULT_QUALITY_ALPHA">AVIF_BGRA_DEFAULT_QUALITY_ALPHA</a>; APixelFormat: <a href="#avifPixelFormat">avifPixelFormat</a> = <a href="#AVIF_BGRA_PIXEL_FORMAT_DEFAULT">AVIF_BGRA_PIXEL_FORMAT_DEFAULT</a>; ACodec: <a href="#avifCodecChoice">avifCodecChoice</a> = <a href="#AVIF_BGRA_CODEC_CHOICE_AUTO">AVIF_BGRA_CODEC_CHOICE_AUTO</a>; ASpeed0to10: integer = <a href="#AVIF_BGRA_SPEED_DEFAULT">AVIF_BGRA_SPEED_DEFAULT</a>): nativeuint; overload;</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -304,7 +304,7 @@ Default quality of color compression</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="AVIF_BGRA_DEFAULT_QUALITY_ALPHA"></span><code><strong>AVIF_BGRA_DEFAULT_QUALITY_ALPHA</strong> = <a href="avifbgra.html#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a> + <a href="avifbgra.html#AVIF_BGRA_DEFAULT_QUALITY_ALPHA_DELTA">AVIF_BGRA_DEFAULT_QUALITY_ALPHA_DELTA</a>;</code></td>
+<td class="itemcode"><span id="AVIF_BGRA_DEFAULT_QUALITY_ALPHA"></span><code><strong>AVIF_BGRA_DEFAULT_QUALITY_ALPHA</strong> = <a href="#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a> + <a href="#AVIF_BGRA_DEFAULT_QUALITY_ALPHA_DELTA">AVIF_BGRA_DEFAULT_QUALITY_ALPHA_DELTA</a>;</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -340,11 +340,11 @@ Specify that no information will be lost in the compression process</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="AVIF_BGRA_PIXEL_FORMAT_DEFAULT"></span><code><strong>AVIF_BGRA_PIXEL_FORMAT_DEFAULT</strong> = <a href="avifbgra.html#AVIF_PIXEL_FORMAT_YUV420">AVIF_PIXEL_FORMAT_YUV420</a>;</code></td>
+<td class="itemcode"><span id="AVIF_BGRA_PIXEL_FORMAT_DEFAULT"></span><code><strong>AVIF_BGRA_PIXEL_FORMAT_DEFAULT</strong> = <a href="#AVIF_PIXEL_FORMAT_YUV420">AVIF_PIXEL_FORMAT_YUV420</a>;</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
-Common format for image compression with half the resolution for chroma channels (ignored when used with <a class="normal" href="avifbgra.html#AVIF_BGRA_LOSSLESS_QUALITY">AVIF_BGRA_LOSSLESS_QUALITY</a>)</p>
+Common format for image compression with half the resolution for chroma channels (ignored when used with <a class="normal" href="#AVIF_BGRA_LOSSLESS_QUALITY">AVIF_BGRA_LOSSLESS_QUALITY</a>)</p>
 </td></tr>
 </table>
 <table class="detail wide_list">

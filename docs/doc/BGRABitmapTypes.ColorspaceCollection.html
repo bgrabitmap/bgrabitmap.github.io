@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="container"><div class="navigation">
-<h2><a href="index.html">Getting started</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Structures</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<h2><a href="index.html">Getting started</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Structures</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">All Identifiers</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
 <div style="clear: both"></div>
 </li></ul></div><div class="content">
 <span id="ColorspaceCollection"></span><h1 class="cio">Class ColorspaceCollection</h1>
@@ -39,31 +39,31 @@ The collection of all colorspaces and conversions between them.</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>class function <strong><a href="BGRABitmapTypes.ColorspaceCollection.html#GetBridgedConversion-TColorspaceAny-TColorspaceAny-">GetBridgedConversion</a></strong>(ASource: <a href="BGRABitmapTypes.html#TColorspaceAny">TColorspaceAny</a>; ADest: <a href="BGRABitmapTypes.html#TColorspaceAny">TColorspaceAny</a>): <a href="BGRABitmapTypes.TBridgedConversion.html">TBridgedConversion</a>; static;</code></td>
+<td class="itemcode"><code>class function <strong><a href="#GetBridgedConversion-TColorspaceAny-TColorspaceAny-">GetBridgedConversion</a></strong>(ASource: <a href="BGRABitmapTypes.html#TColorspaceAny">TColorspaceAny</a>; ADest: <a href="BGRABitmapTypes.html#TColorspaceAny">TColorspaceAny</a>): <a href="BGRABitmapTypes.TBridgedConversion.html">TBridgedConversion</a>; static;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>class function <strong><a href="BGRABitmapTypes.ColorspaceCollection.html#GetCount">GetCount</a></strong>: integer; static;</code></td>
+<td class="itemcode"><code>class function <strong><a href="#GetCount">GetCount</a></strong>: integer; static;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>class function <strong><a href="BGRABitmapTypes.ColorspaceCollection.html#GetDirectConversion-TColorspaceAny-TColorspaceAny-">GetDirectConversion</a></strong>(ASource: <a href="BGRABitmapTypes.html#TColorspaceAny">TColorspaceAny</a>; ADest: <a href="BGRABitmapTypes.html#TColorspaceAny">TColorspaceAny</a>): TColorspaceConvertArrayProc; static;</code></td>
+<td class="itemcode"><code>class function <strong><a href="#GetDirectConversion-TColorspaceAny-TColorspaceAny-">GetDirectConversion</a></strong>(ASource: <a href="BGRABitmapTypes.html#TColorspaceAny">TColorspaceAny</a>; ADest: <a href="BGRABitmapTypes.html#TColorspaceAny">TColorspaceAny</a>): TColorspaceConvertArrayProc; static;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>class function <strong><a href="BGRABitmapTypes.ColorspaceCollection.html#GetItem-integer-">GetItem</a></strong>(AIndex: integer): <a href="BGRABitmapTypes.html#TColorspaceAny">TColorspaceAny</a>; static;</code></td>
+<td class="itemcode"><code>class function <strong><a href="#GetItem-integer-">GetItem</a></strong>(AIndex: integer): <a href="BGRABitmapTypes.html#TColorspaceAny">TColorspaceAny</a>; static;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>class function <strong><a href="BGRABitmapTypes.ColorspaceCollection.html#IndexOf-TColorspaceAny-">IndexOf</a></strong>(AColorspace: <a href="BGRABitmapTypes.html#TColorspaceAny">TColorspaceAny</a>): integer; static;</code></td>
+<td class="itemcode"><code>class function <strong><a href="#IndexOf-TColorspaceAny-">IndexOf</a></strong>(AColorspace: <a href="BGRABitmapTypes.html#TColorspaceAny">TColorspaceAny</a>): integer; static;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>class procedure <strong><a href="BGRABitmapTypes.ColorspaceCollection.html#Add-TColorspaceAny-">Add</a></strong>(AColorspace: <a href="BGRABitmapTypes.html#TColorspaceAny">TColorspaceAny</a>); static;</code></td>
+<td class="itemcode"><code>class procedure <strong><a href="#Add-TColorspaceAny-">Add</a></strong>(AColorspace: <a href="BGRABitmapTypes.html#TColorspaceAny">TColorspaceAny</a>); static;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>class procedure <strong><a href="BGRABitmapTypes.ColorspaceCollection.html#AddConversion-TColorspaceAny-TColorspaceAny-TColorspaceConvertArrayProc-">AddConversion</a></strong>(ASource: <a href="BGRABitmapTypes.html#TColorspaceAny">TColorspaceAny</a>; ADest: <a href="BGRABitmapTypes.html#TColorspaceAny">TColorspaceAny</a>; AConversion: TColorspaceConvertArrayProc); static;</code></td>
+<td class="itemcode"><code>class procedure <strong><a href="#AddConversion-TColorspaceAny-TColorspaceAny-TColorspaceConvertArrayProc-">AddConversion</a></strong>(ASource: <a href="BGRABitmapTypes.html#TColorspaceAny">TColorspaceAny</a>; ADest: <a href="BGRABitmapTypes.html#TColorspaceAny">TColorspaceAny</a>; AConversion: TColorspaceConvertArrayProc); static;</code></td>
 </tr>
 </table>
 <script type="text/javascript" src="navigation.js"></script>

@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="container"><div class="navigation">
-<h2><a href="index.html">Getting started</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Structures</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<h2><a href="index.html">Getting started</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Structures</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">All Identifiers</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
 <div style="clear: both"></div>
 </li></ul></div><div class="content">
 <span id="TBGRA3X3FilterScanner"></span><h1 class="cio">Class TBGRA3X3FilterScanner</h1>
@@ -37,49 +37,49 @@ Abstract scanner that applies a filter on a 3x3 window of pixels</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code><strong><a href="BGRAFilterScanner.TBGRA3X3FilterScanner.html#FAutoSourceBorderColor">FAutoSourceBorderColor</a></strong>: boolean;</code></td>
+<td class="itemcode"><code><strong><a href="#FAutoSourceBorderColor">FAutoSourceBorderColor</a></strong>: boolean;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code><strong><a href="BGRAFilterScanner.TBGRA3X3FilterScanner.html#FDestinationBorderColor">FDestinationBorderColor</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+<td class="itemcode"><code><strong><a href="#FDestinationBorderColor">FDestinationBorderColor</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code><strong><a href="BGRAFilterScanner.TBGRA3X3FilterScanner.html#FSourceBorderColor">FSourceBorderColor</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+<td class="itemcode"><code><strong><a href="#FSourceBorderColor">FSourceBorderColor</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>constructor <strong><a href="BGRAFilterScanner.TBGRA3X3FilterScanner.html#Create-IBGRAScanner-TRect-">Create</a></strong>(ASource: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; ABounds: <a href="BGRAClasses.html#TRect">TRect</a>); overload;</code></td>
+<td class="itemcode"><code>constructor <strong><a href="#Create-IBGRAScanner-TRect-">Create</a></strong>(ASource: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; ABounds: <a href="BGRAClasses.html#TRect">TRect</a>); overload;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>constructor <strong><a href="BGRAFilterScanner.TBGRA3X3FilterScanner.html#Create-TBGRACustomBitmap-">Create</a></strong>(ASource: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>); overload;</code></td>
+<td class="itemcode"><code>constructor <strong><a href="#Create-TBGRACustomBitmap-">Create</a></strong>(ASource: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>); overload;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRAFilterScanner.TBGRA3X3FilterScanner.html#DoFilter3X3-PBGRAPixel-PBGRAPixel-PBGRAPixel-">DoFilter3X3</a></strong>(PTop,PMiddle,PBottom: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; virtual; abstract;</code></td>
+<td class="itemcode"><code>function <strong><a href="#DoFilter3X3-PBGRAPixel-PBGRAPixel-PBGRAPixel-">DoFilter3X3</a></strong>(PTop,PMiddle,PBottom: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; virtual; abstract;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAFilterScanner.TBGRA3X3FilterScanner.html#DoComputeFilter-Integer-arrayofPBGRAPixel-integer-PBGRAPixel-integer-">DoComputeFilter</a></strong>(BufferX: Integer; const Buffers: array of <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; BufferWidth: integer; ADest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; ACount: integer); override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#DoComputeFilter-Integer-arrayofPBGRAPixel-integer-PBGRAPixel-integer-">DoComputeFilter</a></strong>(BufferX: Integer; const Buffers: array of <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; BufferWidth: integer; ADest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; ACount: integer); override;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="BGRAFilterScanner.TBGRA3X3FilterScanner.html#AutoSourceBorderColor">AutoSourceBorderColor</a></strong>: boolean read <a href="BGRAFilterScanner.TBGRA3X3FilterScanner.html#FAutoSourceBorderColor">FAutoSourceBorderColor</a> write <a href="BGRAFilterScanner.TBGRA3X3FilterScanner.html#FAutoSourceBorderColor">FAutoSourceBorderColor</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="#AutoSourceBorderColor">AutoSourceBorderColor</a></strong>: boolean read <a href="#FAutoSourceBorderColor">FAutoSourceBorderColor</a> write <a href="#FAutoSourceBorderColor">FAutoSourceBorderColor</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="BGRAFilterScanner.TBGRA3X3FilterScanner.html#DestinationBorderColor">DestinationBorderColor</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> read <a href="BGRAFilterScanner.TBGRA3X3FilterScanner.html#FDestinationBorderColor">FDestinationBorderColor</a> write <a href="BGRAFilterScanner.TBGRA3X3FilterScanner.html#FDestinationBorderColor">FDestinationBorderColor</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="#DestinationBorderColor">DestinationBorderColor</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> read <a href="#FDestinationBorderColor">FDestinationBorderColor</a> write <a href="#FDestinationBorderColor">FDestinationBorderColor</a>;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="BGRAFilterScanner.TBGRA3X3FilterScanner.html#SourceBorderColor">SourceBorderColor</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> read <a href="BGRAFilterScanner.TBGRA3X3FilterScanner.html#FSourceBorderColor">FSourceBorderColor</a> write <a href="BGRAFilterScanner.TBGRA3X3FilterScanner.html#FSourceBorderColor">FSourceBorderColor</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="#SourceBorderColor">SourceBorderColor</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> read <a href="#FSourceBorderColor">FSourceBorderColor</a> write <a href="#FSourceBorderColor">FSourceBorderColor</a>;</code></td>
 </tr>
 </table>
 <script type="text/javascript" src="navigation.js"></script>
@@ -146,7 +146,7 @@ Abstract scanner that applies a filter on a 3x3 window of pixels</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="AutoSourceBorderColor"></span><code>property <strong>AutoSourceBorderColor</strong>: boolean read <a href="BGRAFilterScanner.TBGRA3X3FilterScanner.html#FAutoSourceBorderColor">FAutoSourceBorderColor</a> write <a href="BGRAFilterScanner.TBGRA3X3FilterScanner.html#FAutoSourceBorderColor">FAutoSourceBorderColor</a>;</code></td>
+<td class="itemcode"><span id="AutoSourceBorderColor"></span><code>property <strong>AutoSourceBorderColor</strong>: boolean read <a href="#FAutoSourceBorderColor">FAutoSourceBorderColor</a> write <a href="#FAutoSourceBorderColor">FAutoSourceBorderColor</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -154,7 +154,7 @@ Abstract scanner that applies a filter on a 3x3 window of pixels</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="DestinationBorderColor"></span><code>property <strong>DestinationBorderColor</strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> read <a href="BGRAFilterScanner.TBGRA3X3FilterScanner.html#FDestinationBorderColor">FDestinationBorderColor</a> write <a href="BGRAFilterScanner.TBGRA3X3FilterScanner.html#FDestinationBorderColor">FDestinationBorderColor</a>;</code></td>
+<td class="itemcode"><span id="DestinationBorderColor"></span><code>property <strong>DestinationBorderColor</strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> read <a href="#FDestinationBorderColor">FDestinationBorderColor</a> write <a href="#FDestinationBorderColor">FDestinationBorderColor</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -162,7 +162,7 @@ Abstract scanner that applies a filter on a 3x3 window of pixels</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="SourceBorderColor"></span><code>property <strong>SourceBorderColor</strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> read <a href="BGRAFilterScanner.TBGRA3X3FilterScanner.html#FSourceBorderColor">FSourceBorderColor</a> write <a href="BGRAFilterScanner.TBGRA3X3FilterScanner.html#FSourceBorderColor">FSourceBorderColor</a>;</code></td>
+<td class="itemcode"><span id="SourceBorderColor"></span><code>property <strong>SourceBorderColor</strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> read <a href="#FSourceBorderColor">FSourceBorderColor</a> write <a href="#FSourceBorderColor">FSourceBorderColor</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>

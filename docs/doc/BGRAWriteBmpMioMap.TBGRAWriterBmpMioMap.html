@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="container"><div class="navigation">
-<h2><a href="index.html">Getting started</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Structures</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<h2><a href="index.html">Getting started</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Structures</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">All Identifiers</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
 <div style="clear: both"></div>
 </li></ul></div><div class="content">
 <span id="TBGRAWriterBmpMioMap"></span><h1 class="cio">Class TBGRAWriterBmpMioMap</h1>
@@ -33,23 +33,23 @@ Extends the TFPCustomImageWriter to write the BMP MioMap (iGO) image format</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code><strong><a href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html#FChunks">FChunks</a></strong>: array of <a href="BGRAClasses.html#TMemoryStream">TMemoryStream</a>;</code></td>
+<td class="itemcode"><code><strong><a href="#FChunks">FChunks</a></strong>: array of <a href="BGRAClasses.html#TMemoryStream">TMemoryStream</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code><strong><a href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html#FCurrentChunk">FCurrentChunk</a></strong>: <a href="BGRAClasses.html#TMemoryStream">TMemoryStream</a>;</code></td>
+<td class="itemcode"><code><strong><a href="#FCurrentChunk">FCurrentChunk</a></strong>: <a href="BGRAClasses.html#TMemoryStream">TMemoryStream</a>;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code><strong><a href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html#FHeader">FHeader</a></strong>: <a href="BGRAReadBmpMioMap.TMioHeader.html">TMioHeader</a>;</code></td>
+<td class="itemcode"><code><strong><a href="#FHeader">FHeader</a></strong>: <a href="BGRAReadBmpMioMap.TMioHeader.html">TMioHeader</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code><strong><a href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html#FMaxChunkSize">FMaxChunkSize</a></strong>: Word;</code></td>
+<td class="itemcode"><code><strong><a href="#FMaxChunkSize">FMaxChunkSize</a></strong>: Word;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code><strong><a href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html#FPalette">FPalette</a></strong>: packed of record
+<td class="itemcode"><code><strong><a href="#FPalette">FPalette</a></strong>: packed of record
         ColorValue: Word;
         AlphaValue: Byte;
         Padding: Byte;
@@ -57,85 +57,85 @@ Extends the TFPCustomImageWriter to write the BMP MioMap (iGO) image format</p>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code><strong><a href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html#FPaletteAlpha">FPaletteAlpha</a></strong>: boolean;</code></td>
+<td class="itemcode"><code><strong><a href="#FPaletteAlpha">FPaletteAlpha</a></strong>: boolean;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code><strong><a href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html#FPaletteIndexes">FPaletteIndexes</a></strong>: packed[0..65535] of <a href="BGRAClasses.html#Int32or64">Int32or64</a>;</code></td>
+<td class="itemcode"><code><strong><a href="#FPaletteIndexes">FPaletteIndexes</a></strong>: packed[0..65535] of <a href="BGRAClasses.html#Int32or64">Int32or64</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code><strong><a href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html#FPaletteOffset">FPaletteOffset</a></strong>: <a href="BGRAClasses.html#Int32or64">Int32or64</a>;</code></td>
+<td class="itemcode"><code><strong><a href="#FPaletteOffset">FPaletteOffset</a></strong>: <a href="BGRAClasses.html#Int32or64">Int32or64</a>;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>constructor <strong><a href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html#Create">Create</a></strong>; override;</code></td>
+<td class="itemcode"><code>constructor <strong><a href="#Create">Create</a></strong>; override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html#IndexOfColor-TBGRAPixel-">IndexOfColor</a></strong>(const AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>): <a href="BGRAClasses.html#Int32or64">Int32or64</a>;</code></td>
+<td class="itemcode"><code>function <strong><a href="#IndexOfColor-TBGRAPixel-">IndexOfColor</a></strong>(const AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>): <a href="BGRAClasses.html#Int32or64">Int32or64</a>;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html#AppendToChunks-const-integer-">AppendToChunks</a></strong>(const Buffer; Count: integer);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#AppendToChunks-const-integer-">AppendToChunks</a></strong>(const Buffer; Count: integer);</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html#BuildPaletteAndChunks-TFPCustomImage-">BuildPaletteAndChunks</a></strong>(Img: TFPCustomImage);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#BuildPaletteAndChunks-TFPCustomImage-">BuildPaletteAndChunks</a></strong>(Img: TFPCustomImage);</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html#FlushChunk">FlushChunk</a></strong>;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#FlushChunk">FlushChunk</a></strong>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html#FreeChunks">FreeChunks</a></strong>;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#FreeChunks">FreeChunks</a></strong>;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html#InitChunks">InitChunks</a></strong>;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#InitChunks">InitChunks</a></strong>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html#InitHeader-TFPCustomImage-">InitHeader</a></strong>(Img: TFPCustomImage);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#InitHeader-TFPCustomImage-">InitHeader</a></strong>(Img: TFPCustomImage);</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html#InitPalette">InitPalette</a></strong>;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#InitPalette">InitPalette</a></strong>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html#InternalWrite-TStream-TFPCustomImage-">InternalWrite</a></strong>(Str: <a href="BGRAClasses.html#TStream">TStream</a>; Img: TFPCustomImage); override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#InternalWrite-TStream-TFPCustomImage-">InternalWrite</a></strong>(Str: <a href="BGRAClasses.html#TStream">TStream</a>; Img: TFPCustomImage); override;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html#NeedChunk">NeedChunk</a></strong>;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#NeedChunk">NeedChunk</a></strong>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html#ReadScanline-TFPCustomImage-integer-PBGRAPixel-">ReadScanline</a></strong>(Img: TFPCustomImage; Y: integer; ADest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#ReadScanline-TFPCustomImage-integer-PBGRAPixel-">ReadScanline</a></strong>(Img: TFPCustomImage; Y: integer; ADest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>);</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html#WriteChunks-TStream-">WriteChunks</a></strong>(Str: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#WriteChunks-TStream-">WriteChunks</a></strong>(Str: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html#WriteHeader-TStream-">WriteHeader</a></strong>(Str: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#WriteHeader-TStream-">WriteHeader</a></strong>(Str: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html#WritePalette-TStream-">WritePalette</a></strong>(Str: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#WritePalette-TStream-">WritePalette</a></strong>(Str: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
 </tr>
 </table>
 <span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html#MaxChunkSize">MaxChunkSize</a></strong>: Word read <a href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html#FMaxChunkSize">FMaxChunkSize</a> write <a href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html#FMaxChunkSize">FMaxChunkSize</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="#MaxChunkSize">MaxChunkSize</a></strong>: Word read <a href="#FMaxChunkSize">FMaxChunkSize</a> write <a href="#FMaxChunkSize">FMaxChunkSize</a>;</code></td>
 </tr>
 </table>
 <script type="text/javascript" src="navigation.js"></script>
@@ -336,7 +336,7 @@ Creates the writer</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="MaxChunkSize"></span><code>property <strong>MaxChunkSize</strong>: Word read <a href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html#FMaxChunkSize">FMaxChunkSize</a> write <a href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html#FMaxChunkSize">FMaxChunkSize</a>;</code></td>
+<td class="itemcode"><span id="MaxChunkSize"></span><code>property <strong>MaxChunkSize</strong>: Word read <a href="#FMaxChunkSize">FMaxChunkSize</a> write <a href="#FMaxChunkSize">FMaxChunkSize</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>

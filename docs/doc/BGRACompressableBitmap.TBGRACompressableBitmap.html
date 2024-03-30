@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="container"><div class="navigation">
-<h2><a href="index.html">Getting started</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Structures</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<h2><a href="index.html">Getting started</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Structures</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">All Identifiers</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
 <div style="clear: both"></div>
 </li></ul></div><div class="content">
 <span id="TBGRACompressableBitmap"></span><h1 class="cio">Class TBGRACompressableBitmap</h1>
@@ -25,13 +25,13 @@
 <script type="text/javascript" src="navigation.js"></script>
 <h2 class="description">Description</h2>
 <p>
-Class to <a class="normal" href="BGRACompressableBitmap.TBGRACompressableBitmap.html#Compress">compress</a> and store the compressed image.</p>
+Class to <a class="normal" href="#Compress">compress</a> and store the compressed image.</p>
 <p>
 
 
-<p>To use it, <a class="normal" href="BGRACompressableBitmap.TBGRACompressableBitmap.html#Create">create</a> an instance with the bitmap you want to <a class="normal" href="BGRACompressableBitmap.TBGRACompressableBitmap.html#Compress">compress</a>. You can then free the original bitmap because <code>TBGRACompressableBitmap</code> contains all information necessary to build it again. To construct again your bitmap, call the <a class="normal" href="BGRACompressableBitmap.TBGRACompressableBitmap.html#GetBitmap">GetBitmap</a> function.
+<p>To use it, <a class="normal" href="#Create">create</a> an instance with the bitmap you want to <a class="normal" href="#Compress">compress</a>. You can then free the original bitmap because <code>TBGRACompressableBitmap</code> contains all information necessary to build it again. To construct again your bitmap, call the <a class="normal" href="#GetBitmap">GetBitmap</a> function.
 
-<p>In this implementation, the memory usage grows during the compression process and is lower only after it is finished. So it is recommended to <a class="normal" href="BGRACompressableBitmap.TBGRACompressableBitmap.html#Compress">compress</a> one bitmap at a time.</p>
+<p>In this implementation, the memory usage grows during the compression process and is lower only after it is finished. So it is recommended to <a class="normal" href="#Compress">compress</a> one bitmap at a time.</p>
 <span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
 <ul class="hierarchy"><li class="ancestor">TObject</li>
 <li class="thisitem">TBGRACompressableBitmap</li></ul><h2 class="overview">Overview</h2>
@@ -39,61 +39,61 @@ Class to <a class="normal" href="BGRACompressableBitmap.TBGRACompressableBitmap.
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code><strong><a href="BGRACompressableBitmap.TBGRACompressableBitmap.html#CompressionLevel">CompressionLevel</a></strong>: Tcompressionlevel;</code></td>
+<td class="itemcode"><code><strong><a href="#CompressionLevel">CompressionLevel</a></strong>: Tcompressionlevel;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>constructor <strong><a href="BGRACompressableBitmap.TBGRACompressableBitmap.html#Create-TBGRABitmap-">Create</a></strong>(Source: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>); overload;</code></td>
+<td class="itemcode"><code>constructor <strong><a href="#Create-TBGRABitmap-">Create</a></strong>(Source: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>); overload;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>constructor <strong><a href="BGRACompressableBitmap.TBGRACompressableBitmap.html#Create">Create</a></strong>; overload;</code></td>
+<td class="itemcode"><code>constructor <strong><a href="#Create">Create</a></strong>; overload;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>destructor <strong><a href="BGRACompressableBitmap.TBGRACompressableBitmap.html#Destroy">Destroy</a></strong>; override;</code></td>
+<td class="itemcode"><code>destructor <strong><a href="#Destroy">Destroy</a></strong>; override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRACompressableBitmap.TBGRACompressableBitmap.html#Compress">Compress</a></strong>: boolean;</code></td>
+<td class="itemcode"><code>function <strong><a href="#Compress">Compress</a></strong>: boolean;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRACompressableBitmap.TBGRACompressableBitmap.html#GetBitmap">GetBitmap</a></strong>: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+<td class="itemcode"><code>function <strong><a href="#GetBitmap">GetBitmap</a></strong>: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRACompressableBitmap.TBGRACompressableBitmap.html#UsedMemory">UsedMemory</a></strong>: Int64;</code></td>
+<td class="itemcode"><code>function <strong><a href="#UsedMemory">UsedMemory</a></strong>: Int64;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRACompressableBitmap.TBGRACompressableBitmap.html#Assign-TBGRABitmap-">Assign</a></strong>(Source: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#Assign-TBGRABitmap-">Assign</a></strong>(Source: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>);</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRACompressableBitmap.TBGRACompressableBitmap.html#ReadFromStream-TStream-">ReadFromStream</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#ReadFromStream-TStream-">ReadFromStream</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRACompressableBitmap.TBGRACompressableBitmap.html#WriteToStream-TStream-">WriteToStream</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#WriteToStream-TStream-">WriteToStream</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
 </tr>
 </table>
 <span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="BGRACompressableBitmap.TBGRACompressableBitmap.html#Caption">Caption</a></strong> : string read FCaption write FCaption;</code></td>
+<td class="itemcode"><code>property <strong><a href="#Caption">Caption</a></strong> : string read FCaption write FCaption;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="BGRACompressableBitmap.TBGRACompressableBitmap.html#Height">Height</a></strong>: Integer read FHeight;</code></td>
+<td class="itemcode"><code>property <strong><a href="#Height">Height</a></strong>: Integer read FHeight;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="BGRACompressableBitmap.TBGRACompressableBitmap.html#Width">Width</a></strong> : Integer read FWidth;</code></td>
+<td class="itemcode"><code>property <strong><a href="#Width">Width</a></strong> : Integer read FWidth;</code></td>
 </tr>
 </table>
 <script type="text/javascript" src="navigation.js"></script>

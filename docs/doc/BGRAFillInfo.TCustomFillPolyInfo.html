@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="container"><div class="navigation">
-<h2><a href="index.html">Getting started</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Structures</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<h2><a href="index.html">Getting started</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Structures</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">All Identifiers</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
 <div style="clear: both"></div>
 </li></ul></div><div class="content">
 <span id="TCustomFillPolyInfo"></span><h1 class="cio">Class TCustomFillPolyInfo</h1>
@@ -35,69 +35,69 @@ Abstract class to provide fill information for a polygon</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code><strong><a href="BGRAFillInfo.TCustomFillPolyInfo.html#FBoundsF">FBoundsF</a></strong>: <a href="BGRAClasses.html#TRectF">TRectF</a>;</code></td>
+<td class="itemcode"><code><strong><a href="#FBoundsF">FBoundsF</a></strong>: <a href="BGRAClasses.html#TRectF">TRectF</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code><strong><a href="BGRAFillInfo.TCustomFillPolyInfo.html#FPoints">FPoints</a></strong>: array of <a href="BGRAFillInfo.TCustomPointRecord.html">TCustomPointRecord</a>;</code></td>
+<td class="itemcode"><code><strong><a href="#FPoints">FPoints</a></strong>: array of <a href="BGRAFillInfo.TCustomPointRecord.html">TCustomPointRecord</a>;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code><strong><a href="BGRAFillInfo.TCustomFillPolyInfo.html#FSegmentsDataCreated">FSegmentsDataCreated</a></strong>: boolean;</code></td>
+<td class="itemcode"><code><strong><a href="#FSegmentsDataCreated">FSegmentsDataCreated</a></strong>: boolean;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>constructor <strong><a href="BGRAFillInfo.TCustomFillPolyInfo.html#Create-arrayofTPointF-boolean-">Create</a></strong>(const points: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; APixelCenteredCoordinates: boolean = true);</code></td>
+<td class="itemcode"><code>constructor <strong><a href="#Create-arrayofTPointF-boolean-">Create</a></strong>(const points: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; APixelCenteredCoordinates: boolean = true);</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>destructor <strong><a href="BGRAFillInfo.TCustomFillPolyInfo.html#Destroy">Destroy</a></strong>; override;</code></td>
+<td class="itemcode"><code>destructor <strong><a href="#Destroy">Destroy</a></strong>; override;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRAFillInfo.TCustomFillPolyInfo.html#CreateIntersectionArray">CreateIntersectionArray</a></strong>: <a href="BGRABitmapTypes.html#ArrayOfTIntersectionInfo">ArrayOfTIntersectionInfo</a>; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="#CreateIntersectionArray">CreateIntersectionArray</a></strong>: <a href="BGRABitmapTypes.html#ArrayOfTIntersectionInfo">ArrayOfTIntersectionInfo</a>; override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRAFillInfo.TCustomFillPolyInfo.html#CreateSegmentData-integer-integer-PCustomPointRecord-">CreateSegmentData</a></strong>(numPt, nextPt: integer; ASeg: <a href="BGRAFillInfo.html#PCustomPointRecord">PCustomPointRecord</a>): pointer; virtual;</code></td>
+<td class="itemcode"><code>function <strong><a href="#CreateSegmentData-integer-integer-PCustomPointRecord-">CreateSegmentData</a></strong>(numPt, nextPt: integer; ASeg: <a href="BGRAFillInfo.html#PCustomPointRecord">PCustomPointRecord</a>): pointer; virtual;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRAFillInfo.TCustomFillPolyInfo.html#GetBounds">GetBounds</a></strong>: <a href="BGRAClasses.html#TRect">TRect</a>; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="#GetBounds">GetBounds</a></strong>: <a href="BGRAClasses.html#TRect">TRect</a>; override;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRAFillInfo.TCustomFillPolyInfo.html#GetBoundsF">GetBoundsF</a></strong>: <a href="BGRAClasses.html#TRectF">TRectF</a>;</code></td>
-</tr>
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>function <strong><a href="BGRAFillInfo.TCustomFillPolyInfo.html#NbMaxIntersection">NbMaxIntersection</a></strong>: integer; override;</code></td>
-</tr>
-<tr class="list2">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAFillInfo.TCustomFillPolyInfo.html#FreeSegmentData-pointer-">FreeSegmentData</a></strong>(data: pointer); virtual;</code></td>
+<td class="itemcode"><code>function <strong><a href="#GetBoundsF">GetBoundsF</a></strong>: <a href="BGRAClasses.html#TRectF">TRectF</a>;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAFillInfo.TCustomFillPolyInfo.html#CreateSegmentsData">CreateSegmentsData</a></strong>; virtual;</code></td>
+<td class="itemcode"><code>function <strong><a href="#NbMaxIntersection">NbMaxIntersection</a></strong>: integer; override;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAFillInfo.TCustomFillPolyInfo.html#InitPoints-arrayofTPointF-">InitPoints</a></strong>(const points: array of <a href="BGRAClasses.html#TPointF">TPointF</a>);</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="#FreeSegmentData-pointer-">FreeSegmentData</a></strong>(data: pointer); virtual;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BGRAFillInfo.TCustomFillPolyInfo.html#SetIntersectionValues-TIntersectionInfo-Single-integer-integer-single-pointer-">SetIntersectionValues</a></strong>(AInter: <a href="BGRABitmapTypes.TIntersectionInfo.html">TIntersectionInfo</a>; AInterX: Single; AWinding, ANumSegment: integer; dy: single; AData: pointer); virtual;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#CreateSegmentsData">CreateSegmentsData</a></strong>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="#InitPoints-arrayofTPointF-">InitPoints</a></strong>(const points: array of <a href="BGRAClasses.html#TPointF">TPointF</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="#SetIntersectionValues-TIntersectionInfo-Single-integer-integer-single-pointer-">SetIntersectionValues</a></strong>(AInter: <a href="BGRABitmapTypes.TIntersectionInfo.html">TIntersectionInfo</a>; AInterX: Single; AWinding, ANumSegment: integer; dy: single; AData: pointer); virtual;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="BGRAFillInfo.TCustomFillPolyInfo.html#NbPoints">NbPoints</a></strong>: integer read GetNbPoints;</code></td>
+<td class="itemcode"><code>property <strong><a href="#NbPoints">NbPoints</a></strong>: integer read GetNbPoints;</code></td>
 </tr>
 </table>
 <script type="text/javascript" src="navigation.js"></script>
