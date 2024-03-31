@@ -25,7 +25,32 @@
 <script type="text/javascript" src="navigation.js"></script>
 <h2 class="description">Description</h2>
 <p>
-Scanner of random color</p>
+Scanner of random color.</p>
+<p>
+
+
+<p><strong>Example filling a form with random pixels:</strong>
+
+<p><img src="image_3.png" alt="randomscanner" />
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">uses</span> ..., BGRABitmap, BGRAGradientScanner;
+
+<span class="pascal_keyword">procedure</span> TForm1.FormPaint(Sender: TObject);
+<span class="pascal_keyword">var</span> bmp: TBGRABitmap;
+  scan: TBGRARandomScanner;
+<span class="pascal_keyword">begin</span>
+  bmp := TBGRABitmap.Create(ClientWidth, ClientHeight);
+  scan := TBGRARandomScanner.Create(False, <span class="pascal_numeric">255</span>);
+  bmp.Fill(scan);
+  scan.Free;
+  bmp.Draw(Canvas,<span class="pascal_numeric">0</span>,0);
+  bmp.Free;
+<span class="pascal_keyword">end</span>;</pre>
+
+<p></p>
 <span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
 <ul class="hierarchy"><li class="ancestor">IInterface</li>
 <li class="ancestor"><a class="normal" href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a></li>

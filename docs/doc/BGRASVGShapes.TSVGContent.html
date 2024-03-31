@@ -25,7 +25,55 @@
 <script type="text/javascript" src="navigation.js"></script>
 <h2 class="description">Description</h2>
 <p>
-Content for an SVG <a class="normal" href="#Element">element</a></p>
+Content for an SVG <a class="normal" href="#Element">element</a>.</p>
+<p>
+
+
+<p>It can be used to browse or add elements.
+
+<p><strong>Example creating an SVG file:</strong>
+
+<p><img src="image_6.svg" alt="content" />
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">uses</span> BGRABitmapTypes, BGRASVG, BGRAUnits;
+<span class="pascal_keyword">var</span> svg: TBGRASVG;
+<span class="pascal_keyword">begin</span>
+  <span class="pascal_comment">//it is recommended to initialise the SVG with size and unit</span>
+  <span class="pascal_comment">//otherwise, the size is kind of undefined</span>
+
+  svg := TBGRASVG.Create(<span class="pascal_numeric">10</span>,6,cuCentimeter);
+  svg.Content.AppendPath(<span class="pascal_string">'M1,1 L9,1 9,5 1,5 z'</span>, cuCentimeter).fillColor := CSSGreen;
+  svg.Content.AppendRect(<span class="pascal_numeric">2</span>,2,<span class="pascal_numeric">6</span>,2, cuCentimeter).fillColor:= BGRA(<span class="pascal_numeric">255</span>,255,<span class="pascal_numeric">0</span>,192);
+  <span class="pascal_keyword">with</span> svg.Content.AppendRect(<span class="pascal_numeric">0</span>,0,svg.Units.ConvertWidth(<span class="pascal_numeric">1</span>,cuCentimeter,cuPixel),
+  svg.Units.ConvertHeight(<span class="pascal_numeric">1</span>,cuCentimeter,cuPixel), cuPixel) <span class="pascal_keyword">do</span>
+  <span class="pascal_keyword">begin</span>
+    fillColor := CSSBlue;
+    fillOpacity:= <span class="pascal_float">0.2</span>;
+  <span class="pascal_keyword">end</span>;
+  svg.Content.AppendRoundRect(<span class="pascal_numeric">3</span>,3,<span class="pascal_numeric">4</span>,1, <span class="pascal_float">0.3</span>,0.<span class="pascal_numeric">3</span>, cuCentimeter).fillColor := CSSOrange;
+  <span class="pascal_keyword">with</span> svg.Content.AppendLine(<span class="pascal_numeric">30</span>,140,<span class="pascal_numeric">250</span>,30, cuPoint) <span class="pascal_keyword">do</span>
+  <span class="pascal_keyword">begin</span>
+    strokeColor := BGRABlack;
+    strokeOpacity:= <span class="pascal_float">0.8</span>;
+  <span class="pascal_keyword">end</span>;
+  svg.Content.AppendLine(svg.ViewBox.min,svg.ViewBox.min+svg.ViewBox.size).strokeColor := CSSRed;
+  <span class="pascal_keyword">with</span> svg.Content.AppendCircle(<span class="pascal_numeric">5</span>,3,<span class="pascal_float">2.8</span>,cuCentimeter) <span class="pascal_keyword">do</span>
+  <span class="pascal_keyword">begin</span>
+    strokeColor := CSSRed;
+    strokeWidth := FloatWithCSSUnit(<span class="pascal_numeric">2</span>,cuPoint);
+    fillNone;
+  <span class="pascal_keyword">end</span>;
+
+  <span class="pascal_comment">//SVG can be saved in a file that can be viewed in</span>
+  <span class="pascal_comment">//a web browser or in InkScape for example</span>
+  svg.SaveToFile(<span class="pascal_string">'content.svg'</span>);
+  svg.Free;
+<span class="pascal_keyword">end</span>.</pre>
+
+<p></p>
 <span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
 <ul class="hierarchy"><li class="ancestor">TObject</li>
 <li class="thisitem">TSVGContent</li></ul><h2 class="overview">Overview</h2>

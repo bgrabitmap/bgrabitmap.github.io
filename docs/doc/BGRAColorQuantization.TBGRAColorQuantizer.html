@@ -25,7 +25,27 @@
 <script type="text/javascript" src="navigation.js"></script>
 <h2 class="description">Description</h2>
 <p>
-Implementation of color quantization</p>
+Implementation of color quantization.</p>
+<p>
+
+
+<p>Example saving an image into 8-bit PNG file: </p>
+
+<pre class="longcode">
+<span class="pascal_keyword">uses</span> BGRAColorQuantization, BGRABitmapTypes, BGRABitmap;
+<span class="pascal_keyword">var</span>
+  quant : TBGRAColorQuantizer;
+  sourceBmp: TBGRABitmap;
+<span class="pascal_keyword">begin</span>
+  sourceBmp := TBGRABitmap.Create(<span class="pascal_string">'picture_in_32_bits.bmp'</span>);
+  quant := TBGRAColorQuantizer.Create(sourceBmp, acFullChannelInPalette);
+  <span class="pascal_comment">// by default, reduces to 256 colors</span>
+  quant.SaveBitmapToFile(daFloydSteinberg, sourceBmp, <span class="pascal_string">'picture_in_8_bits.png'</span>);
+  quant.Free;
+  sourceBmp.Free;
+<span class="pascal_keyword">end</span>;</pre>
+
+<p></p>
 <span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
 <ul class="hierarchy"><li class="ancestor">TObject</li>
 <li class="ancestor"><a class="normal" href="BGRAPalette.TBGRACustomColorQuantizer.html">TBGRACustomColorQuantizer</a></li>

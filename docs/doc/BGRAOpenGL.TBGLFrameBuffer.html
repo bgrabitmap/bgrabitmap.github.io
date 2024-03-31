@@ -29,7 +29,43 @@ Frame buffer in OpenGL.</p>
 <p>
 
 
-<p>A frame buffer is a <a class="normal" href="BGRAOpenGLType.TBGLCustomFrameBuffer.html#Texture">texture</a> that can be used as a drawing surface in OpenGL.</p>
+<p>A frame buffer is a <a class="normal" href="BGRAOpenGLType.TBGLCustomFrameBuffer.html#Texture">texture</a> that can be used as a drawing surface in OpenGL.
+
+<p><strong>Example of drawing on a framebuffer and then drawing it on the OpenGL control:</strong>
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">uses</span> ..., BGRABitmapTypes, BGRAOpenGL;
+
+<span class="pascal_keyword">procedure</span> TForm1.OpenGLControlPaint(Sender: TObject);
+<span class="pascal_keyword">var</span>
+  mousePos: TPoint;
+  buf: TBGLFrameBuffer;
+<span class="pascal_keyword">begin</span>
+  <span class="pascal_comment">// Draw Background</span>
+  BGLViewPort(OpenGLControl.Width, OpenGLControl.Height, BGRAWhite);
+  <span class="pascal_comment">// Create framebuffer</span>
+  buf := TBGLFrameBuffer.Create(<span class="pascal_numeric">256</span>,256);
+  <span class="pascal_comment">// Use it</span>
+  BGLCanvas.ActiveFrameBuffer := buf;
+
+  BGLCanvas.Fill(CSSYellow);
+  BGLCanvas.Line(<span class="pascal_numeric">0</span>,0,<span class="pascal_numeric">128</span>,128, BGRABlack);
+  mousePos := ScreenToClient(Mouse.CursorPos);
+  BGLCanvas.FillRect(mousePos.x - <span class="pascal_numeric">50</span>, mousePos.y - <span class="pascal_numeric">50</span>, mousePos.x + <span class="pascal_numeric">50</span>, mousePos.y + <span class="pascal_numeric">50</span>, CSSRed, False);
+
+  <span class="pascal_comment">// Render framebuffer on the control</span>
+  BGLCanvas.ActiveFrameBuffer := <span class="pascal_keyword">nil</span>;
+  BGLCanvas.PutImage(<span class="pascal_numeric">0</span>,0, buf.Texture);
+  <span class="pascal_comment">// Free framebuffer</span>
+  buf.Free;
+
+  <span class="pascal_comment">// Update</span>
+  OpenGLControl.SwapBuffers;
+<span class="pascal_keyword">end</span>;</pre>
+
+<p></p>
 <span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
 <ul class="hierarchy"><li class="ancestor">TObject</li>
 <li class="ancestor"><a class="normal" href="BGRAOpenGLType.TBGLCustomFrameBuffer.html">TBGLCustomFrameBuffer</a></li>

@@ -25,7 +25,42 @@
 <script type="text/javascript" src="navigation.js"></script>
 <h2 class="description">Description</h2>
 <p>
-8-bit grayscale image</p>
+8-bit grayscale image.</p>
+<p>
+
+
+<p><strong>Example on applying a grayscale mask:</strong>
+
+<p>A red triangle is masked using an <a class="normal" href="BGRABitmapTypes.TGenericUniversalBitmap.generic.html#Ellipse-TPointF-TPointF-TPointF-TPixel-single-TDrawMode-Word-">ellipse</a> shape. <img src="image_4.png" alt="mask_poly" /> </p>
+
+<pre class="longcode">
+<span class="pascal_keyword">uses</span> BGRABitmap, BGRABitmapTypes, BGRAGrayscaleMask;
+
+<span class="pascal_keyword">procedure</span> TForm1.FormPaint(Sender: TObject);
+<span class="pascal_keyword">var</span> tmp, layer: TBGRABitmap;
+    mask: TGrayscaleMask;
+    poly : ArrayOfTPointF;
+<span class="pascal_keyword">begin</span>
+  layer := TBGRABitmap.Create(clientwidth, clientheight, BGRAPixelTransparent);
+  setLength(Poly,<span class="pascal_numeric">3</span>);
+  poly[<span class="pascal_numeric">0</span>] := PointF(<span class="pascal_numeric">10</span>, <span class="pascal_numeric">10</span>);
+  Poly[<span class="pascal_numeric">1</span>] := PointF(layer.width-<span class="pascal_numeric">10</span>, <span class="pascal_numeric">10</span>);
+  Poly[<span class="pascal_numeric">2</span>] := PointF(<span class="pascal_numeric">10</span>, layer.height-<span class="pascal_numeric">10</span>);
+  layer.DrawPolygonAntialias(poly, cssBlack, <span class="pascal_numeric">3</span>, cssRed);
+
+  mask := TGrayscaleMask.Create(clientwidth, clientheight, TByteMask.New(<span class="pascal_numeric">0</span>));
+  mask.FillEllipseAntialias(mask.Width/<span class="pascal_float">2-0.5</span>, mask.Height/<span class="pascal_float">2-0.5</span>,
+                            mask.Width/<span class="pascal_numeric">2</span>, mask.Height/<span class="pascal_numeric">2</span>, TByteMask.New(<span class="pascal_numeric">255</span>));
+  layer.ApplyMask(mask);
+  mask.Free;
+
+  tmp := TBGRABitmap.create (clientwidth, clientheight, cssWhite);
+  tmp.PutImage(<span class="pascal_numeric">0</span>,0, layer, dmDrawWithTransparency);
+  tmp.Draw (canvas,<span class="pascal_numeric">0</span>,0);
+  tmp.free;
+<span class="pascal_keyword">end</span>;</pre>
+
+<p></p>
 <span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
 <ul class="hierarchy"><li class="ancestor">TFPCustomImage</li>
 <li class="ancestor"><a class="normal" href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a></li>

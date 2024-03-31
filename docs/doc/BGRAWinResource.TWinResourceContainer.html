@@ -25,7 +25,31 @@
 <script type="text/javascript" src="navigation.js"></script>
 <h2 class="description">Description</h2>
 <p>
-Container for Windows <a class="normal" href="introduction.html#Resources">resources</a></p>
+Container for Windows <a class="normal" href="introduction.html#Resources">resources</a>.</p>
+<p>
+
+
+<p><strong>Example of modifying an existing RES file:</strong>
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">uses</span> BGRAClasses, BGRABitmapTypes, BGRAWinResource;
+<span class="pascal_keyword">var</span>
+  res: TMultiFileContainer;
+  filestream: TStream;
+<span class="pascal_keyword">begin</span>
+  res := TWinResourceContainer.Create(<span class="pascal_string">'container.res'</span>); <span class="pascal_comment">//load the content of an existing RES file</span>
+  res.Delete(<span class="pascal_string">'MAINICON'</span>,<span class="pascal_string">'ico'</span>); <span class="pascal_comment">//delete current MAINICON entry</span>
+  filestream := TFileStream.Create(<span class="pascal_string">'someicon.ico'</span>,fmOpenRead);
+  res.Add(<span class="pascal_string">'MAINICON'</span>,<span class="pascal_string">'ico'</span>, filestream); <span class="pascal_comment">//replace it with another icon</span>
+  filestream := TFileStream.Create(<span class="pascal_string">'somecursor.cur'</span>, fmOpenRead);
+  res.Add(<span class="pascal_string">'SOMECURSOR'</span>,<span class="pascal_string">'cur'</span>, filestream); <span class="pascal_comment">//add a cursor entry called SOMECURSOR</span>
+  res.SaveToFile(<span class="pascal_string">'container.res'</span>);
+  res.Free;
+<span class="pascal_keyword">end</span>.</pre>
+
+<p></p>
 <span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
 <ul class="hierarchy"><li class="ancestor"><a class="normal" href="BGRAMultiFileType.TMultiFileContainer.html">TMultiFileContainer</a></li>
 <li class="thisitem">TWinResourceContainer</li></ul><h2 class="overview">Overview</h2>

@@ -47,6 +47,20 @@
 
 <p>Here is a nice <a href="https://msegui.net/tutoriels/bgrabitmap-lazarus/tutoriel.html">introduction to BGRABitmap</a> in French.
 
+<p><h2 class=""><span id="PixelFormats"></span>Pixel formats</h2>
+
+
+<p></p>
+
+<ul class="paragraph_spacing">
+  <li><p><a class="normal" href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>: sRGB, 8 bit per channel</p></li>
+  <li><p><a class="normal" href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>: linear 8 bit grayscale. It now has drawing functions, so you can prepare a mask in 8 bit per pixel, avoiding to consume memory</p></li>
+  <li><p><a class="normal" href="ExpandedBitmap.TExpandedBitmap.html">TExpandedBitmap</a>: linear RGB, 16 bit per channel. It has more precision than <a class="normal" href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a> and is linear, so that <a class="normal" href="BGRABitmapTypes.html#dmLinearBlend">dmLinearBlend</a> and <a class="normal" href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a> are equivalent.</p></li>
+  <li><p><a class="normal" href="LinearRGBABitmap.TLinearRGBABitmap.html">TLinearRGBABitmap</a>: linear RGB, 32 bit per channel (single precision float). It has even more precision. Not really recommended though as it uses a lot of memory.</p></li>
+  <li><p><a class="normal" href="WordXYZABitmap.TWordXYZABitmap.html">TWordXYZABitmap</a>: XYZ, 16 bit per channel. Can store any real and reflect color with great precision (see below for remarks about XYZ).</p></li>
+  <li><p><a class="normal" href="XYZABitmap.TXYZABitmap.html">TXYZABitmap</a>: XYZ, 32 bit per channel (single precision float). It has even more precision and also a wider range, so that it can store fluorescent colors and light sources that would otherwise saturate.</p></li>
+</ul>
+
 <p><h2 class=""><span id="Resources"></span>More resources</h2>
 
 

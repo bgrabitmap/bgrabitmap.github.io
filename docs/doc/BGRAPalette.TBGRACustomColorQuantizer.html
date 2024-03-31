@@ -333,7 +333,9 @@ Abstract class for color quantization.</p>
 <td class="itemcode"><span id="DominantColor"></span><code>property <strong>DominantColor</strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> read <a href="#GetDominantColor">GetDominantColor</a>;</code></td>
 </tr>
 <tr><td colspan="2">
-<p class="nodescription">This item has no description.</p></td></tr>
+<p>
+Colors that is the most represented in the source</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -341,7 +343,9 @@ Abstract class for color quantization.</p>
 <td class="itemcode"><span id="ReducedPalette"></span><code>property <strong>ReducedPalette</strong>: <a href="BGRAPalette.TBGRACustomApproxPalette.html">TBGRACustomApproxPalette</a> read <a href="#GetPalette">GetPalette</a>;</code></td>
 </tr>
 <tr><td colspan="2">
-<p class="nodescription">This item has no description.</p></td></tr>
+<p>
+Palette with reduced number of colors after applying quantization</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -349,7 +353,31 @@ Abstract class for color quantization.</p>
 <td class="itemcode"><span id="ReductionColorCount"></span><code>property <strong>ReductionColorCount</strong>: Integer read <a href="#GetReductionColorCount">GetReductionColorCount</a> write <a href="#SetReductionColorCount-Integer-">SetReductionColorCount</a>;</code></td>
 </tr>
 <tr><td colspan="2">
-<p class="nodescription">This item has no description.</p></td></tr>
+<p>
+Number of different colors in the reduced palette.</p>
+<p>
+
+
+<p>By default, there are 256 colors.
+
+<p><strong>Example to reduce an image to 16 colors:</strong> </p>
+
+<pre class="longcode">
+<span class="pascal_keyword">uses</span> BGRAColorQuantization, BGRABitmapTypes, BGRABitmap;
+<span class="pascal_keyword">var</span>
+  quant : TBGRAColorQuantizer;
+  sourceBmp: TBGRABitmap;
+<span class="pascal_keyword">begin</span>
+  sourceBmp := TBGRABitmap.Create(<span class="pascal_string">'picture.jpg'</span>);
+  quant := TBGRAColorQuantizer.Create(sourceBmp, acIgnore);
+  quant.ReductionColorCount := <span class="pascal_numeric">16</span>;
+  quant.SaveBitmapToFile(daFloydSteinberg, sourceBmp, <span class="pascal_string">'picture_in_4_bits.bmp'</span>);
+  quant.Free;
+  sourceBmp.Free;
+<span class="pascal_keyword">end</span>;</pre>
+
+<p></p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -357,7 +385,9 @@ Abstract class for color quantization.</p>
 <td class="itemcode"><span id="SourceColor"></span><code>property <strong>SourceColor</strong>[AIndex: integer]: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> read <a href="#GetSourceColor-integer-">GetSourceColor</a>;</code></td>
 </tr>
 <tr><td colspan="2">
-<p class="nodescription">This item has no description.</p></td></tr>
+<p>
+Value of a color in the source</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -365,6 +395,8 @@ Abstract class for color quantization.</p>
 <td class="itemcode"><span id="SourceColorCount"></span><code>property <strong>SourceColorCount</strong>: Integer read <a href="#GetSourceColorCount">GetSourceColorCount</a>;</code></td>
 </tr>
 <tr><td colspan="2">
-<p class="nodescription">This item has no description.</p></td></tr>
+<p>
+Number colors provided in the source</p>
+</td></tr>
 </table>
 </div></div></body></html>

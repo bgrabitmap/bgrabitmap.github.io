@@ -418,7 +418,36 @@ Miter limit for line joins</p>
 </tr>
 <tr><td colspan="2">
 <p>
-Stroke transformation matrix (applied only to stroke and not to path points)</p>
+Stroke transformation matrix.</p>
+<p>
+
+
+<p>This matrix is applied only to stroke and not to path points.
+
+<p><strong>Example of skew transform:</strong>
+
+<p><img src="image_1.png" alt="pen_skew" />
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">uses</span> BGRABitmapTypes, BGRATransform;
+
+<span class="pascal_keyword">procedure</span> TForm1.BGRAVirtualScreen1Redraw(Sender: TObject; Bitmap: TBGRABitmap);
+<span class="pascal_keyword">var</span>
+  i: Integer;
+<span class="pascal_keyword">begin</span>
+  <span class="pascal_keyword">for</span> i := <span class="pascal_numeric">0</span> <span class="pascal_keyword">to</span> <span class="pascal_numeric">5</span> <span class="pascal_keyword">do</span>
+  <span class="pascal_keyword">begin</span>
+    Bitmap.Pen.StrokeMatrix := AffineMatrixSkewXDeg(-<span class="pascal_numeric">10</span>*i);
+    Bitmap.Pen.LineCap := pecSquare;
+    Bitmap.DrawLineAntialias(<span class="pascal_numeric">40</span>,40+i*<span class="pascal_numeric">80</span>,Bitmap.Width <span class="pascal_keyword">div</span> <span class="pascal_numeric">2-40</span>,40+i*<span class="pascal_numeric">80</span>, BGRABlack,<span class="pascal_numeric">30</span>);
+    Bitmap.Pen.LineCap := pecRound;
+    Bitmap.DrawLineAntialias(Bitmap.Width <span class="pascal_keyword">div</span> <span class="pascal_numeric">2+40</span>,40+i*<span class="pascal_numeric">80</span>,Bitmap.Width-<span class="pascal_numeric">40</span>,40+i*<span class="pascal_numeric">80</span>, BGRABlack,<span class="pascal_numeric">30</span>);
+  <span class="pascal_keyword">end</span>;
+<span class="pascal_keyword">end</span>;</pre>
+
+<p></p>
 </td></tr>
 </table>
 <table class="detail wide_list">

@@ -25,7 +25,66 @@
 <script type="text/javascript" src="navigation.js"></script>
 <h2 class="description">Description</h2>
 <p>
-Generic class configuring and rendering an arrow</p>
+Generic class configuring and rendering an arrow.</p>
+<p>
+
+
+<p><strong>Example using different kind of arrows:</strong>
+
+<p><img src="image_0.png" alt="arrows" />
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">uses</span> BGRABitmap, BGRABitmapTypes;
+
+<span class="pascal_keyword">procedure</span> TForm1.FormPaint(Sender: TObject);
+<span class="pascal_keyword">var</span> bmp:TBGRABitmap;
+  w: single;
+<span class="pascal_keyword">begin</span>
+  bmp := TBGRABitmap.Create(ClientWidth,ClientHeight,BGRAWhite);
+  w := sqrt(ClientWidth*ClientHeight)/<span class="pascal_numeric">50</span>;
+
+  <span class="pascal_comment">// diagonal arrow</span>
+  bmp.Arrow.StartAsTail;
+  bmp.Arrow.StartRepeatCount := <span class="pascal_numeric">2</span>;
+  bmp.Arrow.EndAsTriangle(<span class="pascal_float">0.25</span>,False,True);
+  bmp.DrawPolyLineAntialias(
+    bmp.ComputeOpenedSpline([PointF(<span class="pascal_numeric">80</span>,80),PointF(ClientWidth-<span class="pascal_numeric">160</span>,ClientHeight <span class="pascal_keyword">div</span> <span class="pascal_numeric">2</span>),PointF(ClientWidth-<span class="pascal_numeric">80</span>,ClientHeight-<span class="pascal_numeric">20</span>)],ssCrossingWithEnds),
+    BGRABlack,w);
+  bmp.Arrow.StartRepeatCount := <span class="pascal_numeric">1</span>; <span class="pascal_comment">//restore default value</span>
+
+  <span class="pascal_comment">// top arrow</span>
+  bmp.Arrow.StartAsClassic(True,True,<span class="pascal_numeric">3</span>);
+  bmp.Arrow.StartOffsetX := -<span class="pascal_numeric">8</span>;
+  bmp.Arrow.EndAsClassic(False,True);
+  bmp.DrawPolyLineAntialias(
+    bmp.ComputeOpenedSpline([PointF(<span class="pascal_numeric">40</span>,60),PointF(ClientWidth <span class="pascal_keyword">div</span> <span class="pascal_numeric">3</span>,20),PointF(ClientWidth-<span class="pascal_numeric">80</span>,40)],ssCrossingWithEnds),
+    BGRABlack,w);
+  bmp.Arrow.StartOffsetX := <span class="pascal_numeric">0</span>; <span class="pascal_comment">//restore default value</span>
+
+  <span class="pascal_comment">// left arrow</span>
+  bmp.Arrow.StartAsClassic(True,True);
+  bmp.Arrow.StartSize := PointF(<span class="pascal_numeric">1</span>,2);
+  bmp.Arrow.StartOffsetX := -<span class="pascal_float">5.5</span>;
+  bmp.Arrow.StartRepeatCount := <span class="pascal_numeric">3</span>;
+  bmp.Arrow.EndAsTriangle(<span class="pascal_float">0.75</span>);
+  bmp.DrawLineAntialias(<span class="pascal_numeric">20</span>,90, <span class="pascal_numeric">80</span>,ClientHeight-<span class="pascal_numeric">40</span>,
+    BGRABlack,w);
+  bmp.Arrow.StartSize := PointF(<span class="pascal_numeric">2</span>,2); <span class="pascal_comment">//restore default values</span>
+  bmp.Arrow.StartOffsetX := <span class="pascal_numeric">0</span>;
+  bmp.Arrow.StartRepeatCount := <span class="pascal_numeric">1</span>;
+
+  <span class="pascal_comment">// right arrow</span>
+  bmp.Arrow.StartAsClassic;
+  bmp.Arrow.EndAsClassic(False,False,<span class="pascal_numeric">2</span>);
+  bmp.DrawLineAntialias(ClientWidth-<span class="pascal_numeric">40</span>,40,ClientWidth-<span class="pascal_numeric">40</span>,ClientHeight-<span class="pascal_numeric">80</span>,BGRABlack,w);
+
+  bmp.Draw(Canvas,<span class="pascal_numeric">0</span>,0);
+  bmp.Free;
+<span class="pascal_keyword">end</span>;</pre>
+
+<p></p>
 <span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
 <ul class="hierarchy"><li class="ancestor">TObject</li>
 <li class="thisitem">TBGRACustomArrow</li></ul><h2 class="overview">Overview</h2>

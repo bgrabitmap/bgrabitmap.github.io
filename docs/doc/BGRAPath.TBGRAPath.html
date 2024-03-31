@@ -25,7 +25,30 @@
 <script type="text/javascript" src="navigation.js"></script>
 <h2 class="description">Description</h2>
 <p>
-Path (in 2D) that allows to define custom shapes that can be drawn</p>
+Path (in 2D) that allows to define custom shapes that can be drawn.</p>
+<p>
+
+
+<p><strong>Example of drawing an arrow with a path:</strong> </p>
+
+<pre class="longcode">
+<span class="pascal_keyword">procedure</span> TForm1.BGRAVirtualScreen1Redraw(Sender: TObject; Bitmap: TBGRABitmap);
+<span class="pascal_keyword">var</span> p: TBGRAPath;
+<span class="pascal_keyword">begin</span>
+  p := TBGRAPath.Create;
+  p.scale(<span class="pascal_numeric">2</span>);
+  p.moveTo(<span class="pascal_numeric">20</span>, <span class="pascal_numeric">20</span>);
+  p.arcTo(<span class="pascal_numeric">60</span>, <span class="pascal_numeric">20</span>, <span class="pascal_numeric">60</span>, <span class="pascal_numeric">40</span>, <span class="pascal_numeric">20</span>);
+  p.arcTo(<span class="pascal_numeric">60</span>, <span class="pascal_numeric">120</span>, <span class="pascal_numeric">80</span>, <span class="pascal_numeric">120</span>, <span class="pascal_numeric">20</span>);
+  p.lineTo(<span class="pascal_numeric">120</span>, <span class="pascal_numeric">120</span>);
+  Bitmap.ArrowEndAsClassic;
+  Bitmap.ArrowEndSize := PointF(<span class="pascal_numeric">5</span>,5);
+  Bitmap.DrawPath(p, clBlack, <span class="pascal_numeric">3</span>);
+  Bitmap.ArrowEndAsNone;
+  p.Free;
+<span class="pascal_keyword">end</span>;</pre>
+
+<p></p>
 <span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
 <ul class="hierarchy"><li class="ancestor">IInterface</li>
 <li class="ancestor"><a class="normal" href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a></li>

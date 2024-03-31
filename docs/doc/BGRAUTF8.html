@@ -35,7 +35,7 @@ UTF8 related functions</p>
 </tr>
 <tr class="list2">
 <td class="itemname">Record&nbsp;<a class="bold" href="BGRAUTF8.TGlyphCursorUtf8.html"><code>TGlyphCursorUtf8</code></a></td>
-<td class="itemdesc">Cursor to go through a UTF8 text glyph by glyph</td>
+<td class="itemdesc">Cursor to go through a UTF8 text glyph by glyph.</td>
 </tr>
 <tr class="list">
 <td class="itemname">Record&nbsp;<a class="bold" href="BGRAUTF8.TGlyphUtf8.html"><code>TGlyphUtf8</code></a></td>
@@ -267,21 +267,27 @@ UTF8 related functions</p>
 <td class="itemcode"><span id="AnalyzeBidiUTF8-string-boolean-"></span><code>function <strong>AnalyzeBidiUTF8</strong>(const sUTF8: string; ARightToLeft: boolean): <a href="#TBidiUTF8Array">TBidiUTF8Array</a>; overload;</code></td>
 </tr>
 <tr><td colspan="1">
-<p class="nodescription">This item has no description.</p></td></tr>
+<p>
+Returns an array with bidirectional analysis with specified text direction.</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
 <td class="itemcode"><span id="AnalyzeBidiUTF8-string-TFontBidiMode-"></span><code>function <strong>AnalyzeBidiUTF8</strong>(const sUTF8: string; ABidiMode: <a href="BGRAUnicode.html#TFontBidiMode">TFontBidiMode</a>): <a href="#TBidiUTF8Array">TBidiUTF8Array</a>; overload;</code></td>
 </tr>
 <tr><td colspan="1">
-<p class="nodescription">This item has no description.</p></td></tr>
+<p>
+Returns an array with bidirectional analysis with specified text direction.</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
 <td class="itemcode"><span id="AnalyzeBidiUTF8-string-"></span><code>function <strong>AnalyzeBidiUTF8</strong>(const sUTF8: string): <a href="#TBidiUTF8Array">TBidiUTF8Array</a>; overload;</code></td>
 </tr>
 <tr><td colspan="1">
-<p class="nodescription">This item has no description.</p></td></tr>
+<p>
+Returns an array with bidirectional analysis with automatic text direction.</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -372,7 +378,13 @@ UTF8 related functions</p>
 <td class="itemcode"><span id="GetUTF8DisplayOrder-TBidiUTF8Array-"></span><code>function <strong>GetUTF8DisplayOrder</strong>(const ABidi: <a href="#TBidiUTF8Array">TBidiUTF8Array</a>): <a href="#TUnicodeDisplayOrder">TUnicodeDisplayOrder</a>;</code></td>
 </tr>
 <tr><td colspan="1">
-<p class="nodescription">This item has no description.</p></td></tr>
+<p>
+Display order of characters.</p>
+<p>
+
+
+<p>For example, a text in hebrew will be displayed from right to left. This function doesn't take into account word wrap. In this case, it is a bit more complicated and there is <a class="normal" href="BGRATextBidi.html">BGRATextBidi</a> unit to handle text layout.)</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -521,7 +533,9 @@ little endian stream functions</p>
 <td class="itemcode"><span id="UTF8EmbedDirection-string-boolean-"></span><code>function <strong>UTF8EmbedDirection</strong>(const sUTF8: string; ARightToLeft: boolean): string;</code></td>
 </tr>
 <tr><td colspan="1">
-<p class="nodescription">This item has no description.</p></td></tr>
+<p>
+Adds special unicode characters to make it a quote in a specific direction. For example you can add a quote in arabic that will be right to left inside a text in latin alphabet. This is useful for example if there is punctiation at the end of the quote, so that it will be displayed on the correct side of the text.</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -556,7 +570,9 @@ little endian stream functions</p>
 <td class="itemcode"><span id="UTF8OverrideDirection-string-boolean-"></span><code>function <strong>UTF8OverrideDirection</strong>(const sUTF8: string; ARightToLeft: boolean): string;</code></td>
 </tr>
 <tr><td colspan="1">
-<p class="nodescription">This item has no description.</p></td></tr>
+<p>
+Adds special unicode characters around the text to change it's direction. For example &quot;hello&quot; from right to left would be displayed as &quot;olleh&quot;.</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">

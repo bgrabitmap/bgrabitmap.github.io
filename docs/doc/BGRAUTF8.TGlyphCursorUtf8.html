@@ -25,7 +25,38 @@
 <script type="text/javascript" src="navigation.js"></script>
 <h2 class="description">Description</h2>
 <p>
-Cursor to go through a UTF8 text glyph by glyph</p>
+Cursor to go through a UTF8 text glyph by glyph.</p>
+<p>
+
+
+<p>A glyph is a graphical unit to be displayed. It can be formed by one or more Unicode codepoints.
+
+<p>Example drawing wavy text using <code>TGlyphCursorUtf8</code> on a <a class="normal" href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>: </p>
+
+<pre class="longcode">
+<span class="pascal_keyword">uses</span> ..., BGRAUTF8, BGRACanvas2D;
+
+<span class="pascal_keyword">procedure</span> WavyText(ctx: TBGRACanvas2D; AText: <span class="pascal_keyword">string</span>; X,Y,
+  AWavePosDeg, AWaveStepDeg, AWaveSize: single);
+<span class="pascal_keyword">var</span> cursor : TGlyphCursorUtf8;
+  glyph: TGlyphUtf8;
+  glyphText: <span class="pascal_keyword">string</span>;
+<span class="pascal_keyword">begin</span>
+  cursor := TGlyphCursorUtf8.New(AText, fbmAuto);
+  <span class="pascal_keyword">while</span> <span class="pascal_keyword">not</span> cursor.EndOfString <span class="pascal_keyword">do</span>
+  <span class="pascal_keyword">begin</span>
+    glyph := cursor.GetNextGlyph;
+    <span class="pascal_keyword">if</span> glyph.MirroredGlyphUtf8 &lt;&gt; <span class="pascal_string">''</span> <span class="pascal_keyword">then</span>
+      glyphText := glyph.MirroredGlyphUtf8
+    <span class="pascal_keyword">else</span>
+      glyphText := glyph.GlyphUtf8;
+    ctx.fillText(glyphText, x,y + AWaveSize*Sin(AWavePosDeg*Pi/<span class="pascal_numeric">180</span>));
+    x += ctx.measureText(glyphText).width;
+    AWavePosDeg += AWaveStepDeg;
+  <span class="pascal_keyword">end</span>;
+<span class="pascal_keyword">end</span>;</pre>
+
+<p></p>
 <h2 class="overview">Overview</h2>
 <span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
 <table class="summary wide_list">
@@ -55,7 +86,9 @@ Cursor to go through a UTF8 text glyph by glyph</p>
 <td class="itemcode"><span id="EndOfString"></span><code>function <strong>EndOfString</strong>: boolean;</code></td>
 </tr>
 <tr><td colspan="2">
-<p class="nodescription">This item has no description.</p></td></tr>
+<p>
+Indicate whether the end of the string has bee reached</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -63,7 +96,9 @@ Cursor to go through a UTF8 text glyph by glyph</p>
 <td class="itemcode"><span id="GetNextGlyph"></span><code>function <strong>GetNextGlyph</strong>: <a href="BGRAUTF8.TGlyphUtf8.html">TGlyphUtf8</a>;</code></td>
 </tr>
 <tr><td colspan="2">
-<p class="nodescription">This item has no description.</p></td></tr>
+<p>
+Advance and retrieve the next glyph</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -71,7 +106,9 @@ Cursor to go through a UTF8 text glyph by glyph</p>
 <td class="itemcode"><span id="New-string-TFontBidiMode-"></span><code>class function <strong>New</strong>(const textUTF8: string; ABidiMode: <a href="BGRAUnicode.html#TFontBidiMode">TFontBidiMode</a>): <a href="BGRAUTF8.TGlyphCursorUtf8.html">TGlyphCursorUtf8</a>; static;</code></td>
 </tr>
 <tr><td colspan="2">
-<p class="nodescription">This item has no description.</p></td></tr>
+<p>
+Initialize a record with the given parameters</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -79,6 +116,8 @@ Cursor to go through a UTF8 text glyph by glyph</p>
 <td class="itemcode"><span id="Rewind"></span><code>procedure <strong>Rewind</strong>;</code></td>
 </tr>
 <tr><td colspan="2">
-<p class="nodescription">This item has no description.</p></td></tr>
+<p>
+<a class="normal" href="introduction.html#Start">Start</a> all over again from the first character</p>
+</td></tr>
 </table>
 </div></div></body></html>

@@ -25,7 +25,50 @@
 <script type="text/javascript" src="navigation.js"></script>
 <h2 class="description">Description</h2>
 <p>
-Reading, writing and rendering for an SVG document</p>
+Reading, writing and rendering for an SVG document.</p>
+<p>
+
+
+<p><strong>Example of reading and displaying SVG images:</strong>
+
+<p><img src="image_5.png" alt="svg_example" />
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">uses</span> ..., BGRABitmapTypes, BGRASVG;
+
+<span class="pascal_keyword">procedure</span> DrawSVGImages(ctx: TBGRACanvas2D);
+<span class="pascal_keyword">var</span> svg: TBGRASVG;
+<span class="pascal_keyword">begin</span>
+  svg := TBGRASVG.Create;
+  svg.LoadFromFile(<span class="pascal_string">'Amsterdammertje-icoon.svg'</span>);
+  svg.StretchDraw(ctx, taCenter,tlCenter, <span class="pascal_numeric">0</span>,0,ctx.Width/<span class="pascal_numeric">3</span>,ctx.Height);
+
+  svg.LoadFromFile(<span class="pascal_string">'BespectacledMaleUser.svg'</span>);
+  svg.StretchDraw(ctx, ctx.Width/<span class="pascal_numeric">3</span>,0,ctx.Width*<span class="pascal_numeric">2</span>/3,ctx.Height/<span class="pascal_numeric">2</span>);
+
+  ctx.save;
+  ctx.beginPath;
+  ctx.rect(ctx.Width/<span class="pascal_numeric">3</span>,ctx.Height/<span class="pascal_numeric">2</span>,ctx.Width*<span class="pascal_numeric">2</span>/3,ctx.Height/<span class="pascal_numeric">2</span>);
+  ctx.clip;
+  svg.LoadFromFile(<span class="pascal_string">'Blue_gyroelongated_pentagonal_pyramid.svg'</span>);
+  svg.Draw(ctx, taCenter,tlCenter, ctx.Width*<span class="pascal_numeric">2</span>/3,ctx.Height*<span class="pascal_numeric">3</span>/4);
+  ctx.restore;
+
+  svg.Free;
+
+  ctx.beginPath;
+  ctx.lineWidth:= <span class="pascal_numeric">1</span>;
+  ctx.strokeStyle(BGRABlack);
+  ctx.moveTo(ctx.Width/<span class="pascal_numeric">3</span>,0);
+  ctx.lineTo(ctx.Width/<span class="pascal_numeric">3</span>,ctx.Height);
+  ctx.moveTo(ctx.Width/<span class="pascal_numeric">3</span>,ctx.Height/<span class="pascal_numeric">2</span>);
+  ctx.lineTo(ctx.Width,ctx.Height/<span class="pascal_numeric">2</span>);
+  ctx.stroke;
+<span class="pascal_keyword">end</span>;</pre>
+
+<p></p>
 <span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
 <ul class="hierarchy"><li class="ancestor">TObject</li>
 <li class="ancestor"><a class="normal" href="BGRASVGType.TSVGCustomElement.html">TSVGCustomElement</a></li>
