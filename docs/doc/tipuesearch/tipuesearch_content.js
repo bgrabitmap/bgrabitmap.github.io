@@ -4533,7 +4533,7 @@ var tipuesearch = {"pages": [
      {"title": "BGRACanvas2D.TBGRACanvas2D.rect", "text": "    ", "tags": "", "url": "BGRACanvas2D.TBGRACanvas2D.html#rect-single-single-single-single-"},
      {"title": "BGRACanvas2D.TBGRACanvas2D.resetTransform", "text": "    ", "tags": "", "url": "BGRACanvas2D.TBGRACanvas2D.html#resetTransform"},
      {"title": "BGRACanvas2D.TBGRACanvas2D.restore", "text": "    If there is no saved state, this method does nothing.    ", "tags": "", "url": "BGRACanvas2D.TBGRACanvas2D.html#restore"},
-     {"title": "BGRACanvas2D.TBGRACanvas2D.rotate", "text": "    ", "tags": "", "url": "BGRACanvas2D.TBGRACanvas2D.html#rotate-single-"},
+     {"title": "BGRACanvas2D.TBGRACanvas2D.rotate", "text": "    Example rotating around the center of a 200x200 canvas:       canvas2D.translate(100, 100);  canvas2D.rotate(Pi);  canvas2D.translate(-100, -100);        ", "tags": "", "url": "BGRACanvas2D.TBGRACanvas2D.html#rotate-single-"},
      {"title": "BGRACanvas2D.TBGRACanvas2D.roundRect", "text": "    ", "tags": "", "url": "BGRACanvas2D.TBGRACanvas2D.html#roundRect-single-single-single-single-single-"},
      {"title": "BGRACanvas2D.TBGRACanvas2D.roundRect", "text": "    ", "tags": "", "url": "BGRACanvas2D.TBGRACanvas2D.html#roundRect-single-single-single-single-single-single-"},
      {"title": "BGRACanvas2D.TBGRACanvas2D.save", "text": "    The drawing state consists of:         the current transformation matrix.    the current clipping region.    the font parameters.    the various properties of stroke and fill style.    the shadow parameters.          ", "tags": "", "url": "BGRACanvas2D.TBGRACanvas2D.html#save"},

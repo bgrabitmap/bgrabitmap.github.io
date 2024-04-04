@@ -1512,6 +1512,17 @@ Restores the most recently saved canvas state by popping the top entry in the dr
 <tr><td colspan="2">
 <p>
 Rotates the canvas around the origin (0,0) by the given angle in radians, clockwise.</p>
+<p>
+
+
+<p><strong>Example rotating around the center of a 200x200 canvas:</strong> </p>
+
+<pre class="longcode">
+canvas2D.translate(<span class="pascal_numeric">100</span>, <span class="pascal_numeric">100</span>);
+canvas2D.rotate(Pi);
+canvas2D.translate(-<span class="pascal_numeric">100</span>, -<span class="pascal_numeric">100</span>);</pre>
+
+<p></p>
 </td></tr>
 </table>
 <table class="detail wide_list">
