@@ -1764,7 +1764,33 @@ Scan interpolation filter is used when the <a class="normal" href="#Bitmap">bitm
 <td class="itemcode"><span id="Create-TBitmap-boolean-"></span><code>constructor <strong>Create</strong>(ABitmap: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>; AUseTransparent: boolean); overload; virtual; abstract;</code></td>
 </tr>
 <tr><td colspan="2">
-<p class="nodescription">This item has no description.</p></td></tr>
+<p>
+<a class="normal" href="#Create-TStream-">Create</a> an instance and load an image from a file.</p>
+<p>
+
+
+<p><strong>Example of loading and displaying an image on a form:</strong>
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">procedure</span> TForm1.FormCreate(Sender: TObject);
+<span class="pascal_keyword">begin</span>
+  image := TBGRABitmap.Create(<span class="pascal_string">'image.png'</span>);
+<span class="pascal_keyword">end</span>;
+
+<span class="pascal_keyword">procedure</span> TForm1.FormDestroy(Sender: TObject);
+<span class="pascal_keyword">begin</span>
+  image.free;
+<span class="pascal_keyword">end</span>;
+
+<span class="pascal_keyword">procedure</span> TForm1.FormPaint(Sender: TObject);
+<span class="pascal_keyword">begin</span>
+  image.Draw(Canvas, <span class="pascal_numeric">0</span>, <span class="pascal_numeric">0</span>, True); <span class="pascal_comment">// assume image is opaque</span>
+<span class="pascal_keyword">end</span>;</pre>
+
+<p></p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -1837,7 +1863,44 @@ Scan interpolation filter is used when the <a class="normal" href="#Bitmap">bitm
 </tr>
 <tr><td colspan="2">
 <p>
-Spline</p>
+Compute an closed spline passing by the given points.</p>
+<p>
+
+
+<p><strong>Example of drawing a spline on a form:</strong>
+
+<p><img src="image_1.png" alt="computeclosedspline" />
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">procedure</span> TForm1.FormPaint(Sender: TObject);
+<span class="pascal_keyword">var</span>
+  image: TBGRABitmap;
+  pts: <span class="pascal_keyword">array</span> <span class="pascal_keyword">of</span> TPointF;
+  storedSpline: <span class="pascal_keyword">array</span> <span class="pascal_keyword">of</span> TPointF;
+  c: TBGRAPixel;
+<span class="pascal_keyword">begin</span>
+    image := TBGRABitmap.Create(ClientWidth, ClientHeight, clBtnFace);
+    c := clWindowText;
+
+    <span class="pascal_comment">//rectangular polyline</span>
+    setlength(pts,<span class="pascal_numeric">4</span>);
+    pts[<span class="pascal_numeric">0</span>] := PointF(<span class="pascal_numeric">50</span>,50);
+    pts[<span class="pascal_numeric">1</span>] := PointF(<span class="pascal_numeric">150</span>,50);
+    pts[<span class="pascal_numeric">2</span>] := PointF(<span class="pascal_numeric">150</span>,150);
+    pts[<span class="pascal_numeric">3</span>] := PointF(<span class="pascal_numeric">50</span>,150);
+    image.DrawPolylineAntialias(pts,BGRA(<span class="pascal_numeric">255</span>,0,<span class="pascal_numeric">0</span>,150),<span class="pascal_numeric">1</span>);
+
+    <span class="pascal_comment">//compute spline points and draw as a polyline</span>
+    storedSpline := image.ComputeClosedSpline(pts,ssVertexToSide);
+    image.DrawPolylineAntialias(storedSpline,c,<span class="pascal_numeric">1</span>);
+
+    image.Draw(Canvas,<span class="pascal_numeric">0</span>,0,True);
+    image.free;
+<span class="pascal_keyword">end</span>;</pre>
+
+<p></p>
 </td></tr>
 </table>
 <table class="detail wide_list">
@@ -1894,7 +1957,46 @@ Spline</p>
 <td class="itemcode"><span id="ComputeOpenedSpline-arrayofTPointF-TSplineStyle-"></span><code>function <strong>ComputeOpenedSpline</strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; AStyle: <a href="BGRABitmapTypes.html#TSplineStyle">TSplineStyle</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; virtual; abstract;</code></td>
 </tr>
 <tr><td colspan="2">
-<p class="nodescription">This item has no description.</p></td></tr>
+<p>
+Compute an opened spline passing by the given points.</p>
+<p>
+
+
+<p><strong>Example of drawing a spline on a form:</strong>
+
+<p><img src="image_2.png" alt="computeopenedspline" />
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">procedure</span> TForm1.FormPaint(Sender: TObject);
+<span class="pascal_keyword">var</span>
+  image: TBGRABitmap;
+  pts: <span class="pascal_keyword">array</span> <span class="pascal_keyword">of</span> TPointF;
+  storedSpline: <span class="pascal_keyword">array</span> <span class="pascal_keyword">of</span> TPointF;
+  c: TBGRAPixel;
+<span class="pascal_keyword">begin</span>
+    image := TBGRABitmap.Create(ClientWidth, ClientHeight, clBtnFace);
+    c := clWindowText;
+
+    <span class="pascal_comment">//rectangular polyline</span>
+    setlength(pts,<span class="pascal_numeric">4</span>);
+    pts[<span class="pascal_numeric">0</span>] := PointF(<span class="pascal_numeric">50</span>,50);
+    pts[<span class="pascal_numeric">1</span>] := PointF(<span class="pascal_numeric">150</span>,50);
+    pts[<span class="pascal_numeric">2</span>] := PointF(<span class="pascal_numeric">150</span>,150);
+    pts[<span class="pascal_numeric">3</span>] := PointF(<span class="pascal_numeric">50</span>,150);
+    image.DrawPolylineAntialias(pts,BGRA(<span class="pascal_numeric">255</span>,0,<span class="pascal_numeric">0</span>,150),<span class="pascal_numeric">1</span>);
+
+    <span class="pascal_comment">//compute spline points and draw as a polyline</span>
+    storedSpline := image.ComputeOpenedSpline(pts,ssVertexToSide);
+    image.DrawPolylineAntialias(storedSpline,c,<span class="pascal_numeric">1</span>);
+
+    image.Draw(Canvas,<span class="pascal_numeric">0</span>,0,True);
+    image.free;
+<span class="pascal_keyword">end</span>;</pre>
+
+<p></p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">

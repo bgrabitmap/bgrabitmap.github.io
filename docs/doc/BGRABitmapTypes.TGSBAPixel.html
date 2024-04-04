@@ -25,7 +25,48 @@
 <script type="text/javascript" src="navigation.js"></script>
 <h2 class="description">Description</h2>
 <p>
-Pixel color defined in corrected HSL colorspace. G stands for corrected <a class="normal" href="#hue">hue</a> and B stands for actual brightness. Values range from 0 to 65535.</p>
+Pixel color defined in corrected HSL colorspace.</p>
+<p>
+
+
+<p>G stands for corrected <a class="normal" href="#hue">hue</a> and B stands for actual brightness. Values range from 0 to 65535.
+
+<p>See <a class="normal" href="BGRABitmapTypes.THSLAPixel.html">THSLAPixel</a> for this colorspace without <a class="normal" href="#hue">hue</a> and brightness correction.
+
+<p><strong>Example of drawing a gradient in GSB colorspace:</strong>
+
+<p><img src="image_6.png" alt="gsbapixel_gradient" />
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">procedure</span> TForm1.FormPaint(Sender: TObject);
+<span class="pascal_keyword">var</span> x,y: integer;
+    p: PBGRAPixel;
+    image: TBGRABitmap;
+    gsba: TGSBAPixel;
+<span class="pascal_keyword">begin</span>
+  image := TBGRABitmap.Create(ClientWidth,ClientHeight);
+  gsba.lightness := <span class="pascal_numeric">32768</span>;
+  gsba.alpha := <span class="pascal_numeric">65535</span>;
+  <span class="pascal_keyword">for</span> y := <span class="pascal_numeric">0</span> <span class="pascal_keyword">to</span> image.Height-<span class="pascal_numeric">1</span> <span class="pascal_keyword">do</span>
+  <span class="pascal_keyword">begin</span>
+    p := image.Scanline[y];
+    gsba.saturation := y*<span class="pascal_numeric">65536</span> <span class="pascal_keyword">div</span> image.Height;
+    <span class="pascal_keyword">for</span> x := <span class="pascal_numeric">0</span> <span class="pascal_keyword">to</span> image.Width-<span class="pascal_numeric">1</span> <span class="pascal_keyword">do</span>
+    <span class="pascal_keyword">begin</span>
+      gsba.hue := x*<span class="pascal_numeric">65536</span> <span class="pascal_keyword">div</span> image.Width;
+      p&circ;:= GSBAToBGRA(gsba);
+      inc(p);
+    <span class="pascal_keyword">end</span>;
+  <span class="pascal_keyword">end</span>;
+  image.InvalidateBitmap; <span class="pascal_comment">// changed by direct access</span>
+
+  image.Draw(Canvas,<span class="pascal_numeric">0</span>,0,True);
+  image.free;
+<span class="pascal_keyword">end</span>;</pre>
+
+<p></p>
 <h2 class="overview">Overview</h2>
 <span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
 <table class="summary wide_list">

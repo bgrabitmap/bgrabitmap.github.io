@@ -31,7 +31,9 @@ Renders shape and height maps using Phong shading.</p>
 
 <p>Phong shading consist in adding an ambiant light, a diffuse light (angle between light and object), and a specular light (angle between light, object and observer, i.e. reflected light).
 
-<p>Height maps are grayscale images or a precise bitmaps filled with <a class="normal" href="BGRABitmapTypes.html#MapHeightToBGRA-Single-Byte-">MapHeightToBGRA</a>. They are used to determine orientation and position of the surface.</p>
+<p>Height maps are grayscale images or a precise bitmaps filled with <a class="normal" href="BGRABitmapTypes.html#MapHeightToBGRA-Single-Byte-">MapHeightToBGRA</a>. They are used to determine orientation and position of the surface.
+
+<p>See <a href="https://wiki.freepascal.org/BGRABitmap_tutorial_9">tutorial on Phong shading</a>.</p>
 <span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
 <ul class="hierarchy"><li class="ancestor">TObject</li>
 <li class="ancestor"><a class="normal" href="BGRAPhongTypes.TCustomPhongShading.html">TCustomPhongShading</a></li>
@@ -339,7 +341,39 @@ Render with a color scanner. Map altitude indicate the global height of the map.
 </tr>
 <tr><td colspan="2">
 <p>
-<a class="normal" href="#Draw-TBGRACustomBitmap-TBGRACustomBitmap-single-integer-integer-TBGRACustomBitmap-">Draw</a> a hemisphere of the specified color</p>
+<a class="normal" href="#Draw-TBGRACustomBitmap-TBGRACustomBitmap-single-integer-integer-TBGRACustomBitmap-">Draw</a> a hemisphere of the specified color.</p>
+<p>
+
+
+<p><strong>Example drawing a red sphere on a form:</strong>
+
+<p><img src="image_10.png" alt="tphongshading_drawsphere" />
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">procedure</span> TForm1.FormPaint(Sender: TObject);
+<span class="pascal_keyword">var</span>
+  image: TBGRABitmap;
+  phong: TPhongShading;
+<span class="pascal_keyword">begin</span>
+  phong := TPhongShading.Create;
+  phong.LightPosition := Point(<span class="pascal_numeric">100</span>, <span class="pascal_numeric">100</span>);
+  phong.LightPositionZ := <span class="pascal_numeric">150</span>;
+  phong.SpecularIndex := <span class="pascal_numeric">20</span>;
+  phong.AmbientFactor := <span class="pascal_float">0.4</span>;
+  phong.LightSourceIntensity := <span class="pascal_numeric">250</span>;
+  phong.LightSourceDistanceTerm := <span class="pascal_numeric">200</span>;
+
+  image := TBGRABitmap.Create(ClientWidth,ClientHeight,ColorToBGRA(ColorToRGB(clBtnFace)));
+
+  phong.DrawSphere(image,rect(<span class="pascal_numeric">20</span>,20,<span class="pascal_numeric">120</span>,120),<span class="pascal_numeric">50</span>,BGRA(<span class="pascal_numeric">255</span>,0,<span class="pascal_numeric">0</span>));
+
+  image.Draw(Canvas,<span class="pascal_numeric">0</span>,0,True);
+  image.free;
+<span class="pascal_keyword">end</span>;</pre>
+
+<p></p>
 </td></tr>
 </table>
 <table class="detail wide_list">

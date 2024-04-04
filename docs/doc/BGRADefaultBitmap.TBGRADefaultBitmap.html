@@ -1525,7 +1525,44 @@ Spline</p>
 <td class="itemcode"><span id="ComputeOpenedSpline-arrayofTPointF-TSplineStyle-"></span><code>function <strong>ComputeOpenedSpline</strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AStyle: <a href="BGRABitmapTypes.html#TSplineStyle">TSplineStyle</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; override;</code></td>
 </tr>
 <tr><td colspan="2">
-<p class="nodescription">This item has no description.</p></td></tr>
+<p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomBitmap.html#ComputeOpenedSpline-arrayofTPointF-TSplineStyle-">TBGRACustomBitmap.ComputeOpenedSpline</a>.</p><p>
+Compute an opened spline passing by the given points.
+
+<p><strong>Example of drawing a spline on a form:</strong>
+
+<p><img src="image_2.png" alt="computeopenedspline" />
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">procedure</span> TForm1.FormPaint(Sender: TObject);
+<span class="pascal_keyword">var</span>
+  image: TBGRABitmap;
+  pts: <span class="pascal_keyword">array</span> <span class="pascal_keyword">of</span> TPointF;
+  storedSpline: <span class="pascal_keyword">array</span> <span class="pascal_keyword">of</span> TPointF;
+  c: TBGRAPixel;
+<span class="pascal_keyword">begin</span>
+    image := TBGRABitmap.Create(ClientWidth, ClientHeight, clBtnFace);
+    c := clWindowText;
+
+    <span class="pascal_comment">//rectangular polyline</span>
+    setlength(pts,<span class="pascal_numeric">4</span>);
+    pts[<span class="pascal_numeric">0</span>] := PointF(<span class="pascal_numeric">50</span>,50);
+    pts[<span class="pascal_numeric">1</span>] := PointF(<span class="pascal_numeric">150</span>,50);
+    pts[<span class="pascal_numeric">2</span>] := PointF(<span class="pascal_numeric">150</span>,150);
+    pts[<span class="pascal_numeric">3</span>] := PointF(<span class="pascal_numeric">50</span>,150);
+    image.DrawPolylineAntialias(pts,BGRA(<span class="pascal_numeric">255</span>,0,<span class="pascal_numeric">0</span>,150),<span class="pascal_numeric">1</span>);
+
+    <span class="pascal_comment">//compute spline points and draw as a polyline</span>
+    storedSpline := image.ComputeOpenedSpline(pts,ssVertexToSide);
+    image.DrawPolylineAntialias(storedSpline,c,<span class="pascal_numeric">1</span>);
+
+    image.Draw(Canvas,<span class="pascal_numeric">0</span>,0,True);
+    image.free;
+<span class="pascal_keyword">end</span>;</pre>
+
+<p></p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">

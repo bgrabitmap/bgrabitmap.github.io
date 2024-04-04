@@ -416,7 +416,49 @@ Creates an image of dimensions <em>AWidth</em> and <em>AHeight</em> and fills it
 </tr>
 <tr><td colspan="2">
 <p>
-Creates a brush texture with a specified style, pattern color, background color, dimensions, and <a class="normal" href="BGRABitmapTypes.TCustomUniversalBitmap.html#Pen">pen</a> <a class="normal" href="BGRABitmapTypes.TCustomUniversalBitmap.html#Width">width</a></p>
+Creates a brush texture with a specified style, pattern color, background color, dimensions, and <a class="normal" href="BGRABitmapTypes.TCustomUniversalBitmap.html#Pen">pen</a> <a class="normal" href="BGRABitmapTypes.TCustomUniversalBitmap.html#Width">width</a>.</p>
+<p>
+
+
+<p><strong>Example using a diagonal cross texture to <a class="normal" href="#Fill-TPixel-TDrawMode-Word-">fill</a> shapes on a form:</strong>
+
+<p><img src="image_4.png" alt="createbrushtexture" />
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">procedure</span> TForm1.FormPaint(Sender: TObject);
+<span class="pascal_keyword">var</span>
+  image,tex: TBGRABitmap;
+  c: TBGRAPixel;
+  x,y,rx,ry: single;
+
+<span class="pascal_keyword">begin</span>
+    image := TBGRABitmap.Create(ClientWidth,ClientHeight,ColorToBGRA(ColorToRGB(clBtnFace)));
+    c := ColorToBGRA(ColorToRGB(clWindowText));
+
+    <span class="pascal_comment">//ellipse coordinates</span>
+    x := <span class="pascal_numeric">150</span>;
+    y := <span class="pascal_numeric">100</span>;
+    rx := <span class="pascal_numeric">100</span>;
+    ry := <span class="pascal_numeric">50</span>;
+
+    <span class="pascal_comment">//loads a &quot;diagcross&quot; brush with white pattern and orange background</span>
+    tex := image.CreateBrushTexture(bsDiagCross,BGRAWhite,BGRA(<span class="pascal_numeric">255</span>,192,<span class="pascal_numeric">0</span>)) <span class="pascal_keyword">as</span> TBGRABitmap;
+
+    image.FillEllipseAntialias(x,y,rx-<span class="pascal_float">0.5</span>,ry-<span class="pascal_float">0.5</span>,tex);
+    image.EllipseAntialias(x,y,rx,ry,c,<span class="pascal_numeric">1</span>); <span class="pascal_comment">//draw outline</span>
+
+    image.RoundRectAntialias(x-rx-<span class="pascal_numeric">10</span>,y-ry-<span class="pascal_numeric">10</span>,x+rx+<span class="pascal_numeric">10</span>,y+ry+<span class="pascal_numeric">10</span>,20,<span class="pascal_numeric">20</span>,c,<span class="pascal_numeric">11</span>);
+    image.RoundRectAntialias(x-rx-<span class="pascal_numeric">10</span>,y-ry-<span class="pascal_numeric">10</span>,x+rx+<span class="pascal_numeric">10</span>,y+ry+<span class="pascal_numeric">10</span>,20,<span class="pascal_numeric">20</span>,tex,<span class="pascal_numeric">9</span>);
+
+    tex.Free;
+
+    image.Draw(Canvas,<span class="pascal_numeric">0</span>,0,True);
+    image.free;
+<span class="pascal_keyword">end</span>;</pre>
+
+<p></p>
 </td></tr>
 </table>
 <table class="detail wide_list">
@@ -999,7 +1041,33 @@ Fills a rounded <a class="normal" href="#Rectangle-TRect-TPixel-TPixel-TDrawMode
 <td class="itemcode"><span id="RectangleAntialias-single-single-single-single-TPixel-single-"></span><code>procedure <strong>RectangleAntialias</strong>(x, y, x2, y2: single; const AColor: TPixel; AWidth: single); overload; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
-<p class="nodescription">This item has no description.</p></td></tr>
+<p>
+Draw a <a class="normal" href="#Rectangle-TRect-TPixel-TPixel-TDrawMode-Word-">rectangle</a> using current <a class="normal" href="BGRABitmapTypes.TCustomUniversalBitmap.html#Pen">pen</a> with antialiasing.</p>
+<p>
+
+
+<p><strong>Example drawing a <a class="normal" href="#Rectangle-TRect-TPixel-TPixel-TDrawMode-Word-">rectangle</a> on a form:</strong>
+
+<p><img src="image_5.png" alt="rectangleantialias" />
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">procedure</span> TForm1.FormPaint(Sender: TObject);
+<span class="pascal_keyword">var</span> image: TBGRABitmap;
+    c: TBGRAPixel;
+<span class="pascal_keyword">begin</span>
+  image := TBGRABitmap.Create(ClientWidth, ClientHeight, clBtnFace);
+  c := clWindowText;
+
+  image.RectangleAntialias(<span class="pascal_numeric">80</span>,80,<span class="pascal_numeric">300</span>,200, c, <span class="pascal_numeric">50</span>);
+
+  image.Draw(Canvas,<span class="pascal_numeric">0</span>,0,True);
+  image.free;
+<span class="pascal_keyword">end</span>;</pre>
+
+<p></p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">

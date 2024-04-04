@@ -152,7 +152,38 @@ Create a precise height map for a cone (not grayscale anymore but more precise)<
 </tr>
 <tr><td colspan="1">
 <p>
-Creates a tilable random grayscale image</p>
+Creates a tilable random grayscale image.</p>
+<p>
+
+
+<p><strong>Example filling a form with Perlin noise:</strong>
+
+<p><img src="image_9.png" alt="createcyclicperlinnoisemap" />
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">uses</span>
+  BGRABitmap, BGRABitmapTypes, BGRAGradients;
+
+<span class="pascal_keyword">procedure</span> TForm1.FormPaint(Sender: TObject);
+<span class="pascal_keyword">var</span>
+  image,tex: TBGRABitmap;
+
+<span class="pascal_keyword">begin</span>
+    image := TBGRABitmap.Create(ClientWidth,ClientHeight);
+
+    tex := CreateCyclicPerlinNoiseMap(<span class="pascal_numeric">100</span>,100);
+    image.FillRect(<span class="pascal_numeric">0</span>,0,image.Width,image.Height, tex, dmSet);
+    tex.free;
+
+    image.Draw(Canvas,<span class="pascal_numeric">0</span>,0,True);
+    image.free;
+<span class="pascal_keyword">end</span>;</pre>
+
+<p>
+
+<p>See also <a href="https://wiki.freepascal.org/BGRABitmap_tutorial_8">tutorial on creating textures</a>.</p>
 </td></tr>
 </table>
 <table class="detail wide_list">
