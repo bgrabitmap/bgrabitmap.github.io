@@ -6,7 +6,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
 
-<link rel="StyleSheet" type="text/css" href="pasdoc.css?v=3">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css?v=4">
 </head>
 <body>
 <div class="container"><div class="navigation">
@@ -3532,7 +3532,35 @@ Fills an <a class="normal" href="#Ellipse-TPointF-TPointF-TPointF-IBGRAScanner-s
 <td class="itemcode"><span id="FillPolyAntialias-arrayofTPointF-IBGRAScanner-boolean-"></span><code>procedure <strong>FillPolyAntialias</strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
-<p class="nodescription">This item has no description.</p></td></tr>
+<p>
+Fills a polygon with a texture and with antialiased borders.</p>
+<p>
+
+
+<p>Texture will be repeated if smaller than output area.
+
+<p><img src="image_10.png" alt="fillpolyantialias_texture" />
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">procedure</span> TForm1.FormPaint(Sender: TObject);
+<span class="pascal_keyword">var</span> image: TBGRABitmap;
+    tex: TBGRABitmap;
+<span class="pascal_keyword">begin</span>
+  <span class="pascal_comment">//black background</span>
+  image := TBGRABitmap.Create(ClientWidth,ClientHeight, BGRABlack );
+
+  tex:= TBGRABitmap.Create(<span class="pascal_string">'image.png'</span>); <span class="pascal_comment">//load a bitmap</span>
+  image.FillPolyAntialias( [PointF(<span class="pascal_numeric">110</span>,10), PointF(<span class="pascal_numeric">250</span>,10), PointF(<span class="pascal_numeric">350</span>,160), PointF(<span class="pascal_numeric">10</span>,160)], tex);
+  tex.Free;
+
+  image.Draw(Canvas,<span class="pascal_numeric">0</span>,0,True); <span class="pascal_comment">//draw on the screen</span>
+  image.free;
+<span class="pascal_keyword">end</span>;</pre>
+
+<p></p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">

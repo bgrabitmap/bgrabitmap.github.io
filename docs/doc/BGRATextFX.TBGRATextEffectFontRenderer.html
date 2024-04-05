@@ -6,7 +6,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
 
-<link rel="StyleSheet" type="text/css" href="pasdoc.css?v=3">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css?v=4">
 </head>
 <body>
 <div class="container"><div class="navigation">
@@ -112,27 +112,27 @@ Font renderer with shadow and outline effects.</p>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>destructor <strong><a href="#Destroy">Destroy</a></strong>; override;</code></td>
+<td class="itemcode"><code>destructor <strong><a href="#Destroy">Destroy</a></strong>; <a href="BGRAText.TBGRASystemFontRenderer.html#Destroy">override</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="#TextFitInfo-string-integer-">TextFitInfo</a></strong>(sUTF8: string; AMaxWidth: integer): integer; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="#TextFitInfo-string-integer-">TextFitInfo</a></strong>(sUTF8: string; AMaxWidth: integer): integer; <a href="BGRAText.TBGRASystemFontRenderer.html#TextFitInfo-string-integer-">override</a>;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="#TextSize-string-">TextSize</a></strong>(sUTF8: string): <a href="BGRAClasses.html#TSize">TSize</a>; overload; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="#TextSize-string-">TextSize</a></strong>(sUTF8: string): <a href="BGRAClasses.html#TSize">TSize</a>; overload; <a href="BGRAText.TBGRASystemFontRenderer.html#TextSize-string-">override</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="#TextSize-string-integer-boolean-">TextSize</a></strong>(sUTF8: string; AMaxWidth: integer; ARightToLeft: boolean): <a href="BGRAClasses.html#TSize">TSize</a>; overload; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="#TextSize-string-integer-boolean-">TextSize</a></strong>(sUTF8: string; AMaxWidth: integer; ARightToLeft: boolean): <a href="BGRAClasses.html#TSize">TSize</a>; overload; <a href="BGRAText.TBGRASystemFontRenderer.html#TextSize-string-integer-boolean-">override</a>;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="#TextSizeAngle-string-integer-">TextSizeAngle</a></strong>(sUTF8: string; orientationTenthDegCCW: integer): <a href="BGRAClasses.html#TSize">TSize</a>; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="#TextSizeAngle-string-integer-">TextSizeAngle</a></strong>(sUTF8: string; orientationTenthDegCCW: integer): <a href="BGRAClasses.html#TSize">TSize</a>; <a href="BGRAText.TBGRASystemFontRenderer.html#TextSizeAngle-string-integer-">override</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="#TextVisible-TBGRAPixel-">TextVisible</a></strong>(const AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>): boolean; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="#TextVisible-TBGRAPixel-">TextVisible</a></strong>(const AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>): boolean; <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#TextVisible-TBGRAPixel-">override</a>;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
@@ -156,7 +156,7 @@ Font renderer with shadow and outline effects.</p>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="#InternalTextOutAngle-TBGRACustomBitmap-single-single-integer-string-TBGRAPixel-IBGRAScanner-TAlignment-boolean-boolean-">InternalTextOutAngle</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y: single; AOrientation: integer; sUTF8: string; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; AShowPrefix: boolean = false; ARightToLeft: boolean = false); override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#InternalTextOutAngle-TBGRACustomBitmap-single-single-integer-string-TBGRAPixel-IBGRAScanner-TAlignment-boolean-boolean-">InternalTextOutAngle</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y: single; AOrientation: integer; sUTF8: string; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; AShowPrefix: boolean = false; ARightToLeft: boolean = false); <a href="BGRAText.TBGRASystemFontRenderer.html#InternalTextOutAngle-TBGRACustomBitmap-single-single-integer-string-TBGRAPixel-IBGRAScanner-TAlignment-boolean-boolean-">override</a>;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
@@ -321,7 +321,7 @@ Font renderer with shadow and outline effects.</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; <a href="BGRAText.TBGRASystemFontRenderer.html#Destroy">override</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -329,7 +329,7 @@ Font renderer with shadow and outline effects.</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="TextFitInfo-string-integer-"></span><code>function <strong>TextFitInfo</strong>(sUTF8: string; AMaxWidth: integer): integer; override;</code></td>
+<td class="itemcode"><span id="TextFitInfo-string-integer-"></span><code>function <strong>TextFitInfo</strong>(sUTF8: string; AMaxWidth: integer): integer; <a href="BGRAText.TBGRASystemFontRenderer.html#TextFitInfo-string-integer-">override</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomFontRenderer.html#TextFitInfo-string-integer-">TBGRACustomFontRenderer.TextFitInfo</a>.</p><p>
@@ -339,7 +339,7 @@ Returns the number of Unicode characters that fit into the specified <a class="n
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="TextSize-string-"></span><code>function <strong>TextSize</strong>(sUTF8: string): <a href="BGRAClasses.html#TSize">TSize</a>; overload; override;</code></td>
+<td class="itemcode"><span id="TextSize-string-"></span><code>function <strong>TextSize</strong>(sUTF8: string): <a href="BGRAClasses.html#TSize">TSize</a>; overload; <a href="BGRAText.TBGRASystemFontRenderer.html#TextSize-string-">override</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomFontRenderer.html#TextSize-string-">TBGRACustomFontRenderer.TextSize</a>.</p><p>
@@ -349,7 +349,7 @@ Returns the total <a class="normal" href="BGRAClasses.html#Size-Integer-Integer-
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="TextSize-string-integer-boolean-"></span><code>function <strong>TextSize</strong>(sUTF8: string; AMaxWidth: integer; ARightToLeft: boolean): <a href="BGRAClasses.html#TSize">TSize</a>; overload; override;</code></td>
+<td class="itemcode"><span id="TextSize-string-integer-boolean-"></span><code>function <strong>TextSize</strong>(sUTF8: string; AMaxWidth: integer; ARightToLeft: boolean): <a href="BGRAClasses.html#TSize">TSize</a>; overload; <a href="BGRAText.TBGRASystemFontRenderer.html#TextSize-string-integer-boolean-">override</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomFontRenderer.html#TextSize-string-integer-boolean-">TBGRACustomFontRenderer.TextSize</a>.</p><p>
@@ -359,7 +359,7 @@ Returns the total <a class="normal" href="BGRAClasses.html#Size-Integer-Integer-
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="TextSizeAngle-string-integer-"></span><code>function <strong>TextSizeAngle</strong>(sUTF8: string; orientationTenthDegCCW: integer): <a href="BGRAClasses.html#TSize">TSize</a>; override;</code></td>
+<td class="itemcode"><span id="TextSizeAngle-string-integer-"></span><code>function <strong>TextSizeAngle</strong>(sUTF8: string; orientationTenthDegCCW: integer): <a href="BGRAClasses.html#TSize">TSize</a>; <a href="BGRAText.TBGRASystemFontRenderer.html#TextSizeAngle-string-integer-">override</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomFontRenderer.html#TextSizeAngle-string-integer-">TBGRACustomFontRenderer.TextSizeAngle</a>.</p><p>
@@ -369,7 +369,7 @@ Returns the total <a class="normal" href="BGRAClasses.html#Size-Integer-Integer-
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="TextVisible-TBGRAPixel-"></span><code>function <strong>TextVisible</strong>(const AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>): boolean; override;</code></td>
+<td class="itemcode"><span id="TextVisible-TBGRAPixel-"></span><code>function <strong>TextVisible</strong>(const AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>): boolean; <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#TextVisible-TBGRAPixel-">override</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="inheritdescription">This item has no description. Showing description inherited from <a class="normal" href="BGRABitmapTypes.TBGRACustomFontRenderer.html#TextVisible-TBGRAPixel-">TBGRACustomFontRenderer.TextVisible</a>.</p><p>
@@ -419,7 +419,7 @@ Checks if any text would be visible using the specified color</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><span id="InternalTextOutAngle-TBGRACustomBitmap-single-single-integer-string-TBGRAPixel-IBGRAScanner-TAlignment-boolean-boolean-"></span><code>procedure <strong>InternalTextOutAngle</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y: single; AOrientation: integer; sUTF8: string; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; AShowPrefix: boolean = false; ARightToLeft: boolean = false); override;</code></td>
+<td class="itemcode"><span id="InternalTextOutAngle-TBGRACustomBitmap-single-single-integer-string-TBGRAPixel-IBGRAScanner-TAlignment-boolean-boolean-"></span><code>procedure <strong>InternalTextOutAngle</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y: single; AOrientation: integer; sUTF8: string; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; AShowPrefix: boolean = false; ARightToLeft: boolean = false); <a href="BGRAText.TBGRASystemFontRenderer.html#InternalTextOutAngle-TBGRACustomBitmap-single-single-integer-string-TBGRAPixel-IBGRAScanner-TAlignment-boolean-boolean-">override</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>

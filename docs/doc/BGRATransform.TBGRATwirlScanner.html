@@ -6,7 +6,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
 
-<link rel="StyleSheet" type="text/css" href="pasdoc.css?v=3">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css?v=4">
 </head>
 <body>
 <div class="container"><div class="navigation">
@@ -29,7 +29,41 @@ Scanner that applies a twirl transformation.</p>
 <p>
 
 
-<p>Note : this scanner handles integer coordinates only, so any further transformation applied after this one may not render correctly.</p>
+<p>Note : this scanner handles integer coordinates only, so any further transformation applied after this one may not render correctly.
+
+<p><strong>Example drawing a radial gradient transformed with a twirl:</strong>
+
+<p><img src="image_24.png" alt="tbgratwirlscanner" />
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">var</span> image: TBGRABitmap;
+    grad: TBGRAGradientScanner;
+    affine: TBGRAAffineScannerTransform;
+    twirl: TBGRATwirlScanner;
+<span class="pascal_keyword">begin</span>
+  image := TBGRABitmap.Create(ClientWidth,ClientHeight, BGRABlack );
+
+  grad := TBGRAGradientScanner.Create(BGRA(<span class="pascal_numeric">0</span>,0,<span class="pascal_numeric">255</span>),BGRAWhite,gtRadial,PointF(<span class="pascal_numeric">0</span>,0),PointF(<span class="pascal_numeric">1</span>,0),True,True);
+
+  affine := TBGRAAffineScannerTransform.Create(grad);
+  affine.Scale(<span class="pascal_numeric">150</span>,80);
+  affine.RotateDeg(-<span class="pascal_numeric">30</span>);
+  affine.Translate(ClientWidth/<span class="pascal_numeric">2</span>, ClientHeight/<span class="pascal_numeric">2</span>);
+
+  twirl := TBGRATwirlScanner.Create(affine,Point(ClientWidth <span class="pascal_keyword">div</span> <span class="pascal_numeric">2</span>, ClientHeight <span class="pascal_keyword">div</span> <span class="pascal_numeric">2</span>),<span class="pascal_numeric">100</span>);
+  image.Fill(twirl);
+  twirl.Free;
+
+  affine.free;
+  grad.free;
+
+  image.Draw(Canvas,<span class="pascal_numeric">0</span>,0,True);
+  image.free;
+<span class="pascal_keyword">end</span>;</pre>
+
+<p></p>
 <span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
 <ul class="hierarchy"><li class="ancestor">IInterface</li>
 <li class="ancestor"><a class="normal" href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a></li>
@@ -70,7 +104,7 @@ Scanner that applies a twirl transformation.</p>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="#ScanAt-Single-Single-">ScanAt</a></strong>(X, Y: Single): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="#ScanAt-Single-Single-">ScanAt</a></strong>(X, Y: Single): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; <a href="BGRABitmapTypes.TBGRACustomScanner.html#ScanAt-Single-Single-">override</a>;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
@@ -151,7 +185,7 @@ Scanner that applies a twirl transformation.</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="ScanAt-Single-Single-"></span><code>function <strong>ScanAt</strong>(X, Y: Single): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; override;</code></td>
+<td class="itemcode"><span id="ScanAt-Single-Single-"></span><code>function <strong>ScanAt</strong>(X, Y: Single): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; <a href="BGRABitmapTypes.TBGRACustomScanner.html#ScanAt-Single-Single-">override</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>

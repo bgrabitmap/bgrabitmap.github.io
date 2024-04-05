@@ -6,7 +6,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
 
-<link rel="StyleSheet" type="text/css" href="pasdoc.css?v=3">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css?v=4">
 </head>
 <body>
 <div class="container"><div class="navigation">
@@ -29,7 +29,43 @@ Scanners that applies an affine transform to a bitmap.</p>
 <p>
 
 
-<p>It is usedful if you don't want the bitmap to repeats itself, or want to specify the resample filter, or want to <a class="normal" href="#Fit-TPointF-TPointF-TPointF-">fit</a> easily the bitmap on axes.</p>
+<p>It is usedful if you don't want the bitmap to repeats itself, or want to specify the resample filter, or want to <a class="normal" href="#Fit-TPointF-TPointF-TPointF-">fit</a> easily the bitmap on axes.
+
+<p><strong>Example filling with a rotated image:</strong>
+
+<p><img src="image_22.png" alt="tbgraffinebitmaptransform" />
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">uses</span> BGRABitmap, BGRABitmapTypes, BGRATransform;
+
+<span class="pascal_keyword">procedure</span> TForm1.PaintImage;
+<span class="pascal_keyword">var</span> image: TBGRABitmap;
+    tex: TBGRABitmap;
+    affine: TBGRAAffineBitmapTransform;
+
+<span class="pascal_keyword">begin</span>
+  <span class="pascal_comment">//black background</span>
+  image := TBGRABitmap.Create(ClientWidth,ClientHeight, BGRABlack );
+
+  tex:= TBGRABitmap.Create(<span class="pascal_string">'image.png'</span>); <span class="pascal_comment">//load a bitmap</span>
+
+  <span class="pascal_comment">//create a rotation of 45°</span>
+  affine := TBGRAAffineBitmapTransform.Create(tex,True);
+  affine.RotateDeg(<span class="pascal_numeric">45</span>);
+
+  <span class="pascal_comment">//use this transformation as parameter instead of tex</span>
+  image.FillPolyAntialias( [PointF(<span class="pascal_numeric">110</span>,10), PointF(<span class="pascal_numeric">250</span>,10), PointF(<span class="pascal_numeric">350</span>,160), PointF(<span class="pascal_numeric">10</span>,160)], affine);
+
+  affine.Free;
+  tex.Free;
+
+  image.Draw(Canvas,<span class="pascal_numeric">0</span>,0,True); <span class="pascal_comment">//draw on the screen</span>
+  image.free;
+<span class="pascal_keyword">end</span>;</pre>
+
+<p></p>
 <span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
 <ul class="hierarchy"><li class="ancestor">IInterface</li>
 <li class="ancestor"><a class="normal" href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a></li>
@@ -83,19 +119,19 @@ Scanners that applies an affine transform to a bitmap.</p>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="#InternalScanCurrentPixel">InternalScanCurrentPixel</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="#InternalScanCurrentPixel">InternalScanCurrentPixel</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; <a href="BGRATransform.TBGRAAffineScannerTransform.html#InternalScanCurrentPixel">override</a>;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="#IsScanPutPixelsDefined">IsScanPutPixelsDefined</a></strong>: boolean; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="#IsScanPutPixelsDefined">IsScanPutPixelsDefined</a></strong>: boolean; <a href="BGRABitmapTypes.TBGRACustomScanner.html#IsScanPutPixelsDefined">override</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="#Fit-TPointF-TPointF-TPointF-">Fit</a></strong>(Origin, HAxis, VAxis: <a href="BGRAClasses.html#TPointF">TPointF</a>); override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#Fit-TPointF-TPointF-TPointF-">Fit</a></strong>(Origin, HAxis, VAxis: <a href="BGRAClasses.html#TPointF">TPointF</a>); <a href="BGRATransform.TBGRAAffineScannerTransform.html#Fit-TPointF-TPointF-TPointF-">override</a>;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="#ScanPutPixels-PBGRAPixel-integer-TDrawMode-">ScanPutPixels</a></strong>(pdest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; count: integer; mode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>); override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#ScanPutPixels-PBGRAPixel-integer-TDrawMode-">ScanPutPixels</a></strong>(pdest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; count: integer; mode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>); <a href="BGRABitmapTypes.TBGRACustomScanner.html#ScanPutPixels-PBGRAPixel-integer-TDrawMode-">override</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
@@ -189,7 +225,7 @@ Scanners that applies an affine transform to a bitmap.</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="InternalScanCurrentPixel"></span><code>function <strong>InternalScanCurrentPixel</strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; override;</code></td>
+<td class="itemcode"><span id="InternalScanCurrentPixel"></span><code>function <strong>InternalScanCurrentPixel</strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; <a href="BGRATransform.TBGRAAffineScannerTransform.html#InternalScanCurrentPixel">override</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -197,7 +233,7 @@ Scanners that applies an affine transform to a bitmap.</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="IsScanPutPixelsDefined"></span><code>function <strong>IsScanPutPixelsDefined</strong>: boolean; override;</code></td>
+<td class="itemcode"><span id="IsScanPutPixelsDefined"></span><code>function <strong>IsScanPutPixelsDefined</strong>: boolean; <a href="BGRABitmapTypes.TBGRACustomScanner.html#IsScanPutPixelsDefined">override</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -205,7 +241,7 @@ Scanners that applies an affine transform to a bitmap.</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Fit-TPointF-TPointF-TPointF-"></span><code>procedure <strong>Fit</strong>(Origin, HAxis, VAxis: <a href="BGRAClasses.html#TPointF">TPointF</a>); override;</code></td>
+<td class="itemcode"><span id="Fit-TPointF-TPointF-TPointF-"></span><code>procedure <strong>Fit</strong>(Origin, HAxis, VAxis: <a href="BGRAClasses.html#TPointF">TPointF</a>); <a href="BGRATransform.TBGRAAffineScannerTransform.html#Fit-TPointF-TPointF-TPointF-">override</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -213,7 +249,7 @@ Scanners that applies an affine transform to a bitmap.</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="ScanPutPixels-PBGRAPixel-integer-TDrawMode-"></span><code>procedure <strong>ScanPutPixels</strong>(pdest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; count: integer; mode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>); override;</code></td>
+<td class="itemcode"><span id="ScanPutPixels-PBGRAPixel-integer-TDrawMode-"></span><code>procedure <strong>ScanPutPixels</strong>(pdest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; count: integer; mode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>); <a href="BGRABitmapTypes.TBGRACustomScanner.html#ScanPutPixels-PBGRAPixel-integer-TDrawMode-">override</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>

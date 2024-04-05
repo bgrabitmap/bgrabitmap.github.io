@@ -6,7 +6,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
 
-<link rel="StyleSheet" type="text/css" href="pasdoc.css?v=3">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css?v=4">
 </head>
 <body>
 <div class="container"><div class="navigation">
@@ -27,7 +27,41 @@
 <p>
 Scanner that transforms any other scanner. To use it, <a class="normal" href="#Create-IBGRAScanner-">create</a> this object with a scanner as parameter, call transformation procedures, and finally, use the newly created object as a scanner.
 
-<p>You can transform a gradient or a bitmap. See <a class="normal" href="BGRATransform.TBGRAAffineBitmapTransform.html">TBGRAAffineBitmapTransform</a> for bitmap specific transformation.</p>
+<p>You can transform a gradient or a bitmap. See <a class="normal" href="BGRATransform.TBGRAAffineBitmapTransform.html">TBGRAAffineBitmapTransform</a> for bitmap specific transformation.
+
+<p><strong>Example drawing an oblique radial gradient:</strong>
+
+<p><img src="image_23.png" alt="tbgraaffinescannertransform" />
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">uses</span> BGRAGradientScanner, BGRATransform;
+
+<span class="pascal_keyword">procedure</span> TForm1.FormPaint(Sender: TObject);
+<span class="pascal_keyword">var</span> image: TBGRABitmap;
+    grad: TBGRAGradientScanner;
+    affine: TBGRAAffineScannerTransform;
+<span class="pascal_keyword">begin</span>
+  image := TBGRABitmap.Create(ClientWidth,ClientHeight, BGRABlack );
+
+  grad := TBGRAGradientScanner.Create(BGRA(<span class="pascal_numeric">0</span>,0,<span class="pascal_numeric">255</span>),BGRAWhite,gtRadial,PointF(<span class="pascal_numeric">0</span>,0),PointF(<span class="pascal_numeric">1</span>,0),True,True);
+
+  affine := TBGRAAffineScannerTransform.Create(grad);
+  affine.Scale(<span class="pascal_numeric">150</span>,80);
+  affine.RotateDeg(-<span class="pascal_numeric">30</span>);
+  affine.Translate(ClientWidth/<span class="pascal_numeric">2</span>, ClientHeight/<span class="pascal_numeric">2</span>);
+
+  image.Fill(affine);
+
+  affine.free;
+  grad.free;
+
+  image.Draw(Canvas,<span class="pascal_numeric">0</span>,0,True);
+  image.free;
+<span class="pascal_keyword">end</span>;</pre>
+
+<p></p>
 <span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
 <ul class="hierarchy"><li class="ancestor">IInterface</li>
 <li class="ancestor"><a class="normal" href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a></li>
@@ -68,15 +102,15 @@ Scanner that transforms any other scanner. To use it, <a class="normal" href="#C
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="#GetScanCustomColorspace">GetScanCustomColorspace</a></strong>: <a href="BGRABitmapTypes.html#TColorspaceAny">TColorspaceAny</a>; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="#GetScanCustomColorspace">GetScanCustomColorspace</a></strong>: <a href="BGRABitmapTypes.html#TColorspaceAny">TColorspaceAny</a>; <a href="BGRABitmapTypes.TBGRACustomScanner.html#GetScanCustomColorspace">override</a>;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="#ScanAt-Single-Single-">ScanAt</a></strong>(X, Y: Single): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="#ScanAt-Single-Single-">ScanAt</a></strong>(X, Y: Single): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; <a href="BGRABitmapTypes.TBGRACustomScanner.html#ScanAt-Single-Single-">override</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="#ScanNextPixel">ScanNextPixel</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; override;</code></td>
+<td class="itemcode"><code>function <strong><a href="#ScanNextPixel">ScanNextPixel</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; <a href="BGRABitmapTypes.TBGRACustomScanner.html#ScanNextPixel">override</a>;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
@@ -120,7 +154,7 @@ Scanner that transforms any other scanner. To use it, <a class="normal" href="#C
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="#ScanMoveTo-Integer-Integer-">ScanMoveTo</a></strong>(X, Y: Integer); override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#ScanMoveTo-Integer-Integer-">ScanMoveTo</a></strong>(X, Y: Integer); <a href="BGRABitmapTypes.TBGRACustomScanner.html#ScanMoveTo-Integer-Integer-">override</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -128,7 +162,7 @@ Scanner that transforms any other scanner. To use it, <a class="normal" href="#C
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="#ScanSkipPixels-integer-">ScanSkipPixels</a></strong>(ACount: integer); override;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="#ScanSkipPixels-integer-">ScanSkipPixels</a></strong>(ACount: integer); <a href="BGRABitmapTypes.TBGRACustomScanner.html#ScanSkipPixels-integer-">override</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -217,7 +251,7 @@ Scanner that transforms any other scanner. To use it, <a class="normal" href="#C
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetScanCustomColorspace"></span><code>function <strong>GetScanCustomColorspace</strong>: <a href="BGRABitmapTypes.html#TColorspaceAny">TColorspaceAny</a>; override;</code></td>
+<td class="itemcode"><span id="GetScanCustomColorspace"></span><code>function <strong>GetScanCustomColorspace</strong>: <a href="BGRABitmapTypes.html#TColorspaceAny">TColorspaceAny</a>; <a href="BGRABitmapTypes.TBGRACustomScanner.html#GetScanCustomColorspace">override</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -225,7 +259,7 @@ Scanner that transforms any other scanner. To use it, <a class="normal" href="#C
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="ScanAt-Single-Single-"></span><code>function <strong>ScanAt</strong>(X, Y: Single): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; override;</code></td>
+<td class="itemcode"><span id="ScanAt-Single-Single-"></span><code>function <strong>ScanAt</strong>(X, Y: Single): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; <a href="BGRABitmapTypes.TBGRACustomScanner.html#ScanAt-Single-Single-">override</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -233,7 +267,7 @@ Scanner that transforms any other scanner. To use it, <a class="normal" href="#C
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="ScanNextPixel"></span><code>function <strong>ScanNextPixel</strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; override;</code></td>
+<td class="itemcode"><span id="ScanNextPixel"></span><code>function <strong>ScanNextPixel</strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; <a href="BGRABitmapTypes.TBGRACustomScanner.html#ScanNextPixel">override</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -321,7 +355,7 @@ Scanner that transforms any other scanner. To use it, <a class="normal" href="#C
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="ScanMoveTo-Integer-Integer-"></span><code>procedure <strong>ScanMoveTo</strong>(X, Y: Integer); override;</code></td>
+<td class="itemcode"><span id="ScanMoveTo-Integer-Integer-"></span><code>procedure <strong>ScanMoveTo</strong>(X, Y: Integer); <a href="BGRABitmapTypes.TBGRACustomScanner.html#ScanMoveTo-Integer-Integer-">override</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -337,7 +371,7 @@ Scanner that transforms any other scanner. To use it, <a class="normal" href="#C
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="ScanSkipPixels-integer-"></span><code>procedure <strong>ScanSkipPixels</strong>(ACount: integer); override;</code></td>
+<td class="itemcode"><span id="ScanSkipPixels-integer-"></span><code>procedure <strong>ScanSkipPixels</strong>(ACount: integer); <a href="BGRABitmapTypes.TBGRACustomScanner.html#ScanSkipPixels-integer-">override</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
